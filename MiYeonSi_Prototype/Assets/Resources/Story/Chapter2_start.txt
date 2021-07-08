@@ -1,0 +1,168 @@
+setForeground(스테이지2,false,1)
+removeForeground()
+setBackground(Room,false,1) playMusic(Sunny)
+연애세포 "뭐야, 벌써 나가? 약속까지 시간 좀 남았는데?" changeExpression(연애세포,연애세포_0,100)
+지찬우 "그렇긴 한데, 중고 판매 사이트에서 표를 싸게 팔길래 미리 만나서 사가기로 했거든.다른 애들 것도 내가 구해주기로 했어." changeExpression(지찬우,지찬우_0,100)
+연애세포 "아~ 어제 채팅하던 게 그거야? 너 완전 둔탱인줄 알았는데 꽤 생활력이 있구나." changeExpression(연애세포,연애세포_3,100)
+지찬우 "대학생이 돈이 어디 있어… 자취하는데 한 푼이라도 아껴야 살지." changeExpression(지찬우,지찬우_해탈,100)
+연애세포 "잘했어, 은지도 좋아하겠네." changeExpression(연애세포,연애세포_3,100)
+지찬우 "그… 그렇겠지?" changeExpression(지찬우,지찬우_쑥쓰,100)
+
+setBackground(시내_1,false,1) 
+지찬우 "안 보이네… 이 근처에서 만나기로 했는데." changeExpression(지찬우,지찬우_1,100)
+연애세포 "저 아저씨 아냐?" changeExpression(연애세포,연애세포_0,100)
+지찬우 "아닐걸? 말투로 봤을 때 아마 내 또래의 여성분…" changeExpression(지찬우,지찬우_쭈글,100)
+마민석 "저기 혹시… 공대망해라님?" changeExpression(마민석,마민석_0,100)
+지찬우 "…라라뿅님?" changeExpression(지찬우,지찬우_경악,100)
+연애세포 "너 채팅할 때 말투 귀엽다고 좋아하지 않았었냐?" changeExpression(연애세포,연애세포_1,100)
+지찬우 "…빨리 거래하고 가야겠다. 입장권 가져오셨죠? 여기 삼만 원…" changeExpression(지찬우,지찬우_당황,100)
+마민석 "아, 네…! 여기 입장권…" changeExpression(마민석,마민석_0,100)
+지찬우 "감사합니…? 저기, 손은 왜 잡으시는…" changeExpression(지찬우,지찬우_당황,100)
+마민석 "처음 만난 사이에 이상한 질문인 거 아는데요… 혹시 운명을 믿나요?" changeExpression(마민석,마민석_3,100)
+
+choice 
+{
+    "원래 안 믿었는데 오늘부터 믿을 것 같아요."
+        마민석 "보기보다 줏대가 없는 편이었군요, 하아… 이런 건 취향이 아닌데…" setBackground(시내_1,false,1) changeExpression(마민석,마민석_1,100)
+    "예전부터 쭉 운명을 믿어왔어요."
+        마민석 "운명을 믿는 사람은 오랜만이네요. 나도 믿어요, 우리 제법 잘 맞을 것 같지 않나요?" setBackground(시내_1,false,1) changeExpression(마민석,마민석_0,100)
+    "아뇨, 그런 건 과학적으로 증명되지 않은 분야라…"
+        마민석 "보통 사람들은 그렇죠. 하지만 전 운명을 믿어요. 그리고 지금 그 믿음에   확신이 생기기 시작했어요…" setBackground(시내_1,false,1) changeExpression(마민석,마민석_2,100)
+	"운명? 유치하게 누가 그런 걸 믿어요." 
+        마민석 "아아…♡ 까칠하고 혈기왕성한 학생다운 귀여운 답변이네요. 난 운명을 믿어요. 이거 점점 더 흥미로워지는데…" setBackground(시내_1,false,1) changeExpression(마민석,마민석_3,100)
+}
+
+setMiniGameAfterBG(시내_1,false,1) 
+연애세포 "맛이 간 것 같은데… 야, 상대해주지 말고 빨리 가." changeExpression(연애세포,연애세포_1,100)
+지찬우 "어… 죄, 죄송한데 제가 뒤에 약속이 있어서 이제 놓아주셨으면 하는데…" changeExpression(지찬우,지찬우_당황,100)
+마민석 "아, 나도 모르게 그만… 내가 시간을 뺏었군요, 미안해요." changeExpression(마민석,마민석_0,100)
+지찬우 "감사합니다. 그럼 이만..." changeExpression(지찬우,지찬우_당황,100)
+마민석 "자, 잠깐만요! 학생 이름이 뭐죠?" changeExpression(마민석,마민석_3,100)
+
+choice 
+{
+    "지, 지찬우인데요…"
+        마민석 "의외로 물어보는 건 전부 대답해주는 타입? 너무 쉬워도 흥미가 떨어지는데… " setBackground(시내_1,false,1)  changeExpression(마민석,마민석_1,100)
+    "아저씨가 알아서 뭐 하시게요, 제 이름이 지찬우라는 걸…"
+        마민석 "약간 바보 같은 면도 있군요. 이건 이거대로 귀엽긴 하지만요… " setBackground(시내_1,false,1)  changeExpression(마민석,마민석_0,100)
+    "공짜로는 알려주기 싫은데요. "
+        마민석 "아… 돈으로 공략해야 하는 타입인 건가요? 얼마 정도 필요할까요? 앞으로 아르바이트를 늘려야겠네요…♡" setBackground(시내_1,false,1)  changeExpression(마민석,마민석_2,100)
+	"제가 왜 처음 보는아저씨한테 제 이름을 알려드려야 하는데요?" 
+        마민석 "아아… 까칠한 면도 제법 귀엽잖아… 그럼 천천히 공략해드리도록 하죠… 우훗♡" setBackground(시내_1,false,1)  changeExpression(마민석,마민석_3,100)
+}
+
+setMiniGameAfterBG(시내_1,false,1) 
+연애세포 "뭐냐, 저 아저씨?" changeExpression(연애세포,연애세포_1,100)
+지찬우 "으… 왠지 소름 돋아. 운명 어쩌고 하던데 사이비인가?" changeExpression(지찬우,지찬우_당황,100)
+연애세포 "사이비…보다는 다른 쪽에 관심이 있는 것 같던데." changeExpression(연애세포,연애세포_1,100)
+지찬우 "어? 뭐 말이야?" changeExpression(지찬우,지찬우_깜짝,100)
+연애세포 "…너 눈치 없다는 말 자주 듣지? 됐다. 늦었으니까 빨리 가기나 해." changeExpression(연애세포,연애세포_0,100)
+마민석 "흔치 않은 페이스인걸… 더 알고 싶어…" changeExpression(마민석,마민석_3,100)
+
+setBackground(민속촌_1,false,1) playMusic(FolkVillage)
+최은지 "자료 조사도 대충 끝났겠다~ 생각보다 일찍 끝났는데 우리 조금만 놀다 가면 안될까? 나 민속촌 궁금했거든." changeExpression(최은지,최은지_0,100)
+사수진 "안돼, 나 다른 수업 과제 남았어." changeExpression(사수진,사수진_찌릿,100)
+연애세포 "아싸, 방해꾼 제거! 지찬우, 빨리 둘이 놀자고 말해!" changeExpression(연애세포,연애세포_3,100)
+지찬우 "그, 그럼 수진이는 먼저 가고 나랑 둘이…!" changeExpression(지찬우,지찬우_쑥스,100)
+사수진 "…하지만 내일도 시간 있으니까 오늘은 같이 놀까?" changeExpression(사수진,사수진_찌릿,100)
+연애세포 "바쁘면 그냥 집에 가라고!!!" changeExpression(연애세포,연애세포_0,100)
+최은지 "야호! 그럼 우리 민속촌 벨튀 하러 가자! 나 꼭 한번 해보고 싶었어." changeExpression(최은지,최은지_신나,100)
+지찬우 "벨튀? 나, 난 달리기 못 하는데..." changeExpression(지찬우,지찬우_깜짝,100)
+
+setBackground(민속촌_2,false,1) 
+최은지 "누른다~" changeExpression(최은지,최은지_0,100)
+narrator "띵똥~"
+최은지 "나온다, 뛰어!" changeExpression(최은지,최은지_신나,100)
+지찬우 "여기서 잡히면 끌려가서 웃음거리 되는 거겠지… 싫어… 만일 너튜브에 올리면 어쩌지…" changeExpression(지찬우,지찬우_긴장,100)
+연애세포 "너... 대충 예상했지만 달리기 진짜 느리구나. 못 봐주겠네, 더 빨리는 못 달려?" changeExpression(연애세포,연애세포_2,100)
+지찬우 "시, 시끄러워! 나름 필사적으로 달리는 중이라고...!" changeExpression(지찬우,지찬우_짜증,100)
+최은지 "하하하! 찬우야~ 너무 느린 거 아니야? 좀 더 힘내서 달려봐!" changeExpression(최은지,최은지_신나,100)
+
+playMusic(Evolution)
+miniGame(Minseok_Minigame) 
+{
+   "아… 자기가 빠르다고 막말하네. 이게 최선인 사람도 있다고… 장난하나" 
+        최은지 "어? 그, 그런 뜻으로 한 말은 아니었는데… " setBackground(민속촌_2,false,1) changeExpression(최은지,최은지_1,100)
+   "굳이 남의 집 벨을 누르고 튄다니, 애초에 이런 걸 하면서 얻는 게 뭐지?" 
+        최은지 "무슨 불만이 그렇게 많아~ 그냥 재미로 하는 거지, 뭐! " setBackground(민속촌_2,false,1) changeExpression(최은지,최은지_0,100)
+   "더는 못해! 이게 최선이야! "
+        최은지 "찬우야, 뒤에! " setBackground(민속촌_2,false,1) changeExpression(최은지,최은지_1,100)
+   "은지야, 너 너무 빨라. 같이 가!"
+        최은지 "하하, 찬우 네가 느린 거 아냐?" setBackground(민속촌_2,false,1) changeExpression(최은지,최은지_3,100)
+}
+
+playMusic(FolkVillage)
+setMiniGameAfterBG(민속촌_2,false,1) 
+지찬우 "으악, 잡혔다! 역시 이럴 줄 알았…" changeExpression(지찬우,지찬우_당황,100)
+마민석 "어…? 그쪽은…"  changeExpression(마민석,마민석_0,100)
+지찬우 "아, 아저씨는?!" changeExpression(지찬우,지찬우_경악,100)
+최은지 "어? 찬우야, 아는 사이야?" changeExpression(최은지,최은지_당황,100)
+
+choice 
+{
+    "오랜만이네요, 이런 곳에서 다 만나고. "
+        마민석 "아침에 봤는데 오랜만은 아니지 않나요? " setBackground(민속촌_2,false,1) changeExpression(마민석,마민석_1,100)
+    "다른 사람이랑 착각했네. 모르는 사람이야. "
+        마민석 "찬우군… 착각이 아니라구요. 불과 몇 시간 전에 만났잖아요!" setBackground(민속촌_2,false,1) changeExpression(마민석,마민석_0,100)
+    "이상한 사람이다 했더니 지금 제 뒤를 밟으신 거예요?"
+        마민석 "그건 오해군요. 일하는 중이었습니다만… 그나저나 그 말은 줄곧 나를 신경 쓰고 있었다고 해석해도 될까요? ♡" setBackground(민속촌_2,false,1) changeExpression(마민석,마민석_2,100)
+	"아니, 처… 처음 보는 아저씨야!" 
+        마민석 "찬우군, 거짓말에 서툰 편이군요? 귀여워라… ♡" setBackground(민속촌_2,false,1) changeExpression(마민석,마민석_3,100)
+}
+
+setMiniGameAfterBG(민속촌_2,false,1) 
+최은지 "정말 우연이네, 찬우가 대머리 아저씨랑 아는 사이였다니!"  changeExpression(최은지,최은지_0,100)
+마민석 "버젓이 머리가 있는 사람한테 그런 표현은 실례군요. 누구죠, 저 무례한 아가씨는?" changeExpression(마민석,마민석_1,100)
+지찬우 "예? 어… 일 열심히 하시고… 아… 안녕히 계세요! 얘들아, 가자!" changeExpression(지찬우,지찬우_당황,100)
+최은지 "갑자기? 하지만 민속촌 벨튀의 묘미는 지금부터…" changeExpression(최은지,최은지_뿌엥,100)
+지찬우 "나, 나 목 말라! 우리 카페라도 갈까?!" changeExpression(지찬우,지찬우_가짜웃음,100)
+
+
+setBackground(카페_1,false,1) playMusic(Cafe)
+사수진 "아까 그 아저씨는 뭐야?" changeExpression(사수진,사수진_찌릿,100)
+지찬우 "아무것도 아니니까 신경 쓰지 마... 갑자기 끌고 와서 미안…" changeExpression(지찬우,지찬우_쭈글,100)
+최은지 "괜찮아, 나도 목 말랐으니까. 그럼 나는 딸기 아인슈페너 마실래!" changeExpression(최은지,최은지_0,100)
+사수진 "너 그거 질리지도 않냐?" changeExpression(사수진,사수진_0,100)
+최은지 "질려도 아직 이거만 한 걸 못 찾았단 말이지~" changeExpression(최은지,최은지_0,100)
+사수진 "난 아메리카노." changeExpression(사수진,사수진_0,100)
+지찬우 "나, 나도 아메리카노…" changeExpression(지찬우,지찬우_0,100)
+최은지 "우리 이거 마시고 뭐할까?" changeExpression(최은지,최은지_0,100)
+사수진 "아직도 할 게 남았어?" changeExpression(사수진,사수진_0,100)
+
+playMusic(Evolution)
+miniGame(Minseok_Minigame) 
+{
+   "아… 귀찮은데. 이제 그냥 가면 안 돼?" 
+        최은지 "미…미안, 내가 눈치가 없었지…" setBackground(카페_1,false,1) changeExpression(최은지,최은지_1,100)
+   "뭐 어때, 얼마나 걸린다고. 그럼 하나만 더 보고 가자." 
+        최은지 "정말? 그럼 이따 광장에서 행사 있다는데 우리도 참여하자!" setBackground(카페_1,false,1) changeExpression(최은지,최은지_0,100)
+   "수진아, 그러지 말고 더 놀다 가자. 나도 여기 궁금하고."
+        최은지 "응 부탁할게 수진아 조금만 더 있다가자~" setBackground(카페_1,false,1) changeExpression(최은지,최은지_2,100)
+   "그럼 우린 여기 잘 모르니까 은지가 가고 싶은 곳으로 가자."
+        최은지 "와아, 찬우 최고! 그럼 나 관상가 보고 싶어!" setBackground(카페_1,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(FolkVillage)
+setMiniGameAfterBG(민속촌_1,false,1) 
+최은지 "아, 재밌었다! 다들 바쁠 텐데 내가 너무 무리해서 끌고 다닌 거 아닌가 몰라. 오늘 같이 구경해줘서 고마워." hangeExpression(최은지,최은지_신나,100)
+
+playMusic(Evolution)
+miniGame(Minseok_Minigame)
+{
+   "알면 됐어. 다음부터는 이런 거 부탁하지 마." 
+        최은지 "어? 미, 미안…" setBackground(민속촌_1,false,1) changeExpression(최은지,최은지_1,100)
+   "수진이는 신경 쓰지 마. 말은 그렇게 해도 자기도 즐기는 것 같던데?" 
+		최은지 "진짜? 다행이다~ 하여간 수진이는 솔직하지 못하다니까." setBackground(민속촌_1,false,1) changeExpression(최은지,최은지_0,100)
+   "나도 오늘 정말 즐거웠어. 특히 마지막에 행사는 정말 보길 잘한 것 같아. 수진이도 재밌었대."
+        최은지 "정말? 나만 재밌으면 어쩌나 했는데 다행이다~"  setBackground(민속촌_1,false,1) changeExpression(최은지,최은지_2,100)    
+   "솔직히 평소에 이런 곳 잘 안 오는 데 은지가 있어서 재밌었던 것 같아. 덕분에 잘 즐거웠어."
+        최은지 "정말? 다행이다! 나도 오늘 무지 재밌었어!" setBackground(민속촌_1,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(FolkVillage)
+setMiniGameAfterBG(민속촌_1,false,1) 
+최은지 "그럼 수업에서 보자! 다들 잘 들어가~" changeExpression(최은지,최은지_0,100)
+지찬우 "으,응…! 조심히 들어가…" changeExpression(지찬우,지찬우_쑥스,100)
+연애세포 "하루 만에 많이 친해졌네. 느낌 좋은데?" changeExpression(연애세포,연애세포_3,100)
+
+Load(Chapter3_start)

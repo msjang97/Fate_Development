@@ -1,0 +1,201 @@
+setForeground(스테이지6,false,1)
+removeForeground()
+setBackground(영화관_1,false,1) playMusic(영화관1)
+지찬우 "…너무 일찍 왔나?" changeExpression(지찬우,지찬우_긴장,100)
+연애세포 "지찬우! 지찬우! 지찬우 넌 천재야! 맨날 말까지 더듬던 애가 어떻게 그렇게 거짓말을 술술 했지?" changeExpression(연애세포,연애세포_3,100)
+연애세포 "귀여운 녀석! 기분이다! 이제 하산해도 좋아!" changeExpression(연애세포,연애세포_3,100)
+지찬우 "좋긴 뭐가 좋다는 거야?! 너 솔직히 귀찮은 거지?" changeExpression(지찬우,지찬우_0,100)
+지찬우 "아… 지금이라도 집에 가고 싶다…" changeExpression(지찬우,지찬우_해탈,100)
+지찬우 "호기롭게 말하긴 했지만 막상 학교 밖에서 사적인 일로 단둘이 만나려니까 긴장해서 토할 것 같아." changeExpression(지찬우,지찬우_긴장,100)
+연애세포 "미쳤냐? 어떻게 따낸 기회인데 포기한다는 거야! 방금 한 칭찬 취소야!" changeExpression(연애세포,연애세포_0,100)
+지찬우 "그치만 말실수라도 하면 어떡해. 어제도 그렇게 어색했는데…" changeExpression(지찬우,지찬우_긴장,100)
+연애세포 "괜찮아! 어차피 영화만 보는 건데 무슨 대화를 그렇게…" changeExpression(연애세포,연애세포_0,100)
+안하경 "찬우 선배?" changeExpression(안하경,안하경_0,100)
+지찬우 "…하경이?" changeExpression(지찬우,지찬우_깜짝,100)
+안하경 "답지 않게 웬일입니까? 혼자 영화 보러 온 겁니까?" changeExpression(안하경,안하경_0,100)
+지찬우 "어? 어… 아, 아니! 그냥 지나가는 길이었어! 너야말로 고삼이 왜 영화관에…" changeExpression(지찬우,지찬우_가짜웃음,100)
+안하경 "가끔은 머리도 식혀줘야 공부가 되지 않겠습니까. 저는 영화 보러 왔습니다." changeExpression(안하경,안하경_0,100)
+안하경 "그나저나 지나가는 길에 굳이 영화관 내부까지 오다니 이상…" changeExpression(안하경,안하경_0,100)
+지찬우 "미안! 나 급한 일이 있어서 먼저 갈게!!!" changeExpression(지찬우,지찬우_가짜웃음,100)
+연애세포 "야, 만나기로 한 건 안쪽이잖아. 곧 올 시간인데 나가서 어쩌려고 그래…" changeExpression(연애세포,연애세포_0,100)
+지찬우 "그렇다고 계속 얘기하고 있을 수는 없잖아! 그냥 은지한테 다른 곳으로 오라고 연락을…" changeExpression(지찬우,지찬우_당황,100)
+최은지 "어? 찬우야! 지금 들어가는 길이야? 타이밍 진짜 좋네, 그치?" changeExpression(최은지,최은지_0,100)
+지찬우 "으, 은지?! 어… 타, 타이밍 완전 최고네! 드, 들어가좍!!!" changeExpression(지찬우,지찬우_긴장,100)
+연애세포 "한마디 했는데 혀를 씹냐…" changeExpression(연애세포,연애세포_1,100)
+최은지 "예매까지 미리 해주고 고마워. 오늘 우리 뭐 본다고 했었지?" changeExpression(최은지,최은지_0,100)
+
+playMusic(Evolution)
+miniGame(Anhakyung_Minigame) 
+{
+    "응, 매드소마 예매했어."
+        최은지 "아… 사실 난 무서운 거 잘 못 보는데… 그래도 같이 보면 재밌겠다." setBackground(영화관_1,false,1) changeExpression(최은지,최은지_1,100)
+    "응, 마라랜드 예매했어."
+        최은지 "재밌겠다! 노래가 매콤하다고 하던데 기대되네." setBackground(영화관_1,false,1) changeExpression(최은지,최은지_0,100)
+    "응, 비긴 이계인 예매했어."
+        최은지 "아~ 계인 러팔로가 나오는 작품 맞지? 나 완전 팬이야! 기대돼~ " setBackground(영화관_1,false,1) changeExpression(최은지,최은지_2,100)
+    "응, 극대노의 질주 예매했어."
+        최은지 "진짜? 나 그거 보고 싶었는데! 진짜 기대된다~" setBackground(영화관_1,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(영화관1)
+setMiniGameAfterBG(영화관_1,false,1) 
+최은지 "어디 보자 시간이… 영화 시작하려면 1시간 정도 남았네. 우리 그때까지 뭐할까?" changeExpression(최은지,최은지_0,100)
+지찬우 "미, 미안.... 내가 시간 생각을 못 해서…" changeExpression(지찬우,지찬우_깜짝,100)
+최은지 "네가 왜 미안해~ 맞다, 아까 올라오면서 봤는데 1층에 오락실 있더라. 혹시 게임 좋아해?" changeExpression(최은지,최은지_0,100)
+
+playMusic(Evolution)
+miniGame(Anhakyung_Minigame) 
+{
+    "당연하지, 나 시간 나면 사행성 게임만 해.."
+        최은지 "…농담이지? 영화 시작 전까지 거기서 잠깐 시간 시간 때우다 가자." setBackground(영화관_1,false,1) changeExpression(최은지,최은지_1,100)
+    "게임? 좋아하지. 윷놀이 같은 거."
+        최은지 "윷놀이…? 오락실에 윷놀이는 없을 텐데… " setBackground(영화관_1,false,1) changeExpression(최은지,최은지_0,100)
+    "사실 오락실은 잘 안 가봤는데 너 가고 싶으면 거기 가자."
+        최은지 "어? 안 좋아하면 다른 곳 가도 되는데…" setBackground(영화관_1,false,1) changeExpression(최은지,최은지_2,100)
+    "응, 좋아해. 그럼 영화 시작 전까지 게임이나 하다 갈까?."
+        최은지 "좋아! 나 오락실 게임 좋아하거든. 이따 내 실력 보고 놀라지 마~" setBackground(영화관_1,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(오락실)
+setMiniGameAfterBG(오락실_2,false,1) 
+최은지 "진짜 오랜만이다~ 사실 나도 대학교 오고 거의 안 왔거든." changeExpression(최은지,최은지_신나,100)
+지찬우 "나도 오랜만에 오니까 좋네…" changeExpression(지찬우,지찬우_0,100)
+연애세포 "최은지랑 와서 좋은 거겠지." changeExpression(연애세포,연애세포_0,100)
+최은지 "사격게임도 있네! 나 이거 잘하는데 우리 이거 할까?" changeExpression(최은지,최은지_신나,100)
+지찬우 "와… 사격게임 좋아해? 전혀 예상 못 했는데…" changeExpression(지찬우,지찬우_깜짝,100)
+최은지 "그런 소리 자주 들어. 체구가 작아서 그런가?" changeExpression(최은지,최은지_0,100)
+연애세포 "너 최은지에 대해 진짜 아는 게 없구나?" changeExpression(연애세포,연애세포_0,100)
+지찬우 "그러게… 좀 안다고 생각했는데." changeExpression(지찬우,지찬우_깜짝,100)
+연애세포 "웃기셔~ 내가 오기 전까지는 기껏해야 인사 한번 나눈 게 다면서 알긴 뭘 알아?" changeExpression(연애세포,연애세포_0,100)
+연애세포 "그래서 요즘 좀 붙어 다니니까 어때? 환상이 좀 깨져?" changeExpression(연애세포,연애세포_0,100)
+지찬우 "아니… 더 좋아졌어." changeExpression(지찬우,지찬우_쑥스,100)
+연애세포 "엥? 그… 그래?" changeExpression(연애세포,연애세포_0,100)
+안하경 "오랜만에 맡는 피 냄새이지 말입니다." changeExpression(안하경,안하경_2,100)
+지찬우 "하, 하경이?! 언제부터 있었어?" changeExpression(지찬우,지찬우_당황,100)
+안하경 "방금 왔습니다. 영화 상영까지 시간이 좀 남아서 말입니다. 근데 급한 볼일이 이겁니까?" changeExpression(안하경,안하경_0,100)
+지찬우 "어? 어… 아니, 그게…" changeExpression(지찬우,지찬우_당황,100)
+안하경 "호오, 사격게임입니까. 저도 같이해도 되겠습니까." changeExpression(안하경,안하경_0,100)
+
+
+choice 
+{
+    "네 마음을 향한 사격도… 허락해줄래?"
+        안하경 "선배… 멘트 완전구립니다. 대학 가더니 사람이 왜 이렇게 변했습니까. 예전의 선배가 좋았지 말입니다. " setBackground(오락실_2,false,1) changeExpression(안하경,안하경_1,100)
+    "난 총 잘 쏘는 여자가 그렇게 멋있더라. "
+        안하경 "저보고 하는 말입니까? 원한다면 당장 보여드릴 수 있지 말입니다. " setBackground(오락실_2,false,1) changeExpression(안하경,안하경_0,100)
+    "미안, 나 오늘은 은지랑 둘이 만난 거라서."
+        안하경 "예나 지금이나 그 성격 어디 안 가지 말입니다. 그래도 같이 하면 더 재밌지 않습니까. " setBackground(오락실_2,false,1) changeExpression(안하경,안하경_2,100)
+	"뭘 그런 걸 물어. 자기가 놀고 싶으면 끼는 거지. " 
+        안하경 "선배의 이런 시원시원한 면이 좋습니다… 여전하지 말입니다. " setBackground(오락실_2,false,1) changeExpression(안하경,안하경_3,100)
+}
+
+playMusic(오락실)
+setMiniGameAfterBG(오락실_2,false,1) 
+최은지 "어? 찬우… 학교 후배였던가?" changeExpression(최은지,최은지_삐질,100)
+안하경 "안하경입니다. 저도 그쪽 이름 모르니 그냥 넘어가겠습니다." changeExpression(안하경,안하경_0,100)
+최은지 "난 최은지야. 만난 것도 인연인데 같이 놀다 갈래? 사람 많으면 더 재밌잖아~" changeExpression(최은지,최은지_0,100)
+안하경 "바라던 바입니다." changeExpression(안하경,안하경_0,100)
+지찬우 "너무 착해서 곤란할 때도 있구나…" changeExpression(지찬우,지찬우_해탈,100)
+최은지 "그럼 나 먼저 한다! 악, 빗나갔다! 너무 오랜만이라 그런가? 원래 더 잘 했는데…" changeExpression(최은지,최은지_당황,100)
+안하경 "원래 빈 수레가 요란하지 말입니다." changeExpression(안하경,안하경_0,100)
+최은지 "방금은 실수야!" changeExpression(최은지,최은지_뿌엥,100)
+최은지 "아…! 또 빗나갔네…" changeExpression(최은지,최은지_삐질,100)
+안하경 "그것도 사격이라고 하고 있는 겁니까. 총이 아깝지 말입니다." changeExpression(안하경,안하경_0,100)
+
+
+choice 
+{
+    "신경 쓰지 마. 난 포복 전진도 못하는 여자한테는 관심 없으니깐. "
+        안하경 "이건 저와 저 사람 사이의 일입니다. 괜히 끼어들지 마십시오. " setBackground(오락실_2,false,1) changeExpression(안하경,안하경_1,100)
+    "그러고 보니 하경이는 총을 엄청 잘 쐈지?"
+        안하경 "그렇지 말입니다. 군대에서 제 별명이 전장의 붉은 악마였지 말입니다." setBackground(오락실_2,false,1) changeExpression(안하경,안하경_0,100)
+    "현직 여고생이랑 일반인을 어떻게 비교해. 시비는 그쯤 하지? "
+        안하경 "크하하하하! 오랜만에 총을 쥐었더니 조금 흥분했지 말입니다. 이거 죄송하게 됐지 말입니다." setBackground(오락실_2,false,1) changeExpression(안하경,안하경_2,100)
+	"지금 뭐하는 거야, 실례잖아. 빨리 은지한테 사과해." 
+        안하경 "…평소 직업 특성상 총을 자주 잡다 보니 감정이 격해졌습니다. 죄송하게 됐지 말입니다." setBackground(오락실_2,false,1) changeExpression(안하경,안하경_3,100)
+}
+
+playMusic(오락실)
+setMiniGameAfterBG(오락실_2,false,1) 
+안하경 "재미있는 제안 하나 해도 되겠습니까. 우리 둘이 대결해서 제가 이기면 찬우 선배가 제 소원을 들어주기로." changeExpression(안하경,안하경_0,100)
+최은지 "뭐? 그럼 내가 이기면?" changeExpression(최은지,최은지_당황,100)
+안하경 "그럴 일은 없을 것 같지만… 만약 제가 지면 제가 찬우 선배 소원을 들어드리겠습니다." changeExpression(안하경,안하경_2,100)
+최은지 "뭐야, 그게~ 나는 완전 상관없는 거잖아. 찬우야, 괜찮겠어? 나 믿어?" changeExpression(최은지,최은지_2,100)
+안하경 "크하하하학! 그런 질문을 하다니 어리석…" changeExpression(안하경,안하경_0,100)
+지찬우 "믿어." changeExpression(지찬우,지찬우_0,100)
+최은지 "진짜? 좋았어~ 찬우야, 내가 너 소원권 하나 킵해줄게!" changeExpression(최은지,최은지_4,100)
+연애세포 "진짜 믿냐? 벌써 두 발 날렸는데? 누가 봐도 지는 게임…" changeExpression(연애세포,연애세포_1,100)
+지찬우 "솔직히 기대는 안 해… 그냥 거절해도 됐지만..." changeExpression(지찬우,지찬우_쭈글,100)
+지찬우 "하경이가 저렇게 대놓고 무시하는데 나까지 못 믿겠다고 하면 은지가 뭐가 돼…" changeExpression(지찬우,지찬우_0,100)
+narrator "(10분 후)"
+
+
+setBackground(오락실_2,false,1) playMusic(오락실)
+안하경 "그럼 이번에는 레이싱 게임 어떻습니까." changeExpression(안하경,안하경_0,100)
+최은지 "레이싱 게임? 좋아! 자리 두 개밖에 없으니까 먼저 가는 사람이 임자~" changeExpression(최은지,최은지_신나,100)
+안하경 "치사합니다! 그래봤자 달리기로는 저한테 안됩니다!" changeExpression(안하경,안하경_2,100)
+지찬우 "어째 둘이 친해진 것 같네..." changeExpression(지찬우,지찬우_쭈글,100)
+
+
+setBackground(영화관_1,false,1) playMusic(영화관1)
+최은지 "그래도 다 같이 노니까 진짜 재밌었다, 그치?" changeExpression(최은지,최은지_신나,100)
+지찬우 "응… 재밌었어…" changeExpression(지찬우,지찬우_쭈글,100)
+연애세포 "진심이냐?" changeExpression(연애세포,연애세포_0,100)
+지찬우 "둘이 놀면 더 좋긴 했겠지…"  changeExpression(지찬우,지찬우_해탈,100)
+안하경 "재밌었다니 다행이지만 둘이 만난 건데 제가 괜히 낀 거 아닌가 싶습니다." changeExpression(안하경,안하경_0,100)
+
+
+choice 
+{
+    "이제 알았냐? 눈치 더럽게 빠르네. "
+        안하경 "…그렇다고 면전에 대고 그렇게 말할 필요는 없지 않습니까. " setBackground(오락실_2,false,1) changeExpression(안하경,안하경_1,100)
+    "난 하경이 만나서 좋았는데."
+        안하경 "평소 같으면 느끼하다고 싫어했겠지만… 오늘은 그냥 넘어가겠습니다. " setBackground(오락실_2,false,1) changeExpression(안하경,안하경_0,100)
+    "됐어, 덕분에 재밌었어. "
+        안하경 "…진짜입니까. 솔직히 조금 기쁩니다." setBackground(오락실_2,false,1) changeExpression(안하경,안하경_2,100)
+	"그런 걸 신경 쓰고 그러냐? 넌 걱정이 너무 많아." 
+        안하경 "…그렇습니다. 평소의 저답지 않았습니다. 그냥 없던 말로 하겠습니다. " setBackground(오락실_2,false,1) changeExpression(안하경,안하경_3,100)
+}
+
+playMusic(영화관2)
+setMiniGameAfterBG(영화관_1,false,1) 
+최은지 "아, 영화 곧 시작하겠다! 찬우야, 빨리 가자!" changeExpression(최은지,최은지_0,100)
+안하경 "…영화? 분명히 영화관은 그냥 지나가던 길이라고…" changeExpression(안하경,안하경_0,100)
+지찬우 "그, 그러게! 하경아, 우리 먼저 갈게. 다음에 보자!!!" changeExpression(지찬우,지찬우_0,100)
+
+
+setBackground(영화관_2,false,1)
+최은지 "찬우야, 근데 표는 어디서 난 거야?" changeExpression(최은지,최은지_0,100)
+지찬우 "어? 어… 치, 친구가 줬어…" changeExpression(지찬우,지찬우_어색,100)
+지찬우 "친구라고는 수진이밖에 없지만." changeExpression(지찬우,지찬우_가짜웃음,100)
+최은지 "그래? 근데 그 친구 너랑 같이 영화 보고 싶어서 준 거 아니야? 나랑 봐도 괜찮아?" changeExpression(최은지,최은지_0,100)
+지찬우 "하하… 괘, 괜찮아…" changeExpression(지찬우,지찬우_가짜웃음,100)
+연애세포 "복장 터지는구만… 너랑 보려고 돈 주고 산 거란 말이야." changeExpression(연애세포,연애세포_0,100)
+
+
+setBackground(시내_3,false,1) playMusic(시내대화1)
+최은지 "영화 재밌었다~ 그치! 찬우야, 덕분에 오늘 즐거웠어. 정말 고마워." changeExpression(최은지,최은지_0,100)
+지찬우 "그래…? 다, 다행이다…"changeExpression(지찬우,지찬우_쑥스,100)
+최은지 "영화 마지막이 진짜 반전이었어! 제일 친한 친구가 알고 보니 스토커였다니" changeExpression(최은지,최은지_0,100)
+최은지 "난 마지막까지 전혀 몰랐는데 혹시 찬우 너는 알았어?" changeExpression(최은지,최은지_0,100)
+
+playMusic(Evolution)
+miniGame(Anhakyung_Minigame)
+{
+    "너 그것도 눈치 못 챘냐? 영화 자주 본다며?"
+        최은지 "그거랑 이거랑 다르지~ 이번엔 너무 몰입해서 의심할 겨를도 없었어." setBackground(시내_3,false,1) changeExpression(최은지,최은지_1,100)
+    "복선이 재밌긴 한데 좀 뻔하지 않았어? 내가 감독이었으면 그냥~  "
+        최은지 "그래? 뻔하긴 해도 그거대로 재미있지 않았어? " setBackground(시내_3,false,1) changeExpression(최은지,최은지_0,100)
+    "응, 나는 중반부 넘어가는 지점에서 알았어. "
+        최은지 "진짜? 찬우 너 엄청 예리하다! 평소에 이런 영화 좋아해? " setBackground(시내_3,false,1) changeExpression(최은지,최은지_2,100)
+    "아니, 나도 전혀 몰랐어. 연출을 진짜 잘한 것 같아. "
+        최은지 "그치?! 찬우 너 나랑 진짜 잘 맞는 것 같아! 우리 다음에 또 오자! 다음에는 내가 살게! " setBackground(시내_3,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(시내대화1)
+setMiniGameAfterBG(시내_3,false,1) 
+최은지 "어, 버스 온다! 찬우야, 그럼 나 이만 갈게~ 학교에서 보자!" changeExpression(최은지,최은지_0,100)
+지찬우 "응! 조, 조심히 들어가!" changeExpression(지찬우,지찬우_쑥스,100)
+
+Load(Chapter7_start)
+

@@ -1,0 +1,200 @@
+setForeground(스테이지4,false,1)
+removeForeground()
+setBackground(Room,false,1) playMusic(찬우방)
+연애세포 "은지한테 같이 술 마시자고 하자." changeExpression(연애세포,연애세포_0,100)
+지찬우 "뭐? 싫어… 술 마시면 다음 날 힘들단 말이야." changeExpression(지찬우,지찬우_깜짝,100)
+연애세포 "너 바보야? 대학생들이 만나는 게 술 약속밖에 없지." changeExpression(연애세포,연애세포_2,100)
+연애세포 "그렇게 친한 사이도 아닌데 놀이공원이라도 가자고 하면 가겠냐?" changeExpression(연애세포,연애세포_2,100)
+연애세포 "저번에 했던 조별 과제 끝난 기념으로 한잔하자고 그래." changeExpression(연애세포,연애세포_2,100)
+지찬우 "놀이공원… 재밌겠다." changeExpression(지찬우,지찬우_쑥스,100)
+연애세포 "안된다니까! 자기 친구들이랑 가지 뭐하러 너랑 가냐?" changeExpression(연애세포,연애세포_2,100)
+지찬우 "아, 알았어… 근데 조별 과제면 수진이랑 셋이 만나는 건가?" changeExpression(지찬우,지찬우_쭈글,100)
+연애세포 "그쪽이 자연스럽지. 사수진은 계속 따라줘서 먼저 취하게 만들고 최은지랑 둘이 놀면 자연스럽게 친해질 수 있을 거야." changeExpression(연애세포,연애세포_0,100)
+지찬우 "수진이가 따라준다고 다 마실 애가 아닌데… 일단 알았어." changeExpression(지찬우,지찬우_0,100)
+
+setBackground(대학캠퍼스_1,false,1) playMusic(캠퍼스)
+지찬우 "수진아, 요즘 바빠?" changeExpression(지찬우,지찬우_0,100)
+사수진 "말도 마. 과제에 대외활동에 여기저기서 불러대서 죽겠어." changeExpression(사수진,사수진_0,100)
+연애세포 "나이스~ 차라리 최은지한테 사수진은 바빠서 못왔다고 하자!"
+지찬우 "그렇구나… 응, 예상했어. 힘들겠네…" changeExpression(지찬우,지찬우_가짜웃음,100)
+사수진 "…왜?" changeExpression(사수진,사수진_0,100)
+지찬우 "아니, 그냥 같이 한잔할까 해서…" changeExpression(지찬우,지찬우_가짜웃음,100)
+사수진 "언제?" changeExpression(사수진,사수진_찌릿,100)
+지찬우 "어? 이, 이번 주 금요일…" changeExpression(지찬우,지찬우_깜짝,100)
+사수진 "좋아." changeExpression(사수진,사수진_미소,100)
+지찬우 "뭐? 너 바쁜 거 아니었어? 괜찮은 거야?" changeExpression(지찬우,지찬우_깜짝,100)
+사수진 "하루 정도는 괜찮아. 가자." changeExpression(사수진,사수진_3,100)
+연애세포 "뭐야, 맨날 이럴 거면 그냥 처음부터 가겠다고 하던가! 뭐… 됐어, 처음부터 같이 가려고 했으니까." changeExpression(연애세포,연애세포_0,100)
+지찬우 "그럼 은지도 같이 불러서 셋이 마시자! 우리 조별 과제 칭찬도 받고 잘 마무리 했으니까 기념으로…" changeExpression(지찬우,지찬우_깜짝,100)
+사수진 "너 최은지랑 둘이 약속 잡기에 어색하니까 나 부르는 거야?" changeExpression(사수진,사수진_찌릿,100)
+연애세포 "이래서 눈치 빠른 녀석들이 싫다니깐…" changeExpression(연애세포,연애세포_1,100)
+
+
+choice 
+{
+    "눈치도 빠르네. 싫으면 그냥 은지랑 둘이 만날게. "
+        사수진 "누가 싫대? " setBackground(대학캠퍼스_1,false,1) changeExpression(사수진,사수진_1,100)
+    "야, 친구 좋다는 게 뭐냐? 아, 함만 나와주라~ "
+        사수진 "진짜 귀찮게 구네… 알았어.  " setBackground(대학캠퍼스_1,false,1) changeExpression(사수진,사수진_0,100)
+    "아냐, 그냥 오랜만에 너랑 마시고 싶어서 그래… 은지는 그냥 겸사겸사… "
+        사수진 "됐어, 내가 그런 말에 속을 사람도 아닌데 뭐하러 거짓말해. " setBackground(대학캠퍼스_1,false,1) changeExpression(사수진,사수진_2,100)
+	"나 너 없으면 말 한마디도 제대로 못 할 것 같아서 그래… 한 번만 와주면 안 돼?" 
+        사수진 "하긴, 네 성격에 말이나 제대로 하겠냐. " setBackground(대학캠퍼스_1,false,1) changeExpression(사수진,사수진_3,100)
+}
+
+setMiniGameAfterBG(대학캠퍼스_1,false,1)
+사수진 "알았어, 그럼 내가 연락할게. 금요일 7시까지 나와." changeExpression(사수진,사수진_0,100)
+지찬우 "어? 지, 진짜?!" changeExpression(지찬우,지찬우_깜짝,100)
+연애세포 "뭐야, 생각보다 괜찮은 녀석이잖아?" changeExpression(연애세포,연애세포_0,100)
+
+setBackground(술집_1,false,1) playMusic(술집1)
+지찬우 "야, 나 오늘 어때? 이 옷 괜찮아? 좀 과한가?" changeExpression(지찬우,지찬우_쑥스,100)
+연애세포 "그래픽 인력 부족해서 맨날 같은 옷 입으면서 뭐라는 거야…" changeExpression(연애세포,연애세포_0,100)
+연애세포 "됐어, 평소에 안 꾸미던 애들이 꾸미면 오히려 촌스러우니까." changeExpression(연애세포,연애세포_0,100)
+지찬우 "근데 수진이는 술 약속을 왜 이렇게 일찍 잡은 거지? 일찍 들어가려고 그러나?" changeExpression(지찬우,지찬우_0,100)
+연애세포 "먼저 들어가면 우리야 땡큐지. 근데 왜 아무도 안 오냐? 슬슬 올 시간인데…" changeExpression(연애세포,연애세포_0,100)
+사수진 "일찍 왔네." changeExpression(사수진,사수진_0,100)
+지찬우 "수, 수진아! 아… 다행이다. 은지 먼저 오면 무슨 말을 해야 하나 걱정이었는데… 너 와서 어색할 걱정은 없겠다." changeExpression(지찬우,지찬우_어색,100)
+연애세포 "다행은 무슨… 이렇게 숫기가 없어서는…" changeExpression(연애세포,연애세포_0,100)
+사수진 "은지 금요일 알바 있어. 오려면 시간 좀 걸려." changeExpression(사수진,사수진_0,100)
+지찬우 "어? 진짜? 그럼 언제 온대?" changeExpression(지찬우,지찬우_깜짝,100)
+사수진 "일단 먹으면서 얘기하자. 나 배고파." changeExpression(사수진,사수진_0,100)
+지찬우 "나, 나도 저녁을 안 먹어서… 그럼 밥부터 시킬까?" changeExpression(지찬우,지찬우_0,100)
+연애세포 "뭐, 뭐냐…? 그럼 왜 7시에 부른 건데?" changeExpression(연애세포,연애세포_1,100)
+사수진 "응, 뭐 마실래? 소주?" changeExpression(사수진,사수진_0,100)
+지찬우 "어? 벌써 마시려고? 너 먹고 싶은 거 시켜…" changeExpression(지찬우,지찬우_0,100)
+사수진 "그래, 알아서 주문할게." changeExpression(사수진,사수진_0,100)
+지찬우 "사수진, 나한테 할 말 있냐?" changeExpression(지찬우,지찬우_1,100)
+사수진 "일단 한잔하고 얘기해." changeExpression(사수진,사수진_0,100)
+지찬우 "그래…" changeExpression(지찬우,지찬우_쭈글,100)
+사수진 "찬우야, 저번에 내가 좋아하는 사람 있다고 했던 거 기억나?" changeExpression(사수진,사수진_0,100)
+연애세포 "뭐야, 역시 이 녀석도 최은지를…" changeExpression(연애세포,연애세포_0,100)
+사수진 " 누군지 알겠어?" changeExpression(사수진,사수진_0,100)
+지찬우 "………………은지?" changeExpression(지찬우,지찬우_쭈글,100)
+사수진 "너야." changeExpression(사수진,사수진_발그레,100)
+지찬우 "…(입으로 뱉는다)" changeExpression(지찬우,지찬우_주륵,100)
+연애세포 "…" changeExpression(연애세포,연애세포_1,100)
+사수진 "왜 이렇게 눈치가 없지? 아니면 알면서도 믿기 싫어서 모르는 척하는 건가? 그렇게 싫어?" changeExpression(사수진,사수진_3,100)
+연애세포 "그냥 눈치가 없는 건데…" changeExpression(연애세포,연애세포_1,100)
+사수진 "네가 은지랑 잘 되게 도와달라고 했잖아. 그래서 못 도와주겠다, 이 말 하려고 일찍 부른 거야." changeExpression(사수진,사수진_3,100)
+
+
+choice 
+{
+    "그래서 나 훼방 놓으려고 나온 거냐?"
+        사수진 "이 상황에서 드는 생각이 그게 다야?" setBackground(술집_1,false,1) changeExpression(사수진,사수진_1,100)
+    "그걸 왜 하필 지금 말하는 건데?"
+        사수진 "그럼 언제 말해? 오히려 미리 말하는 게 좋지 않아?   " setBackground(술집_1,false,1) changeExpression(사수진,사수진_0,100)
+    "수진아… 진짜 나한테 왜 이러냐… 내가 너 아끼는 거 알잖아. "
+        사수진 "알지, 나를 얼마나 아끼는지. " setBackground(술집_1,false,1) changeExpression(사수진,사수진_2,100)
+	"네가 그런 말을 하면… 나는 이제 뭘 어떻게 해야 해?" 
+        사수진 "그냥 평소처럼 하면 돼. 이제 와서 네가 내 친구라는 사실은 변하지 않아. 내가 널 언제부터 좋아했다고 생각해?" setBackground(술집_1,false,1) changeExpression(사수진,사수진_3,100)
+}
+
+playMusic(술집1)
+setMiniGameAfterBG(술집_1,false,1) 
+사수진 "찬우야, 진짜 자신 있어? 은지는 그냥 포기하는 게 어때?" changeExpression(사수진,사수진_0,100)
+연애세포 "저 얼굴로 말하니까 진짜 재수 없네…" changeExpression(연애세포,연애세포_0,100)
+지찬우 "체할 것 같아…" changeExpression(지찬우,지찬우_경악,100)
+사수진 "꼭꼭 씹어 먹어." changeExpression(사수진,사수진_미소,100)
+연애세포 "이거 완전 또라이잖아…" changeExpression(연애세포,연애세포_1,100)
+최은지 "어? 너희 먼저 마시고 있었어? 벌써 한 병 비웠네? 언제 왔어?" changeExpression(최은지,최은지_0,100)
+사수진 "둘 다 저녁 안 먹어서 먼저 먹고 있었어. 새로 시켜줄게." changeExpression(사수진,사수진_0,100)
+최은지 "그랬구나~ 그럼 난 튀김 시킬래! 근데 찬우 표정이 안 좋네? 벌써 취한 건 아니지?" changeExpression(최은지,최은지_0,100)
+지찬우 "어…? 괘, 괜찮아… 너 기다린다고 별로 안 마셨어…" changeExpression(지찬우,지찬우_가짜웃음,100)
+최은지 "진짜 괜찮은 거 맞지? 나 화장실 좀 다녀올게, 둘이 주문하고 있어~" changeExpression(최은지,최은지_0,100)
+연애세포 "지금 분위기 완전 어색하단 말이야! 가지 마---!!!!!!" changeExpression(연애세포,연애세포_0,100)
+사수진 "표정 관리 좀 해. 사람 불러놓고 뭐 하는 거야." changeExpression(사수진,사수진_0,100)
+
+
+choice 
+{
+    "안 그래도 알아서 잘할 거니까 신경 꺼. "
+        사수진 "지금 네가 알아서 못하고 있으니까 하는 소리잖아. " setBackground(술집_1,false,1) changeExpression(사수진,사수진_1,100)
+    "너 같으면 이 상황에서 표정 관리가 되겠냐?"
+        사수진 "글쎄, 난 이런 경험이 없어서 모르겠는데. ." setBackground(술집_1,false,1) changeExpression(사수진,사수진_0,100)
+    "내 표정 그렇게 별로야? "
+        사수진 "완전 이상해. 이래서 사회생활은 하겠어? " setBackground(술집_1,false,1) changeExpression(사수진,사수진_2,100)
+	"너 때문에 아무 생각이 안 들어. 어떻게 해야 할지 모르겠어.  " 
+        사수진 "어떡하긴, 그냥 아무 일 없었던 것처럼 해." setBackground(술집_1,false,1) changeExpression(사수진,사수진_3,100)
+}
+
+playMusic(술집1) 
+setMiniGameAfterBG(술집_1,false,1) 
+최은지 "어? 음식 벌써 나왔네? 맛있겠다! 나 알바하느라 저녁도 못 먹었거든~" changeExpression(최은지,최은지_신나,100)
+사수진 "배고프겠네, 많이 먹어." changeExpression(사수진,사수진_0,100)
+최은지 "응! 잘 먹겠습니다~" changeExpression(최은지,최은지_신나,100)
+
+playMusic(Evolution)
+miniGame(SaSuJin_MiniGame) 
+{
+    "넌 다이어트 안 해? 튀김 살찌니까 조금만 먹어. "
+        최은지 "뭐? 남이야 무슨 상관이야… " setBackground(술집_1,false,1) changeExpression(최은지,최은지_1,100)
+    "엄청 신나 보이네, 튀김 좋아해?"
+        최은지 "사실 평소에 좋아하는 건 아닌데 여기 튀김이 진짜 맛있거든. 너도 먹어봐! " setBackground(술집_1,false,1) changeExpression(최은지,최은지_0,100)
+    "근데 무슨 알바해? 금요일에 알바하면 힘들겠다. 고생했네, 많이 먹어. "
+        최은지 "편의점! 솔직히 힘들긴 한데 어쩌겠어, 일이라는 게 다 그렇지. " setBackground(술집_1,false,1) changeExpression(최은지,최은지_2,100)
+    "체하면 안 되니까 천천히 먹어. 다 먹으면 또 시키자."
+        최은지 "좋아! 오늘은 먹고 죽는다~ 여기 튀김 진짜 맛있어! 기분 최고다~" setBackground(술집_1,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(술집1)
+setMiniGameAfterBG(술집_1,false,1)  
+최은지 "그래도 과제 잘 마무리해서 다행이다. 솔직히 교수님이 처음에 조별 과제라고 하셨을 때 좀 걱정했거든." changeExpression(최은지,최은지_0,100)
+사수진 "맞아. 교수님이 칭찬도 많이 해주셨고, 다들 주말에 답사 나간다고 고생했어." changeExpression(사수진,사수진_미소,100)
+최은지 "으아~ 나 발표할 때 너무 긴장해서 실수했던 거 계속 생각나! 괜찮았어?" changeExpression(최은지,최은지_1,100)
+
+playMusic(Evolution)
+miniGame(SaSuJin_MiniGame)
+{
+    "어? 너 실수했어? 미안, 나 제대로 안 들어서…"
+        최은지 "뭐야~ 그래도 같은 팀인데 좀 듣지? 나 열심히 준비한 거란 말야." setBackground(술집_1,false,1) changeExpression(최은지,최은지_1,100)
+    "그러게, 괜찮은데 실수한 부분이 아쉽더라. 다음부터 좀 더 연습해."
+        최은지 "그래도 나 많이 연습했는데~ 그래도 다음부터 같은 실수는 안 하겠지?" setBackground(술집_1,false,1) changeExpression(최은지,최은지_0,100)
+    "별로 티도 안 났어. 다들 실수한 줄도 몰랐을걸? 그냥 잊어."
+        최은지 "그런가? 역시 그랬으려나? 그랬으면 좋겠다~ 그래, 그냥 생각 안 할래." setBackground(술집_1,false,1) changeExpression(최은지,최은지_2,100)
+    "아냐, 교수님도 발표 좋았다고 하셨잖아. 이번 과제 은지 덕분에 잘 마무리했어."
+        최은지 "그래? 그럼 다행이고~ 다들 열심히 해서 좋은 결과 있었어." setBackground(술집_1,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(술집1)
+setMiniGameAfterBG(술집_1,false,1)
+사수진 "발표 잘했어. 솔직히 너 아니었으면 이렇게 반응 좋지는 못했을 거야." changeExpression(사수진,사수진_0,100)
+최은지 "수진이한테 칭찬을 다 듣네. 기념으로 짠하자 짠~" changeExpression(최은지,최은지_4,100)
+사수진 "너무 급하게 마시는 거 아냐? 이따 집에 어떻게 들어가려고 그래." changeExpression(사수진,사수진_0,100)
+최은지 "나 별로 안 마셨어. 그리고 오늘 금요일인데 뭐 어때~" changeExpression(최은지,최은지_뿌엥,100)
+
+
+setBackground(시내_3,false,1) playMusic(시내1)
+최은지 "얘들아, 오늘 재밌었어. 다들 집에 잘 들어가~" changeExpression(최은지,최은지_신나,100)
+사수진 "그래, 너도 알바하고 온다고 피곤했을 텐데 집 가서 푹 쉬어." changeExpression(사수진,사수진_0,100)
+최은지 "아… 너무 달렸나. 구름 위를 걷는 것 같아…" changeExpression(최은지,최은지_신나,100)
+
+playMusic(Evolution)
+miniGame(SaSuJin_MiniGame) 
+{
+    "그러게 적당히 마시지 뭘 이렇게 많이 마셨어. 너도 참 사람 피곤하게 만든다."
+        최은지 "잔소리는 엄마한테 듣는 걸로 충분하거든~ 됐으니까 빨리 집에 들어가." setBackground(시내_3,false,1) changeExpression(최은지,최은지_1,100)
+    "수진아, 너 은지랑 같은 방향 아냐? 좀 데려다줘. "
+        사수진 "안 그래도 그러려고 했어. 너도 조심히 들어가. 이상한 사람 따라가지 말고." setBackground(시내_3,false,1) changeExpression(최은지,최은지_0,100)
+    "집 잘 찾아갈 수 있겠어? 데리러 오는 사람 있어? ."
+        최은지 "데리러 오는 사람은 없는데… 괜찮아, 나 술 마시고 집 못 찾아간 적 한 번도 없어." setBackground(시내_3,false,1) changeExpression(최은지,최은지_2,100)
+    "은지야, 집 근처까지만 나랑 같이 가자. 내가 걱정돼서 그래. "
+        최은지 "어? 너희 집 반대 방향 아니야? 그럼 내가 너무 미안한데… 마음만 받을게" setBackground(시내_3,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(시내대화2)
+setMiniGameAfterBG(Room_2,false,1) 
+지찬우 "있잖아…" changeExpression(지찬우,지찬우_쭈글,100)
+연애세포 "응?" changeExpression(연애세포,연애세포_0,100)
+지찬우 "수진이랑 은지 잘 어울리지 않냐…" changeExpression(지찬우,지찬우_해탈,100)
+연애세포 "응." changeExpression(연애세포,연애세포_0,100)
+지찬우 "짜증 나… 아니라고 하면 덧나나." changeExpression(지찬우,지찬우_0,100)
+연애세포 "자기가 먼저 물어봐 놓고 성질이야. 안 그래도 둘이 썸 탄다고 소문까지 났었잖아." changeExpression(연애세포,연애세포_0,100)
+연애세포 "정작 둘은 관심 없는 것 같지만." changeExpression(연애세포,연애세포_0,100)
+지찬우 "아까 수진이가 자신 있냐고 물었잖아, 솔직히 자신 없다." changeExpression(지찬우,지찬우_쭈글,100)
+지찬우 "역시 은지는 수진이처럼 잘 생기고 능력 좋은 애랑…" changeExpression(지찬우,지찬우_해탈,100)
+연애세포 "네가 언제는 자신 있었냐? 뭐가 문제인데? 되면 되는 거고 안 되면 어쩔 수 없고. 뭘 그렇게 혼자 오바해." changeExpression(연애세포,연애세포_4,100)
+지찬우 "응… 그, 그렇지..." changeExpression(지찬우,지찬우_해탈,100)
+
+Load(Chapter5_start)

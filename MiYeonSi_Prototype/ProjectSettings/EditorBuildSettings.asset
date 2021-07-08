@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/01.Scenes/StartScene.unity
+    guid: 480fc4d2ebdebb448acb5786cb95aaae
+  - enabled: 1
+    path: Assets/01.Scenes/MainSystem.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/01.Scenes/MiniGames/SaSuJin_MiniGame.unity
+    guid: 93be43a990da28e43ac4e899e962763d
+  - enabled: 1
+    path: Assets/01.Scenes/MiniGames/Anhakyung_Minigame.unity
+    guid: eabbc774cc041ae4faa9388dbda6862d
+  - enabled: 1
+    path: Assets/01.Scenes/MiniGames/Minseok_Minigame.unity
+    guid: 26ed3274fb1f07a40880d3a8500cceb0
+  - enabled: 1
+    path: Assets/01.Scenes/EndingCredit.unity
+    guid: c3b457627dbc32944887314477defd15
+  m_configObjects: {}

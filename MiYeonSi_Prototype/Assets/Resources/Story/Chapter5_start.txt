@@ -1,0 +1,180 @@
+setForeground(스테이지5,false,1)
+removeForeground()
+setBackground(강의실_2,false,1) playMusic(Class)
+최은지 "찬우야 수업 끝났어!" changeExpression(최은지,최은지_0,100)
+지찬우 "어..? 어?! 끝났다고?" changeExpression(지찬우,지찬우_깜짝,100)
+최은지 "많이 피곤했나 보네, 과제 한다고 밤 샌 거야?" changeExpression(최은지,최은지_1,100)
+지찬우 "어… 그, 그렇지... 하하하…" changeExpression(지찬우,지찬우_가짜웃음,100)
+연애세포 "게임 했으면서." changeExpression(연애세포,연애세포_0,100)
+지찬우 "조용히 해…" changeExpression(지찬우,지찬우_가짜웃음,100)
+최은지 "찬우야, 우리 다음 수업 한 시간 늦게 시작한다고 문자 왔는데 봤어?" changeExpression(최은지,최은지_0,100)
+지찬우 "가, 갑자기? 그걸 지금 알려주는 법이 어디 있어…" changeExpression(지찬우,지찬우_깜짝,100)
+최은지 "어쩌겠어, 그래도 한 시간은 금방 가니까 과제라도 하면서 기다려야지, 뭐." changeExpression(최은지,최은지_0,100)
+연애세포 "야, 기회야! 어디 카페라도 가자고 해!!!" changeExpression(연애세포,연애세포_0,100)
+지찬우 "가, 갑자기?! 나랑 가기 싫다고 하면 어떡해!" changeExpression(지찬우,지찬우_긴장,100)
+연애세포 "네가 그러니까 만년 솔로인 거야! 됐어, 내가 할게!" changeExpression(연애세포,연애세포_2,100)
+연애세포 "괜찮으면 같이 카페라도 갈래? 그래도 혼자 기다리기보단 덜 지루하잖아." changeExpression(연애세포,연애세포_2,100)
+지찬우 "헙…" changeExpression(지찬우,지찬우_긴장,100)
+최은지 "카페? 그럴까? 그럼 날도 추운데 카페에서 뭐라도 한잔 마시고 수업 가자." changeExpression(최은지,최은지_0,100)
+
+
+setBackground(카페_2,false,1) playMusic(카페1)
+마민석 "어서 오세요~"changeExpression(마민석,마민석_0,100)
+지찬우 "아악!!!!!!!" changeExpression(지찬우,지찬우_경악,100)
+마민석 "어… 찬우 군? 이런 곳에서 다 보네요♡ 혹시 여기 학교 다녀요?" changeExpression(마민석,마민석_3,100)
+
+
+choice 
+{
+    "설마 저 때문에 여기까지 오신 거예요?"
+        마민석 "그건 본인이 생각하기에도 좀 아니지 않나요? 평범하게 일하고 있습니다만." setBackground(카페_2,false,1) changeExpression(마민석,마민석_1,100)
+    "아저씨가 왜 여기 계세요?"
+        마민석 "눈치채지 못한 건가요? 물론 영업 중이랍니다~ ♡" setBackground(카페_2,false,1) changeExpression(마민석,마민석_0,100)
+    "혹시 여기서 알바하시는 거예요?"
+        마민석 "눈썰미가 제법인데요? 최근 운 좋게 일자리를 얻었어요." setBackground(카페_2,false,1) changeExpression(마민석,마민석_2,100)
+	"따, 딱히 아저씨를 보러 온 건 아니니까… 오해하지 마세요!" 
+        마민석 "그렇게 말하면 전혀 설득력이 없는데요~ 솔직하지 못하군요♡" setBackground(카페_2,false,1) changeExpression(마민석,마민석_3,100)
+}
+
+playMusic(카페1)
+setMiniGameAfterBG(카페_2,false,1) 
+최은지 "어? 찬우 아는 분이야? 음… 근데 어디서 봤던 것 같은데…" changeExpression(최은지,최은지_당황,100)
+지찬우 "으, 은지야! 메뉴 골랐어?" changeExpression(지찬우,지찬우_가짜웃음,100)
+최은지 "아니, 아직 고민 중… 아~ 매번 카페 올 때마다 고민하는 거 힘드네…" changeExpression(최은지,최은지_삐질,100)
+
+playMusic(Evolution)
+miniGame(Minseok_Minigame) 
+{
+   "은지야 딸기 아이스라떼는 어때?" 
+        최은지 "음… 기껏 골라줬는데 미안, 그냥 딸기 아인슈페너로 할래." setBackground(카페_2,false,1) changeExpression(최은지,최은지_1,100)
+   "은지야, 딸기 프라푸치노는 어때?" 
+        최은지 "음… 기껏 골라줬는데 미안, 그냥 딸기 아인슈페너로 할래. " setBackground(카페_2,false,1) changeExpression(최은지,최은지_0,100)
+   "은지야 딸기 요거트스무디는 어때?"
+        최은지 "음… 기껏 골라줬는데 미안, 그냥 딸기 아인슈페너로 할래. " setBackground(카페_2,false,1) changeExpression(최은지,최은지_2,100)
+   "은지야 딸기 아인슈페너는 어때?"
+        최은지 "우와, 나 맨날 고민하다가 결국 그거 마시는데, 어떻게 알았어?" setBackground(카페_2,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(카페1)
+setMiniGameAfterBG(카페_2,false,1)
+최은지 "딸기 아인슈페너 레귤러요. 매장에서 먹고 가요." changeExpression(최은지,최은지_0,100)
+마민석 "네~ 찬우군은요?" changeExpression(마민석,마민석_0,100)
+
+choice 
+{
+    "무슨 음료가 이렇게 비싸? 이럴 거면 그냥 국밥이나 한 그릇 든든하게 시켜 먹지. "
+        마민석 "그 말을 굳이 카페에서 하는 이유가 궁금하군요. 사실 주문 없으면 알바생 입장에서는 편해서 좋습니다만… " setBackground(카페_2,false,1) changeExpression(마민석,마민석_1,100)
+    "근데 여기 쌍화차 같은 건 안 팔아요? 계란 두 개 띄운 거."
+        마민석 "앞에 메뉴판 있습니만, 쌍화차는 안 팔아요. 아무래도 젊은이들 사이에서는 수요가…" setBackground(카페_2,false,1) changeExpression(마민석,마민석_0,100)
+    "따뜻한 거."
+        마민석 "그냥 따뜻한 거라고 하면 제가 모르죠, 아메리카노 맞나요?" setBackground(카페_2,false,1) changeExpression(마민석,마민석_2,100)
+	"아메리카노 레귤러  뜨거운 거로요." 
+        마민석 "우훗…♡ 금방 준비해드릴게요… " setBackground(카페_2,false,1) changeExpression(마민석,마민석_3,100)
+}
+
+setMiniGameAfterBG(카페_1,false,1)
+최은지 "찬우야, 저기 창가에 자리 비었다. 저기 앉을까?" changeExpression(최은지,최은지_0,100)
+지찬우 "그, 그래!" changeExpression(지찬우,지찬우_0,100)
+최은지 "…" changeExpression(최은지,최은지_0,100)
+지찬우 "…" changeExpression(지찬우,지찬우_긴장,100)
+연애세포 "야, 숨 막혀. 뭐라도 말해봐." changeExpression(연애세포,연애세포_0,100)
+지찬우 "시, 시험 얘기라도 할까?" changeExpression(지찬우,지찬우_긴장,100)
+연애세포 "미쳤냐? 괜히 분위기 무겁게 하지 말고 그냥 취미 같은 거… " changeExpression(연애세포,연애세포_2,100)
+최은지 "찬우야, 중간고사 준비 잘 하고 있어? 이번 시험 어떻게 나올까?" changeExpression(최은지,최은지_0,100)
+연애세포 "그렇지, 역시 시험이 중요하지. 공부 가르쳐 달라는 핑계로 친해지자." changeExpression(연애세포,연애세포_거짓웃음,100
+
+playMusic(Evolution)
+miniGame(Minseok_Minigame) 
+{
+   "중간고사?! 언제 그런 얘기 나왔어? 공부 하나도 안 했는데 망했다." 
+        최은지 "너 수업 하나도 안 들었구나? 2주 전부터 말씀하셨는데… 어쩌려고 그래." setBackground(카페_1,false,1) changeExpression(최은지,최은지_1,100)
+   "나? 완전 망했지. 이야~ 은지는 똑똑해서 좋겠네. 이번에도 과탑이겠구만." 
+        최은지 "나도 그렇게 머리가 좋은 편은 아니야. 그래도 미리 복습하면 시험 잘 볼 수 있어.  " setBackground(카페_1,false,1) changeExpression(최은지,최은지_0,100)
+   "수진이가 가르쳐줘서 어느 정도는 잘 되고 있어. 은지 너도 모르는 거 있으면 물어봐."
+        최은지 "수진이랑 공부하면 진짜 문제없겠다! 나도 수진이 옆에서 공부하는 거 봤는데 진짜 꼼꼼하더라." setBackground(카페_1,false,1) changeExpression(최은지,최은지_2,100)
+   "이번 시험 어렵대서 열심히 복습하고 있는데 솔직히 자신 없네."
+        최은지 "뭐야~ 이미 잘하고 있으면서. 아직 시작도 안 한 애들이 태반일걸?" setBackground(카페_1,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(카페1)
+setMiniGameAfterBG(카페_1,false,1)
+narrator "(진동벨) 지잉-"
+지찬우 "아, 음료 나왔나 보다. 내가 가져올게." changeExpression(지찬우,지찬우_긴장,100)
+최은지 "그래 줄래? 고마워." changeExpression(최은지,최은지_0,100)
+연애세포 "웬일이야? 시키지도 않았는데 이런 매너? 완전 매너 있잖아!" changeExpression(연애세포,연애세포_3,100)
+지찬우 "은지 보냈다가 저 아저씨가 무슨 이상한 말을 할지 모르잖아…" changeExpression(지찬우,지찬우_0,100)
+지찬우 "저... 음료 받으러 왔는데요…" changeExpression(지찬우,지찬우_쭈글,100)
+마민석 "여기 주문하신 음료 나왔습니다~" changeExpression(마민석,마민석_0,100)
+지찬우 "감사합…" changeExpression(지찬우,지찬우_쭈글,100)
+마민석 "찬우군, 같이 온 학생이랑은 어떤 관계인가요?" changeExpression(마민석,마민석_0,100)
+지찬우 "그런 건 왜 물어보시는 거예요? 그냥 같은 과 친구인데요…" changeExpression(지찬우,지찬우_깜짝,100)
+마민석 "어디서 저렇게 예쁜 아가씨를 데려왔나 했죠, 보아하니 인기도 상당할 듯한데… " changeExpression(마민석,마민석_0,100)
+지찬우 "…더 할 얘기 없으시면 가도 되죠?" changeExpression(지찬우,지찬우_0,100)
+
+narrator "찬우가 음료를 가지고 자리로 돌아온다."
+
+최은지 "이거야, 이거! 역시 아무리 고민해도 결국 돌아오게 된다니까~" changeExpression(최은지,최은지_신나,100)
+지찬우 "그 음료 진짜 좋아하나 봐." changeExpression(지찬우,지찬우_0,100)
+최은지 "응! 원래 주기적으로 바뀌는데 이번엔 좀 오래 가네~" changeExpression(최은지,최은지_신나,100)
+마민석 "이거 먹으면서 해요." changeExpression(마민석,마민석_0,100)
+최은지 "어? 찬우야, 너 케이크도 시켰어?" changeExpression(최은지,최은지_0,100)
+마민석 "학생들이 공부하는 거 대견해서 내가 주는 서비스예요. 맛있게 먹어요♡" changeExpression(마민석,마민석_3,100)
+최은지 "와~ 감사합니다, 잘 먹을게요!" changeExpression(최은지,최은지_신나,100)
+
+
+choice 
+{
+    "감사합니다, 아저씨. 아저씨가 주신 거라 더 맛있어 보여요. "
+        마민석 "생각보다 재미 없는 반응이네… " setBackground(카페_2,false,1) changeExpression(마민석,마민석_1,100)
+    "맛있어 보이긴 하네요. 잘 먹을게요."
+        마민석 "그냥 솔직하게 고맙다고 말해도 될 텐데… 후후" setBackground(카페_2,false,1) changeExpression(마민석,마민석_0,100)
+    "케이크는 티라미수가 국룰인데… 아, 신경 쓰지 마세요. 그래도 주셨으니까 먹을게요. "
+        마민석 "어른이 주면 그냥 감사합니다 하고 먹을 것이지, 찬우군은 말이 많은 타입이군요." setBackground(카페_2,false,1) changeExpression(마민석,마민석_2,100)
+	"카페에 손님 대부분이 학생인데 저희만 준다니 완전 수상한데요. 이상한 거 넣은 건 아니죠?" 
+        마민석 "이상한 거라뇨? 그냥 평범한 케이크랍니다♡ 맛있으니 어서 드셔보세요… 우훗♡" setBackground(카페_2,false,1) changeExpression(마민석,마민석_3,100)
+}
+
+playMusic(카페1)
+setMiniGameAfterBG(카페_1,false,1) 
+최은지 "엄청 친절하시다. 누구야?" changeExpression(최은지,최은지_0,100)
+지찬우 "어? …아, 아빠 회사 친구?" changeExpression(지찬우,지찬우_깜짝,100)
+최은지 "응…? 너희 아빠도 여기서 일하셔?" changeExpression(최은지,최은지_0,100)
+지찬우 "…착각했다. 이모의 당숙의 사촌 남동생의 막내딸의 같은 반 친구의 아버지야." changeExpression(지찬우,지찬우_해탈,100)
+최은지 "그게 무슨 사이지…?" changeExpression(최은지,최은지_당황,100)
+연애세포 "야, 먹기만 하고 갈 거야? 아무거나 물어봐." changeExpression(연애세포,연애세포_2,100)
+
+playMusic(Evolution)
+miniGame(Minseok_Minigame) 
+{
+   "여기 케이크 진짜 맛없다, 그치?" 
+        최은지 "어… 그, 그래? 난 맛있는데… 그래도 우리 생각해서 주신 건데 그렇게 말하면 안 되지…" setBackground(카페_1,false,1) changeExpression(최은지,최은지_1,100)
+   "오늘 날씨 진짜 좋다~ " 
+        최은지 "어? 날씨… 흐리지 않아?" setBackground(카페_1,false,1) changeExpression(최은지,최은지_0,100)
+   "은지야, 혹시 시간 있을 때는 뭐해?"
+        최은지 "나? 나는 보통 영화 보러 가. 영화 보는 거 좋아하거든. " setBackground(카페_1,false,1) changeExpression(최은지,최은지_2,100)
+   "최근 영화 ‘판과 제이크의 미로’가 재개봉했던데, 혹시 봤어?"
+        최은지 "찬우 너도 봤니?! 나 그 영화 엄청 좋아해. 개봉하자마자 보러 갔어! " setBackground(카페_1,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(카페1)
+setMiniGameAfterBG(카페_1,false,1)
+지찬우 "혼자 극장 가서 보는 거야?" changeExpression(지찬우,지찬우_0,100)
+최은지 "맞아, 그래도 극장 가서 보는 거랑 집에서 보는 거랑 다르잖아~ 좋은 작품은 제대로 감상하고 싶어." changeExpression(최은지,최은지_0,100)
+지찬우 "그, 그럼 어떤 영화 좋아해?" changeExpression(지찬우,지찬우_긴장,100)
+최은지 "다양하게 보는데 특히 액션 영화를 좋아해. 시원한 연출을 보면 스트레스가 풀리는 것 같아." changeExpression(최은지,최은지_신나,100)
+최은지 "아, 근데 공포 영화는 무서워서 별로 안 좋아해. 찬우 너는? 너도 영화 좋아해?" changeExpression(최은지,최은지_0,100)
+지찬우 "어? …어! 무, 물론이지. 나 영화 엄청 좋아해." changeExpression(지찬우,지찬우_깜짝,100)
+최은지 "정말? 제일 좋아하는 영화가 뭐야?" changeExpression(최은지,최은지_0,100) changeExpression(최은지,최은지_0,100)
+지찬우 "………………………." changeExpression(지찬우,지찬우_당황,100)
+연애세포 "너 영화도 안 보냐?! 아무거나 둘러대!" changeExpression(연애세포,연애세포_2,100)
+지찬우 "태, 태운 콩 프린스…" changeExpression(지찬우,지찬우_가짜웃음,100)
+최은지 "어? 그건 드라마 아니야?" changeExpression(최은지,최은지_당황,100)
+연애세포 "…미안하다, 내가 무리한 걸 바랬구나." changeExpression(연애세포,연애세포_1,100)
+최은지 "아! 슬슬 가야겠다. 찬우야, 일어나자." changeExpression(최은지,최은지_0,100)
+지찬우 "어? 벌써?!" changeExpression(지찬우,지찬우_깜짝,100)
+최은지 "미리 여유 있게 도착해야지." changeExpression(최은지,최은지_0,100)
+지찬우 "저… 은, 은지야…!" changeExpression(지찬우,지찬우_긴장,100)
+최은지 "응?" changeExpression(최은지,최은지_0,100)
+지찬우 "사실 내가 공짜티켓이 두 개가 있는데 기간이 얼마 안 남았거든!"changeExpression(지찬우,지찬우_긴장,100)
+지찬우 "이, 이번 주 시간 괘, 괜찮으면… 나랑 영화 보러 갈래…?" changeExpression(지찬우,지찬우_긴장,100)
+Load(Chapter6_start)

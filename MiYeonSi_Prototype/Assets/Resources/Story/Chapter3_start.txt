@@ -1,0 +1,196 @@
+setForeground(스테이지3,false,1)
+removeForeground()
+setBackground(대학캠퍼스_1,false,1) playMusic(캠퍼스)
+사수진 "찬우야, MT 가?" changeExpression(사수진,사수진_0,100)
+지찬우 "별로 안 가고 싶은데… 어색한 사람들끼리 강원도 산골에 모여서 술 마시고 노는 게 뭐가 좋다는 거야…" changeExpression(지찬우,지찬우_1,100)
+사수진 "그래도 가야지, 학연 중요한 거 알지? 안 그래도 붙임성 없는 애가 지금 안 친해지면 언제 친해지려고 그래." changeExpression(사수진,사수진_0,100)
+지찬우 "하아… 역시 그렇겠지? 참석할 테니까 나랑 같이 있어주라…" changeExpression(지찬우,지찬우_쭈글,100)
+사수진 "내가 너 말고 누구랑 노냐? 쓸데없는 걱정 말고 참석해." changeExpression(사수진,사수진_미소,100)
+연애세포 "긍정적으로 생각해! 최은지랑 친해질 기회라고." changeExpression(연애세포,연애세포_0,100)
+지찬우 "그… 그런가?" changeExpression(지찬우,지찬우_0,100)
+
+setBackground(산책로_2,false,1) playMusic(산책로1)
+지찬우 "6시까지 집합이라니 너무 빡센 거 아냐? 벌써 피곤하네." changeExpression(지찬우,지찬우_짜증,100)
+사수진 "너 또 내가 안 깨워줬으면 늦을 뻔했지, 진짜 나 없으면 어떡하려고 그래?" changeExpression(사수진,사수진_0,100)
+지찬우 "그러게… 진짜 너 없으면 나 어떡하냐…" changeExpression(지찬우,지찬우_해탈,100)
+사수진 "저녁 먹고 게임한다니까 슬슬 들어가자." changeExpression(사수진,사수진_0,100)
+지찬우 "게임? 와… 진짜 집에 가고 싶다…" changeExpression(지찬우,지찬우_당황,100)
+
+narrator "지찬우와 사수진 뒤로 무언가 지나간다"
+
+지찬우 "응? 바, 방금 뭐지?" changeExpression(지찬우,지찬우_당황,100)
+사수진 "왜? 거기 뭐 있어?" changeExpression(사수진,사수진_0,100)
+지찬우 "아니, 그건 아닌데 뭔가…" changeExpression(지찬우,지찬우_깜짝,100)
+안하경 "…..." changeExpression(안하경,안하경_0,100)
+지찬우 "…........" changeExpression(지찬우,지찬우_경악,100)
+
+
+choice 
+{
+    "......"
+        안하경 "왜 사람을 보고도 무시하는 겁니까. 방금 저랑 눈 마주쳤지 않습니까." setBackground(산책로_2,false,1) changeExpression(안하경,안하경_1,100)
+    "하경이…? 너 거기서 뭐해…?"
+        안하경 "아, 이거 참. 저도 위장실력이 녹슬었지 말입니다. 부끄럽습니다. " setBackground(산책로_2,false,1) changeExpression(안하경,안하경_0,100)
+    "산짐승이었나 봐, 신경 쓰지 마. 수진아, 들어가자."
+        안하경 "크하하학! 농담은 여전하지 말입니다. 이런 곳에서 다 보다니 우연입니다." setBackground(산책로_2,false,1) changeExpression(안하경,안하경_2,100)
+	"거기 있는 거 다 보인다고. 너 말야, 위장실력이 녹슨 거 아냐?" 
+        안하경 "크하하학! 역시 선배 눈은 못 속이지 말입니다." setBackground(산책로_2,false,1) changeExpression(안하경,안하경_3,100)
+}
+
+playMusic(산책로2)
+setMiniGameAfterBG(산책로_2,false,1) 
+안하경 "체력단련을 위해 잠깐 훈련 중이었습니다. 입시에서 가장 중요한 건 체력 아니겠습니까. 껄껄껄!" changeExpression(안하경,안하경_2,100)
+사수진 "하경이? 오랜만이네, 졸업 후에 보는 건 처음인가?" changeExpression(사수진,사수진_미소,100)
+안하경 "수진선배까지? 왜 이런 외진 산골에 선배 둘이 같이 있는 겁니까?" changeExpression(안하경,안하경_0,100)
+지찬우 "우리는 MT 때문에 온 거야. 너 훈련 제법 멀리까지 오는구나." changeExpression(지찬우,지찬우_0,100)
+안하경 "좀 멀긴 해도 역시 강원도보다 좋은 곳을 못 찾았지 말입니다." changeExpression(안하경,안하경_3,100)
+연애세포 "와, 귀여운데 성실하기까지 하네." changeExpression(연애세포,연애세포_1,100)
+사수진 "찬우야, 애들이 찾겠다. 그만 들어가자" changeExpression(사수진,사수진_0,100)
+지찬우 "어? 아직 시간 좀 여유 있지 않나? 그,그럼 우린 이만 가볼게..." changeExpression(지찬우,지찬우_쭈글,100)
+안하경 "수진선배… 아직도…" changeExpression(안하경,안하경_3,100)
+
+
+setBackground(MT_2,false,1) playMusic(MT1)
+narrator "자, 짠! 한 번 더! 모두 잔 드시고… 미공대를 위하여~!" 
+지찬우 "위… 위하여! 아… 이거 언제까지 하는 거야…" changeExpression(지찬우,지찬우_가짜웃음,100)
+최은지 "위하여…" changeExpression(최은지,최은지_삐질,100)
+연애세포 "최은지도 슬슬 취기가 올라오나본데? 원래 좀 알딸딸할 때가 분위기 좋아. 지금 말 걸어보자." changeExpression(연애세포,연애세포_0,100)
+
+
+playMusic(Evolution)
+miniGame(Anhakyung_Minigame) 
+{
+    "은지야, 나 너 좋아한다. "
+        최은지 "….?" setBackground(MT_2,false,1) changeExpression(최은지,최은지_1,100)
+    "은지야, 너 유교 사상에서 추구한 유인자 능호인능오인이라는 사랑의 관점에 대해 생각해본 적 있어?"
+        최은지 "유인자 뭐…? 어… 유교? 자, 잘 모르겠는데… " setBackground(MT_2,false,1) changeExpression(최은지,최은지_0,100)
+    "은지야, 너 좀 취한 것 같아. 술 깰 겸 나갔다 오자. "
+        최은지 "어? 나 별로 안 마셨는데… 그렇게 보여? 그래, 같이 가자." setBackground(MT_2,false,1) changeExpression(최은지,최은지_2,100)
+    "은지야, 아까 보니까 공기가 좋던데 좀 걷다 올까? 애들한테는 내가 잘 말할게."
+        최은지 "그럴까? 안 그래도 타이밍 봐서 적당히 빠지려고 했거든." setBackground(MT_2,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(산책로1)
+setMiniGameAfterBG(산책로_2,false,1) 
+연애세포 "좋아, 둘이 빠져나오는 데 성공! 이제 분위기만 잘 이끌어 가면…" changeExpression(연애세포,연애세포_3,100)
+지찬우 "사실 나 술 잘 못 마시거든… 보니까 너도 좀 취한 것 같길래. 같이 와줘서 고마워." changeExpression(지찬우,지찬우_긴장,100)
+최은지 "아냐, 나도 이렇게 시끄러운 자리 별로 안 좋아해. 나와서 걸으니까 좋다…" changeExpression(최은지,최은지_신나,100)
+안하경 "훅훅…! 훅…! 어? 찬우 선배?" changeExpression(안하경,안하경_0,100)
+지찬우 "하, 하경이?!" changeExpression(지찬우,지찬우_경악,100)
+최은지 "어? 아는 사이야? 귀엽게 생겼네, 혹시 여자친구?" changeExpression(최은지,최은지_0,100)
+지찬우 "아, 아냐! 절대 아냐! 그럴 리가 없잖아! 그냥 후배야! 진짜 아무 사이도 아니야!" changeExpression(지찬우,지찬우_경악,100)
+안하경 ".…" changeExpression(안하경,안하경_1,100)
+연애세포 "와~ 내가 다 상처받네. 그렇게까지 말 할 필요 있냐?" changeExpression(연애세포,연애세포_1,100)
+안하경 "MT 왔다고 하지 않으셨습니까. 왜 둘만 이런 으슥한 곳으로 나온 겁니까." changeExpression(안하경,안하경_1,100)
+
+
+choice 
+{
+    "은지가 나오자고 해서 어쩔 수 없이 나온 거야."
+        안하경 "사람이 강단이 없군요. 친구가 나오자고 해서 억지로 나오다니. " setBackground(산책로_2,false,1) changeExpression(안하경,안하경_1,100)
+    "둘 다 술을 못 마셔서 잠깐 바람 쐬러 나온 거야."
+        안하경 "그 사람 많은 MT에서 수진 선배도 있는데 굳이 둘이서…? " setBackground(산책로_2,false,1) changeExpression(안하경,안하경_0,100)
+    "어쩌면 이곳에… 네가 있을지도 모른다는 생각이 들어서…"
+        안하경 "선배… 멀리서도 저의 기척을 느끼신 겁니까." setBackground(산책로_2,false,1) changeExpression(안하경,안하경_2,100)
+	"그런 게 궁금해? 왜?" 
+        안하경 "선배… 알면서도 물어보는 심리는 뭡니까. 그걸 꼭 제 입으로… " setBackground(산책로_2,false,1) changeExpression(안하경,안하경_3,100)
+}
+
+playMusic(산책로1)
+setMiniGameAfterBG(산책로_2,false,1) 
+최은지 "사실 찬우는 학교에서 엄청 조용한 스타일이라서 친한 후배가 있었다고 하니까 조금 궁금하네" changeExpression(최은지,최은지_0,100)
+최은지 "둘이 어떻게 알게 된 사이야?" changeExpression(최은지,최은지_0,100)
+
+choice 
+{
+    "친하긴, 그냥 얼굴만 아는 사이야." 
+        안하경 "선배, 되도않는 거짓말을 하는 이유는 뭡니까. " setBackground(산책로_2,false,1) changeExpression(안하경,안하경_1,100)
+    "우리 어떻게 만났더라? 기억이 안 나네. "
+        안하경 "그 사람 많은 MT에서 수진 선배도 있는데 굳이 둘이서…? " setBackground(산책로_2,false,1) changeExpression(안하경,안하경_0,100)
+    "동아리에서 알게 됐어. 그냥 생기부 기록용이었지만."
+        안하경 "선배… 멀리서도 저의 기척을 느끼신 겁니까." setBackground(산책로_2,false,1) changeExpression(안하경,안하경_2,100)
+	"그냥 친한 후배가 아니라… 더 각별한 사이야. " 
+        안하경 "선배… 알면서도 물어보는 심리는 뭡니까. 그걸 꼭 제 입으로… " setBackground(산책로_2,false,1) changeExpression(안하경,안하경_3,100)
+}
+
+playMusic(산책로1)
+setMiniGameAfterBG(산책로_2,false,1) 
+지찬우 "너, 너무 오래 나와 있었나?! 슬슬 들어가야겠다!" changeExpression(지찬우,지찬우_가짜웃음,100)
+최은지 "어? 오랜만에 만난 거 아니야? 더 얘기 안 해도 돼?" changeExpression(최은지,최은지_0,100)
+지찬우 "괘, 괜찮아… 하경아, 그럼 조심히 들어가! 훈련 열심히 하고!" changeExpression(지찬우,지찬우_가짜웃음,100)
+연애세포 "왜 이렇게 급하게 나오는 건데?" changeExpression(연애세포,연애세포_0,100)
+지찬우 "저러다 은지한테 쓸데없는 얘기라도 하면 어떡해…" changeExpression(지찬우,지찬우_긴장,100)
+연애세포 "근데 진짜 쟤한테 관심 없냐? 귀여운데 그냥 사귀면 안 돼?" changeExpression(연애세포,연애세포_3,100)
+지찬우 "	…넌 진짜 뭐 하러 나온 거냐?" changeExpression(지찬우,지찬우_1,100)
+연애세포 "아, 알았어. 최은지랑 사귀게 도와줄게. 농담이지, 농담~" changeExpression(연애세포,연애세포_거짓웃음,100)
+
+
+setBackground(MT_2,false,1) playMusic(MT1)
+narrator "자자, 우리 MT니까 진실게임 어때. 좋지, 좋지?! 자 그럼 시계방향으로 돌아가는 거야."
+narrator "옆자리 사람이 질문하는 거다! 대답 못 하면 마시기! 질문 못 해도 마시기!!! 그럼 솔이부터 질문!"
+narrator "지금 이 자리에 수진이가 좋아하는 사람… 있어?
+사수진 "마셔봤자 있다는 거 인정하는 셈이겠지? 그냥 말할게, 있어." changeExpression(사수진,사수진_0,100)
+narrator "우와… 수진이 좋아하는 사람 있었어? 호, 혹시 나…"
+narrator "야, 꿈 깨! 최은지 아냐? 둘이 친하잖아. 자주 붙어있던데."
+narrator "아… 역시 그렇겠지? 부럽다…"
+사수진 "이제 내 차례지? 찬우야, 이 자리에 좋아하는 사람 있어?" changeExpression(사수진,사수진_미소,100)
+지찬우 "어…? 어…! 나, 나도 있…어…!" changeExpression(지찬우,지찬우_긴장,100)
+narrator "(조용…)"
+지찬우 "이 익숙한 분위기… 숨 막힌다… 집에 가고 싶다. 아니, 차라리 죽여주라…" changeExpression(지찬우,지찬우_긴장,100)
+연애세포 "야! 이제 네 차례야! 옆에 은지니까 질문 잘해!" changeExpression(연애세포,연애세포_0,100)
+
+playMusic(Evolution)
+miniGame(Anhakyung_Minigame) 
+{
+    "은지야, 질문이 생각이 안 나는데 네가 한 잔만 대신 마셔주라. 내가 술이 약해서…"
+        최은지 "뭐야… 네 벌칙은 네가 받아야지… 나도 술 약하단 말이야. " setBackground(MT_2,false,1) changeExpression(최은지,최은지_1,100)
+    "땅바닥에 떨어진 음식 먹은 적 있어?"
+        최은지 "어? 어… 땅바닥이라는 게 길바닥 말하는 건가? 그, 그럼 없는 것 같은데… " setBackground(MT_2,false,1) changeExpression(최은지,최은지_0,100)
+    "은지는 좋아하는 사람 있어?"
+        최은지 "음… 최근 관심이 생긴 사람은 있어. " setBackground(MT_2,false,1) changeExpression(최은지,최은지_2,100)
+    "아~ 질문이 생각 안 나네, 그냥 한 잔 마실게. "
+        최은지 "풉, 찬우야, 너 연기 진짜 못한다. " setBackground(MT_2,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(MT1)
+setMiniGameAfterBG(MT_2,false,1) 
+narrator "자, 이 분위기 그대로~ 한 바퀴 돌고 다음 게임으로!" 
+지찬우 "우욱… 내일 숙취 장난 아니겠다…" changeExpression(지찬우,지찬우_주륵,100)
+최은지 "그러게… 나도 그만 마시고 싶은데..." changeExpression(최은지,최은지_삐질,100)
+narrator "은지 걸렸다! 하하하! 쭉쭉 들이켜~ 야, 수진이가 흑기사 안 해 주냐?"
+narrator "와아~ 흑기사! 흑기사!"
+사수진 "…내가?" changeExpression(사수진,사수진_1,100)
+
+playMusic(Evolution)
+miniGame(Anhakyung_Minigame) 
+{
+    "이야~ 은지 이제 보니까 완전 술고래네. 계속 들어가네~"
+        최은지 "지금 누구 놀려? 나도 걸리기 싫다고… " setBackground(MT_2,false,1) changeExpression(최은지,최은지_1,100)
+    "은지야, 내가 흑기사 해줄까?"
+        최은지 "어? 어… 네, 네가? 아냐… 괘, 괜찮아… 신경 써줘서 고마워… " setBackground(MT_2,false,1) changeExpression(최은지,최은지_0,100)
+    "은지야, 이거 숙취해소제야. 필요할 것 같아서 사왔어. 이따 밤에 마시고 자. "
+        최은지 "어? 나 주는 거야? 챙겨줘서 고마워… " setBackground(MT_2,false,1) changeExpression(최은지,최은지_2,100)
+    "(술을 따르는 척 물을 따라준다.) 받아. "
+        최은지 "어? 이거 물... 찬우야, 고마워…" setBackground(MT_2,false,1) changeExpression(최은지,최은지_4,100)
+}
+
+playMusic(MT1)
+setMiniGameAfterBG(MT_2,false,1) 
+narrator "하하하! 오늘 진짜 재밌다. 야, 너희도 좋지, 좋지?! 좋아, 한 바퀴 더!!! 이번에 걸리면 러브샷이다!"
+사수진 "아… 저런 걸 과대라고…" changeExpression(사수진,사수진_1,100)
+	
+setBackground(복도_1,false,1) playMusic(Downtown)
+narrator "(다음날, 아파트 현관)"
+지찬우 "우욱… 토할 것 같아… 수진아 나 죽는다…" changeExpression(지찬우,지찬우_주륵,100)
+사수진 "너는 그러게 왜 마시지도 못하는 술을 받아먹고 그래. 대충 마시는 척만 하면 되잖아." changeExpression(사수진,사수진_0,100)
+지찬우 "뭐…? 너 지금까지 그랬어…?" changeExpression(지찬우,지찬우_당황,100)
+사수진 "준다고 다 마시는 게 미련한 거야. 다음부터는 요령껏 마셔." changeExpression(사수진,사수진_찌릿,100)
+지찬우 "우욱… 나는 네가 술 엄청 잘 마시는 줄 알았지… 어쨌든 데려다줘서 고맙다…" changeExpression(지찬우,지찬우_주륵,100)
+사수진 "인사는 됐으니까 빨리 들어가기나 해, 다 왔어." changeExpression(사수진,사수진_찌릿,100)
+narrator "삑삑삑삑-… 철컥."
+
+setBackground(Room,false,1)
+사수진 "그럼 난 간다. 해장하고 씻고 자! 귀찮다고 그냥 자면 안 돼." changeExpression(사수진,사수진_0,100)
+지찬우 "고마워… 잘 가…" changeExpression(지찬우,지찬우_쭈글,100)
+
+Load(Chapter4_start)
