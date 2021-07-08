@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EndingCollection : MonoBehaviour
 {
-    public GameObject[] EndingCollections; //  0.찬우  1. 은지   2. 수진   3. 민석   4. 하경
+    public GameObject[] EndingCollections; //  0.찬우  1. 은아   2. 준병   3. 민석   4. 아린
 
     void Update()
     {       
@@ -15,17 +15,17 @@ public class EndingCollection : MonoBehaviour
         // 찬우 엔딩 해금
         if (SaveData.P_instance.EndingCollection.ContainsKey("Solo_Ending"))
             EndingCollections[0].SetActive(true);
-        // 은지 엔딩 해금
-        if (SaveData.P_instance.EndingCollection.ContainsKey("Enji_Ending"))
+        // 은아 엔딩 해금
+        if (SaveData.P_instance.EndingCollection.ContainsKey("Euna_Ending"))
             EndingCollections[1].SetActive(true);
-        // 수진 엔딩 해금
-        if (SaveData.P_instance.EndingCollection.ContainsKey("Sujin_Ending"))
+        // 준병 엔딩 해금
+        if (SaveData.P_instance.EndingCollection.ContainsKey("Junbyeong_Ending"))
             EndingCollections[2].SetActive(true);
         // 민석 엔딩 해금
         if (SaveData.P_instance.EndingCollection.ContainsKey("Minseok_Ending"))
             EndingCollections[3].SetActive(true);
-        // 하경 엔딩 해금
-        if (SaveData.P_instance.EndingCollection.ContainsKey("Hakyung_Ending"))
+        // 아린 엔딩 해금
+        if (SaveData.P_instance.EndingCollection.ContainsKey("Arin_Ending"))
             EndingCollections[4].SetActive(true);
     }
 }

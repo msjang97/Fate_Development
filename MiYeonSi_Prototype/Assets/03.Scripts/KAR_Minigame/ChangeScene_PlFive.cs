@@ -28,22 +28,22 @@ public class ChangeScene_PlFive : MonoBehaviour
                 case "Button1":
                     name = name.Replace("Button", "");
                     ChoiceManager.P_instance.selectedNum = int.Parse(name);
-                    LovePoint.instance.enji_LovePoint += -5;
+                    LovePoint.instance.euna_LovePoint += -5;
                     break;
                 case "Button2":
                     name = name.Replace("Button", "");
                     ChoiceManager.P_instance.selectedNum = int.Parse(name);
-                    LovePoint.instance.enji_LovePoint += 0;
+                    LovePoint.instance.euna_LovePoint += 0;
                     break;
                 case "Button3":
                     name = name.Replace("Button", "");
                     ChoiceManager.P_instance.selectedNum = int.Parse(name);
-                    LovePoint.instance.enji_LovePoint += 3;
+                    LovePoint.instance.euna_LovePoint += 3;
                     break;
                 case "Button4":
                     name = name.Replace("Button", "");
                     ChoiceManager.P_instance.selectedNum = int.Parse(name);
-                    LovePoint.instance.enji_LovePoint += 5;
+                    LovePoint.instance.euna_LovePoint += 5;
 
                     break;
             }

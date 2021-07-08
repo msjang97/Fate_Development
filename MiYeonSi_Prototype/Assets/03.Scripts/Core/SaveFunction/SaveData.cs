@@ -109,10 +109,10 @@ public class SaveData : MonoBehaviour
         tw.Write("SavedPlaySong : " + _savedPlaySong + "\n");
 
         tw.Write("ch_count : " + LovePoint.instance.ch_count + "\n");
-        tw.Write("enji_LovePoint : " + LovePoint.instance.enji_LovePoint + "\n");
-        tw.Write("hagyoung_LovePoint : " + LovePoint.instance.hagyoung_LovePoint + "\n");
+        tw.Write("euna_LovePoint : " + LovePoint.instance.euna_LovePoint + "\n");
+        tw.Write("arin_LovePoint : " + LovePoint.instance.arin_LovePoint + "\n");
         tw.Write("minseok_LovePoint : " + LovePoint.instance.minseok_LovePoint + "\n");
-        tw.Write("sujin_LovePoint : " + LovePoint.instance.sujin_LovePoint + "\n");
+        tw.Write("junbyeong_LovePoint : " + LovePoint.instance.junbyeong_LovePoint + "\n");
 
         tw.Close();
         fs.Close();
@@ -157,25 +157,25 @@ public class SaveData : MonoBehaviour
                     data = loadData[i].Split(' ', '\n');
                     LovePoint.instance.ch_count = int.Parse(data[2]);
                 }
-                else if (loadData[i].StartsWith("enji_LovePoint : "))
+                else if (loadData[i].StartsWith("euna_LovePoint : "))
                 {
                     data = loadData[i].Split(' ', '\n');
-                    LovePoint.instance.enji_LovePoint = int.Parse(data[2]);
+                    LovePoint.instance.euna_LovePoint = int.Parse(data[2]);
                 }
-                else if (loadData[i].StartsWith("hagyoung_LovePoint : "))
+                else if (loadData[i].StartsWith("arin_LovePoint : "))
                 {
                     data = loadData[i].Split(' ', '\n');
-                    LovePoint.instance.hagyoung_LovePoint = int.Parse(data[2]);
+                    LovePoint.instance.arin_LovePoint = int.Parse(data[2]);
                 }
                 else if (loadData[i].StartsWith("minseok_LovePoint : "))
                 {
                     data = loadData[i].Split(' ', '\n');
                     LovePoint.instance.minseok_LovePoint = int.Parse(data[2]);
                 }
-                else if (loadData[i].StartsWith("sujin_LovePoint : "))
+                else if (loadData[i].StartsWith("junbyeong_LovePoint : "))
                 {
                     data = loadData[i].Split(' ', '\n');
-                    LovePoint.instance.sujin_LovePoint = int.Parse(data[2]);
+                    LovePoint.instance.junbyeong_LovePoint = int.Parse(data[2]);
                 }
             }
 

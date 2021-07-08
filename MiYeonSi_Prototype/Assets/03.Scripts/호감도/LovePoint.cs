@@ -22,19 +22,19 @@ public class LovePoint : MonoBehaviour
 
     public int ch_count = 0; //챕터 카운트 (0: 프롤로그 , 1: 챕터1 ~ 7: 챕터7)
 
-    public int enji_LovePoint = 0; // 최은지 호감도
-    public int sujin_LovePoint = 0; // 사수진 호감도
-    public int hagyoung_LovePoint = 0; // 안하경 호감도
+    public int euna_LovePoint = 0; // 류은아 호감도
+    public int junbyeong_LovePoint = 0; // 문준병 호감도
+    public int arin_LovePoint = 0; // 고아린 호감도
     public int minseok_LovePoint = 0; // 마민석 호감도
 
     public void Distr_LovePoint_Cal(int point) //방해자 점수 정리해주는 함수 - 챕터 별 방해자 한테 선택지 점수 넘겨주기
     {
-        // 챕터 카운트를 가져와서 각각 챕터의 방해자에게 호감도 넣어주기 (사수진-1,4 ,7 / 안하경-3,6  / 마민석-2 ,5)
-        if (ch_count == 1 || ch_count == 4 || ch_count == 7) // 사수진       
-            sujin_LovePoint += point;
+        // 챕터 카운트를 가져와서 각각 챕터의 방해자에게 호감도 넣어주기 (문준병-1,4 ,7 / 고아린-3,6  / 마민석-2 ,5)
+        if (ch_count == 1 || ch_count == 4 || ch_count == 7) // 문준병       
+            junbyeong_LovePoint += point;
 
-        else if (ch_count == 3 || ch_count == 6) //안하경        
-            hagyoung_LovePoint += point;
+        else if (ch_count == 3 || ch_count == 6) //고아린        
+            arin_LovePoint += point;
 
         else if (ch_count == 2 || ch_count == 5) // 마민석       
             minseok_LovePoint += point;
@@ -43,7 +43,7 @@ public class LovePoint : MonoBehaviour
 
     public void Main_LovePoint_Cal(int point)
     {
-        enji_LovePoint += point;
+        euna_LovePoint += point;
     }
 
     // 엔딩 골라서 넘겨주기
@@ -51,19 +51,19 @@ public class LovePoint : MonoBehaviour
     {
         string EndingName = "";
 
-        if (enji_LovePoint >= 85)
+        if (euna_LovePoint >= 85)
         {
-            EndingName = "Enji_Ending";
+            EndingName = "Euna_Ending";
         }
         else
         {
-            int higherPoint = sujin_LovePoint;
-            EndingName = "Sujin_Ending";
+            int higherPoint = junbyeong_LovePoint;
+            EndingName = "Junbyoeng_Ending";
 
-            if (higherPoint < hagyoung_LovePoint)
+            if (higherPoint < arin_LovePoint)
             {
-                higherPoint = hagyoung_LovePoint;
-                EndingName = "Hakyung_Ending";
+                higherPoint = arin_LovePoint;
+                EndingName = "Arin_Ending";
             }
 
             if (higherPoint < minseok_LovePoint)
@@ -72,8 +72,8 @@ public class LovePoint : MonoBehaviour
                 EndingName = "Minseok_Ending";
             }
 
-            if (((sujin_LovePoint == hagyoung_LovePoint || hagyoung_LovePoint == minseok_LovePoint) && higherPoint == hagyoung_LovePoint)
-                || (sujin_LovePoint == minseok_LovePoint && higherPoint == sujin_LovePoint))
+            if (((junbyeong_LovePoint == arin_LovePoint || arin_LovePoint == minseok_LovePoint) && higherPoint == arin_LovePoint)
+                || (junbyeong_LovePoint == minseok_LovePoint && higherPoint == junbyeong_LovePoint))
             {
                 EndingName = "Solo_Ending";
             }
