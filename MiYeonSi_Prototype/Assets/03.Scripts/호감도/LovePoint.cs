@@ -22,11 +22,13 @@ public class LovePoint : MonoBehaviour
 
     public int ch_count = 0; //챕터 카운트 (0: 프롤로그 , 1: 챕터1 ~ 7: 챕터7)
 
-    public int euna_LovePoint = 0; // 류은아 호감도
+    public int eunji_LovePoint = 0; // 최은지 호감도
     public int junbyeong_LovePoint = 0; // 문준병 호감도
     public int arin_LovePoint = 0; // 고아린 호감도
     public int minseok_LovePoint = 0; // 마민석 호감도
 
+
+    // =========================변경가능성 있음 ===================================
     public void Distr_LovePoint_Cal(int point) //방해자 점수 정리해주는 함수 - 챕터 별 방해자 한테 선택지 점수 넘겨주기
     {
         // 챕터 카운트를 가져와서 각각 챕터의 방해자에게 호감도 넣어주기 (문준병-1,4 ,7 / 고아린-3,6  / 마민석-2 ,5)
@@ -41,9 +43,11 @@ public class LovePoint : MonoBehaviour
 
     }
 
+    //===============================================================================
+
     public void Main_LovePoint_Cal(int point)
     {
-        euna_LovePoint += point;
+        eunji_LovePoint += point;
     }
 
     // 엔딩 골라서 넘겨주기
@@ -51,7 +55,7 @@ public class LovePoint : MonoBehaviour
     {
         string EndingName = "";
 
-        if (euna_LovePoint >= 85)
+        if (eunji_LovePoint >= 85)
         {
             EndingName = "Euna_Ending";
         }

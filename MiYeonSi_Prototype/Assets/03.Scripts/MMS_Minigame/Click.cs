@@ -18,16 +18,16 @@ public class Click : MonoBehaviour
         switch (ChoiceManager.P_instance.selectedNum)
         {
             case 1:
-                LovePoint.instance.euna_LovePoint += -5;
+                LovePoint.instance.eunji_LovePoint += -5;
                 break;
             case 2:
-                LovePoint.instance.euna_LovePoint += 0;
+                LovePoint.instance.eunji_LovePoint += 0;
                 break;
             case 3:
-                LovePoint.instance.euna_LovePoint += 3;
+                LovePoint.instance.eunji_LovePoint += 3;
                 break;
             case 4:
-                LovePoint.instance.euna_LovePoint += 5;
+                LovePoint.instance.eunji_LovePoint += 5;
                 break;
             default:
                 break;

@@ -109,7 +109,7 @@ public class SaveData : MonoBehaviour
         tw.Write("SavedPlaySong : " + _savedPlaySong + "\n");
 
         tw.Write("ch_count : " + LovePoint.instance.ch_count + "\n");
-        tw.Write("euna_LovePoint : " + LovePoint.instance.euna_LovePoint + "\n");
+        tw.Write("eunji_LovePoint : " + LovePoint.instance.eunji_LovePoint + "\n");
         tw.Write("arin_LovePoint : " + LovePoint.instance.arin_LovePoint + "\n");
         tw.Write("minseok_LovePoint : " + LovePoint.instance.minseok_LovePoint + "\n");
         tw.Write("junbyeong_LovePoint : " + LovePoint.instance.junbyeong_LovePoint + "\n");
@@ -157,10 +157,10 @@ public class SaveData : MonoBehaviour
                     data = loadData[i].Split(' ', '\n');
                     LovePoint.instance.ch_count = int.Parse(data[2]);
                 }
-                else if (loadData[i].StartsWith("euna_LovePoint : "))
+                else if (loadData[i].StartsWith("eunji_LovePoint : "))
                 {
                     data = loadData[i].Split(' ', '\n');
-                    LovePoint.instance.euna_LovePoint = int.Parse(data[2]);
+                    LovePoint.instance.eunji_LovePoint = int.Parse(data[2]);
                 }
                 else if (loadData[i].StartsWith("arin_LovePoint : "))
                 {

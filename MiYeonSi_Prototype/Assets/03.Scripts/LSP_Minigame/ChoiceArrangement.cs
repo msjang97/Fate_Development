@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class ChoiceArrangement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject[] choices;
+   // public GameObject heart;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+
+
 }
