@@ -10,6 +10,14 @@ TagManager:
   - Choice4
   - Bar
   - heart
+  - spaceArea
+  - Left
+  - Up
+  - Right
+  - Best
+  - Good
+  - Normal
+  - Worst
   layers:
   - Default
   - TransparentFX
@@ -20,9 +28,9 @@ TagManager:
   - 
   - 
   - Minigame
-  - 
-  - 
-  - 
+  - Heart
+  - Worst
+  - BestNormalGood
   - 
   - 
   - 

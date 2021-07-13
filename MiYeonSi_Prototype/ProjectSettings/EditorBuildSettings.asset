@@ -12,14 +12,17 @@ EditorBuildSettings:
     path: Assets/01.Scenes/MainSystem.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/01.Scenes/MiniGames/SaSuJin_MiniGame.unity
-    guid: 93be43a990da28e43ac4e899e962763d
+    path: Assets/01.Scenes/MiniGames/KAR_Minigame.unity
+    guid: 4f19857abbdf88e46b76e9e87088e5d5
   - enabled: 1
-    path: Assets/01.Scenes/MiniGames/Anhakyung_Minigame.unity
-    guid: eabbc774cc041ae4faa9388dbda6862d
+    path: Assets/01.Scenes/MiniGames/MJB_MiniGame.unity
+    guid: 338131cba76a2394287030a78e887d40
   - enabled: 1
-    path: Assets/01.Scenes/MiniGames/Minseok_Minigame.unity
-    guid: 26ed3274fb1f07a40880d3a8500cceb0
+    path: Assets/01.Scenes/MiniGames/MMS_Minigame.unity
+    guid: 97bfe4ba90b98fa4982a5558b4f46d62
+  - enabled: 1
+    path: Assets/01.Scenes/MiniGames/LoveShotPut_Minigame.unity
+    guid: 50645ec0314fe824e9820d521813ac51
   - enabled: 1
     path: Assets/01.Scenes/EndingCredit.unity
     guid: c3b457627dbc32944887314477defd15
