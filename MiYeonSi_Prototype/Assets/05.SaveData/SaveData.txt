@@ -1,9 +1,0 @@
-ChapterName : Chapter1_start
-ChapterProgress : 20
-SavedBackgroundLine : 20
-SavedPlaySong : Class
-ch_count : 1
-enji_LovePoint : 0
-hagyoung_LovePoint : 0
-minseok_LovePoint : 0
-sujin_LovePoint : 5

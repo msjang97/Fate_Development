@@ -35,7 +35,7 @@ public class NovelController : MonoBehaviour
         if (SaveData.P_instance.isLoadData == true)
         {
             SaveData.P_instance.LoadGame();
-            _chapterName = SaveData.P_instance.ChapterName;
+            _chapterName = SaveData.P_instance._gameData._chapterName;
 
             LoadChapterFile(_chapterName);
             return;
@@ -115,7 +115,7 @@ public class NovelController : MonoBehaviour
         handlingChapterFile = StartCoroutine(HandlingChapterFile());
 
         _chapterName = fileName;
-        SaveData.P_instance.ChapterName = _chapterName;
+        SaveData.P_instance._gameData._chapterName = _chapterName;
 
         Next();
     }
@@ -131,9 +131,9 @@ public class NovelController : MonoBehaviour
         if (SaveData.P_instance.isLoadData == true)
         {
             SaveData.P_instance.isLoadData = false;
-            chapterProgress = SaveData.P_instance.SavedChapterProgress;
-            lastBackground = SaveData.P_instance.SavedBackgroundLine;
-            playSongName = SaveData.P_instance.SavedPlaySong;
+            chapterProgress = SaveData.P_instance._gameData._savedChapterProgress;
+            lastBackground = SaveData.P_instance._gameData._savedBackgroundLine;
+            playSongName = SaveData.P_instance._gameData._savedPlaySong;
 
             HandleLine(data[lastBackground]);
             Command_PlayMusic(playSongName);
