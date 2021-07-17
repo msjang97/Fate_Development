@@ -100,7 +100,7 @@ public class Character
             }
         }
 
-        if (renderers.bodyRenderer.sprite.name != sprite.name && image != null)//이게 항상 실행되는게 문제야 둘이 당연히 다르지.. 바꾸려는 스프라이트랑 원래있던 스프라이트랑 똑같으면 바꾸는 의미가 없잖아..
+        if (renderers.bodyRenderer.sprite.name != sprite.name && image != null)
         {
             image = GameObject.Instantiate(renderers.bodyRenderer.gameObject, renderers.bodyRenderer.transform.parent).GetComponent<Image>(); //이렇게 하면 계속 clone이 생김,, 수정바람.
             

@@ -54,7 +54,7 @@ public class DialogueSystem : MonoBehaviour
 
         textArchitect = new TextArchitect(speechText, speech, additiveSpeech);
 
-        speakerNameText.text = DetermineSpeaker(speaker); // temporary
+        speakerNameText.text = DetermineSpeaker(speaker); // 화자가 나레이션인지 판별
         isWaitingForUserInput = false;
 
         while (textArchitect.isConstructing)

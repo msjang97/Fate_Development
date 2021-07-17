@@ -2261,9 +2261,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ch_count: 0
-  enji_LovePoint: 0
-  sujin_LovePoint: 0
-  hagyoung_LovePoint: 0
+  eunji_LovePoint: 0
+  junbyeong_LovePoint: 0
+  arin_LovePoint: 0
   minseok_LovePoint: 0
 --- !u!1 &1046882563
 GameObject:

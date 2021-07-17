@@ -30,19 +30,19 @@ public class CLM : MonoBehaviour
         {
             string[] dialogueAndActions = rawLine.Split('"');
             char actionSplitter = ' ';
-            string[] actionsArr = dialogueAndActions.Length == 3 ? dialogueAndActions[2].Split(actionSplitter) : dialogueAndActions[0].Split(actionSplitter);
+            string[] actionsArr = dialogueAndActions.Length == 3 ? dialogueAndActions[2].Split(actionSplitter) : dialogueAndActions[0].Split(actionSplitter); //액션 저장
 
             if(dialogueAndActions.Length == 3) //contains dialogue
             {                
-                speaker = dialogueAndActions[0] == "" ? NovelController.instance.cachedLastSpeaker : dialogueAndActions[0];
-                if (speaker[speaker.Length - 1] == ' ')
-                    speaker = speaker.Remove(speaker.Length - 1);
+                speaker = dialogueAndActions[0] == "" ? NovelController.instance.cachedLastSpeaker : dialogueAndActions[0]; //화자 이름이 안써있을 시는 cachedLastSpeaker(전에 말하던 화자)를 speaker에 대입.
+                if (speaker[speaker.Length - 1] == ' ') //화자 이름 뒤에 공백 없애주기. 
+                    speaker = speaker.Remove(speaker.Length - 1); 
 
                 //cache the speaker
-                NovelController.instance.cachedLastSpeaker = speaker;
+                NovelController.instance.cachedLastSpeaker = speaker; //NovelController에 새로운 화자 이름을 업데이트 해줌.
 
                 //segment the dialogue.
-                SegmentDialogue(dialogueAndActions[1]);
+                SegmentDialogue(dialogueAndActions[1]); 
             }
             //now handle actions
             for(int i = 0; i< actionsArr.Length; i++)
@@ -125,15 +125,12 @@ public class CLM : MonoBehaviour
             {
                 if(line.speaker != "narrator")
                 {
-                    //line.curSpeaker = line.speaker;
                     if(curCharacter != null && line.speaker != curCharacter.characterName)
                     {
                         curCharacter.FadeOut(100, false); //방금까지 말하던 사람 지워주기.
                     }
                     Character character = CharacterManager.instance.GetCharacter(line.speaker);
                     curCharacter = character;
-                    //Character curCharacter = CharacterManager.instance.GetCharacter(line.curSpeaker);
-                    //curCharacter.FadeOut(100, false);
                     character.FadeIn(100, false); //새로운 사람 FadeIn.
                     character.Say(dialogue, pretext != "");
                 }
@@ -150,6 +147,38 @@ public class CLM : MonoBehaviour
                     yield return new WaitForEndOfFrame();
 
                 running = null;
+            }
+
+            private void ChangeDialogueColor()
+            {
+                if(line.speaker  == "마민석")
+                {
+
+                }
+                else if (line.speaker == "사수진")
+                {
+
+                }
+                else if (line.speaker == "안하경")
+                {
+
+                }
+                else if (line.speaker == "연애세포")
+                {
+
+                }
+                else if (line.speaker == "지찬우")
+                {
+
+                }
+                else if (line.speaker == "최은지")
+                {
+
+                }
+                else //엑스트라나 나레이션 일 때
+                {
+
+                }
             }
 
             public void ForceFinish()

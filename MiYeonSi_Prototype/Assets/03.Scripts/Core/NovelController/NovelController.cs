@@ -126,8 +126,8 @@ public class NovelController : MonoBehaviour
     [HideInInspector] public int chapterProgress = 0;
     IEnumerator HandlingChapterFile()
     {
-        //the progress through the lines in this chapter.
         chapterProgress = 0; //번호가 여기서 초기화됌.
+
         if (SaveData.P_instance.isLoadData == true)
         {
             SaveData.P_instance.isLoadData = false;
@@ -142,12 +142,8 @@ public class NovelController : MonoBehaviour
             Debug.Log(chapterProgress+ "" + lastBackground + playSongName);
         }
 
-
-
         while (chapterProgress < data.Count)
         {
-            //we need a way of knowing when the player wants to advance. We nees d "next" trigger.Not just a keypress. But something that can be triggerd.
-            //by a click or a keypress
             if (_next)
             {
                 if (isAfterMiniGame == true) //미니게임 이후일 경우, 저장된 진행상황만큼 이동.
@@ -206,15 +202,15 @@ public class NovelController : MonoBehaviour
         bool gatheringChoices = true;
         while (gatheringChoices)
         {
-            Debug.Log(chapterProgress);
+            //Debug.Log(chapterProgress);
             chapterProgress++;
             line = data[chapterProgress];
-            Debug.Log(chapterProgress);
-            Debug.Log(line);
+            //Debug.Log(chapterProgress);
+            //Debug.Log(line);
 
             if (line.Equals("{"))
             {
-                Debug.Log("일치함");
+                //Debug.Log("일치함");
                 continue;
             }
 
@@ -222,8 +218,8 @@ public class NovelController : MonoBehaviour
 
             if (line != "}")
             {
-                Debug.Log(chapterProgress);
-                Debug.Log(line);
+                //Debug.Log(chapterProgress);
+                //Debug.Log(line);
                 choices.Add(line.Split('"')[1]);
                 actions.Add(data[chapterProgress + 1].Replace("        ", ""));
                 chapterProgress++;
@@ -267,7 +263,6 @@ public class NovelController : MonoBehaviour
     {
         //Debug.Log(rawLine);
         CLM.LINE line = CLM.Interpret(rawLine);
-        //now we need to handle the line. This requires a loop full of waiting for input since the line consists of multiple segments that hve to be handled individually.
         StopHandlingLine();
         handlingLine = StartCoroutine(HandlingLine(line));
 
