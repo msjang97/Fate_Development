@@ -56,6 +56,8 @@ public class ShotputControll : MonoBehaviour
             heartCon.stopHeart = false;
         }
         HeartStop();
+
+        
     }
 
     void Init()
@@ -169,6 +171,7 @@ public class ShotputControll : MonoBehaviour
                     if (range / 10 * 0 + min == (int)heart.transform.position.y)
                     {
                         powerSpeed = 0;
+                        heartCon.worstCount = 1;
                         heartCon.movestopHeart = true;
                     }
                     break;
@@ -176,6 +179,7 @@ public class ShotputControll : MonoBehaviour
                     if (range / 10 * 1 + min == (int)heart.transform.position.y)
                     {
                         powerSpeed = 0;
+                        heartCon.worstCount = 1;
                         heartCon.movestopHeart = true;
                     }
                         break;
@@ -183,6 +187,7 @@ public class ShotputControll : MonoBehaviour
                     if (range / 10 * 2 + min == (int)heart.transform.position.y)
                     {
                         powerSpeed = 0;
+                        heartCon.worstCount = 1;
                         heartCon.movestopHeart = true;
                     }
                     break;
@@ -190,6 +195,8 @@ public class ShotputControll : MonoBehaviour
                     if (range / 10 * 3 + min == (int)heart.transform.position.y)
                     {
                         powerSpeed = 0;
+                        heartCon.worstCount = 1;
+
                         heartCon.movestopHeart = true;
                     }
                     break;
@@ -197,6 +204,7 @@ public class ShotputControll : MonoBehaviour
                     if (range / 10 * 4 + min == (int)heart.transform.position.y)
                     {
                         powerSpeed = 0;
+                        heartCon.worstCount = 1;
                         heartCon.movestopHeart = true;
                     }
                     break;
@@ -204,6 +212,7 @@ public class ShotputControll : MonoBehaviour
                     if (range / 10 * 5 + min == (int)heart.transform.position.y)
                     {
                         powerSpeed = 0;
+                        heartCon.worstCount = 1;
                         heartCon.movestopHeart = true;
                     }
                     break;
@@ -211,6 +220,7 @@ public class ShotputControll : MonoBehaviour
                     if (range / 10 * 6 + min == (int)heart.transform.position.y)
                     {
                         powerSpeed = 0;
+                        heartCon.worstCount = 1;
                         heartCon.movestopHeart = true;
                     }
                     break;
@@ -218,13 +228,16 @@ public class ShotputControll : MonoBehaviour
                     if (range / 10 * 7 + min == (int)heart.transform.position.y)
                     {
                         powerSpeed = 0;
-                        heartCon.movestopHeart = true;
+                        heartCon.worstCount = 1;
+
                     }
                     break;
                 case 8:
                     if (range / 10 * 8 + min == (int)heart.transform.position.y)
                     {
                         powerSpeed = 0;
+                        heartCon.worstCount = 1;
+
                         heartCon.movestopHeart = true;
                     }
                     break;
@@ -232,6 +245,7 @@ public class ShotputControll : MonoBehaviour
                     if (range / 10 * 9 + min == (int)heart.transform.position.y)
                     {
                         powerSpeed = 0;
+                        heartCon.worstCount = 1;
                         heartCon.movestopHeart = true;
                     }
                     break;
@@ -240,6 +254,7 @@ public class ShotputControll : MonoBehaviour
 
                     {
                         powerSpeed = 0;
+                        heartCon.worstCount = 1;
                         heartCon.movestopHeart = true;
                     }
                     break;
