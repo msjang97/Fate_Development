@@ -47,9 +47,37 @@ public class NovelController : MonoBehaviour
         }
         else
         {
-            _chapterName = ChoiceManager.P_instance.savedChapterName;
+            if (LovePoint.instance.goEnd)
+            {
+                switch (LovePoint.instance.end_num)
+                {
+                    case 0:
+                        _chapterName = "EE"; // 은지엔딩 EE
+                        break;
+                    case 1:
+                        _chapterName = "JE"; //준병엔딩 JE
+                        break;
+                    case 2:
+                        _chapterName = "AE"; //아린엔딩 AE
+                        break;
+                    case 3:
+                        _chapterName = "ME"; // 민석엔딩 ME
+                        break;
+                    case 4:
+                        _chapterName = "SE"; //솔로엔딩 SE
+                        break;
+                    default:
+                        break;
+                }
 
-            isAfterMiniGame = true;
+                LovePoint.instance.goEnd = false;
+            }
+            else
+            {
+                _chapterName = ChoiceManager.P_instance.savedChapterName;
+                isAfterMiniGame = true;
+            }
+            
         }
 
         LoadChapterFile(_chapterName);
@@ -402,6 +430,9 @@ public class NovelController : MonoBehaviour
             case "removeForeground":
                 Command_removeForeground(data[1]);
                 break;
+            case "countEnd":
+                Choice_EndingScene_R();
+                break;
             case "goEnding":
                 Go_SelectEnding();
                 break;
@@ -422,8 +453,8 @@ public class NovelController : MonoBehaviour
 
     void Go_SelectEnding()
     {
-        string SelectEndingName = LovePoint.instance.Choice_EndingScene();
-        Command_Load(SelectEndingName);
+        LovePoint.instance.goEnd = true;
+        SceneManager.LoadScene("MainSystem");
     }
 
     void Command_goToStartScene2()
@@ -445,7 +476,85 @@ public class NovelController : MonoBehaviour
         NovelController.instance.LoadChapterFile(chapterName);
         HandleLine(data[0]);
     }
+    public void Choice_EndingScene_R()
+    {
+        string EndingName = "";
 
+
+        if (LovePoint.instance.eunji_LovePoint >= 85) // 은지호감도 85이상 일때 은지 엔딩
+        {
+            LovePoint.instance.end_num = 0; //eunji
+            EndingName = "Enji_Ending";
+        }
+        else
+        {
+            int higherPoint = LovePoint.instance.junbyeong_LovePoint; // 준병호감도를 하이포인트로 임의지정
+
+            if (higherPoint < LovePoint.instance.arin_LovePoint) // 
+            {
+                higherPoint = LovePoint.instance.arin_LovePoint;
+
+                if (higherPoint < LovePoint.instance.minseok_LovePoint)
+                {
+                    higherPoint = LovePoint.instance.minseok_LovePoint;
+                    LovePoint.instance.end_num = 3; // minseok
+                    EndingName = "Minseok_Ending";
+                }
+                else if (higherPoint > LovePoint.instance.minseok_LovePoint)
+                {
+                    higherPoint = LovePoint.instance.arin_LovePoint;
+                    LovePoint.instance.end_num = 2; // arin
+                    EndingName = "Hakyung_Ending";
+                }
+
+                else if (higherPoint == LovePoint.instance.minseok_LovePoint)
+                {
+                    LovePoint.instance.end_num = 4; // solo
+                    EndingName = "Solo_Ending";
+                }
+            }
+
+            else if (higherPoint > LovePoint.instance.arin_LovePoint)
+            {
+                if (higherPoint > LovePoint.instance.minseok_LovePoint)
+                {
+                    higherPoint = LovePoint.instance.junbyeong_LovePoint;
+                    LovePoint.instance.end_num = 1; // junbyeong
+                    EndingName = "Sujin_Ending";
+                }
+                else if (higherPoint < LovePoint.instance.minseok_LovePoint)
+                {
+                    higherPoint = LovePoint.instance.minseok_LovePoint;
+                    LovePoint.instance.end_num = 3; // minseok
+                    EndingName = "Minseok_Ending";
+                }
+
+                else if (higherPoint == LovePoint.instance.minseok_LovePoint)
+                {
+                    LovePoint.instance.end_num = 4; // solo
+                    EndingName = "Solo_Ending";
+                }
+            }
+
+            else if (higherPoint == LovePoint.instance.arin_LovePoint)
+            {
+                if (higherPoint >= LovePoint.instance.minseok_LovePoint)
+                {
+                    LovePoint.instance.end_num = 4; // solo
+                    EndingName = "Solo_Ending";
+                }
+                else
+                {
+                    higherPoint = LovePoint.instance.minseok_LovePoint;
+                    LovePoint.instance.end_num = 3; // minseok
+                    EndingName = "Minseok_Ending";
+                }
+            }
+        }
+
+        SaveData.P_instance.SaveAndLoadEndingData(EndingName);
+        Next();
+    }
     void Command_removeForeground(string data)
     {
         string texName = data;

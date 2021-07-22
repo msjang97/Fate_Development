@@ -153,4 +153,5 @@ setMiniGameAfterBG(대학캠퍼스_밤,false,1)
 지찬우 "아, 불꽃놀이 시작하겠다! 빨리 가자." changeExpression(지찬우,지찬우_긴장,100)
 최은지 "그래…" changeExpression(최은지,최은지_0,100)
 
+countEnd()
 goEnding()
