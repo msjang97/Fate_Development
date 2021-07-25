@@ -129,10 +129,10 @@ public class CLM : MonoBehaviour
                     {
                         curCharacter.FadeOut(100, false); //방금까지 말하던 사람 지워주기.
                     }
-                    Character character = CharacterManager.instance.GetCharacter(line.speaker);
+                    Character character = CharacterManager.instance.GetCharacter(line.speaker); 
                     curCharacter = character;
                     character.FadeIn(100, false); //새로운 사람 FadeIn.
-                    character.Say(dialogue, pretext != "");
+                    character.Say(dialogue, pretext != ""); //캐릭터 Say랑 DialogueSystem에 있는 Say랑 구분하기
                 }
                 else
                 {
@@ -149,37 +149,7 @@ public class CLM : MonoBehaviour
                 running = null;
             }
 
-            private void ChangeDialogueColor()
-            {
-                if(line.speaker  == "마민석")
-                {
-
-                }
-                else if (line.speaker == "사수진")
-                {
-
-                }
-                else if (line.speaker == "안하경")
-                {
-
-                }
-                else if (line.speaker == "연애세포")
-                {
-
-                }
-                else if (line.speaker == "지찬우")
-                {
-
-                }
-                else if (line.speaker == "최은지")
-                {
-
-                }
-                else //엑스트라나 나레이션 일 때
-                {
-
-                }
-            }
+            
 
             public void ForceFinish()
             {

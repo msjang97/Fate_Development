@@ -45,9 +45,32 @@ public class DialogueSystem : MonoBehaviour
     TextArchitect textArchitect = null;
     public TextArchitect currentArchitect { get { return textArchitect; } }
 
+    private void ChangeDialogueColor(string speaker)
+    {
+        string speechBoxPath = "SpeechBox/" + speaker + "/"+speaker;
+        Debug.Log(FileManager.savPath + "Resources/SpeechBox/" + speaker + "/" + speaker);
+        Debug.Log(Application.persistentDataPath + "Resources/SpeechBox/" + speaker + "/" + speaker);
+        UnityEditor.AssetDatabase.IsValidFolder("Assets/Resources/SpeechBox/" + speaker + "/" + speaker);
+
+
+        if (UnityEditor.AssetDatabase.IsValidFolder("Assets/Resources/SpeechBox/" + speaker))
+        {
+            speechPanel.transform.GetChild(1).GetComponent<RawImage>().texture = Resources.Load<Texture>(speechBoxPath);
+            speechPanel.transform.GetChild(2).GetComponent<RawImage>().texture = Resources.Load<Texture>(speechBoxPath+"다음"); //추후에 수정하기.
+        }
+        else //엑스트라나 나레이션 일 때
+        {
+            speechPanel.transform.GetChild(1).GetComponent<RawImage>().texture = Resources.Load<Texture>("SpeechBox/사수진/사수진");
+            speechPanel.transform.GetChild(2).GetComponent<RawImage>().texture = Resources.Load<Texture>("SpeechBox/사수진/사수진다음"); //추후에 수정하기.
+        }
+    }
+
+
     IEnumerator Speaking(string speech, bool additive, string speaker = "")
     {
         speechPanel.SetActive(true);
+        //speechPanel.transform.GetChild(0).GetComponent<RawImage>().texture = Resources.Load<Texture>("SpeechBox/" + speaker);
+        ChangeDialogueColor(speaker);
 
         string additiveSpeech = additive ? speechText.text : "";
         targetSpeech = additiveSpeech + speech;
