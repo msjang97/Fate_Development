@@ -439,6 +439,10 @@ public class NovelController : MonoBehaviour
             case "goEndingCredit":
                 Go_EndingCredit();
                 break;
+            case "distr":
+                Command_Distr(data[1]);
+                break;
+
         }
     }
     void Go_start()
@@ -456,7 +460,24 @@ public class NovelController : MonoBehaviour
         LovePoint.instance.goEnd = true;
         SceneManager.LoadScene("MainSystem");
     }
+    void Command_Distr(string distr)
+    {
+        switch (distr)
+        {
+            case "문준병":
+                LovePoint.instance.ch_count = 1;
+                break;
+            case "고아린":
+                LovePoint.instance.ch_count = 2;
+                break;
+            case "마민석":
+                LovePoint.instance.ch_count = 3;
+                break;
+            default:
+                break;
+        }        
 
+    }
     void Command_goToStartScene2()
     {
         touch_box.SetActive(false);
@@ -472,7 +493,7 @@ public class NovelController : MonoBehaviour
 
     void Command_Load(string chapterName)
     {
-        LovePoint.instance.ch_count++;
+        //LovePoint.instance.ch_count++;
         NovelController.instance.LoadChapterFile(chapterName);
         HandleLine(data[0]);
     }
