@@ -15,6 +15,7 @@ public class TextArchitect
     private float speed = 1f;
 
     public bool skip = false;
+    public static bool skip2 = false;
 
     public bool isConstructing { get { return buildProcess != null; } }
     Coroutine buildProcess = null;
@@ -40,6 +41,7 @@ public class TextArchitect
         }
         buildProcess = null;
     }
+    
 
     IEnumerator Construction()
     {
@@ -52,7 +54,21 @@ public class TextArchitect
         //TMP_Text inf = text1.textInfo;
         //int vis = inf.characterCount;
 
-        text1.text += targetText;
+        //text1.text += targetText;
+        if (!skip2 )
+        {
+            yield return new WaitForSeconds(0.5f);
+            for (int i = 0; i < targetText.Length; i++)
+            {
+                text1.text = targetText.Substring(0, i);
+                yield return new WaitForSeconds(0.15f);
+            }
+        }
+        else
+        {
+            text1.text += targetText;
+            skip2 = false;
+        }
 
         //text1.ForceMeshUpdate();
         //inf = text1.textInfo;
@@ -60,27 +76,27 @@ public class TextArchitect
 
         //text1.maxVisibleCharacters = vis;
 
-       /* while (vis < max)
-        {
-            //allow skipping by increasing the characters per frame and the speed of occurance.
-            if (skip)
-            {
-                speed = 1;
-                charactersPerFrame = charactersPerFrame < 5 ? 5 : charactersPerFrame + 3;
-            }
+        /* while (vis < max)
+         {
+             //allow skipping by increasing the characters per frame and the speed of occurance.
+             if (skip)
+             {
+                 speed = 1;
+                 charactersPerFrame = charactersPerFrame < 5 ? 5 : charactersPerFrame + 3;
+             }
 
-            //reveal a certain number of characters per frame.
-            while (runsThisFrame < charactersPerFrame)
-            {
-                //vis++;
-                //text1.maxVisibleCharacters = vis;
-                runsThisFrame++;
-            }
+             //reveal a certain number of characters per frame.
+             while (runsThisFrame < charactersPerFrame)
+             {
+                 //vis++;
+                 //text1.maxVisibleCharacters = vis;
+                 runsThisFrame++;
+             }
 
-            //wait for the next available revelation time.
-            runsThisFrame = 0;
-            yield return new WaitForSeconds(0.01f * speed);
-        }*/
+             //wait for the next available revelation time.
+             runsThisFrame = 0;
+             yield return new WaitForSeconds(0.01f * speed);
+         }*/
 
 
 
@@ -118,8 +134,18 @@ public class TextArchitect
 
         buildProcess = DialogueSystem.instance.StartCoroutine(Construction());
         activeArchitects.Add(text1, this);
+
     }
 
+    IEnumerator _typing()
+    {
+        yield return new WaitForSeconds(2f);
+        for (int i = 0; i < text1.text.Length; i++)
+        {
+            text1.text += targetText.Substring(0, i);
+            yield return new WaitForSeconds(0.15f);
+        }
+    }
     /// <summary>
     /// Terminate this architect. Stops the text generation process and removes it from the cache of all active architects.
     /// </summary>
