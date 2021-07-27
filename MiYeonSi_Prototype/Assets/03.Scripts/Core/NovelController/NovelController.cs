@@ -313,6 +313,12 @@ public class NovelController : MonoBehaviour
     {
         _next = false;
 
+        //Before Line is Started. Handle all the actions set at the end of the line.
+        for (int i = 0; i < line.actions.Count; i++)
+        {
+            HandleAction(line.actions[i]);
+        }
+
         int lineProgress = 0; //progress through the segments of a line.
 
         while (lineProgress < line.segments.Count)
@@ -365,7 +371,7 @@ public class NovelController : MonoBehaviour
         //Line is finished. Handle all the actions set at the end of the line.
         for (int i = 0; i < line.actions.Count; i++)
         {
-            HandleAction(line.actions[i]);
+            HandleAfterAction(line.actions[i]);
         }
 
         handlingLine = null;
@@ -375,7 +381,7 @@ public class NovelController : MonoBehaviour
     // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void HandleAction(string action)
     {
-        print("Handle action [" + action + "]");
+        print("Handle After action [" + action + "]");
         string[] data = action.Split('(', ')');
 
         switch (data[0])
@@ -421,12 +427,6 @@ public class NovelController : MonoBehaviour
             case "Load":
                 Command_Load(data[1]);
                 break;
-            case "setGotoStartScene":
-                Command_goToStartScene();
-                break;
-            case "setGotoStartScene2":
-                Command_goToStartScene2();
-                break;
             case "removeForeground":
                 Command_removeForeground(data[1]);
                 break;
@@ -443,6 +443,21 @@ public class NovelController : MonoBehaviour
                 Command_Distr(data[1]);
                 break;
 
+        }
+    }
+    public void HandleAfterAction(string action)
+    {
+        print("Handle action [" + action + "]");
+        string[] data = action.Split('(', ')');
+
+        switch (data[0])
+        {
+            case "setGotoStartScene":
+                Command_goToStartScene();
+                break;
+            case "setGotoStartScene2":
+                Command_goToStartScene2();
+                break;
         }
     }
     void Go_start()
