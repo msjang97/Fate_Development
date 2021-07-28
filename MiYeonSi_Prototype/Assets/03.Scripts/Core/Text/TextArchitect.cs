@@ -55,21 +55,24 @@ public class TextArchitect
         //int vis = inf.characterCount;
 
         //text1.text += targetText;
-        if (!skip2 )
+        if (!LovePoint.instance._skip )
         {
-            yield return new WaitForSeconds(0.5f);
+            //yield return new WaitForSeconds(0.5f);
             for (int i = 0; i < targetText.Length; i++)
             {
                 text1.text = targetText.Substring(0, i);
-                yield return new WaitForSeconds(0.15f);
+                if(!LovePoint.instance._skip )
+                    yield return new WaitForSeconds(0.15f);
+                else if(LovePoint.instance._skip && LovePoint.instance._next)
+                    yield return new WaitForSeconds(0f);
             }
-        }
-        else
-        {
-            text1.text += targetText;
-            skip2 = false;
-        }
+            LovePoint.instance._next = false;
+            LovePoint.instance._skip = false;
+            //LovePoint.instance._next = false;
 
+        }
+        
+        //textbox_button.skipB = false;
         //text1.ForceMeshUpdate();
         //inf = text1.textInfo;
         //int max = inf.characterCount;
@@ -133,19 +136,19 @@ public class TextArchitect
             existingArchitect.Terminate();
 
         buildProcess = DialogueSystem.instance.StartCoroutine(Construction());
+        //if (LovePoint.instance._skip && LovePoint.instance._next)
+        //{
+        //    text1.text += targetText;
+        //    //skip2 = false;
+        //    LovePoint.instance._next = false;
+        //    LovePoint.instance._skip = false;
+
+        //}
         activeArchitects.Add(text1, this);
 
     }
 
-    IEnumerator _typing()
-    {
-        yield return new WaitForSeconds(2f);
-        for (int i = 0; i < text1.text.Length; i++)
-        {
-            text1.text += targetText.Substring(0, i);
-            yield return new WaitForSeconds(0.15f);
-        }
-    }
+ 
     /// <summary>
     /// Terminate this architect. Stops the text generation process and removes it from the cache of all active architects.
     /// </summary>

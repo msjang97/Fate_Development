@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class textbox_button : MonoBehaviour
 {
-
     public NovelController novel_con;
+    [SerializeField]
+    public static  bool skipB;
 
     public void Next_textbox()
     {
-        novel_con.next_box = true;
-        Debug.Log("test");
+        if (!LovePoint.instance._next)
+        {
+            novel_con.next_box = true;
+            LovePoint.instance._next = true;
+        }
+        else
+        {
+            LovePoint.instance._skip = true;
+        }
+
+        //novel_con.next_box = true;
     }
-
-
 
 }
