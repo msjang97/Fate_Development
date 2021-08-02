@@ -7,65 +7,84 @@ public class HeartControll : MonoBehaviour
     public bool stopHeart = false;// 하트 정지
     public bool movestopHeart = false; // 가다가 멈춘 하트판단
     public bool worstStop = false; // 가다가 멈춘 하트판단
-    public int worstCount = 0; 
 
     public ShotputControll SPC;
-
-
-    private void Update()
+   
+    private void LateUpdate()
     {
-        if (worstCount == 1 && worstStop == false)
+        if (SPC.powerSpeed == 0 && movestopHeart)
         {
-            //ChoiceManager.P_instance.selectedNum = 1;
-            // LovePoint.instance.eunji_LovePoint += -5;
-            Debug.Log("Worst");
-            //movestopHeart = false;
+            if (worstStop == false)
+            {
+                //ChoiceManager.P_instance.selectedNum = 1;
+                // LovePoint.instance.eunji_LovePoint += -5;
+                Debug.Log("Worst");
+                //movestopHeart = false;
+                worstStop = true;
+            }
         }
+       
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Left" || col.gameObject.tag == "Up" || col.gameObject.tag == "Right")
+        if (SPC.powerSpeed > 0)
         {
-            Debug.Log("충돌");
-            Debug.Log("Worst");
+            if (col.gameObject.tag == "Left" || col.gameObject.tag == "Up" || col.gameObject.tag == "Right")
+            {
+                Debug.Log("충돌");
+                Debug.Log("Worst");
 
-            stopHeart = true;
+                stopHeart = true;
+            }
         }
-
+       
     }
 
     private void OnTriggerStay2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Best")
+        if (SPC.powerSpeed == 0)
         {
-            movestopHeart = false;
-            //ChoiceManager.P_instance.selectedNum = 4;
-            // LovePoint.instance.eunji_LovePoint += 5;
-            worstStop = true;
+            if (col.gameObject.tag == "Best")
+            {
+                movestopHeart = false;               
+                worstStop = true;
+                if (worstStop)
+                {
+                    //ChoiceManager.P_instance.selectedNum = 4;
+                    // LovePoint.instance.eunji_LovePoint += 5;
+                    Debug.Log("Best");
+                }
+                
+            }
 
-            Debug.Log("Best");
-        }
+            else if (col.gameObject.tag == "Good")
+            {
+                movestopHeart = false;               
+                worstStop = true;
+                if (worstStop)
+                {
+                    // ChoiceManager.P_instance.selectedNum = 3;
+                    // LovePoint.instance.eunji_LovePoint += 3;
+                    Debug.Log("Good");
+                }
+                
+            }
 
-        else if (col.gameObject.tag == "Good")
-        {
-            movestopHeart = false;
-            // ChoiceManager.P_instance.selectedNum = 3;
-            // LovePoint.instance.eunji_LovePoint += 3;
-            worstStop = true;
-            Debug.Log("Good");
-
-        }
-
-        else if (col.gameObject.tag == "Normal")
-        {
-            movestopHeart = false;
-            //ChoiceManager.P_instance.selectedNum = 2;
-            // LovePoint.instance.eunji_LovePoint += 0;
-            worstStop = true;
-            Debug.Log("Normal");
-
-        }
+            else if (col.gameObject.tag == "Normal")
+            {
+                movestopHeart = false;
+                worstStop = true;
+                if (worstStop)
+                {
+                    //ChoiceManager.P_instance.selectedNum = 2;
+                    // LovePoint.instance.eunji_LovePoint += 0;
+                    Debug.Log("Normal");
+                }
+               
+            }
+           
+        }     
         
     }
 }
