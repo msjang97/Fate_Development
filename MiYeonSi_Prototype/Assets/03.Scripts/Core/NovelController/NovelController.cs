@@ -196,6 +196,7 @@ public class NovelController : MonoBehaviour
                 //this is a Choice MiniGame
                 else if (line.StartsWith("miniGame"))
                 {
+                    ChoiceManager.P_instance.beforeMinigame = data[chapterProgress - 2].Split('"')[1];
                     ChoiceManager.P_instance.savedChapterName = _chapterName;
                     ChoiceManager.P_instance.selectedNum = 0;
                     ChoiceManager.P_instance.isMainSceneLoaded = false;

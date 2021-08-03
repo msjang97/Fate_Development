@@ -26,11 +26,10 @@ public class ShotputControll : MonoBehaviour
     public Slider powerSlider; // 총 게이지 수치
     private bool buttonDown;
 
+    public bool powerCheck;
     public GameObject heart; // 하트
-    public Collider2D _heart; // 하트 콜라이더
 
     public HeartControll heartCon;//하트 컨트롤 스크립트
-    public bool zero; 
     private void Start()
     {
         Init();
@@ -63,6 +62,8 @@ public class ShotputControll : MonoBehaviour
 
     void Init()
     {
+        powerCheck = false;
+
         powerSlider.maxValue = 200; // 최대 200 슬라이더
         rz = 60;
         _rz = 0;
@@ -112,6 +113,7 @@ public class ShotputControll : MonoBehaviour
     void PowerCharging() // 게이지채우기
     {
         powerBar.SetActive(true);
+        powerCheck = true;
 
         upPower += p_count * Time.deltaTime;
         powerSlider.value = upPower;
@@ -143,14 +145,14 @@ public class ShotputControll : MonoBehaviour
         if (_rz > 0 && _rz <= 60)
         {
             if (powerSpeed > 0)
-            {
                 powerSpeed -= 1;
-                if (powerSpeed == 0)
-                    heartCon.movestopHeart = true;
-            }
-            else if (powerSpeed <= 0 )
+
+            else if (powerSpeed < 0)
                 powerSpeed = 0;
-            
+
+            else if (powerSpeed == 0 && powerCheck)           
+                heartCon.movestopHeart = true;
+
             heart.transform.Translate(Vector3.left *8 * powerSpeed * Time.deltaTime);
             heart.transform.Translate(Vector3.up *28 * powerSpeed * Time.deltaTime);
 
@@ -159,18 +161,19 @@ public class ShotputControll : MonoBehaviour
         else if (_rz < 0 && _rz >= -60)
         {
             if (powerSpeed > 0)
-            {
                 powerSpeed -= 1;
-                if (powerSpeed == 0)
-                    heartCon.movestopHeart = true;
-            }
-            else if( powerSpeed <= 0)
+
+            else if (powerSpeed < 0)
                 powerSpeed = 0;
-            
+
+            else if (powerSpeed == 0 && powerCheck)
+                heartCon.movestopHeart = true;
+
             heart.transform.Translate(Vector3.right *8 * powerSpeed * Time.deltaTime);
             heart.transform.Translate(Vector3.up *28 * powerSpeed * Time.deltaTime);
         }
 
+        //powerCheck = false;
     }
 
     //void HeartStop()

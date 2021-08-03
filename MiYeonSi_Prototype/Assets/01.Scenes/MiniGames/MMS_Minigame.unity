@@ -1175,6 +1175,7 @@ MonoBehaviour:
   - {fileID: 1250822758}
   - {fileID: 768197336}
   - {fileID: 147950384}
+  bannerText: {fileID: 4224185189963301778}
 --- !u!1 &1675046822
 GameObject:
   m_ObjectHideFlags: 0

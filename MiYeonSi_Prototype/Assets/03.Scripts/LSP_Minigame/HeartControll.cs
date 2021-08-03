@@ -9,19 +9,29 @@ public class HeartControll : MonoBehaviour
     public bool worstStop = false; // 가다가 멈춘 하트판단
 
     public ShotputControll SPC;
-   
-    private void LateUpdate()
+    public Animator animator;
+
+
+    private void Start()
     {
-        if (SPC.powerSpeed == 0 && movestopHeart)
+        animator = GetComponent<Animator>();
+    }
+    private void Update()
+    {
+        if (SPC.powerSpeed == 0 )
         {
-            if (worstStop == false)
+            if (movestopHeart && worstStop)
             {
                 //ChoiceManager.P_instance.selectedNum = 1;
                 // LovePoint.instance.eunji_LovePoint += -5;
                 Debug.Log("Worst");
+                animator.SetBool("heartbomb", true);
+
                 //movestopHeart = false;
-                worstStop = true;
+                worstStop = false;
             }
+            animator.SetBool("heartbomb", true);
+
         }
        
     }
@@ -32,6 +42,8 @@ public class HeartControll : MonoBehaviour
         {
             if (col.gameObject.tag == "Left" || col.gameObject.tag == "Up" || col.gameObject.tag == "Right")
             {
+                animator.SetBool("heartbomb", true);
+
                 Debug.Log("충돌");
                 Debug.Log("Worst");
 
@@ -39,6 +51,7 @@ public class HeartControll : MonoBehaviour
             }
         }
        
+
     }
 
     private void OnTriggerStay2D(Collider2D col)
@@ -48,8 +61,8 @@ public class HeartControll : MonoBehaviour
             if (col.gameObject.tag == "Best")
             {
                 movestopHeart = false;               
-                worstStop = true;
-                if (worstStop)
+                worstStop = false;
+                if (!worstStop)
                 {
                     //ChoiceManager.P_instance.selectedNum = 4;
                     // LovePoint.instance.eunji_LovePoint += 5;
@@ -61,8 +74,8 @@ public class HeartControll : MonoBehaviour
             else if (col.gameObject.tag == "Good")
             {
                 movestopHeart = false;               
-                worstStop = true;
-                if (worstStop)
+                worstStop = false;
+                if (!worstStop)
                 {
                     // ChoiceManager.P_instance.selectedNum = 3;
                     // LovePoint.instance.eunji_LovePoint += 3;
@@ -74,8 +87,8 @@ public class HeartControll : MonoBehaviour
             else if (col.gameObject.tag == "Normal")
             {
                 movestopHeart = false;
-                worstStop = true;
-                if (worstStop)
+                worstStop = false;
+                if (!worstStop)
                 {
                     //ChoiceManager.P_instance.selectedNum = 2;
                     // LovePoint.instance.eunji_LovePoint += 0;
@@ -83,7 +96,10 @@ public class HeartControll : MonoBehaviour
                 }
                
             }
-           
+            else if (col.gameObject.tag == "Worst")
+            {
+                worstStop = true;
+            }
         }     
         
     }

@@ -13,6 +13,7 @@ public class ChoiceManager : MonoBehaviour
 
     public List<string> choices = new List<string>();
     public List<string> actions = new List<string>();
+    public string beforeMinigame;
 
     private static ChoiceManager instance = null;
     public static ChoiceManager P_instance 

@@ -804,6 +804,7 @@ MonoBehaviour:
   - {fileID: 762707480}
   - {fileID: 639222742}
   - {fileID: 742366426}
+  bannerText: {fileID: 515245427}
 --- !u!1 &639222740
 GameObject:
   m_ObjectHideFlags: 0
@@ -2104,6 +2105,7 @@ GameObject:
   - component: {fileID: 1678784684}
   - component: {fileID: 1678784686}
   - component: {fileID: 1678784685}
+  - component: {fileID: 1678784687}
   m_Layer: 5
   m_Name: Banner
   m_TagString: Untagged
@@ -2164,6 +2166,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678784683}
   m_CullTransparentMesh: 0
+--- !u!114 &1678784687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678784683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f70d5d339040547847eef254445549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bannerText: {fileID: 515245427}
 --- !u!1 &1712108976
 GameObject:
   m_ObjectHideFlags: 0

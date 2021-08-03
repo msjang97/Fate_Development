@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class Choice_ : MonoBehaviour
 {
     public Text [] texts;
+    public Text bannerText;
 
 
     private void Start()
     {
         Input_Text();
+        bannerText.text = ChoiceManager.P_instance.beforeMinigame;
+
     }
 
     private void Input_Text()

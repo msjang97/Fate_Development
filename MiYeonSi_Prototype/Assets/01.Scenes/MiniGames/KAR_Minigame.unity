@@ -2033,6 +2033,7 @@ MonoBehaviour:
   - {fileID: 1429294593}
   - {fileID: 1951506545}
   - {fileID: 997883247}
+  bannerText: {fileID: 49948400246491203}
 --- !u!1 &1951506543
 GameObject:
   m_ObjectHideFlags: 0
