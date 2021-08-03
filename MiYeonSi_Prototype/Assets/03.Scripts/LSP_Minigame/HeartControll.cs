@@ -18,6 +18,8 @@ public class HeartControll : MonoBehaviour
     }
     private void Update()
     {
+        //animator.SetBool("heartbomb", true);
+
         if (SPC.powerSpeed == 0 )
         {
             if (movestopHeart && worstStop)
@@ -25,7 +27,7 @@ public class HeartControll : MonoBehaviour
                 //ChoiceManager.P_instance.selectedNum = 1;
                 // LovePoint.instance.eunji_LovePoint += -5;
                 Debug.Log("Worst");
-                animator.SetBool("heartbomb", true);
+                //animator.SetBool("heartbomb", true);
 
                 //movestopHeart = false;
                 worstStop = false;
