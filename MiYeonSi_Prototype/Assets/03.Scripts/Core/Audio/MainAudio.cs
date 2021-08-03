@@ -46,6 +46,7 @@ public class MainAudio : MonoBehaviour
             }
             if (check == true)
             {
+                audio.volume = SaveData.P_instance._settingData._BGM_volume;
                 if(!audio.isPlaying)
                 audio.Play();
                 check = false;

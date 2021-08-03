@@ -10,13 +10,18 @@ public class OptionManager : MonoBehaviour
 
     private void Start()
     {
+
         SetAudio();
     }
 
     void SetAudio()
     {
-        bgm.onValueChanged.AddListener( GameObject.Find("AudioManager").GetComponent<AudioManager>().SetSongVolume);
+        bgm.value = SaveData.P_instance._settingData._BGM_volume;
+        sfx.value = SaveData.P_instance._settingData._SFX_volume;
+
+        bgm.onValueChanged.AddListener(GameObject.Find("AudioManager").GetComponent<AudioManager>().SetSongVolume);
         sfx.onValueChanged.AddListener(GameObject.Find("AudioManager").GetComponent<AudioManager>().SetSFXVolume);
+
     }
 
 }

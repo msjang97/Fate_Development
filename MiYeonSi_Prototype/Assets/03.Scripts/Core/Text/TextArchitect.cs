@@ -58,7 +58,7 @@ public class TextArchitect
         if (!LovePoint.instance._skip )
         {
             //yield return new WaitForSeconds(0.5f);
-            for (int i = 0; i < targetText.Length; i++)
+            for (int i = 0; i <= targetText.Length; i++)
             {
                 text1.text = targetText.Substring(0, i);
                 if(!LovePoint.instance._skip )

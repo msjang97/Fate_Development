@@ -48,12 +48,20 @@ public class AudioManager : MonoBehaviour
 
     public void SetSongVolume(float myVolume) //배경음 볼륨 조절.
     {
-         activeSong.volume = myVolume;
+        if(activeSong != null)
+            activeSong.volume = myVolume;
+
+        SaveData.P_instance.SaveSettingData(myVolume, SFX_volume);
     }
 
     public void SetSFXVolume(float myVolume) //효과음 볼륨 조절.
     {
+        Debug.Log(SFX_volume + "next" + myVolume);
         SFX_volume = myVolume;
+
+        // 저장을 위한 변수. 보기 좋게 수정 필요.
+        float BGMVolume = SaveData.P_instance._settingData._BGM_volume;
+        SaveData.P_instance.SaveSettingData(BGMVolume, SFX_volume);
     }
 
     public void StopSong()
@@ -82,6 +90,7 @@ public class AudioManager : MonoBehaviour
             if(count >= 1)
                 activeSong.DestorySong();
             activeSong = new SONG(song, maxVolume, pitch, startingVolume, PlayOnStart, loop);
+            activeSong.volume = SaveData.P_instance._settingData._BGM_volume;
             count += 1;
         }
 

@@ -23,7 +23,15 @@ public class ForJsonGameData
 public class EndingCollectionData
 {
     public List<string> _endingCollection;
-    
+
+}
+
+[Serializable]
+public class SettingData
+{
+    public float _BGM_volume;
+    public float _SFX_volume;
+
 }
 
 public class SaveData : MonoBehaviour
@@ -43,6 +51,7 @@ public class SaveData : MonoBehaviour
 
     public ForJsonGameData _gameData;
     public EndingCollectionData _endingCollectionData;
+    public SettingData _settingData;
 
     private bool _isLoadData;
     public bool isLoadData
@@ -50,9 +59,10 @@ public class SaveData : MonoBehaviour
         get { return _isLoadData; }
         set { _isLoadData = value; }
     }
-    
+
     string dataPath;
     string endingDataPath;
+    string settingDataPath;
 
     private void Awake()
     {
@@ -70,9 +80,11 @@ public class SaveData : MonoBehaviour
 
         _gameData = new ForJsonGameData();
         _endingCollectionData = new EndingCollectionData();
+        _settingData = new SettingData();
 
         dataPath = Application.persistentDataPath + "GameData.json";
         endingDataPath = Application.persistentDataPath + "EndingData.json";
+        settingDataPath = Application.persistentDataPath + "settingData.json";
 
         FileInfo dataFile = new FileInfo(dataPath);
         if (!dataFile.Exists)
@@ -80,6 +92,7 @@ public class SaveData : MonoBehaviour
             SaveGame("Chapter0_start", 0, 0, "Title");
         }
 
+        LoadSettingData();
         SaveAndLoadEndingData("");
     }
 
@@ -93,7 +106,7 @@ public class SaveData : MonoBehaviour
 
         string ToJsonData = JsonUtility.ToJson(_gameData);
         File.WriteAllText(dataPath, ToJsonData);
-        
+
         Debug.Log(_gameData._chapterName + ", line : " + _gameData._savedChapterProgress + " lastBackground : " + _gameData._savedBackgroundLine + ", " + _gameData._savedPlaySong);
 
     }
@@ -104,7 +117,7 @@ public class SaveData : MonoBehaviour
         {
             string loadData = File.ReadAllText(dataPath);
             _gameData = JsonUtility.FromJson<ForJsonGameData>(loadData);
-            
+
             Debug.Log("Load!" + _gameData._chapterName + ", line : " + _gameData._savedChapterProgress + " lastBackground : " + _gameData._savedBackgroundLine + ", " + _gameData._savedPlaySong);
         }
         else
@@ -125,7 +138,7 @@ public class SaveData : MonoBehaviour
         {
             _endingCollectionData._endingCollection = new List<string>();
 
-            string message = "File " + dataPath + " does not exist!";
+            string message = "File " + endingDataPath + " does not exist!";
             Debug.Log(message);
         }
 
@@ -134,5 +147,34 @@ public class SaveData : MonoBehaviour
 
         string ToJsonData = JsonUtility.ToJson(_endingCollectionData);
         File.WriteAllText(endingDataPath, ToJsonData);
+    }
+
+    public void SaveSettingData(float BGM_volume, float SFX_volume)
+    {
+        _settingData._BGM_volume = BGM_volume;
+        _settingData._SFX_volume = SFX_volume;
+
+        string ToJsonData = JsonUtility.ToJson(_settingData);
+        File.WriteAllText(settingDataPath, ToJsonData);
+
+        Debug.Log("BGM : " + _settingData._BGM_volume + " SFX : " + _settingData._SFX_volume);
+    }
+
+    public void LoadSettingData()
+    {
+        if (File.Exists(settingDataPath))
+        {
+            string loadData = File.ReadAllText(settingDataPath);
+            _settingData = JsonUtility.FromJson<SettingData>(loadData);
+
+            Debug.Log("Load BGM : " + _settingData._BGM_volume + " SFX : " + _settingData._SFX_volume);
+        }
+        else
+        {
+            SaveSettingData(0.5f, 0.5f);
+
+            string errorMessage = "ERR! setting data File " + settingDataPath + " does not exist!";
+            Debug.LogError(errorMessage);
+        }
     }
 }
