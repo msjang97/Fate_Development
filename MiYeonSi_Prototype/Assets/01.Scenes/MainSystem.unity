@@ -368,8 +368,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   novel_con: {fileID: 733717520}
-  dialSystem: {fileID: 0}
-  dial: {fileID: 0}
 --- !u!114 &341559084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2006,6 +2004,7 @@ MonoBehaviour:
   savedChapterName: 
   choices: []
   actions: []
+  beforeMinigame: 
 --- !u!4 &1018042778
 Transform:
   m_ObjectHideFlags: 0
@@ -2040,6 +2039,8 @@ MonoBehaviour:
   minseok_LovePoint: 0
   end_num: 0
   minigameCount: 0
+  _skip: 0
+  _next: 0
 --- !u!1 &1046882563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3324,8 +3325,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   novel_con: {fileID: 733717520}
-  dialSystem: {fileID: 733717518}
-  dial: {fileID: 905489404}
 --- !u!114 &1903488741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3781,7 +3780,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 735295795}
         m_MethodName: SetSFXVolume
-        m_Mode: 4
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
