@@ -14,13 +14,15 @@ public class textbox_button : MonoBehaviour
         {
             novel_con.next_box = true;
             LovePoint.instance._next = true;
+           
         }
         else
         {
             LovePoint.instance._skip = true;
+
         }
 
-        //novel_con.next_box = true;
+
     }
 
 }

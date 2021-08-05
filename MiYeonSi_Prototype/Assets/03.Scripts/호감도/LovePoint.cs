@@ -48,6 +48,8 @@ public class LovePoint : MonoBehaviour
     //대화 관련 변수===============================================================
     public bool _skip;
     public bool _next;
+    public bool _choiceNext;
+    public bool _isAfterMiniGame;
 
 
 

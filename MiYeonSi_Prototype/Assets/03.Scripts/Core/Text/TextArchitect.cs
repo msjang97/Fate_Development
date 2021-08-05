@@ -61,17 +61,21 @@ public class TextArchitect
             for (int i = 0; i <= targetText.Length; i++)
             {
                 text1.text = targetText.Substring(0, i);
-                if(!LovePoint.instance._skip )
+                if (!LovePoint.instance._skip)
                     yield return new WaitForSeconds(0.15f);
-                else if(LovePoint.instance._skip && LovePoint.instance._next)
+                else if (LovePoint.instance._skip && LovePoint.instance._next)
+                {
                     yield return new WaitForSeconds(0f);
+                   
+                }
             }
             LovePoint.instance._next = false;
             LovePoint.instance._skip = false;
             //LovePoint.instance._next = false;
-
+            
         }
-        
+        if (LovePoint.instance._isAfterMiniGame)
+            LovePoint.instance._choiceNext = true;
         //textbox_button.skipB = false;
         //text1.ForceMeshUpdate();
         //inf = text1.textInfo;
