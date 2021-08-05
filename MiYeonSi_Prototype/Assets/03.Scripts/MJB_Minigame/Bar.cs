@@ -5,9 +5,9 @@ using UnityEngine;
 public class Bar : MonoBehaviour
 {
     [SerializeField]
-    private float moveSpeed = 15;
-    private float upLimit = 1260;
-    private float downLimit = 425;   
+    private float moveSpeed = 20;
+    private float upLimit = 1680;
+    private float downLimit = 280;   
     private int direction = 1;
     private bool isStoped = false;
     public bool P_isStoped { get { return isStoped; } }
