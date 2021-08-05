@@ -8,24 +8,23 @@ public class NovelController : MonoBehaviour
 {
     public static NovelController instance;
     //private string txtFileName = null;
-    private bool isAfterMiniGame = false;
+    public bool isAfterMiniGame = false;
     [HideInInspector]
     public int lastBackground;
     string _chapterName;
     string playSongName;
     float untouchableTime;
     public bool next_box;
-    //public int ch_count = 0; // 현재 몇 챕터확인 변수 (0:프롤로그 , 1:챕터_1 등등)
-
+    public bool choiceNext;
+   
     public GameObject touch_box;
     /// <summary> The lines of data loaded directly from a chapter file. /// </summary>
-    List<string> data = new List<string>();
+    public List<string> data = new List<string>();
     /// <summary> The progress in the current data list. /// </summary>
 
     void Awake()
     {
         instance = this;
-        //ch_count = 0;
     }
 
     // Start is called before the first frame update
@@ -43,7 +42,7 @@ public class NovelController : MonoBehaviour
 
         if (ChoiceManager.P_instance.savedChapterName == "") //처음 시작할때만 
         {
-            _chapterName = "Chapter0_start";
+            _chapterName = "test";
         }
         else
         {
@@ -151,7 +150,7 @@ public class NovelController : MonoBehaviour
     public bool isHandlingChapterFile { get { return handlingChapterFile != null; } }
 
     Coroutine handlingChapterFile = null;
-    [HideInInspector] public int chapterProgress = 0;
+    [HideInInspector] public int chapterProgress = 0; //
     IEnumerator HandlingChapterFile()
     {
         chapterProgress = 0; //번호가 여기서 초기화됌.
@@ -174,16 +173,33 @@ public class NovelController : MonoBehaviour
         {
             if (_next)
             {
-                if (isAfterMiniGame == true) //미니게임 이후일 경우, 저장된 진행상황만큼 이동.
+                if (isAfterMiniGame == true  && !LovePoint.instance._choiceNext ) //미니게임 이후일 경우, 저장된 진행상황만큼 이동.
+                {
+                    LovePoint.instance._isAfterMiniGame = isAfterMiniGame;
+                    HandleLine(ChoiceManager.P_instance.choices2[ChoiceManager.P_instance.selectedNum - 1]); //선택지 출력.
+
+
+                    while (isHandlingLine)
+                        yield return new WaitForEndOfFrame();
+                    chapterProgress = ChoiceManager.P_instance.savedChapterProgress;
+                    continue;
+                    
+                }
+
+                if (isAfterMiniGame == true && LovePoint.instance._choiceNext)
                 {
                     HandleLine(ChoiceManager.P_instance.actions[ChoiceManager.P_instance.selectedNum - 1]); //선택지에 대한 대답 출력.
+
                     while (isHandlingLine)
                         yield return new WaitForEndOfFrame();
                     chapterProgress = ChoiceManager.P_instance.savedChapterProgress;
                     isAfterMiniGame = false;
-                    continue;
-                }
+                    LovePoint.instance._isAfterMiniGame = isAfterMiniGame;
 
+                    LovePoint.instance._choiceNext = false;
+                    //continue;
+                }
+               
                 string line = data[chapterProgress];
 
                 //this is a choice
@@ -210,6 +226,7 @@ public class NovelController : MonoBehaviour
                 else
                 {
                     HandleLine(data[chapterProgress]);
+                    Debug.Log(data[chapterProgress]);
                     chapterProgress++;
                     while (isHandlingLine)
                         yield return new WaitForEndOfFrame();
@@ -226,6 +243,7 @@ public class NovelController : MonoBehaviour
     {
         //string title = line.Split('"')[1];
         List<string> choices = new List<string>();
+        List<string> choices2 = new List<string>();
         List<string> actions = new List<string>();
 
         bool gatheringChoices = true;
@@ -250,6 +268,7 @@ public class NovelController : MonoBehaviour
                 //Debug.Log(chapterProgress);
                 //Debug.Log(line);
                 choices.Add(line.Split('"')[1]);
+                choices2.Add(line);
                 actions.Add(data[chapterProgress + 1].Replace("        ", ""));
                 chapterProgress++;
             }
@@ -278,11 +297,11 @@ public class NovelController : MonoBehaviour
         else //일반 선택지가 아니라면
         {
             ChoiceManager.P_instance.choices = choices; //선택지 텍스트 저장.
+            ChoiceManager.P_instance.choices2 = choices2; 
             ChoiceManager.P_instance.actions = actions; //선택지 대답 저장.
 
             SceneManager.LoadScene(miniGameName); // 각 미니게임 호출해주기.
-            //미니게임 캔버스 띄우기
-            //sasujin_mini.SetActive(true);
+           
         }
 
         //chapterProgress++;
