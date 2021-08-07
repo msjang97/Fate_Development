@@ -41,21 +41,19 @@ public class TextArchitect
         }
         buildProcess = null;
     }
-    
+
 
     IEnumerator Construction()
     {
         int runsThisFrame = 0;
 
-        text1.text = "";
+        text1.text = ""; //텍스트 초기화
         text1.text += preText;
 
-        //text1.ForceMeshUpdate();
-        //TMP_Text inf = text1.textInfo;
-        //int vis = inf.characterCount;
+        int vis = text1.text.Length;
 
-        //text1.text += targetText;
-        if (!LovePoint.instance._skip )
+        /*
+        if (!LovePoint.instance._skip ) //준병선배가 추가한 부분(오류 수정 실패 시 백업용)
         {
             //yield return new WaitForSeconds(0.5f);
             for (int i = 0; i <= targetText.Length; i++)
@@ -75,58 +73,35 @@ public class TextArchitect
             
         }
         if (LovePoint.instance._isAfterMiniGame)
-            LovePoint.instance._choiceNext = true;
-        //textbox_button.skipB = false;
-        //text1.ForceMeshUpdate();
-        //inf = text1.textInfo;
-        //int max = inf.characterCount;
+            LovePoint.instance._choiceNext = true;*/
 
-        //text1.maxVisibleCharacters = vis;
+        int max = targetText.Length; //최대 문장길이를 저장.
 
-        /* while (vis < max)
-         {
-             //allow skipping by increasing the characters per frame and the speed of occurance.
-             if (skip)
-             {
-                 speed = 1;
-                 charactersPerFrame = charactersPerFrame < 5 ? 5 : charactersPerFrame + 3;
-             }
+        //text1 = maxVisibleCharacters;
 
-             //reveal a certain number of characters per frame.
-             while (runsThisFrame < charactersPerFrame)
-             {
-                 //vis++;
-                 //text1.maxVisibleCharacters = vis;
-                 runsThisFrame++;
-             }
-
-             //wait for the next available revelation time.
-             runsThisFrame = 0;
-             yield return new WaitForSeconds(0.01f * speed);
-         }*/
-
-
-
-        if (skip)
+        while (vis < max) //max변수 : 현재 문장 길이  vis변수 : 현재 출력가능한 문장 길이
         {
-            speed = 1;
-            charactersPerFrame = charactersPerFrame < 5 ? 5 : charactersPerFrame + 3;
+            //allow skipping by increasing the characters per frame and the speed of occurance.
+            if (skip)
+            {
+                //speed = 0.1f;
+                text1.text += targetText;
+                skip = false;
+                break;
+                //charactersPerFrame = charactersPerFrame < 5 ? 5 : charactersPerFrame + 3;
+            }
+
+            //reveal a certain number of characters per frame.
+            while (runsThisFrame < charactersPerFrame) //여기가 한글자씩 나오게 하는 부분
+            {
+                vis++;
+                text1.text = targetText.Substring(0, vis);
+                runsThisFrame++;
+            }
+
+            runsThisFrame = 0; //한글자 출력하기 전 == 1; 한글자 출력 완료후 다시 0으로 초기화됨.
+            yield return new WaitForSeconds(0.1f * speed); //글자 속도 조절 하는 부분
         }
-
-        //reveal a certain number of characters per frame.
-        while (runsThisFrame < charactersPerFrame)
-        {
-            //vis++;
-            //text1.maxVisibleCharacters = vis;
-            runsThisFrame++;
-        }
-
-        //wait for the next available revelation time.
-        runsThisFrame = 0;
-        yield return new WaitForSeconds(0.01f * speed);
-
-
-
 
         //terminate the architect and remove it from the active log of architects.
         Terminate();
@@ -140,19 +115,10 @@ public class TextArchitect
             existingArchitect.Terminate();
 
         buildProcess = DialogueSystem.instance.StartCoroutine(Construction());
-        //if (LovePoint.instance._skip && LovePoint.instance._next)
-        //{
-        //    text1.text += targetText;
-        //    //skip2 = false;
-        //    LovePoint.instance._next = false;
-        //    LovePoint.instance._skip = false;
-
-        //}
         activeArchitects.Add(text1, this);
-
     }
 
- 
+
     /// <summary>
     /// Terminate this architect. Stops the text generation process and removes it from the cache of all active architects.
     /// </summary>
@@ -169,7 +135,6 @@ public class TextArchitect
 
     public void ForceFinish()
     {
-        //text1.maxVisibleCharacters = text1.text.Length;
         Terminate();
     }
 }

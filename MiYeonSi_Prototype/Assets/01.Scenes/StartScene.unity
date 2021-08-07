@@ -4252,7 +4252,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4471,6 +4471,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701fa637c2bc98b4db35c91859065b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameData:
+    _chapterName: 
+    _savedChapterProgress: 0
+    _savedBackgroundLine: 0
+    _savedPlaySong: 
+    ch_count: 0
+    eunji_LovePoint: 0
+    arin_LovePoint: 0
+    minseok_LovePoint: 0
+    junbyeong_LovePoint: 0
+  _endingCollectionData:
+    _endingCollection: []
+  _settingData:
+    _BGM_volume: 0
+    _SFX_volume: 0
 --- !u!1 &1493189039
 GameObject:
   m_ObjectHideFlags: 0

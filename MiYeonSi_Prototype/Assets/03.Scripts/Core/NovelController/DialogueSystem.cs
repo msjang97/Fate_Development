@@ -80,10 +80,14 @@ public class DialogueSystem : MonoBehaviour
         speakerNameText.text = DetermineSpeaker(speaker); // 화자가 나레이션인지 판별
         isWaitingForUserInput = false;
 
-        while (textArchitect.isConstructing)
+        while (textArchitect.isConstructing) 
         {
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (NovelController.instance._next == true)// 대화 진행중 한번 더 입력이 들어오면 대화 강제 스킵.
+            {
                 textArchitect.skip = true;
+                NovelController.instance._next = false;
+            }
+                
 
             yield return new WaitForEndOfFrame();
         }

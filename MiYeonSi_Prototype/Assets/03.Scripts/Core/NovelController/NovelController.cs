@@ -42,7 +42,7 @@ public class NovelController : MonoBehaviour
 
         if (ChoiceManager.P_instance.savedChapterName == "") //처음 시작할때만 
         {
-            _chapterName = "test";
+            _chapterName = "Chapter0_start";
         }
         else
         {
@@ -103,7 +103,7 @@ public class NovelController : MonoBehaviour
         }
     }
 
-    bool _next = false;
+    public bool _next = false;
     public void Next()
     {
         _next = true;
@@ -369,17 +369,22 @@ public class NovelController : MonoBehaviour
             //the segment now needs to build and run.
             segment.Run();
 
-            while (segment.isRunning)
+            while (segment.isRunning) //만약 말하는 중인데 인풋이 또 들어왔다면
             {
                 yield return new WaitForEndOfFrame();
                 //allow for auto completion of the current segment for skipping purposes.
                 if (_next)
                 {
                     //rapidly complete the text on first advance, force it to finish on the second.
-                    if (!segment.architect.skip)
-                        segment.architect.skip = true;
-                    else
-                        segment.ForceFinish();
+                    if (!segment.architect.skip) //skip이 false일때 
+                    {
+                        segment.architect.skip = true; //skip을 true로 바꿔줌.
+                    }
+                    else //skip이 true일때
+                    {
+                        //segment.ForceFinish(); //대화 강제 종료
+                    }
+                        
                 }
             }
 

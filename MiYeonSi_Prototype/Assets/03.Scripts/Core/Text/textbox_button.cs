@@ -10,7 +10,7 @@ public class textbox_button : MonoBehaviour
 
     public void Next_textbox()
     {
-        if (!LovePoint.instance._next)
+        /*if (!LovePoint.instance._next)
         {
             novel_con.next_box = true;
             LovePoint.instance._next = true;
@@ -20,7 +20,15 @@ public class textbox_button : MonoBehaviour
         {
             LovePoint.instance._skip = true;
 
+        }*/
+
+        if (!novel_con.next_box)
+        {
+            novel_con.next_box = true;
+            //LovePoint.instance._next = true;
+
         }
+  
 
 
     }

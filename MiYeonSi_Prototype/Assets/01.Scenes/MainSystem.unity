@@ -1455,9 +1455,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880a1a958c6ad03419283b3963ebdae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAfterMiniGame: 0
   lastBackground: 0
   next_box: 0
+  choiceNext: 0
   touch_box: {fileID: 341559081}
+  data: []
   chapterProgress: 0
   cachedLastSpeaker: 
 --- !u!114 &733717521
@@ -1641,10 +1644,10 @@ RectTransform:
   m_Father: {fileID: 659797916}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.09485185, y: 0.33739582}
-  m_AnchorMax: {x: 0.2834815, y: 0.3696459}
-  m_AnchoredPosition: {x: 5.4000244, y: 78.19995}
-  m_SizeDelta: {x: 0.23, y: -1.85}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -330.1, y: -203.57}
+  m_SizeDelta: {x: 205, y: 61.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890613640
 MonoBehaviour:
@@ -2003,6 +2006,7 @@ MonoBehaviour:
   savedChapterProgress: 0
   savedChapterName: 
   choices: []
+  choices2: []
   actions: []
   beforeMinigame: 
 --- !u!4 &1018042778
@@ -2041,6 +2045,8 @@ MonoBehaviour:
   minigameCount: 0
   _skip: 0
   _next: 0
+  _choiceNext: 0
+  _isAfterMiniGame: 0
 --- !u!1 &1046882563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,10 +3528,10 @@ RectTransform:
   m_Father: {fileID: 642636329}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.2125, y: 0}
-  m_SizeDelta: {x: 1092.4, y: 1920}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2003704416
 GameObject:
