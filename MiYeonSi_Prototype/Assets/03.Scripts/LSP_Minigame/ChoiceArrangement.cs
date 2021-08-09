@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ChoiceArrangement : MonoBehaviour
 {
-    public GameObject best;
-    public GameObject good;
+    public GameObject best; //회색
+    public GameObject good; //노란색
 
     public float bestMoveX;
     public float goodMoveX;
