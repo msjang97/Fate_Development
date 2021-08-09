@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     private int currentTime;
     public static bool stop = false;
     public Slider TimeSlider;
-
+    public GameObject manual;
     // Use this for initialization
     void Start()
     {
@@ -19,14 +19,22 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time -= Time.deltaTime;
-        TimeSlider.value = time;
-        currentTime = (int)time;
-
-        if (currentTime <= 0)
+        if (manual.activeSelf == true)
         {
-            currentTime = 0;
-            ChoiceManager.P_instance.selectedNum = 1;
+            TimeSlider.maxValue = 30;
         }
+        else
+        {
+            time -= Time.deltaTime;
+            TimeSlider.value = time;
+            currentTime = (int)time;
+
+            if (currentTime <= 0)
+            {
+                currentTime = 0;
+                ChoiceManager.P_instance.selectedNum = 1;
+            }
+        }
+        
     }
 }

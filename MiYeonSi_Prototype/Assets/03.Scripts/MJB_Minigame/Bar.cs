@@ -14,12 +14,18 @@ public class Bar : MonoBehaviour
 
     public Vector2 BarPosition;
     public RectTransform BarTransform;
+    public GameObject manual;
 
     // Update is called once per frame
     void Update()
     {
-        if(isStoped == false)
-            MoveBar();
+        if( manual.activeSelf == false)
+        {
+            if (isStoped == false)            
+                MoveBar();          
+        }     
+       // else       
+         //   StopBar();       
     }
 
     private void MoveBar()

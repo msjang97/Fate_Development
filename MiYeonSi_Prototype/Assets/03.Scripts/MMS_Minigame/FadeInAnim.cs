@@ -7,11 +7,14 @@ public class FadeInAnim : MonoBehaviour
 {
     public GameObject[] button = new GameObject[4];  // 선택지
     public GameObject[] buttonText = new GameObject[4]; //선택지에 있는 텍스트
-
+    public GameObject manual;
     public void Start()
     {
-        FadeOut(0.5f); //0.5초간 사라짐 
-        Invoke("TestFI", 1.5f);//1.5초뒤 나타나는 코드 실행
+       
+            FadeOut(0.5f); //0.5초간 사라짐 
+            Invoke("TestFI", 1.5f);//1.5초뒤 나타나는 코드 실행
+        
+        
     }
 
     void TestFI() {

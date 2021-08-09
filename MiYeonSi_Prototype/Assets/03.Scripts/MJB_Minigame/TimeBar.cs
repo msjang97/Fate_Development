@@ -8,7 +8,7 @@ public class TimeBar : MonoBehaviour
     public float TimeCost;
     public Bar bar;
     public Slider TimeSlider;
-
+    public GameObject manual;
     private void Awake()
     {
         TimeSlider.maxValue = TimeCost;             
@@ -16,7 +16,7 @@ public class TimeBar : MonoBehaviour
 
     void Update()
     {
-        if (bar.P_isStoped == false)
+        if (bar.P_isStoped == false &&manual.activeSelf == false)
             CountTime();
     }
 

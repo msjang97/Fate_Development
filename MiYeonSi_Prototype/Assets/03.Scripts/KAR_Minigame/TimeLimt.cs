@@ -8,6 +8,7 @@ public class TimeLimt : MonoBehaviour
 {
     public static float rTime;
     public Slider TimeSlider;
+    public GameObject manual; 
 
     void Start()
     {
@@ -17,13 +18,21 @@ public class TimeLimt : MonoBehaviour
 
     void Update()
     {
-        rTime -= Time.deltaTime;
-        TimeSlider.value = rTime;
+        if (manual.activeSelf == true)
+            rTime = 10f;
 
-        if (rTime < 0)
-        { 
-            rTime = 0;
-            ChoiceManager.P_instance.selectedNum = 1;
+
+        else
+        {
+            rTime -= Time.deltaTime;
+            TimeSlider.value = rTime;
+
+            if (rTime < 0)
+            {
+                rTime = 0;
+                ChoiceManager.P_instance.selectedNum = 1;
+            }
         }
+       
     }
 }

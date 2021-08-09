@@ -22,7 +22,7 @@ public class Minigame_Controll : MonoBehaviour
             {
                 //LovePoint.instance.minigameCount ++;
                 start_scene.SetActive(false);
-                minigame_scene.SetActive(false);
+                minigame_scene.SetActive(true);
                 manual.SetActive(true);
                 
             }
