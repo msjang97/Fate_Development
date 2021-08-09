@@ -79,31 +79,30 @@ public class Button1 : MonoBehaviour
 
     public void movePos(int ranNum, GameObject gameObject)
     {
-
         if (ranNum == 0)
         {
-            ButtonX = Random.Range(-170, 186);
-            Button1Y = Random.Range(200, 410); // 500 ~ 710 210
+            ButtonX = Random.Range(-115, 115);
+            Button1Y = Random.Range(300, 510); // 300 ~ 510 210
             gameObject.transform.localPosition = new Vector3(ButtonX, Button1Y, 0.0f);
         }
 
         else if (ranNum == 1)
         {
-            ButtonX = Random.Range(-170, 186);
-            Button2Y = Random.Range(-210, 20);// 110 ~ 320 210
+            ButtonX = Random.Range(-115, 115);
+            Button2Y = Random.Range(-120, 90);// 110 ~ 320 210
             gameObject.transform.localPosition = new Vector3(ButtonX, Button2Y, 0.0f);
         }
         else if (ranNum == 2)
         {
-            ButtonX = Random.Range(-170, 186);
-            Button3Y = Random.Range(-500, -370); // -280 ~ -70 210
+            ButtonX = Random.Range(-115, 115);
+            Button3Y = Random.Range(-540, -330); // -280 ~ -70 210
             gameObject.transform.localPosition = new Vector3(ButtonX, Button3Y, 0.0f);
         }
 
         else if (ranNum == 3)
         {
-            ButtonX = Random.Range(-170, 186);
-            Button4Y = Random.Range(-820, -700); // -670 ~ -460 210
+            ButtonX = Random.Range(-115, 115);
+            Button4Y = Random.Range(-960, -750); // -670 ~ -460 210
             gameObject.transform.localPosition = new Vector3(ButtonX, Button4Y, 0.0f);
         }
     }
