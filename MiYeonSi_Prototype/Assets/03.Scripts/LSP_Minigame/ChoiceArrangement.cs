@@ -22,8 +22,8 @@ public class ChoiceArrangement : MonoBehaviour
         bestMoveX = Random.Range(-215, 215);
         goodMoveX = Random.Range(-210, 210);
 
-        best.transform.localPosition = new Vector3(bestMoveX, 270f, 0f);
-        good.transform.localPosition = new Vector3(goodMoveX, -620f, 0f);
+        best.transform.localPosition = new Vector3(bestMoveX, 465f, 0f);
+        good.transform.localPosition = new Vector3(goodMoveX, -425f, 0f);
 
     }
 
