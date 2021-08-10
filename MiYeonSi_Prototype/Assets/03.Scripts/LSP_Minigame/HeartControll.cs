@@ -48,6 +48,7 @@ public class HeartControll : MonoBehaviour
 
                 Debug.Log("충돌");
                 Debug.Log("Worst");
+                SPC.powerSpeed = 0;
 
                 stopHeart = true;
             }

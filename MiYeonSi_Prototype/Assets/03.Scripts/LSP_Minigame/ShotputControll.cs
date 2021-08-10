@@ -64,7 +64,7 @@ public class ShotputControll : MonoBehaviour
     {
         powerCheck = false;
 
-        powerSlider.maxValue = 200; // 최대 200 슬라이더
+        powerSlider.maxValue = 250; // 최대 200 슬라이더
         rz = 60;
         _rz = 0;
         mz = 100;
@@ -72,7 +72,7 @@ public class ShotputControll : MonoBehaviour
 
         upPower = 0;
         //powerSpeed = 0;
-        p_count = 90;
+        p_count = 150;
     }
 
     public void PointerDown()
@@ -138,7 +138,7 @@ public class ShotputControll : MonoBehaviour
         if (count == 2)
         heart.SetActive(true);
 
-        heart.transform.rotation = Quaternion.Euler(0f, 0f, _rz);
+        //heart.transform.rotation = Quaternion.Euler(0f, 0f, _rz);
 
         float mx = powerSpeed * Time.deltaTime;
 
