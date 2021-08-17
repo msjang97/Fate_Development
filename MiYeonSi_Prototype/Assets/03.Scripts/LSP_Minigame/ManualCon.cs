@@ -38,10 +38,19 @@ public class ManualCon : MonoBehaviour
             if (miniC == 0) // LovePoint.instance.minigameCount == 0
             {
                 //LovePoint.instance.minigameCount ++;
-                start_scene.SetActive(false);
-                minigame_scene.SetActive(true);
-                manual.SetActive(true);
-
+                
+                if (SceneManager.GetActiveScene().name == "MMS_Minigame")
+                {
+                    start_scene.SetActive(false);
+                    minigame_scene.SetActive(false);
+                    manual.SetActive(true);
+                }
+                else
+                {
+                    start_scene.SetActive(false);
+                    minigame_scene.SetActive(true);
+                    manual.SetActive(true);
+                }
             }
             else
             {
