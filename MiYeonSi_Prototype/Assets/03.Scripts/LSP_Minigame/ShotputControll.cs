@@ -7,6 +7,8 @@ public class ShotputControll : MonoBehaviour
 {
     public GameObject powerBar; // 게이지바 
     public GameObject choice_lowest; // 가장 점수낮은 범위 
+    public GameObject stopbutton; // 가장 점수낮은 범위 
+    public Sprite throw_button;
     public float rz; // Z축 -60~ 60 제한
     public float _rz; // 임시 rz저장
     
@@ -126,6 +128,7 @@ public class ShotputControll : MonoBehaviour
 
     void PowerStop() // 게이지 정지
     {
+        stopbutton.GetComponent<Image>().sprite = throw_button;
         powerSlider.value = _powerSpeed;
         HeartMovement();
         //HeartStop();
@@ -176,114 +179,5 @@ public class ShotputControll : MonoBehaviour
         //powerCheck = false;
     }
 
-    //void HeartStop()
-    //{
-    //    min = choice_lowest.transform.position.y- 525;
-    //    max = choice_lowest.transform.position.y + 525;
-    //    range = max - min;
-
-    //    pos_y = heart.transform.position.y;
-        
-       
-    //    if (min < heart.transform.position.y && max > heart.transform.position.y)
-    //    {
-    //        switch ((int)_powerSpeed % 100 / 10)
-    //        {
-    //            case 0:
-    //                if (range / 10 * 0 + min == (int)heart.transform.position.y)
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-    //                    heartCon.movestopHeart = true;
-    //                }
-    //                break;
-    //            case 1:
-    //                if (range / 10 * 1 + min == (int)heart.transform.position.y)
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-    //                    heartCon.movestopHeart = true;
-    //                }
-    //                    break;
-    //            case 2:
-    //                if (range / 10 * 2 + min == (int)heart.transform.position.y)
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-    //                    heartCon.movestopHeart = true;
-    //                }
-    //                break;
-    //            case 3:
-    //                if (range / 10 * 3 + min == (int)heart.transform.position.y)
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-
-    //                    heartCon.movestopHeart = true;
-    //                }
-    //                break;
-    //            case 4:
-    //                if (range / 10 * 4 + min == (int)heart.transform.position.y)
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-    //                    heartCon.movestopHeart = true;
-    //                }
-    //                break;
-    //            case 5:
-    //                if (range / 10 * 5 + min == (int)heart.transform.position.y)
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-    //                    heartCon.movestopHeart = true;
-    //                }
-    //                break;
-    //            case 6:
-    //                if (range / 10 * 6 + min == (int)heart.transform.position.y)
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-    //                    heartCon.movestopHeart = true;
-    //                }
-    //                break;
-    //            case 7:
-    //                if (range / 10 * 7 + min == (int)heart.transform.position.y)
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-
-    //                }
-    //                break;
-    //            case 8:
-    //                if (range / 10 * 8 + min == (int)heart.transform.position.y)
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-
-    //                    heartCon.movestopHeart = true;
-    //                }
-    //                break;
-    //            case 9:
-    //                if (range / 10 * 9 + min == (int)heart.transform.position.y)
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-    //                    heartCon.movestopHeart = true;
-    //                }
-    //                break;
-    //            case 10:
-    //                if (range / 10 * 10 + min == (int)heart.transform.position.y)
-
-    //                {
-    //                    powerSpeed = 0;
-    //                    heartCon.worstCount = 1;
-    //                    heartCon.movestopHeart = true;
-    //                }
-    //                break;
-    //            default:
-    //                break;
-    //        }
-    //    }
-    //}
-
+    
 }
