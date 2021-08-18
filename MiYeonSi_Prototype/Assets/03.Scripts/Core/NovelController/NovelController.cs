@@ -14,6 +14,7 @@ public class NovelController : MonoBehaviour
     string _chapterName;
     string playSongName;
     float untouchableTime;
+    bool isAutoNext;
     public bool next_box;
     public bool choiceNext;
    
@@ -31,6 +32,7 @@ public class NovelController : MonoBehaviour
     void Start()
     {
         next_box = false;
+        isAutoNext = false;
         if (SaveData.P_instance.isLoadData == true)
         {
             SaveData.P_instance.LoadGame();
@@ -42,7 +44,7 @@ public class NovelController : MonoBehaviour
 
         if (ChoiceManager.P_instance.savedChapterName == "") //처음 시작할때만 
         {
-            _chapterName = "test";
+            _chapterName = "Chapter0_start";
         }
         else
         {
@@ -84,30 +86,40 @@ public class NovelController : MonoBehaviour
 
     void Update()
     {
-        UntouchableCheck();
-
-        if (next_box)
-        {
+        if (isTouchable())
             Next();
-            next_box = false;
-        }
-        
+
+        CoolDownManager();
     }
 
-    void UntouchableCheck()
+    void CoolDownManager()
     {
-        if(untouchableTime >= 0.0f)
-        {
+        if (untouchableTime > 0.0f)
             untouchableTime -= Time.deltaTime;
+    }
+
+    bool isTouchable()
+    {
+        if (untouchableTime > 0.0f)
+        {
             next_box = false;
+            return false;
         }
+
+        if (next_box || isAutoNext)
+            return true;
+
+        return false;
     }
 
     public bool _next = false;
     public void Next()
     {
         _next = true;
+        next_box = false;
+        isAutoNext = false;
     }
+
     static List<string> ArrayToList(string[] array, bool removeBlankLines = true)
     {
         List<string> list = new List<string>();
@@ -121,6 +133,7 @@ public class NovelController : MonoBehaviour
         }
         return list;
     }
+
     public void LoadChapterFile(string fileName)
     {
         TextAsset asset = Resources.Load("story/" + fileName) as TextAsset;
@@ -406,7 +419,7 @@ public class NovelController : MonoBehaviour
     // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void HandleAction(string action)
     {
-        print("Handle After action [" + action + "]");
+        print("Handle action [" + action + "]");
         string[] data = action.Split('(', ')');
 
         switch (data[0])
@@ -472,11 +485,14 @@ public class NovelController : MonoBehaviour
     }
     public void HandleAfterAction(string action)
     {
-        print("Handle action [" + action + "]");
+        print("Handle After action [" + action + "]");
         string[] data = action.Split('(', ')');
 
         switch (data[0])
         {
+            case "autoNextPassage":
+                Command_AutoNextPassage(data[1]);
+                break;
             case "setGotoStartScene":
                 Command_goToStartScene();
                 break;
@@ -485,6 +501,15 @@ public class NovelController : MonoBehaviour
                 break;
         }
     }
+
+    void Command_AutoNextPassage(string data)
+    {
+        float delayTime = (data != "" ? float.Parse(data) : 0);
+
+        isAutoNext = true;
+        untouchableTime = delayTime;
+    }
+
     void Go_start()
     {
         SceneManager.LoadScene("StartScene");
