@@ -12,10 +12,49 @@ public class EndingCollection : MonoBehaviour
 
     public void CollectEnding()
     {
+        //나머지 일러스트는 일러스트 이름으로 넘어와서 판단
 
-    
+        // 프롤로그1
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("P_1"))
+            EndingCollections[0].SetActive(true);
+        // 프롤로그2
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("P_2"))
+            EndingCollections[1].SetActive(true);
+        // 챕터 1
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH1_1"))
+            EndingCollections[2].SetActive(true);
+        // 챕터 2
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH2_1"))
+            EndingCollections[3].SetActive(true);
+        // 챕터 3
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH3_1"))
+            EndingCollections[4].SetActive(true);
+        // 챕터 4
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH4_1"))
+            EndingCollections[5].SetActive(true);
+        // 챕터 4-1
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH4_1_1"))
+            EndingCollections[6].SetActive(true);
+        // 챕터 4-2
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH4_2_1"))
+            EndingCollections[7].SetActive(true);
+        // 챕터 4-3
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH4_3_1"))
+            EndingCollections[8].SetActive(true);
+        // 챕터 5
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH5_1"))
+            EndingCollections[9].SetActive(true);
+        // 챕터 6_1
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH6_1"))
+            EndingCollections[10].SetActive(true);
+        // 챕터 6_2
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH6_2"))
+            EndingCollections[11].SetActive(true);
+        // 챕터 7
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("CH7_1"))
+            EndingCollections[12].SetActive(true);
 
-
+        //엔딩은 임의의 엔딩 이름으로 넣어진걸 가지고 판단
 
         // 은지 엔딩 해금
         if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("Eunji_Ending"))

@@ -644,6 +644,8 @@ public class NovelController : MonoBehaviour
     void Command_removeForeground(string data)
     {
         string texName = data;
+        SaveData.P_instance.SaveAndLoadEndingData(texName); // 일러스트 등장마다 파일이름으로 세이브
+
         Texture2D tex = texName == "null" ? null : Resources.Load("Images/UI/Backdrops/" + texName) as Texture2D;
         BCFC.instance.foreground.RemoveActiveImage(tex);
         Next();
