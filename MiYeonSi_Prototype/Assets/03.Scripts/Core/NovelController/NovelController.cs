@@ -17,7 +17,8 @@ public class NovelController : MonoBehaviour
     bool isAutoNext;
     public bool next_box;
     public bool choiceNext;
-   
+
+
     public GameObject touch_box;
     /// <summary> The lines of data loaded directly from a chapter file. /// </summary>
     public List<string> data = new List<string>();
@@ -641,11 +642,21 @@ public class NovelController : MonoBehaviour
         SaveData.P_instance.SaveAndLoadEndingData(EndingName);
         Next();
     }
+
+    void ILLuCon (string s)
+    {
+        // Love_1 테스트용 추후삭제
+        if (s=="Love_1" || s== "P_1" || s== "P_2" || s == "CH1_1" || s == "CH2_1" || s == "CH3_1" || s == "CH4_1" || s == "CH4_1_1" || s == "CH4_1_2"
+            || s == "CH4_3_1" || s == "CH5_1" || s == "CH6_1" || s == "CH6_2" || s == "CH7_1")
+        {
+            SaveData.P_instance.SaveAndLoadEndingData(s);
+        }
+
+    }
     void Command_removeForeground(string data)
     {
+        
         string texName = data;
-        SaveData.P_instance.SaveAndLoadEndingData(texName); // 일러스트 등장마다 파일이름으로 세이브
-
         Texture2D tex = texName == "null" ? null : Resources.Load("Images/UI/Backdrops/" + texName) as Texture2D;
         BCFC.instance.foreground.RemoveActiveImage(tex);
         Next();
@@ -654,6 +665,8 @@ public class NovelController : MonoBehaviour
     void Command_SetLayerImage(string data, BCFC.LAYER layer)
     {
         string texName = data.Contains(",") ? data.Split(',')[0] : data;
+        //Debug.Log(texName);
+        ILLuCon(texName);
         Texture2D tex = texName == "null" ? null : Resources.Load("Images/UI/Backdrops/" + texName) as Texture2D;
         float spd = 2f;
         bool smooth = false;

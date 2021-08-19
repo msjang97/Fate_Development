@@ -7,7 +7,7 @@ setBackground(Room, false, 1) playMusic(Title)
 지찬우 "항상 혼자 지내와서 이제는 외롭다는 감정조차 알 수 없다. 이대로 모태솔로로 삶을 마감하는 건 아니겠지."
 지찬우 "…그건 싫어! 제발 올해가 가기 전에, 아니 졸업하기 전이라도 좋으니까 여자친구가 생겼으면 좋겠어!!!" changeExpression(지찬우,지찬우_경악,100)
 
-setForeground(Love,false,1)
+setForeground(Love_1,false,1)
 removeForeground()
 
 연애세포 "아~ 거, 되게 시끄럽네. 오냐, 이 몸이 친히 도와주마" changeExpression(연애세포,연애세포_0,100) 

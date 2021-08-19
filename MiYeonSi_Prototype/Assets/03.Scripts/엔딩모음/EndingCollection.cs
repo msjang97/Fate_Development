@@ -13,7 +13,8 @@ public class EndingCollection : MonoBehaviour
     public void CollectEnding()
     {
         //나머지 일러스트는 일러스트 이름으로 넘어와서 판단
-
+        if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("Love_1"))
+            EndingCollections[0].SetActive(true);
         // 프롤로그1
         if (SaveData.P_instance._endingCollectionData._endingCollection.Contains("P_1"))
             EndingCollections[0].SetActive(true);
