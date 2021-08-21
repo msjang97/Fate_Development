@@ -12,7 +12,7 @@ public class TextArchitect
     private string targetText;
 
     private int charactersPerFrame = 1;
-    private float speed = 1f;
+    private float printSpeed = 1f; //작을 수록 빠른 값
 
     public bool skip = false;
     public static bool skip2 = false;
@@ -28,7 +28,7 @@ public class TextArchitect
         this.targetText = targetText;
         this.preText = preText;
         this.charactersPerFrame = charactersPerFrame;
-        this.speed = Mathf.Clamp(speed, 1f, 300f);
+        this.printSpeed = Mathf.Clamp(speed, 1f, 300f);
 
         Initiate();
     }
@@ -85,7 +85,7 @@ public class TextArchitect
             if (skip)
             {
                 //speed = 0.1f;
-                text1.text += targetText;
+                text1.text = targetText;
                 skip = false;
                 break;
                 //charactersPerFrame = charactersPerFrame < 5 ? 5 : charactersPerFrame + 3;
@@ -100,7 +100,7 @@ public class TextArchitect
             }
 
             runsThisFrame = 0; //한글자 출력하기 전 == 1; 한글자 출력 완료후 다시 0으로 초기화됨.
-            yield return new WaitForSeconds(0.1f * speed); //글자 속도 조절 하는 부분
+            yield return new WaitForSeconds(0.03f * printSpeed); //글자 속도 조절 하는 부분
         }
 
         //terminate the architect and remove it from the active log of architects.
