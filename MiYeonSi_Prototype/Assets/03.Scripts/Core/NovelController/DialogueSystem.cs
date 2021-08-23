@@ -45,23 +45,23 @@ public class DialogueSystem : MonoBehaviour
     TextArchitect textArchitect = null;
     public TextArchitect currentArchitect { get { return textArchitect; } }
 
-    private void ChangeDialogueColor(string speaker)
+    private void ChangeDialogueColor(string speaker) //화자를 인자로 받아, 각 화자에 따라 채팅창, 이름표, 동그라미버튼 색 바꾸기.
     {
         string speechBoxPath = "SpeechBox/" + speaker + "/"+speaker;
-        Debug.Log(FileManager.savPath + "Resources/SpeechBox/" + speaker + "/" + speaker);
-        Debug.Log(Application.persistentDataPath + "Resources/SpeechBox/" + speaker + "/" + speaker);
+
         UnityEditor.AssetDatabase.IsValidFolder("Assets/Resources/SpeechBox/" + speaker + "/" + speaker);
 
-
-        if (UnityEditor.AssetDatabase.IsValidFolder("Assets/Resources/SpeechBox/" + speaker))
+        if (UnityEditor.AssetDatabase.IsValidFolder("Assets/Resources/SpeechBox/" + speaker)) //특정 캐릭터 일 때
         {
-            speechPanel.transform.GetChild(1).GetComponent<RawImage>().texture = Resources.Load<Texture>(speechBoxPath);
-            speechPanel.transform.GetChild(2).GetComponent<RawImage>().texture = Resources.Load<Texture>(speechBoxPath+"다음"); //추후에 수정하기.
+            speechPanel.transform.GetChild(1).GetComponent<RawImage>().texture = Resources.Load<Texture>(speechBoxPath+"이름");//이름 색 변경
+            speechPanel.transform.GetChild(0).GetComponent<RawImage>().texture = Resources.Load<Texture>(speechBoxPath+"대화창");//채팅창 색 변경
+            speechPanel.transform.GetChild(2).GetComponent<RawImage>().texture = Resources.Load<Texture>(speechBoxPath+"다음"); //다음버튼 변경
         }
         else //엑스트라나 나레이션 일 때
         {
-            speechPanel.transform.GetChild(1).GetComponent<RawImage>().texture = Resources.Load<Texture>("SpeechBox/사수진/사수진");
-            speechPanel.transform.GetChild(2).GetComponent<RawImage>().texture = Resources.Load<Texture>("SpeechBox/사수진/사수진다음"); //추후에 수정하기.
+            speechPanel.transform.GetChild(1).GetComponent<RawImage>().texture = Resources.Load<Texture>("SpeechBox/엑스트라/엑스트라이름");//이름 색 변경
+            speechPanel.transform.GetChild(0).GetComponent<RawImage>().texture = Resources.Load<Texture>("SpeechBox/엑스트라/엑스트라대화창");//채팅창 색 변경
+            speechPanel.transform.GetChild(2).GetComponent<RawImage>().texture = Resources.Load<Texture>("SpeechBox/엑스트라/엑스트라다음"); //다음버튼 변경
         }
     }
 
