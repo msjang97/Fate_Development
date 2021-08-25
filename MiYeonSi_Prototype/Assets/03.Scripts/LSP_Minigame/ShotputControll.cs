@@ -156,8 +156,36 @@ public class ShotputControll : MonoBehaviour
             else if (powerSpeed == 0 && powerCheck)           
                 heartCon.movestopHeart = true;
 
-            heart.transform.Translate(Vector3.left *8 * powerSpeed * Time.deltaTime);
-            heart.transform.Translate(Vector3.up *28 * powerSpeed * Time.deltaTime);
+            if (_rz > 0 && _rz <= 10)
+            {            
+                heart.transform.Translate(Vector3.left * 1 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 20 * powerSpeed * Time.deltaTime);
+            }
+            else if (_rz > 10 && _rz <= 20)
+            {
+                heart.transform.Translate(Vector3.left * 3 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 22 * powerSpeed * Time.deltaTime);
+            }
+            else if (_rz > 20 && _rz <=30)
+            {
+                heart.transform.Translate(Vector3.left * 5 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 24 * powerSpeed * Time.deltaTime);
+            }
+            else if (_rz > 30 && _rz <= 40)
+            {
+                heart.transform.Translate(Vector3.left * 7 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 26 * powerSpeed * Time.deltaTime);
+            }
+            else if (_rz > 40 && _rz <= 50)
+            {
+                heart.transform.Translate(Vector3.left * 9 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up *28 * powerSpeed * Time.deltaTime);
+            }
+            else if (_rz > 50 && _rz <= 60)
+            {
+                heart.transform.Translate(Vector3.left *11  * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 30 * powerSpeed * Time.deltaTime);
+            }
 
         }
 
@@ -172,8 +200,39 @@ public class ShotputControll : MonoBehaviour
             else if (powerSpeed == 0 && powerCheck)
                 heartCon.movestopHeart = true;
 
-            heart.transform.Translate(Vector3.right *8 * powerSpeed * Time.deltaTime);
-            heart.transform.Translate(Vector3.up *28 * powerSpeed * Time.deltaTime);
+
+            if (_rz > -10 && _rz <= 0)
+            {
+                heart.transform.Translate(Vector3.right * 1 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 20 * powerSpeed * Time.deltaTime);
+            }
+            else if (_rz > -20 && _rz <= -10)
+            {
+                heart.transform.Translate(Vector3.right * 3 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 22 * powerSpeed * Time.deltaTime);
+            }
+            else if (_rz > -30 && _rz <= -20)
+            {
+                heart.transform.Translate(Vector3.right * 5 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 24 * powerSpeed * Time.deltaTime);
+            }
+            else if (_rz > -40 && _rz <= -30)
+            {
+                heart.transform.Translate(Vector3.right * 7 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 26 * powerSpeed * Time.deltaTime);
+            }
+            else if (_rz > -50 && _rz <= -40)
+            {
+                heart.transform.Translate(Vector3.right * 9 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 28 * powerSpeed * Time.deltaTime);
+            }
+            else if (_rz > 60 && _rz <= -50)
+            {
+                heart.transform.Translate(Vector3.right * 11 * powerSpeed * Time.deltaTime);
+                heart.transform.Translate(Vector3.up * 30 * powerSpeed * Time.deltaTime);
+            }
+            //heart.transform.Translate(Vector3.right *8 * powerSpeed * Time.deltaTime);
+            //heart.transform.Translate(Vector3.up *30 * powerSpeed * Time.deltaTime);
         }
 
         //powerCheck = false;
