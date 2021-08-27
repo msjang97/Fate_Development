@@ -196,6 +196,8 @@ public class NovelController : MonoBehaviour
                     while (isHandlingLine)
                         yield return new WaitForEndOfFrame();
                     chapterProgress = ChoiceManager.P_instance.savedChapterProgress;
+                    LovePoint.instance._choiceNext = true;
+
                     continue;
                     
                 }
@@ -211,7 +213,7 @@ public class NovelController : MonoBehaviour
                     LovePoint.instance._isAfterMiniGame = isAfterMiniGame;
 
                     LovePoint.instance._choiceNext = false;
-                    //continue;
+                    continue;
                 }
                
                 string line = data[chapterProgress];
