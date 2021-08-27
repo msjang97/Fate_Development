@@ -79,7 +79,7 @@ public class NovelController : MonoBehaviour
                 _chapterName = ChoiceManager.P_instance.savedChapterName;
                 isAfterMiniGame = true;
             }
-            
+
         }
 
         LoadChapterFile(_chapterName);
@@ -150,7 +150,7 @@ public class NovelController : MonoBehaviour
         //data = FileManager.LoadFile(FileManager.savPath + "Resources/story/" + fileName); 
 
         cachedLastSpeaker = "";
-        
+
         if (handlingChapterFile != null)
             StopCoroutine(handlingChapterFile);
         handlingChapterFile = StartCoroutine(HandlingChapterFile());
@@ -178,16 +178,17 @@ public class NovelController : MonoBehaviour
 
             HandleLine(data[lastBackground]);
             Command_PlayMusic(playSongName);
-            _next = true;
+            if (chapterProgress != 0)
+                _next = true;
 
-            Debug.Log(chapterProgress+ "" + lastBackground + playSongName);
+            Debug.Log(chapterProgress + "" + lastBackground + playSongName);
         }
 
         while (chapterProgress < data.Count)
         {
             if (_next)
             {
-                if (isAfterMiniGame == true  && !LovePoint.instance._choiceNext ) //미니게임 이후일 경우, 저장된 진행상황만큼 이동.
+                if (isAfterMiniGame == true && !LovePoint.instance._choiceNext) //미니게임 이후일 경우, 저장된 진행상황만큼 이동.
                 {
                     LovePoint.instance._isAfterMiniGame = isAfterMiniGame;
                     HandleLine(ChoiceManager.P_instance.choices2[ChoiceManager.P_instance.selectedNum - 1]); //선택지 출력.
@@ -199,7 +200,7 @@ public class NovelController : MonoBehaviour
                     LovePoint.instance._choiceNext = true;
 
                     continue;
-                    
+
                 }
 
                 if (isAfterMiniGame == true && LovePoint.instance._choiceNext)
@@ -215,7 +216,7 @@ public class NovelController : MonoBehaviour
                     LovePoint.instance._choiceNext = false;
                     continue;
                 }
-               
+
                 string line = data[chapterProgress];
 
                 //this is a choice
@@ -313,11 +314,11 @@ public class NovelController : MonoBehaviour
         else //일반 선택지가 아니라면
         {
             ChoiceManager.P_instance.choices = choices; //선택지 텍스트 저장.
-            ChoiceManager.P_instance.choices2 = choices2; 
+            ChoiceManager.P_instance.choices2 = choices2;
             ChoiceManager.P_instance.actions = actions; //선택지 대답 저장.
 
             SceneManager.LoadScene(miniGameName); // 각 미니게임 호출해주기.
-           
+
         }
 
         //chapterProgress++;
@@ -400,7 +401,7 @@ public class NovelController : MonoBehaviour
                     {
                         //segment.ForceFinish(); //대화 강제 종료
                     }
-                        
+
                 }
             }
 
@@ -543,14 +544,14 @@ public class NovelController : MonoBehaviour
                 break;
             default:
                 break;
-        }        
+        }
 
     }
     void Command_goToStartScene2()
     {
         touch_box.SetActive(false);
         AudioManager.instance.StopSong();
-        Invoke("Go_start",1.5f);
+        Invoke("Go_start", 1.5f);
     }
 
     void Command_goToStartScene()
@@ -564,6 +565,7 @@ public class NovelController : MonoBehaviour
         //LovePoint.instance.ch_count++;
         NovelController.instance.LoadChapterFile(chapterName);
         HandleLine(data[0]);
+        SaveData.P_instance.SaveGame(_chapterName, 0, 0, playSongName);
     }
     public void Choice_EndingScene_R()
     {
@@ -645,10 +647,10 @@ public class NovelController : MonoBehaviour
         Next();
     }
 
-    void ILLuCon (string s)
+    void ILLuCon(string s)
     {
         // Love_1 테스트용 추후삭제
-        if (s=="Love_1" || s== "P_1" || s== "P_2" || s == "CH1_1" || s == "CH2_1" || s == "CH3_1" || s == "CH4_1" || s == "CH4_1_1" || s == "CH4_1_2"
+        if (s == "Love_1" || s == "P_1" || s == "P_2" || s == "CH1_1" || s == "CH2_1" || s == "CH3_1" || s == "CH4_1" || s == "CH4_1_1" || s == "CH4_1_2"
             || s == "CH4_3_1" || s == "CH5_1" || s == "CH6_1" || s == "CH6_2" || s == "CH7_1")
         {
             SaveData.P_instance.SaveAndLoadEndingData(s);
@@ -657,7 +659,7 @@ public class NovelController : MonoBehaviour
     }
     void Command_removeForeground(string data)
     {
-        
+
         string texName = data;
         Texture2D tex = texName == "null" ? null : Resources.Load("Images/UI/Backdrops/" + texName) as Texture2D;
         BCFC.instance.foreground.RemoveActiveImage(tex);
