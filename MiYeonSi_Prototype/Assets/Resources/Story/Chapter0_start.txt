@@ -1,6 +1,50 @@
 setForeground(프롤로그,false,1)
 removeForeground()
-setBackground(Room, false, 1) playMusic(Title)
+setBackground(검은창, false, 1)
+
+신 "오늘은 누굴 만들어볼까?" changeExpression(신,신_스탠딩,100)
+narrator "신은 인간에게 필요한 여러가지 요소들을"
+narrator "배분하여 하나의 인격체를 만든다." 
+narrator "신이 운을 배분하던 중,"
+narrator "찬우에게 넣을 운을 착각하여"
+narrator "운 대신 불운을 넣어버린다."
+신 "엣콩~ 실수~" changeExpression(신,신_스탠딩,100)
+narrator "운이 다른 사람에 비해"
+narrator "많이 없는 정도였지만…"
+신 "별 일 있겠어?" changeExpression(신,신_스탠딩,100)
+narrator "그냥 두고 지켜 보기로 한다."
+narrator "하지만 예상밖으로"
+narrator "운이 없어도 너무 없다."
+narrator "자신의 실수 하나로"
+narrator "아이의 인생이 불운으로 뒤덮이는 것은"
+narrator "원하지 않았던 신은"
+narrator "어떻게 할지 고민을 한다."
+신 "나는 바쁜데… 나 대신 다녀올 사람이 필요해" changeExpression(신,신_스탠딩,100)
+narrator "그때 눈에 띄는 노는 견습천사 하나."
+신 "주문 연습도 안하고 맨날 놀고…"
+신 "그래, 너로 정했다!" changeExpression(신,신_스탠딩,100)
+narrator "……못미덥지만 다른 견습천사들은"
+narrator "바쁘기 때문에 선택지가 없다."
+신 "사람은 고쳐쓰는거 아니지만" changeExpression(신,신_스탠딩,100)
+신 "견습 천사는 고쳐 쓸 수 있을지도?"
+narrator "한 번 믿어나 보자 하는 심정으로"
+narrator "놀기만 하는 견습천사에게"
+narrator "소원을 하나 들어주고 오라고 명령한다."
+
+
+setBackground(찬우방_낮, false, 1)
+
+
+
+
+
+
+
+
+
+
+
+
 지찬우 "대학 오면 여자친구 생긴다는 말, 안 믿는 척하면서도 내심 기대했다." changeExpression(지찬우,지찬우_0,100) 
 지찬우 "그런데 오게 된 학교가 하필 공대라니.." changeExpression(지찬우,지찬우_해탈,100) 
 지찬우 "극악의 성비에 그나마 있는 여자애들도 조별 과제 때 인사한 게 전부. 외롭다는 건 뭘까?"
