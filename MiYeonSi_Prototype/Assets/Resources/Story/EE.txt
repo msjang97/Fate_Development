@@ -1,3 +1,4 @@
+setBackground(찬우방_낮, false, 1) playMusic(S1)
 연애세포 "하아암~ 좋은 아침!" changeExpression(연애세포,연애세포_호탕,100)
 연애세포 "찬우야, 너도 잘 잤…" changeExpression(연애세포,연애세포_호탕,100)
 연애세포 "으아아아아아악!!!!" changeExpression(연애세포,연애세포_당황,100)
@@ -21,6 +22,7 @@
 지찬우 "은지는 나를 어떻게 생각할까…" changeExpression(지찬우,지찬우_기본,100)
 지찬우 "나… 정말 은지랑 이어질 수 있을까…?" changeExpression(지찬우,지찬우_기본,100)
 
+setBackground(크리스마스_거리, false, 1) playMusic(S8)
 연애세포 "나약해지지마!!!!!!!!!" changeExpression(연애세포,연애세포_버럭,100)
 연애세포 "너 충분히 승산 있어." changeExpression(연애세포,연애세포_버럭,100)
 지찬우 "내가… 승산이 있을까…" changeExpression(지찬우,지찬우_기본,100)
@@ -36,9 +38,7 @@
 지찬우 "알았어, 궁상 그만 떨게." changeExpression(지찬우,지찬우_기본,100)
 지찬우 "고마워, 진심이야." changeExpression(지찬우,지찬우_안도,100)
 
-setBackground(크리스마스_거리,false,1)
-playMusic(S8)
-
+setBackground(크리스마스_거리,false,1) playMusic(S8)
 지찬우 "오늘 사람 많네…" changeExpression(지찬우,지찬우_머쓱,100)
 지찬우 "크리스마스라서 그런가." changeExpression(지찬우,지찬우_머쓱,100)
 지찬우 "우와… 다 커플이야 커플…" changeExpression(지찬우,지찬우_삐질,100)
@@ -202,38 +202,39 @@ playMusic(S8)
 최은지 "오늘은 우리 둘이 놀자." changeExpression(최은지,최은지_갸륵,100)
 최은지 "첫 데이트니까…! 그게 좋겠지?" changeExpression(최은지,최은지_활짝,100)
 
-setForeground(은지,false,1)
-removeForeground()
-setForeground(신계,false,1)
+setForeground(찬우은지,false,1)
 removeForeground()
 
+setBackground(신계, false, 1) playMusic(S8)
 견습천사 "연애박사 납시오~" changeExpression(견습천사,견습천사_자만,100)
-신 "흠… 이걸 칭찬을 해줘야 할지"
-신 "주문 틀렸다고 혼을 내야 할지…"
+신 "흠… 이걸 칭찬을 해줘야 할지" changeExpression(신,신_스탠딩,100)
+신 "주문 틀렸다고 혼을 내야 할지…" changeExpression(신,신_스탠딩,100)
 견습천사 "에이~칭찬 해주셔야죠~" changeExpression(견습천사,견습천사_사악,100)
 견습천사 "찬우 얼굴 보셨어요?" changeExpression(견습천사,견습천사_기본,100)
 견습천사 "죽어가던 애 제가 다 살려놨는데!" changeExpression(견습천사,견습천사_자만,100)
 견습천사 "그래도 저 열심히 했다구요…" changeExpression(견습천사,견습천사_진지,100)
-신 "그래… 노력한 건 보이더구나." 
-신 "찬우의 소원이 이루어지긴 했으니..."
-신 "………………"
-신 "좋아! 결정했어!"
+신 "그래… 노력한 건 보이더구나." changeExpression(신,신_스탠딩,100)
+신 "찬우의 소원이 이루어지긴 했으니..." changeExpression(신,신_스탠딩,100)
+신 "………………" changeExpression(신,신_스탠딩,100)
+신 "좋아! 결정했어!" changeExpression(신,신_스탠딩,100)
 견습천사 "무엇을 결정하셨는지…?" changeExpression(견습천사,견습천사_오잉,100)
-신 "널 정식 천사로 승격한다."
+신 "널 정식 천사로 승격한다." changeExpression(신,신_스탠딩,100)
 견습천사 "……………!" changeExpression(견습천사,견습천사_다급,100)
 견습천사 "와!!!!!!!!!!!!!!!!" changeExpression(견습천사,견습천사_기본,100)
-신 "대신!"
-신 "천사가 되어서 주문을 틀리는 것은"
-신 "매~우 곤란한 일이니"
-신 "주문력 테스트에 통과하면!"
-신 "바로 승격해주겠다."
+신 "대신!" changeExpression(신,신_스탠딩,100)
+신 "천사가 되어서 주문을 틀리는 것은" changeExpression(신,신_스탠딩,100)
+신 "매~우 곤란한 일이니" changeExpression(신,신_스탠딩,100)
+신 "주문력 테스트에 통과하면!" changeExpression(신,신_스탠딩,100)
+신 "바로 승격해주겠다." changeExpression(신,신_스탠딩,100)
 견습천사 "’으엑… 주문 싫은데…’" changeExpression(견습천사,견습천사_고뇌,100)
-신 "싫으냐? 그럼 말고."
+신 "싫으냐? 그럼 말고." changeExpression(신,신_스탠딩,100)
 견습천사 "아니예요!! 너무 좋아요!!" changeExpression(견습천사,견습천사_제발,100)
 견습천사 "주문 공부 열심히 해서" changeExpression(견습천사,견습천사_다급,100)
 견습천사 "꼭! 정식 천사가 되겠습니다!~" changeExpression(견습천사,견습천사_기본,100)
-신 "그래, 정진하도록 하여라."
-견습천사 " ’찬우야, 고마워! 덕분에 나도’" changeExpression(견습천사,견습천사_사악,100)
-견습천사 " ’정식 천사다!!!!!!!!’" changeExpression(견습천사,견습천사_기본,100)
-견습천사 " ’내가 지켜볼 테니까…’" changeExpression(견습천사,견습천사_기본,100)
-견습천사 " ’너도 앞으로는 행복만 해라!’" changeExpression(견습천사,견습천사_기본,100)
+신 "그래, 정진하도록 하여라." changeExpression(신,신_스탠딩,100)
+견습천사 "’찬우야, 고마워! 덕분에 나도’" changeExpression(견습천사,견습천사_사악,100)
+견습천사 "’정식 천사다!!!!!!!!’" changeExpression(견습천사,견습천사_기본,100)
+견습천사 "’내가 지켜볼 테니까…’" changeExpression(견습천사,견습천사_기본,100)
+견습천사 "’너도 앞으로는 행복만 해라!’" changeExpression(견습천사,견습천사_기본,100)
+
+goEndingCredit()
