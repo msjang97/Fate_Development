@@ -202,7 +202,8 @@ public class Character
     public Sprite lastBodySprite = null;
     public void FadeIn(float speed = 3, bool smooth = false)
     {
-        if(lastBodySprite != null)
+        lastBodySprite = null;
+        if (lastBodySprite != null)
         {
             TransitionBody(lastBodySprite, speed, smooth);
         }
