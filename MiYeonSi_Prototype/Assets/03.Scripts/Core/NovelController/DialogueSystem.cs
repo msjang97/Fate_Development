@@ -12,7 +12,7 @@ public class DialogueSystem : MonoBehaviour
     public ELEMENTS elements;
 
     //주인공 배열 생성
-    private string[] MainCharacterList = new string[6] { "지찬우", "최은지", "류은아", "문준병", "고아린", "마민석"}; 
+    private string[] MainCharacterList = new string[6] { "지찬우", "최은지", "연애세포", "문준병", "고아린", "마민석"}; 
 
     void Awake()
     {
