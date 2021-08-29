@@ -323,7 +323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 235ddfa3cccac3848b6b1a2ccee2432c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f8acdcb4059feb4094312eec3acebd0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -409,7 +409,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD14C\uC2A4\uD2B8\uC785\uB2C8\uB2E4. 1"
+  m_Text: "\uC5B4...!  \uACF5\uC5F0 \uBCF4\uB7EC\uAC00\uC790!"
 --- !u!222 &104283494
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1314,7 +1314,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD14C\uC2A4\uD2B8\uC785\uB2C8\uB2E44"
+  m_Text: "\uC2DC\uB044\uB7EC\uC6B4 \uAC78 \uC2EB\uC5B4\uD574\uC11C \uBBF8\uC548..."
 --- !u!222 &997883248
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 30d97f369e32614459e6bca4cc6a3aef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de5afb9e562b67a4ebcd5c500038c9b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1620,7 +1620,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD14C\uC2A4\uD2B8\uC785\uB2C8\uB2E42"
+  m_Text: "\uACF5\uC5F0\uB9D0\uACE0 \uC810 \uBD10\uC8FC\uB294 \uACF3\uC740 \uC5B4\uB54C?"
 --- !u!222 &1429294594
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2326,7 +2326,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uD14C\uC2A4\uD2B8\uC785\uB2C8\uB2E43"
+  m_Text: "\uC751... \uACF5\uC5F0 \uC88B\uC9C0... \uADFC\uB370..."
 --- !u!222 &1951506546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2650,7 +2650,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC804\uBC29\uC5D0 \uC801 \uCD9C\uD604. \uC804\uD22C\uBAA8\uB4DC \uB3CC\uC785\uD569\uB2C8\uB2E4."
+  m_Text: "\uCC2C\uC6B0\uC57C \uC6B0\uB9AC\uB3C4 \uACF5\uC5F0 \uBCF4\uB7EC\uAC08\uAE4C?"
 --- !u!222 &49948400246491204
 CanvasRenderer:
   m_ObjectHideFlags: 0

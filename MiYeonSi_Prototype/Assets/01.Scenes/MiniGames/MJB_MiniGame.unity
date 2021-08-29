@@ -512,7 +512,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC608\uC804\uBD80\uD130 \uCB49 \uC6B4\uBA85\uC744 \uBBFF\uC5B4 \uC654\uC5B4\uC694."
+  m_Text: "\u3134...\uB098 \uBB34\uC870\uAC74 \uC88B\uC544."
 --- !u!222 &407760751
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -675,7 +675,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB0B4\uAC00 \uADF8\uB0E5 \uBCF4\uACE0\uB9CC \uC788\uC744 \uAC83 \uAC19\uC544?"
+  m_Text: "\uCC2C\uC6B0\uB294 \uC5B4\uB54C?"
 --- !u!222 &515245428
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -880,8 +880,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC6D0\uB79C \uC548 \uBBFF\uC5C8\uB294\uB370 \uC624\uB298\uBD80\uD130
-    \uBBFF\uC744 \uAC83 \uAC19\uC544\uC694."
+  m_Text: "\uC74C... \uC88B\uC740\uAC83 \uAC19\uC544."
 --- !u!222 &639222743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -945,7 +944,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: bfebf9e2904723044869fd6548b50645, type: 3}
+  m_Texture: {fileID: 2800000, guid: de5afb9e562b67a4ebcd5c500038c9b8, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1028,8 +1027,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC544\uB1E8. \uADF8\uB7F0 \uAC74 \uACFC\uD559\uC801\uC73C\uB85C \uC99D\uBA85\uB418\uC9C0
-    \uC54A\uC740 \uBD84\uC57C\uB77C..."
+  m_Text: "\uADF8\uAC78 \uB098\uD55C\uD14C \uBB3C\uC5B4\uBCF4\uB294 \uC774\uC720\uB294...?"
 --- !u!222 &742366427
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1106,8 +1104,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC6B4\uBA85? \uC720\uCE58\uD558\uAC8C \uB204\uAC00 \uADF8\uB7F0 \uAC78
-    \uBBFF\uC5B4\uC694."
+  m_Text: "\uC5E5 \uB09C \uC2EB\uC740\uB370?"
 --- !u!222 &762707481
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1909,7 +1906,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 08069e1b63064224cbcb5605a9d43902, type: 3}
+  m_Texture: {fileID: 2800000, guid: 70409420611f67743bf9dbc3e6b43a75, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
