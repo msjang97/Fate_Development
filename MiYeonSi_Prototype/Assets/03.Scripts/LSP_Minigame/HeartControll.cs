@@ -24,9 +24,10 @@ public class HeartControll : MonoBehaviour
         {
             if (movestopHeart && worstStop)
             {
-                //ChoiceManager.P_instance.selectedNum = 1;
-                // LovePoint.instance.eunji_LovePoint += -5;
                 Debug.Log("Worst");
+
+                ChoiceManager.P_instance.selectedNum = 1;
+                LovePoint.instance.eunji_LovePoint += -5;
                 //animator.SetBool("heartbomb", true);
 
                 //movestopHeart = false;
@@ -67,9 +68,9 @@ public class HeartControll : MonoBehaviour
                 worstStop = false;
                 if (!worstStop)
                 {
-                    //ChoiceManager.P_instance.selectedNum = 4;
-                    // LovePoint.instance.eunji_LovePoint += 5;
                     Debug.Log("Best");
+                    ChoiceManager.P_instance.selectedNum = 4;
+                     LovePoint.instance.eunji_LovePoint += 5;
                 }
                 
             }
@@ -80,9 +81,10 @@ public class HeartControll : MonoBehaviour
                 worstStop = false;
                 if (!worstStop)
                 {
-                    // ChoiceManager.P_instance.selectedNum = 3;
-                    // LovePoint.instance.eunji_LovePoint += 3;
                     Debug.Log("Good");
+
+                    ChoiceManager.P_instance.selectedNum = 3;
+                    LovePoint.instance.eunji_LovePoint += 3;
                 }
                 
             }
@@ -93,14 +95,17 @@ public class HeartControll : MonoBehaviour
                 worstStop = false;
                 if (!worstStop)
                 {
-                    //ChoiceManager.P_instance.selectedNum = 2;
-                    // LovePoint.instance.eunji_LovePoint += 0;
                     Debug.Log("Normal");
+
+                    ChoiceManager.P_instance.selectedNum = 2;
+                    LovePoint.instance.eunji_LovePoint += 0;
                 }
                
             }
             else if (col.gameObject.tag == "Worst")
             {
+                //ChoiceManager.P_instance.selectedNum = 1;
+                //LovePoint.instance.eunji_LovePoint += -5;
                 worstStop = true;
             }
         }     
