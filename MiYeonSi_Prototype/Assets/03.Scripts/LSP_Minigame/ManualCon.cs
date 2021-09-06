@@ -17,42 +17,43 @@ public class ManualCon : MonoBehaviour
     public GameObject manual;
     public GameObject stopB; // 문준병게임에 멈추기 매뉴얼
     public GameObject choice_b; // 문준병게임에 이동 바 
-    public int miniC; //임시변수
 
+    public bool first_mini = false;
     private float time;
 
     private void Start()
     {
         count = 0;
+        FirstMinigame(); // 미니게임 각각 시작시 false true 판단
     }
 
 
     private void Update()
     {
-
         time += Time.deltaTime;
         if (time < 2.0f)
             start_scene.SetActive(true);
         else
         {
-            if (miniC == 0) // LovePoint.instance.minigameCount == 0
+            if (!first_mini) 
             {
-                //LovePoint.instance.minigameCount ++;
                 
                 if (SceneManager.GetActiveScene().name == "MMS_Minigame")
                 {
                     start_scene.SetActive(false);
                     minigame_scene.SetActive(false);
                     manual.SetActive(true);
+                    LovePoint.instance.mini_mms = true;
                 }
                 else
                 {
                     start_scene.SetActive(false);
                     minigame_scene.SetActive(true);
                     manual.SetActive(true);
+                    Check_Minigame();
                 }
             }
-            else
+            else 
             {
                 start_scene.SetActive(false);
                 minigame_scene.SetActive(true);
@@ -61,6 +62,28 @@ public class ManualCon : MonoBehaviour
 
         }
 
+    }
+
+    public void FirstMinigame()
+    {
+        if (SceneManager.GetActiveScene().name == "MJB_MiniGame")
+            first_mini = LovePoint.instance.mini_mjb;
+        else if (SceneManager.GetActiveScene().name == "KAR_Minigame")
+            first_mini = LovePoint.instance.mini_kar;
+        else if (SceneManager.GetActiveScene().name == "LoveShotPut_Minigame")
+            first_mini = LovePoint.instance.mini_lsp;
+        else if (SceneManager.GetActiveScene().name == "MMS_Minigame")
+            first_mini = LovePoint.instance.mini_mms;
+    }
+
+    public void Check_Minigame()
+    {
+        if (SceneManager.GetActiveScene().name == "MJB_MiniGame")
+            LovePoint.instance.mini_mjb = true;
+        else if (SceneManager.GetActiveScene().name == "KAR_Minigame")
+            LovePoint.instance.mini_kar = true;
+        else if (SceneManager.GetActiveScene().name == "LoveShotPut_Minigame")
+            LovePoint.instance.mini_lsp = true;
     }
 
     public void Touch_Manual()

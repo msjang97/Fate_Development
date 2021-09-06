@@ -44,6 +44,10 @@ public class LovePoint : MonoBehaviour
     public int minseok_LovePoint = 0; // 마민석 호감도
     public int end_num = 0;
     public int minigameCount =0;
+    public bool mini_kar = false;
+    public bool mini_mms = false;
+    public bool mini_mjb = false;
+    public bool mini_lsp = false;
 
     //대화 관련 변수===============================================================
     public bool _skip;
