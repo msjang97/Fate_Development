@@ -26,7 +26,8 @@ public class textbox_button : MonoBehaviour
         {
             novel_con.next_box = true;
             //LovePoint.instance._next = true;
-
+            if (novel_con.choiceNext)
+                LovePoint.instance._choiceNext = true;
         }
   
 

@@ -45,7 +45,7 @@ public class NovelController : MonoBehaviour
 
         if (ChoiceManager.P_instance.savedChapterName == "") //처음 시작할때만 
         {
-            _chapterName = "Chapter1_start";
+            _chapterName = "Chapter1_start"; //Chapter1_start
         }
         else
         {
@@ -197,7 +197,8 @@ public class NovelController : MonoBehaviour
                     while (isHandlingLine)
                         yield return new WaitForEndOfFrame();
                     chapterProgress = ChoiceManager.P_instance.savedChapterProgress;
-                    LovePoint.instance._choiceNext = true;
+                    choiceNext = true;
+                    //LovePoint.instance._choiceNext = true;
 
                     continue;
 
