@@ -45,11 +45,11 @@ public class NovelController : MonoBehaviour
 
         if (ChoiceManager.P_instance.savedChapterName == "") //처음 시작할때만 
         {
-            _chapterName = "Chapter1_start"; //Chapter1_start
+            _chapterName = "Chapter1_start"; //Chapter0_start
         }
         else
         {
-            if (LovePoint.instance.goEnd)
+            if (LovePoint.instance.goEnd)// 엔딩이 열릴때
             {
                 switch (LovePoint.instance.end_num)
                 {
@@ -74,8 +74,26 @@ public class NovelController : MonoBehaviour
 
                 LovePoint.instance.goEnd = false;
             }
-            else
+            else// 엔딩이 안나올때
             {
+                if (LovePoint.instance._isBranch) // 챕터4 일때 분기점
+                {
+                    switch (LovePoint.instance._numBranch)
+                    {
+                        case 1:
+                            _chapterName = "Chapter4_1_start"; //4_1
+                            break;
+                        case 2:
+                            _chapterName = "Chapter4_2_start"; // 4_2
+                            break;
+                        case 3:
+                            _chapterName = "Chapter4_3_start";  // 4_3
+                            break;                     
+                        default:
+                            break;
+                    }
+                }
+                
                 _chapterName = ChoiceManager.P_instance.savedChapterName;
                 isAfterMiniGame = true;
             }
@@ -485,6 +503,12 @@ public class NovelController : MonoBehaviour
             case "distr":
                 Command_Distr(data[1]);
                 break;
+            case "goBranch":// 챕터 4 분기점 묻는 초이스전에 대본추가
+                Go_Branch();
+                break;
+            case "nextBranch"://챕터 4 대본 마지막 추가
+                Next_Branch();
+                break;
 
         }
     }
@@ -530,6 +554,7 @@ public class NovelController : MonoBehaviour
         LovePoint.instance.goEnd = true;
         SceneManager.LoadScene("MainSystem");
     }
+ 
     void Command_Distr(string distr)
     {
         switch (distr)
@@ -547,6 +572,16 @@ public class NovelController : MonoBehaviour
                 break;
         }
 
+    }
+
+    void Go_Branch() 
+    {
+        LovePoint.instance._goBranch = true;
+    }
+    void Next_Branch() 
+    {
+        LovePoint.instance._isBranch = true;
+        SceneManager.LoadScene("MainSystem");
     }
     void Command_goToStartScene2()
     {

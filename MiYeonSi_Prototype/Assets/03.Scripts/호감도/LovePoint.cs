@@ -55,9 +55,10 @@ public class LovePoint : MonoBehaviour
     public bool _choiceNext;
     public bool _isAfterMiniGame;
 
-
-
-
+    // 분기점 이야기 변수
+    public bool _isBranch; //분기점 열렸는지 확인
+    public bool _goBranch;// 선택지 분기점 열어주기
+    public int _numBranch; // 분기점 번호
 
 
 

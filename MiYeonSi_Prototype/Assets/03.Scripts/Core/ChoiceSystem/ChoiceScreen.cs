@@ -104,23 +104,45 @@ public class ChoiceScreen : MonoBehaviour
         choice.index = button.choiceIndex;
         choice.title = button.text;
 
-        switch (choice.index)
+        if (LovePoint.instance._goBranch)
         {
-            case 0:
-                LovePoint.instance.Distr_LovePoint_Cal(-5);
-                break;
-            case 1:
-                LovePoint.instance.Distr_LovePoint_Cal(0);
-                break;
-            case 2:
-                LovePoint.instance.Distr_LovePoint_Cal(3);
-                break;
-            case 3:
-                LovePoint.instance.Distr_LovePoint_Cal(5);
-                break;
-            default:
-                break;
+            switch (choice.index)
+            {
+                case 0:
+                    LovePoint.instance._numBranch = 1; ;
+                    break;
+                case 1:
+                    LovePoint.instance._numBranch = 2; ;
+                    break;
+                case 2:
+                    LovePoint.instance._numBranch = 3; ;
+                    break;
+               
+                default:
+                    break;
+            }
         }
+        else
+        {
+            switch (choice.index)
+            {
+                case 0:
+                    LovePoint.instance.Distr_LovePoint_Cal(-5);
+                    break;
+                case 1:
+                    LovePoint.instance.Distr_LovePoint_Cal(0);
+                    break;
+                case 2:
+                    LovePoint.instance.Distr_LovePoint_Cal(3);
+                    break;
+                case 3:
+                    LovePoint.instance.Distr_LovePoint_Cal(5);
+                    break;
+                default:
+                    break;
+            }
+        }
+        
     }
 
     public void MakeChoice(string choiceTitle)
