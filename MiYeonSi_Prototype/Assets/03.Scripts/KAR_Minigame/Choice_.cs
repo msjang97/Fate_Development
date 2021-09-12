@@ -20,7 +20,7 @@ public class Choice_ : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
-            texts[i].text = ChoiceManager.P_instance.choices[i];
+            texts[i].text = ChoiceManager.P_instance.choices[i].Split('"')[1];
         }
     }
 }

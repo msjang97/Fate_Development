@@ -129,6 +129,8 @@ public class SaveData : MonoBehaviour
 
     public void SaveAndLoadEndingData(string endingName)
     {
+        Debug.Log(endingDataPath);
+        Debug.Log(endingName);
         if (File.Exists(endingDataPath))
         {
             string loadData = File.ReadAllText(endingDataPath);

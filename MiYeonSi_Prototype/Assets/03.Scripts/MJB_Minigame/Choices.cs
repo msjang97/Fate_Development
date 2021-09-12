@@ -19,7 +19,7 @@ public class Choices : MonoBehaviour
     {
         for(int i = 0; i < 4; i++)
         {
-            ChoiceTexts[i].text = ChoiceManager.P_instance.choices[i];
+            ChoiceTexts[i].text = ChoiceManager.P_instance.choices[i].Split('"')[1];
         }
     }
 }

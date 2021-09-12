@@ -61,7 +61,7 @@ public class ChoiceScreen : MonoBehaviour
 
         for(int i = 0; i < choices.Length; i++)
         {
-            CreateChoice(choices[i]);
+            CreateChoice(choices[i].Split('"')[1]);
         }
 
         while (isWaitingForChoiceToBeMade)

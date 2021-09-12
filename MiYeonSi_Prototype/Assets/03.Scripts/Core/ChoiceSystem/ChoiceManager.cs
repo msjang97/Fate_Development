@@ -12,7 +12,6 @@ public class ChoiceManager : MonoBehaviour
     [HideInInspector] public string savedChapterName;
 
     public List<string> choices = new List<string>();
-    public List<string> choices2 = new List<string>();
     public List<string> actions = new List<string>();
     public string beforeMinigame;
 

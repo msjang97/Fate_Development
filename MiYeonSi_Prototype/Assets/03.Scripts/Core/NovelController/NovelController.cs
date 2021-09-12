@@ -125,7 +125,7 @@ public class NovelController : MonoBehaviour
             return false;
         }
 
-        if (next_box || isAutoNext)
+        if (next_box || isAutoNext || Input.GetKey(KeyCode.Space))
             return true;
 
         return false;
@@ -206,33 +206,29 @@ public class NovelController : MonoBehaviour
         {
             if (_next)
             {
-                if (isAfterMiniGame == true && !LovePoint.instance._choiceNext) //미니게임 이후일 경우, 저장된 진행상황만큼 이동.
+                if (isAfterMiniGame)
                 {
-                    LovePoint.instance._isAfterMiniGame = isAfterMiniGame;
-                    HandleLine(ChoiceManager.P_instance.choices2[ChoiceManager.P_instance.selectedNum - 1]); //선택지 출력.
+                    if(!LovePoint.instance._choiceNext) //미니게임 이후일 경우, 저장된 진행상황만큼 이동.
+                    {
+                        HandleLine(ChoiceManager.P_instance.choices[ChoiceManager.P_instance.selectedNum - 1]); //선택지 출력.
 
+                        choiceNext = true;
+                    }
+                    else if(LovePoint.instance._choiceNext)
+                    {
+                        HandleLine(ChoiceManager.P_instance.actions[ChoiceManager.P_instance.selectedNum - 1]); //선택지에 대한 대답 출력.
+
+                        choiceNext = false;
+                        isAfterMiniGame = false;
+                        LovePoint.instance._choiceNext = false;
+                    }
 
                     while (isHandlingLine)
                         yield return new WaitForEndOfFrame();
+
+                    LovePoint.instance._isAfterMiniGame = isAfterMiniGame; // 이게 필요한 부분인가?
                     chapterProgress = ChoiceManager.P_instance.savedChapterProgress;
-                    choiceNext = true;
-                    //LovePoint.instance._choiceNext = true;
 
-                    continue;
-
-                }
-
-                if (isAfterMiniGame == true && LovePoint.instance._choiceNext)
-                {
-                    HandleLine(ChoiceManager.P_instance.actions[ChoiceManager.P_instance.selectedNum - 1]); //선택지에 대한 대답 출력.
-
-                    while (isHandlingLine)
-                        yield return new WaitForEndOfFrame();
-                    chapterProgress = ChoiceManager.P_instance.savedChapterProgress;
-                    isAfterMiniGame = false;
-                    LovePoint.instance._isAfterMiniGame = isAfterMiniGame;
-
-                    LovePoint.instance._choiceNext = false;
                     continue;
                 }
 
@@ -279,17 +275,13 @@ public class NovelController : MonoBehaviour
     {
         //string title = line.Split('"')[1];
         List<string> choices = new List<string>();
-        List<string> choices2 = new List<string>();
         List<string> actions = new List<string>();
 
         bool gatheringChoices = true;
         while (gatheringChoices)
         {
-            //Debug.Log(chapterProgress);
             chapterProgress++;
             line = data[chapterProgress];
-            //Debug.Log(chapterProgress);
-            //Debug.Log(line);
 
             if (line.Equals("{"))
             {
@@ -301,10 +293,7 @@ public class NovelController : MonoBehaviour
 
             if (line != "}")
             {
-                //Debug.Log(chapterProgress);
-                //Debug.Log(line);
-                choices.Add(line.Split('"')[1]);
-                choices2.Add(line);
+                choices.Add(line);
                 actions.Add(data[chapterProgress + 1].Replace("        ", ""));
                 chapterProgress++;
             }
@@ -333,11 +322,9 @@ public class NovelController : MonoBehaviour
         else //일반 선택지가 아니라면
         {
             ChoiceManager.P_instance.choices = choices; //선택지 텍스트 저장.
-            ChoiceManager.P_instance.choices2 = choices2;
             ChoiceManager.P_instance.actions = actions; //선택지 대답 저장.
 
             SceneManager.LoadScene(miniGameName); // 각 미니게임 호출해주기.
-
         }
 
         //chapterProgress++;
@@ -461,6 +448,7 @@ public class NovelController : MonoBehaviour
                 Command_SetLayerImage(data[1], BCFC.instance.background);
                 lastBackground = chapterProgress;
                 SaveData.P_instance.SaveGame(_chapterName, chapterProgress, lastBackground, playSongName);
+                Next(); // 배경 전환되면서 같이 전환.
                 break;
             case "setCinematic":
                 Command_SetLayerImage(data[1], BCFC.instance.cinematic);
