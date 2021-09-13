@@ -179,7 +179,7 @@ MonoBehaviour:
   manual: {fileID: 965989200}
   stopB: {fileID: 1451629011}
   choice_b: {fileID: 2010466542}
-  miniC: 0
+  first_mini: 0
 --- !u!1 &121833356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,7 +2354,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 720}
-  m_SizeDelta: {x: 1080, y: 157}
+  m_SizeDelta: {x: 1255, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678784685
 MonoBehaviour:
