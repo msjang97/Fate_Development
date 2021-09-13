@@ -112,7 +112,7 @@ public class ManualCon : MonoBehaviour
                 }
                 break;
             case 3:
-                 manual.SetActive(false);
+                manual.SetActive(false);
                 minigame_scene.SetActive(true);
                 break;
             default:

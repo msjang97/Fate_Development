@@ -8,6 +8,7 @@ public class ShotputControll : MonoBehaviour
     public GameObject powerBar; // 게이지바 
     public GameObject choice_lowest; // 가장 점수낮은 범위 
     public GameObject stopbutton; // 가장 점수낮은 범위 
+    public GameObject manual; // 매뉴얼
     public Sprite throw_button;
     public float rz; // Z축 -60~ 60 제한
     public float _rz; // 임시 rz저장
@@ -40,7 +41,12 @@ public class ShotputControll : MonoBehaviour
     void Update()
     {
         if (count == 0)
-            ArrowRotatation();
+        {
+            if (manual.activeSelf == false)
+                ArrowRotatation();
+
+        }
+
         else if (count >= 1)
         {
             ArrowStop();
