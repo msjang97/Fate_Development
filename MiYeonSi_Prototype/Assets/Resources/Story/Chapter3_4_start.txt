@@ -1,7 +1,5 @@
-setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
-
-지찬우 "그럴까...?" changeExpression(지찬우,지찬우_기본,100
-지찬우 "또 같이 가자 그러면 부담스럽지 않을까?" changeExpression(지찬우,지찬우_삐질,100)
+지찬우 "좋아, 같이 가자고 해야겠어." changeExpression(지찬우,지찬우_얼빠짐,100)
+지찬우 "또 같이 가자 그래도 부담스럽지 않겠지?" changeExpression(지찬우,지찬우_삐질,100)
 연애세포 "밀어붙여!! 괜찮아!! 나 연애세포야!" changeExpression(연애세포,연애세포_웃음,100)
 지찬우 "...믿는다." changeExpression(지찬우,지찬우_삐질,100)
 지찬우 "...은지야 집 방향도 같은데 같이 갈까?" changeExpression(지찬우,지찬우_쑥스,100)
@@ -73,7 +71,7 @@ setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 최은석 "우와!!!!!" changeExpression(최은석,최은석_반짝,100)
 최은석 "형아 오늘 나랑 놀 수 있는거야?" changeExpression(최은석,최은석_반짝,100)
 최은지 "그렇게 신경 안 써줘도 되는데..." changeExpression(최은지,최은지_깜짝,100)
-최은석 "앗싸!!!! 형! 형! 빨리 가자!!" changeExpression(최은석,최은석_반짝,100)
+최은석	"앗싸!!!! 형! 형! 빨리 가자!!" changeExpression(최은석,최은석_반짝,100)
 최은석 "나 5시에 학원 가야해서" changeExpression(최은석,최은석_반짝,100)
 최은석 "시간이 얼마 없어!" changeExpression(최은석,최은석_반짝,100)
 지찬우 "’응? 5시면 많이 남은 거 아닌가?’" changeExpression(지찬우,지찬우_삐질,100)
@@ -117,6 +115,7 @@ setBackground(은지방,false,1) playMusic(S12)
 최은지 "은석아!! 거실에서 놀라고 했ㅈ..." changeExpression(최은지,최은지_짜증,100)
 최은석 "아! 누나! 내가 누나 대신" changeExpression(최은석,최은석_활짝,100)
 최은석 "우리 집 소개해주고 있었어!" changeExpression(최은석,최은석_활짝,100)
+
 
 SetForeground(삼자대면,false,1)
 removeForeground() 

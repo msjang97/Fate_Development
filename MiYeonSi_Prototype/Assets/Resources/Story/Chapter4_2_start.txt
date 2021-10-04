@@ -1,0 +1,116 @@
+setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
+
+지찬우 "요즘 자주 피곤하네...” changeExpression(지찬우,지찬우_기본,100)
+지찬우 "그래, 건강이 우선이야.” changeExpression(지찬우,지찬우_기본,100)
+지찬우 "대학 병원 가서 건강 검진이나 받자.” changeExpression(지찬우,지찬우_기본,100)
+연애세포 "너무 멀지 않아? 지루한데...” changeExpression(연애세포,연애세포_개싫음,100)
+연애세포 "그래! 저 앞 한의원에서 받으면 안돼?” changeExpression(연애세포,연애세포_호탕,100)
+지찬우 "어라? 부강 한의원... 아직도 있네.” changeExpression(지찬우,지찬우_깜짝,100)
+narrator "그때, 한의원에서 나오는 익숙한 얼굴.”
+고아린 "어? 오빠!!!!!!!!” changeExpression(고아린,고아린_놀람,100)
+고아린 "오빠 여기 다시 오는거야?" changeExpression(고아린,고아린_놀람,100)
+지찬우 "어?? 아니야 그냥...지나가는 길이였어.” changeExpression(지찬우,지찬우_깜짝,100)
+고아린 "나는 여기 한약이 잘 맞더라고!!” changeExpression(고아린,고아린_화색,100)
+고아린 "요즘도 주기적으로 타 먹고 있어!” changeExpression(고아린,고아린_화색,100)
+고아린 "몸 관리에 필수거든!!” changeExpression(고아린,고아린_활짝,100)
+지찬우 "그래... 몸 관리 잘 하고... 나는 이만...” changeExpression(지찬우,지찬우_넋나감,100)
+고아린 "오빠 우리 예전" changeExpression(고아린,고아린_미소,100)
+고아린 "여기서 놀던 거 기억나??” changeExpression(고아린,고아린_미소,100)
+연애세포 "와... 힘이 장난 아니다...” changeExpression(연애세포,연애세포_당황,100)
+연애세포 "가는 사람 힘으로 잡아버리네...” changeExpression(연애세포,연애세포_당황,100)
+지찬우 "옛날... 기억나지...” changeExpression(지찬우,지찬우_지루,100)
+
+setBackground(한의원_내부,false,1) playMusic(S16)
+narrator "과거"
+narrator "엄마 손에 잡혀 억지로 한의원에 온”
+narrator "7살 찬우와 5살 아린.”
+narrator "둘은 남들보다 성장이 늦다.”
+narrator "그 탓에 성장 촉진을 위한 한약을”
+narrator "주기적으로 먹고 있었다.”
+narrator "처음엔 서로 낯가리기 바빴지만”
+narrator "매주 마주치다 보니,”
+narrator "자연스럽게 친해져 같이 놀게 되었다.”
+narrator "각자 진료 차례를 기다리고 있던 둘은”
+narrator "자주 쇼파 위에서 뛰어내리며”
+narrator "슈퍼맨 흉내를 내며 놀았다.”
+
+어린찬우 "슈우웅!! 슈퍼맨!!” changeExpression(어린찬우,어린찬우_활짝,100)
+어린아린 "하하하!!! 오빠!! 나도 슈우웅!!” changeExpression(어린아린,어린아린_활짝,100)
+어린찬우 "그럼 난 타노스!!” changeExpression(어린찬우,어린찬우_활짝,100)
+어린찬우 "다 없애버린다!!” changeExpression(어린찬우,어린찬우_활짝,100)
+어린아린 "꺄아아악!! 다 없어진다!!” changeExpression(어린아린,어린아린_활짝,100)
+어린찬우 "이번엔... 스파이더맨이다!!” changeExpression(어린찬우,어린찬우_활짝,100)
+어린아린 "나도!! 나도 스파이더맨 할래!!” changeExpression(어린아린,어린아린_활짝,100)
+어린아린 "같이!! 나도 같이해!!!” changeExpression(어린아린,어린아린_활짝,100)
+
+PlaySound(S_2)
+
+어린아린 "아야... 미안해 오빠.” changeExpression(어린아린,어린아린_울망,100)
+어린아린 "내가 괜히 같이 뛰는 바람에...” changeExpression(어린아린,어린아린_울망,100)
+어린아린 "...!!! 오빠 팔!!!” changeExpression(어린아린,어린아린_창백,100)
+어린찬우 "어라 팔이 빨개졌네.” changeExpression(어린찬우,어린찬우_기본,100)
+어린아린 "흑...흡...끕....으아앙!!” changeExpression(어린아린,어린아린_눈물,100)
+
+SetForeground(어린찬우아린,false,1)
+removeForeground() 
+
+어린아린 "오빠 팔이 흑...흡.... " changeExpression(어린아린,어린아린_눈물,100)
+어린아린 "빨개졌어 흐윽...흡...흑...” changeExpression(어린아린,어린아린_눈물,100)
+어린찬우 "여긴 병원이니까 내 팔도 나을거야!!” changeExpression(어린찬우,어린찬우_삐질,100)
+어린찬우 "괜찮아 아린아!! 울지마~ 뚝!!” changeExpression(어린찬우,어린찬우_활짝,100)
+어린아린 "‘오빠가 날 지켜주느라 팔을 다쳤어.’” changeExpression(어린아린,어린아린_눈물,100)
+어린아린 "‘내가 좋아하는 오빠가 다치는 건’” changeExpression(어린아린,어린아린_눈물,100)
+어린아린 "’............ 싫어!’” changeExpression(어린아린,어린아린_창백,100)
+어린아린 "‘내가... 빨리 자라서‘" changeExpression(어린아린,어린아린_눈물,100)
+어린아린 "’오빠를 지켜주는 사람이 될거야!’” changeExpression(어린아린,어린아린_울망,100)
+
+setBackground(낮의거리,false,1) playMusic(S6)
+고아린 "요즘도 오빠보면 미안하고 막 그래... " changeExpression(고아린,고아린_울먹,100)
+고아린 "하지만 그럴수록 힘이 난달까?” changeExpression(고아린,고아린_미소,100)
+고아린 "역시 오빠는 내가 지켜줘야 한다는” changeExpression(고아린,고아린_투지,100)
+고아린 "다짐을 하게 돼” changeExpression(고아린,고아린_활짝,100)
+지찬우 ”음...아린아 그때 그건” changeExpression(지찬우,지찬우_삐질,100)
+지찬우 "구해주려 한 게 아니라 사고였...” changeExpression(지찬우,지찬우_삐질,100)
+고아린 "오빠... 그때는 오빠가 날 구해줬지만” changeExpression(고아린,고아린_투지,100)
+고아린 "지금의 나라면 오빠를 지킬 수 있어...” changeExpression(고아린,고아린_투지,100)
+고아린 "내가 그때 하체 단련을 좀 했더라면” changeExpression(고아린,고아린_울먹,100)
+고아린 "내가 안전하게 오빠를 지켰겠지??” changeExpression(고아린,고아린_울먹,100)
+
+choice
+{
+  지찬우 “어~ 그래 단련 열심히 해~” setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_고백,100)
+	고아린 “응응, 오빠 내 말 좀 들어봐.” changeExpression(고아린,고아린_활짝,100)
+  지찬우 “허허….” setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_웃음,100)
+	고아린 “응응, 오빠 내 말 좀 들어봐.” changeExpression(고아린,고아린_미소,100)
+  지찬우 “하하… 그런데 아린아 학원은?” setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_기본,100)
+	고아린 “응응, 오빠 내 말 좀 들어봐.” changeExpression(고아린,고아린_작은웃음,100)
+  지찬우 “그건 사실이 아니야.” setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
+	고아린 “응응, 오빠 내 말 좀 들어봐.” changeExpression(고아린,고아린_뾰로퉁,100)
+}
+
+setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
+지찬우 “’말이 안 통해…’” changeExpression(지찬우,지찬우_살려줘,100)
+지찬우 “’애초에 같이 넘어진 건데’” changeExpression(지찬우,지찬우_살려줘,100)
+지찬우 “’왜 내가 구해줬다고 생각하는 거야.’” changeExpression(지찬우,지찬우_살려줘,100)
+고아린 “주 21회씩 헬스장도 다니고 있고,” changeExpression(고아린,고아린_무표정,100)
+고아린 “학원도 제법 성실하게 다니는 중이야.” changeExpression(고아린,고아린_무표정,100)
+연애세포 “와… 헬스를 왜 그렇게 열심히…” changeExpression(연애세포,연애세포_당황,100)
+고아린 “오빠가 응원해주니까 힘이 나는데?” changeExpression(고아린,고아린_활짝,100)
+고아린 “나 헬스 트레이너가 될까 생각 중이야.” changeExpression(고아린,고아린_활짝,100)
+고아린 “적성도 잘 맞고 너무 괜찮더라고.” changeExpression(고아린,고아린_활짝,100)
+고아린 “오빠도 헬스장 같이 다녀볼래?” changeExpression(고아린,고아린_화색,100)
+고아린 “내가 운동하는거 좀 봐줄 게!!” changeExpression(고아린,고아린_화색,100)
+고아린 “아 그래! 오늘 같이 가보자.” changeExpression(고아린,고아린_작은웃음,100)
+고아린 “저번처럼 알바 핑계로 도망가지 말고!” changeExpression(고아린,고아린_상처,100)
+지찬우 “아니야~ 오빠는 좀 바빠서 하하…” changeExpression(지찬우,지찬우_넋나감,100)
+연애세포 “찬우야… 건강검진…” changeExpression(연애세포,연애세포_당황,100)
+연애세포 “그거 핑계라도 대라…” changeExpression(연애세포,연애세포_머쓱,100)
+지찬우 “아참, 내가 깜빡했네.” changeExpression(지찬우,지찬우_깜짝,100)
+지찬우 “나 건강검진 받으러 가던 길이라서…!” changeExpression(지찬우,지찬우_지루,100)
+지찬우 “미안해~” changeExpression(지찬우,지찬우_삐질,100)
+고아린 “나이도 젊은 사람이 건강검진이라니 휴…” changeExpression(고아린,고아린_상처,100)
+고아린 “역시 내가 지켜주는 수밖에 없네…” changeExpression(고아린,고아린_투지,100)
+ 
+
+
+Load(Chapter5_start)

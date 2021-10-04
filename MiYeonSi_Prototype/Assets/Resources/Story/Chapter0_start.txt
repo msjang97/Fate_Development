@@ -2,7 +2,7 @@ setForeground(프롤로그,false,1)
 removeForeground()
 
 
-setBackground(검은창, false, 1)
+setBackground(낮의거리, false, 1)
 신 "오늘은 누굴 만들어볼까?" changeExpression(신,신_스탠딩,100)
 narrator "신은 인간에게 필요한 여러가지 요소들을"
 narrator "배분하여 하나의 인격체를 만든다." 
