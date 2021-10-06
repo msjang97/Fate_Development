@@ -1,0 +1,19 @@
+setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
+
+지찬우 “사실 나… 너 좋아해.” changeExpression(지찬우,지찬우_웃음,100)
+최은지 “어…? 어… 어…?” changeExpression(최은지,최은지_어색웃음,100)
+지찬우 “너한테 내 마음 강요하는 건 아니야…” changeExpression(지찬우,지찬우_쑥스,100)
+지찬우 “그냥 이렇게 된 이상 말해보는 거야…” changeExpression(지찬우,지찬우_쑥스,100)
+지찬우 “더 이상 거짓말 하기 싫어서…” changeExpression(지찬우,지찬우_쑥스,100)
+최은지 “ㅇ... 어 그래!” changeExpression(최은지,최은지_어색웃음,100)
+최은지 “갑작스럽긴 한데…” changeExpression(최은지,최은지_어색웃음,100)
+최은지 “하하하… 일단 솔직하게 말해줘서” changeExpression(최은지,최은지_고백,100)
+최은지 “고마워 찬우야…!” changeExpression(최은지,최은지_고백,100)
+최은지 “밥… 밥 먹으러 갈까??” changeExpression(최은지,최은지_어색웃음,100)
+지찬우 “그래………!” changeExpression(지찬우,지찬우_일단동의,100)
+연애세포 “흐으~ 핑크빛 기류가 흐르는구만~” changeExpression(연애세포,연애세포_웃음,100)
+연애세포 “뿌듯~하다!” changeExpression(연애세포,연애세포_웃음,100)
+
+
+countEnd()
+goEnding()

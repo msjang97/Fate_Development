@@ -1,0 +1,17 @@
+setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
+
+지찬우 “어... 그게…” changeExpression(지찬우,지찬우_기본,100)
+지찬우 “하하하 그게 아니라~” changeExpression(지찬우,지찬우_기본,100)
+지찬우 “그게 아니라…” changeExpression(지찬우,지찬우_기본,100)
+지찬우 “미안 은지야…” changeExpression(지찬우,지찬우_주륵,100)
+지찬우 “아직 준비가 안됐나봐…”
+최은지 “‘하하… 못들은 척 하기도 그렇고’” changeExpression(최은지,최은지_헐,100)
+최은지 “그래…! 뭘 준비해야 하는지” changeExpression(최은지,최은지_긴장,100)
+최은지 “모르겠지만… 알겠어…!” changeExpression(최은지,최은지_긴장,100)
+최은지 “밥 먹으러 가자…!” changeExpression(최은지,최은지_긴장,100)
+지찬우 “그래………” changeExpression(지찬우,지찬우_주륵,100)
+연애세포 “하아… 핑크 빛 기류가 흐르다 말았어…” changeExpression(연애세포,연애세포_개싫음,100)
+
+
+countEnd()
+goEnding()
