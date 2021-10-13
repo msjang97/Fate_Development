@@ -1,15 +1,15 @@
 setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
 
-지찬우 “사실 나… 오늘 좀 기대하고 나왔거든…” changeExpression(지찬우,지찬우_고백,100)
-지찬우 “혹시 네가 날 친구로서 보는게 아니라” changeExpression(지찬우,지찬우_고백,100)
-지찬우 “남자로 봐주는 걸까 하고…” changeExpression(지찬우,지찬우_고백,100)
-지찬우 “너한테 내 마음 강요하는 건 아니야…” changeExpression(지찬우,지찬우_쑥스,100)
-지찬우 “그냥 이렇게 된 이상 말해보는 거야…” changeExpression(지찬우,지찬우_쑥스,100)	
-지찬우 “너무 부담스럽게 생각 안 했으면 해.” changeExpression(지찬우,지찬우_쑥스,100)
-최은지 “어... 어 그래! 밥… 밥 먹으러 갈까??” changeExpression(최은지,최은지_어색웃음,100)
-지찬우 “그래………!” changeExpression(지찬우,지찬우_고백,100)
-연애세포 “흐으~ 핑크빛 기류가 흐르는구만~” changeExpression(연애세포,연애세포_웃음,100)
-연애세포 “뿌듯~하다!” changeExpression(연애세포,연애세포_웃음,100)
+지찬우 "사실 나... 오늘 좀 기대하고 나왔거든..." changeExpression(지찬우,지찬우_고백,100)
+지찬우 "혹시 네가 날 친구로서 보는게 아니라" changeExpression(지찬우,지찬우_고백,100)
+지찬우 "남자로 봐주는 걸까 하고..." changeExpression(지찬우,지찬우_고백,100)
+지찬우 "너한테 내 마음 강요하는 건 아니야..." changeExpression(지찬우,지찬우_쑥스,100)
+지찬우 "그냥 이렇게 된 이상 말해보는 거야..." changeExpression(지찬우,지찬우_쑥스,100)	
+지찬우 "너무 부담스럽게 생각 안 했으면 해." changeExpression(지찬우,지찬우_쑥스,100)
+최은지 "어... 어 그래! 밥... 밥 먹으러 갈까??" changeExpression(최은지,최은지_어색웃음,100)
+지찬우 "그래.........!" changeExpression(지찬우,지찬우_고백,100)
+연애세포 "흐으~ 핑크빛 기류가 흐르는구만~" changeExpression(연애세포,연애세포_웃음,100)
+연애세포 "뿌듯~하다!" changeExpression(연애세포,연애세포_웃음,100)
 
 
 
