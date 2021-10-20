@@ -120,8 +120,8 @@ miniGame(MJB_Minigame)
 setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
 문준병 "‘둘이서... 버스킹 관람...?’" changeExpression(문준병,문준병_짜증,100)
 준베이 "‘안돼. 내 뮤즈야.’" changeExpression(준베이,준베이_침착,100)
-나레이션 "무대를 하던 사람이 공연을 끝내자마자"
-나레이션 "재빨리 마이크를 가로채는 준병."
+narrator "무대를 하던 사람이 공연을 끝내자마자"
+narrator "재빨리 마이크를 가로채는 준병."
 준베이 "아아 여러분 안녕하세요!" changeExpression(준베이,준베이_기본,100)
 준베이 "저는 헤비메탈 음악을 하는" changeExpression(준베이,준베이_아련,100)
 준베이 "준베이 라고 합니다." changeExpression(준베이,준베이_웃음,100)
@@ -213,11 +213,11 @@ setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
 지찬우 "시간을 보낼 수 있을 줄 알았는데..." changeExpression(지찬우,지찬우_씁쓸,100)
 최은지 "찬우야 뭐라고?? 데이트??" changeExpression(최은지,최은지_올,100)
 최은지 "무슨 말이야??" changeExpression(최은지,최은지_오,100)
-나레이션 "하루 안에 만나고 싶지 않은 인물들을"
-나레이션 "셋이나 동시에 만나 정신이 없는 찬우."
-나레이션 "앞에 은지가 있다는 것을"
-나레이션 "자각하지 못하고"
-나레이션 "혼잣말 치고는 크게 말을 해버린다."
+narrator "하루 안에 만나고 싶지 않은 인물들을"
+narrator "셋이나 동시에 만나 정신이 없는 찬우."
+narrator "앞에 은지가 있다는 것을"
+narrator "자각하지 못하고"
+narrator "혼잣말 치고는 크게 말을 해버린다."
 연애세포 "사고도 종류별로 치는 구만..." changeExpression(연애세포,연애세포_개싫음,100)
 연애세포 "그냥 말 나온 김에" changeExpression(연애세포,연애세포_무표정,100)
 연애세포 "솔직하게 좋아한다고 말해." changeExpression(연애세포,연애세포_무표정,100)
@@ -242,7 +242,8 @@ setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
 playMusic(Evolution)
 miniGame(LoveShotPut_Minigame) 
 {
-	지찬우 "살짝 돌려말한다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_고백,100)
+
+지찬우 "살짝 돌려말한다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_고백,100)
 	지찬우 "돌리지 않고 말한다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_쑥스,100)
 	지찬우 "티 나지만 얼버무린다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_안도,100)
 	지찬우 "잘못 들었다고 우긴다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_어색웃음,100)

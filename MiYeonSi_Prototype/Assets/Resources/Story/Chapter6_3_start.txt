@@ -39,9 +39,10 @@ setBackground(주점,false,1) playMusic(S18)
 지찬우 "그래...! 자신감...!" changeExpression(지찬우,지찬우_쑥스,100)
 최은지 "찬우야 짠! 할까?" changeExpression(최은지,최은지_기본,100)
 지찬우 "그래...! 짠!" changeExpression(지찬우,지찬우_일단동의,100)
-나레이션 "은지와 술을 마시는 것은 처음인 찬우."
-나레이션 "바짝 긴장한 탓에 술 기운이"
-나레이션 "빨리 오르는 듯 하다."
+
+"은지와 술을 마시는 것은 처음인 찬우."
+narrator "바짝 긴장한 탓에 술 기운이"
+narrator "빨리 오르는 듯 하다."
 지찬우 "흐아아... 좋다..." changeExpression(지찬우,지찬우_어색웃음,100)
 지찬우 "머리가 띵...하다..." changeExpression(지찬우,지찬우_일단동의,100)
 연애세포 "찬우야? 지찬우???" changeExpression(연애세포,연애세포_머쓱,100)
@@ -308,12 +309,12 @@ setBackground(찬우방_밤,false,1) playMusic(S14)
 지찬우 "어라... 끝이 접혔다..." changeExpression(지찬우,지찬우_안도,100)
 연애세포 "작은 불행도 피해가지 않는구나..." changeExpression(연애세포,연애세포_머쓱,100)
 지찬우 "그래도 오늘은 슬프지 않네..." changeExpression(지찬우,지찬우_웃음,100)
-나레이션 "사진의 한 귀퉁이가 접혀 있지만"
-나레이션 "오늘은 이런 작은 불운 따위가"
-나레이션 "찬우를 슬프게 할 수 없다."
-나레이션 "접힌 모서리보다"
-나레이션 "환하게 웃는 은지의 얼굴에"
-나레이션 "눈길이 가는 찬우"
+narrator "사진의 한 귀퉁이가 접혀 있지만"
+narrator "오늘은 이런 작은 불운 따위가"
+narrator "찬우를 슬프게 할 수 없다."
+narrator "접힌 모서리보다"
+narrator "환하게 웃는 은지의 얼굴에"
+narrator "눈길이 가는 찬우"
 
 SetForeground(찬우은지,false,1)
 removeForeground() 

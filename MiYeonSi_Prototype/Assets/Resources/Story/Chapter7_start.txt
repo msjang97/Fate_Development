@@ -25,8 +25,12 @@ playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
 	"분위기 좋은 파스타 가게" setBackground(찬우방_낮,false,1) changeExpression(연애세포,연애세포_호탕,100)
+	Load(Chapter7_1_start)
 	"맛집으로 소문난 타코 가게" setBackground(찬우방_낮,false,1) changeExpression(연애세포,연애세포_호탕,100)
+	Load(Chapter7_2_start)
 	"락 스타일로 꾸며진 동태탕 가게" setBackground(찬우방_낮,false,1) changeExpression(연애세포,연애세포_호탕,100)
+	Load(Chapter7_3_start)
 	"아무거나" setBackground(찬우방_낮,false,1) changeExpression(연애세포,연애세포_호탕,100)
+	Load(Chapter7_4_start)
 }
 

@@ -32,9 +32,13 @@ playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
   연애세포 "자연스럽게 가까워지자! <귀신의 집>" setBackground(학교축제,false,1) changeExpression(연애세포,연애세포_호탕,100)
+	Load(Chapter6_1_start)
   연애세포 "무섭지만 꾹 참고! <귀신의 집>" setBackground(학교축제,false,1) changeExpression(연애세포,연애세포_호탕,100)
+	Load(Chapter6_2_start)
   연애세포 "술부터 마시고 보자! <주점>" setBackground(학교축제,false,1) changeExpression(연애세포,연애세포_호탕,100)
+	Load(Chapter6_3_start)
   연애세포 "술 기운을 빌려 화끈하게! <주점>" setBackground(학교축제,false,1) changeExpression(연애세포,연애세포_호탕,100)
+	Load(Chapter6_4_start)
 }
 
 

@@ -108,8 +108,10 @@ setBackground(찬우방_밤,false,1) playMusic(S14)
 choice
 {
   지찬우 "학교 빈 강의실에서 공부할까?" changeExpression(지찬우,지찬우_기본,100)
+	Load(Chapter4_5_1_start)
   지찬우 "병원에 건강검진 받으러 갈까?" changeExpression(지찬우,지찬우_기본,100)
+	Load(Chapter4_5_2_start)
   지찬우 "편의점 아르바이트 면접보러갈까?" changeExpression(지찬우,지찬우_기본,100)
+	Load(Chapter4_5_3_start)
 }
-
 

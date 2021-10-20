@@ -1,4 +1,4 @@
-setBackground(낮의거리,false,1) playMusic(S6)
+setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 
 지찬우 "놀아주자..." changeExpression(지찬우,지찬우_고백,100)
 지찬우 "휴... 어쩔 수 없지..." changeExpression(지찬우,지찬우_멍때림,100)

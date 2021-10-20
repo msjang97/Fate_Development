@@ -16,9 +16,10 @@ PlaySound(S_5)
 지찬우 "‘대신 면접 보겠다고 하셨는데...’" changeExpression(지찬우,지찬우_살려줘,100)
 지찬우 "‘하하...이게 무슨 일이지 ....’" changeExpression(지찬우,지찬우_살려줘,100)
 지찬우 "‘전화 드려봐야겠다...’" changeExpression(지찬우,지찬우_살려줘,100)
-나레이션 "혹시나 하는 마음에 전화를 걸어보지만" 
-나레이션 "오히려 담당 매니저가 마민석이라는"
-나레이션 "확답만 받는다."
+
+"혹시나 하는 마음에 전화를 걸어보지만" 
+narrator "오히려 담당 매니저가 마민석이라는"
+narrator "확답만 받는다."
 연애세포 "무슨 일이 꼬여도 이렇게 꼬이니...:" changeExpression(연애세포,연애세포_개싫음,100)
 지찬우 "그래도... 면접만 참으면" changeExpression(지찬우,지찬우_삐질,100)
 지찬우 "일 할 때는 교대 근무 일 테니까..." changeExpression(지찬우,지찬우_삐질,100)
@@ -46,7 +47,10 @@ PlaySound(S_5)
 choice
 {
   지찬우 "저... 안 들고 왔는데..." setBackground(편의점,false,1) changeExpression(지찬우,지찬우_넋나감,100)
-	마민석 "후후후 귀엽게 뻔한 거짓말~" changeExpression(마민석,마민석_할짝,100)
+
+  
+  
+  마민석 "후후후 귀엽게 뻔한 거짓말~" changeExpression(마민석,마민석_할짝,100)
   지찬우 "들고는 왔는데... 드리기 싫어요." setBackground(편의점,false,1) changeExpression(지찬우,지찬우_기본,100)
 	마민석 "후후후 튕기시기는~" changeExpression(마민석,마민석_깜찍,100)
   지찬우 "아... PC방 알바는 그만두신거예요?" setBackground(편의점,false,1) changeExpression(지찬우,지찬우_웃음,100)

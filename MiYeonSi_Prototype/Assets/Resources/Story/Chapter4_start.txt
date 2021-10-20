@@ -196,6 +196,7 @@ playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
   지찬우 "아저씨 말도 틀린 건 아니야." setBackground(강의실,false,1) changeExpression(지찬우,지찬우_고백,100)
+	Load(Chapter5_start)
   지찬우 "아저씨 말이 맞지." setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_웃음,100)
   지찬우 "은지 말이 일리 있지..." setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_기본,100)
   지찬우 "무조건 은지 말이 맞지..." setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_기본,100)
@@ -206,4 +207,3 @@ miniGame(MMS_Minigame)
 
 
 
-Load(Chapter5_start)

@@ -185,3 +185,6 @@ setBackground(신계,false,1) playMusic(S9)
 신 "그래, 정진하도록 하여라." changeExpression(신,신_스탠딩,100)
 견습천사 "’찬우야, 고마워! 덕분에 나도’" changeExpression(견습천사,견습천사_사악,100)
 견습천사 "’정식 천사다!!!!!!!!’" changeExpression(견습천사,견습천사_기본,100)
+
+
+goEndingCredit()

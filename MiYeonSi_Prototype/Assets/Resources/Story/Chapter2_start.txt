@@ -256,11 +256,14 @@ playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {
   지찬우 "놀아주자..." setBackground(낮의거리,false,1)  changeExpression(지찬우,지찬우_고백,100)
+  Load(Chapter2_1_start)
   지찬우 "그냥... 가자..." setBackground(낮의거리,false,1)  changeExpression(지찬우,지찬우_웃음,100)
+  Load(Chapter2_2_start)
   지찬우 "그냥... 가자..." setBackground(낮의거리,false,1)  changeExpression(지찬우,지찬우_기본,100)
+  Load(Chapter2_3_start)
   지찬우 "그냥... 가자..." setBackground(낮의거리,false,1)  changeExpression(지찬우,지찬우_얼빠짐,100)
+  Load(Chapter2_4_start)
 }
 
 
 
-Load(Chapter3_start)
