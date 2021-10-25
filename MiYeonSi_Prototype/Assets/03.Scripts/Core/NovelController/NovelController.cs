@@ -88,12 +88,12 @@ public class NovelController : MonoBehaviour
                             break;
                         case 3:
                             _chapterName = "Chapter4_3_start";  // 4_3
-                            break;                     
+                            break;
                         default:
                             break;
                     }
                 }
-                
+
                 _chapterName = ChoiceManager.P_instance.savedChapterName;
                 isAfterMiniGame = true;
             }
@@ -208,13 +208,13 @@ public class NovelController : MonoBehaviour
             {
                 if (isAfterMiniGame)
                 {
-                    if(!LovePoint.instance._choiceNext) //미니게임 이후일 경우, 저장된 진행상황만큼 이동.
+                    if (!LovePoint.instance._choiceNext) //미니게임 이후일 경우, 저장된 진행상황만큼 이동.
                     {
                         HandleLine(ChoiceManager.P_instance.choices[ChoiceManager.P_instance.selectedNum - 1]); //선택지 출력.
 
                         choiceNext = true;
                     }
-                    else if(LovePoint.instance._choiceNext)
+                    else if (LovePoint.instance._choiceNext)
                     {
                         HandleLine(ChoiceManager.P_instance.actions[ChoiceManager.P_instance.selectedNum - 1]); //선택지에 대한 대답 출력.
 
@@ -244,7 +244,9 @@ public class NovelController : MonoBehaviour
                 //this is a Choice MiniGame
                 else if (line.StartsWith("miniGame"))
                 {
-                    ChoiceManager.P_instance.beforeMinigame = data[chapterProgress - 2].Split('"')[1];
+                    string[] before = data[chapterProgress - 2].Split('"');
+                    ChoiceManager.P_instance.beforeMinigame = before.Length > 1 ? before[1] : before[0];
+                    //ChoiceManager.P_instance.beforeMinigame = data[chapterProgress - 2].Split('"')[1];
                     ChoiceManager.P_instance.savedChapterName = _chapterName;
                     ChoiceManager.P_instance.selectedNum = 0;
                     ChoiceManager.P_instance.isMainSceneLoaded = false;
@@ -542,7 +544,7 @@ public class NovelController : MonoBehaviour
         LovePoint.instance.goEnd = true;
         SceneManager.LoadScene("MainSystem");
     }
- 
+
     void Command_Distr(string distr)
     {
         switch (distr)
@@ -562,11 +564,11 @@ public class NovelController : MonoBehaviour
 
     }
 
-    void Go_Branch() 
+    void Go_Branch()
     {
         LovePoint.instance._goBranch = true;
     }
-    void Next_Branch() 
+    void Next_Branch()
     {
         LovePoint.instance._isBranch = true;
         SceneManager.LoadScene("MainSystem");
@@ -673,14 +675,9 @@ public class NovelController : MonoBehaviour
 
     void ILLuCon(string s)
     {
-        // Love_1 테스트용 추후삭제
-        if (s == "Love_1" || s == "P_1" || s == "P_2" || s == "CH1_1" || s == "CH2_1" || s == "CH3_1" || s == "CH4_1" || s == "CH4_1_1" || s == "CH4_1_2"
-            || s == "CH4_3_1" || s == "CH5_1" || s == "CH6_1" || s == "CH6_2" || s == "CH7_1")
-        {
-            SaveData.P_instance.SaveAndLoadEndingData(s);
-        }
-
+        SaveData.P_instance.SaveAndLoadEndingData(s);
     }
+
     void Command_removeForeground(string data)
     {
 

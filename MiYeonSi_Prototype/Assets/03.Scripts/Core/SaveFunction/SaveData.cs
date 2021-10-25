@@ -22,7 +22,7 @@ public class ForJsonGameData
 [Serializable]
 public class EndingCollectionData
 {
-    public List<string> _endingCollection;
+    public List<int> _endingCollection;
 
 }
 
@@ -131,24 +131,30 @@ public class SaveData : MonoBehaviour
     {
         Debug.Log(endingDataPath);
         Debug.Log(endingName);
-        if (File.Exists(endingDataPath))
+        try
         {
-            string loadData = File.ReadAllText(endingDataPath);
-            _endingCollectionData = JsonUtility.FromJson<EndingCollectionData>(loadData);
+            int illustNumber = (int)System.Enum.Parse(typeof(EndingCollection.IllustrationName), endingName);
+
+            if (File.Exists(endingDataPath))
+            {
+                string loadData = File.ReadAllText(endingDataPath);
+                _endingCollectionData = JsonUtility.FromJson<EndingCollectionData>(loadData);
+            }
+            else
+            {
+                _endingCollectionData._endingCollection = new List<int>();
+
+                string message = "File " + endingDataPath + " does not exist!";
+                Debug.Log(message);
+            }
+
+            if (!_endingCollectionData._endingCollection.Contains(illustNumber))
+                _endingCollectionData._endingCollection.Add(illustNumber);
+
+            string ToJsonData = JsonUtility.ToJson(_endingCollectionData);
+            File.WriteAllText(endingDataPath, ToJsonData);
         }
-        else
-        {
-            _endingCollectionData._endingCollection = new List<string>();
-
-            string message = "File " + endingDataPath + " does not exist!";
-            Debug.Log(message);
-        }
-
-        if (!_endingCollectionData._endingCollection.Contains(endingName))
-            _endingCollectionData._endingCollection.Add(endingName);
-
-        string ToJsonData = JsonUtility.ToJson(_endingCollectionData);
-        File.WriteAllText(endingDataPath, ToJsonData);
+        catch { Debug.Log(endingName + "is pass"); }
     }
 
     public void SaveSettingData(float BGM_volume, float SFX_volume)
