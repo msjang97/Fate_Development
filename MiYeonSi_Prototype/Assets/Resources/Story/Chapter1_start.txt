@@ -412,6 +412,12 @@ setMiniGameAfterBG(아린이네_문앞, false, 1) playMusic(S7)
 지찬우 "미안해 내가 동을 착각해서..." changeExpression(지찬우,지찬우_삐질,100)
 지찬우 "여기로 와버렸네... 잘 있어!" changeExpression(지찬우,지찬우_삐질,100)
 고아린 "대답도 제대로 안하고 어디를 가 오빠?" changeExpression(고아린,고아린_작은웃음,100)
+
+
+SetForeground(아린민석_손,false,1)
+removeForeground() 
+
+
 지찬우 "ㅇ......아파" changeExpression(지찬우,지찬우_경악,100)
 고아린 "......." changeExpression(고아린,고아린_빠직,100)
 지찬우 "아파......ㅇ....아파 아린아.." changeExpression(지찬우,지찬우_경악,100)
