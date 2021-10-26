@@ -7869,7 +7869,7 @@ MonoBehaviour:
     minseok_LovePoint: 0
     junbyeong_LovePoint: 0
   _endingCollectionData:
-    _endingCollection: []
+    _endingCollection: 
   _settingData:
     _BGM_volume: 0
     _SFX_volume: 0
