@@ -126,7 +126,6 @@ setBackground(낮의거리,false,1) playMusic(S6)
 지찬우 "어떡하지...?" changeExpression(지찬우,지찬우_지루,100)
 
 
-//분기점 선택지 3개로 고른거에 따라 4_5_1,2,3으로 나뉨
 choice
 {
   지찬우 "학교 빈 강의실에서 공부할까?" changeExpression(지찬우,지찬우_기본,100)

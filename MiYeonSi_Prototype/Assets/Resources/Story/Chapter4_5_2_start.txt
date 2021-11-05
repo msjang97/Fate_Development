@@ -79,9 +79,6 @@ setBackground(낮의거리,false,1) playMusic(S6)
 choice
 {
   지찬우 "어~ 그래 단련 열심히 해~" setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_고백,100)
-
-  
-  
   고아린 "응응, 오빠 내 말 좀 들어봐." changeExpression(고아린,고아린_활짝,100)
   지찬우 "허허...." setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_웃음,100)
 	고아린 "응응, 오빠 내 말 좀 들어봐." changeExpression(고아린,고아린_미소,100)

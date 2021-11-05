@@ -16,11 +16,7 @@ PlaySound(S_3)
 최은지 "어디 갈래? 뭐 먹고 싶어?" changeExpression(최은지,전화받음,100)
 
 
-
-//분기점 선택지 4개로 고른거에 따라 7_1,2,3,4으로 나뉨
-
-
-distr(마민석)
+distr(마민석) "어디 갈래? 뭐 먹고 싶어?"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {

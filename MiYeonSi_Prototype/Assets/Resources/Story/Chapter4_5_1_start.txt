@@ -32,11 +32,7 @@ narrator "쿠당탕탕"
 choice
 {
   지찬우 "기프티콘...? 정성스럽네!" setBackground(강의실,false,1) changeExpression(지찬우,지찬우_고백,100)
-
-  
-  
-  
-  문준병 "내 정성을 알아주는 거야?" changeExpression(문준병,문준병_호탕,100)
+	문준병 "내 정성을 알아주는 거야?" changeExpression(문준병,문준병_호탕,100)
   지찬우 "너무 수고스러운데..." setBackground(강의실,false,1) changeExpression(지찬우,지찬우_웃음,100)
 	문준병 "뭐, 내가 좀 수고할게!" changeExpression(문준병,문준병_미소,100)
   지찬우 "어떤 거 줄 거야...?" setBackground(강의실,false,1) changeExpression(지찬우,지찬우_기본,100)

@@ -25,9 +25,8 @@ setBackground(학교축제,false,1) playMusic(S17)
 지찬우 "어디가 좋을까?" changeExpression(지찬우,지찬우_일단동의,100)
 연애세포 "귀신의 집이랑 주점 중에 흠..." changeExpression(연애세포,연애세포_호탕,100)
 
-//분기점 선택지에 따라 6_1,2,3,4로 나뉨
 
-distr(고아린)
+distr(고아린) "귀신의 집이랑 주점 중에 흠..."
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {

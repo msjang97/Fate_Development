@@ -19,7 +19,7 @@ setBackground(낮의거리,false,1)
 고아린 "운동하자 운동." changeExpression(고아린,고아린_상처,100)
 지찬우 "어… 아린아 잠시ㅁ…" changeExpression(지찬우,지찬우_깜짝,100)
 고아린 "종강인가 뭔가 그거 했지? 가자." changeExpression(고아린,고아린_화색,100)
-나레이션 "찬우를 들쳐 메고 가는 아린."
+narrator "찬우를 들쳐 메고 가는 아린."
 지찬우 "어……. 어…? 아린아…! 자…잠시…!" changeExpression(지찬우,지찬우_경악,100)
 연애세포 "찬우야 수고해라…" changeExpression(연애세포,연애세포_당황,100)
 

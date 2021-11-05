@@ -189,7 +189,8 @@ setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 지찬우 "저... 은지야..." changeExpression(지찬우,지찬우_안도,100)
 최은지 "응! 오늘은 같이 못가는거야?" changeExpression(최은지,최은지_기본,100)
 
-playMusic(Evolution)
+distr(마민석) "응! 오늘은 같이 못가는거야?"
+playMusic(Evolution) 
 miniGame(MMS_Minigame) 
 {
   지찬우 "오늘은 동생 데려다 줘야 할 것 같아..." setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_고백,100)
@@ -249,9 +250,9 @@ setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 남자아이 "나랑 안 놀아줄 거야...? 끅...흐읍..." changeExpression(남자아이최은석_글썽,100)
 지찬우 "‘그냥 지나치기도 그렇고...’" changeExpression(지찬우,지찬우_멍때림,100)
 연애세포 "두고 가기도 좀 그렇고... 어떡할래?" changeExpression(연애세포,연애세포_무표정,100)
-//분기점
 
-distr(문준병)
+
+distr(문준병) 연애세포 "두고 가기도 좀 그렇고... 어떡할래?"
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {

@@ -13,7 +13,7 @@ narrator "축제를 즐기기 위해 강의실에 모인다."
 최은지 "하필 오늘까지 과제를..." changeExpression(최은지,최은지_난처,100)
 최은지 "교수님도 너무하시다..." changeExpression(최은지,최은지_힝구,100)
 
-distr(문준병)
+distr(문준병) "교수님도 너무하시다..."
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -28,24 +28,24 @@ miniGame(MMS_Minigame)
 }
 
 setMiniGameAfterBG(강의실,false,1) playMusic(S4)
-???(그림자) "헐!!! 하은아!!! 여기 있다!!!!" changeExpression(???,여대생그림자1,100)
-???(그림자) "꺄아아아아악 준병이 오빠!!!" changeExpression(???,여대생그림자3,100)
-???(그림자) "사진 찍어주세요 오빠~~" changeExpression(???,여대생그림자2,100)
-???(그림자) "싸인도 해주세요 싸인도!!!" changeExpression(???,여대생그림자1,100)
+여대생1 "헐!!! 하은아!!! 여기 있다!!!!" changeExpression(여대생1,여대생그림자1,100)
+여대생3 "꺄아아아아악 준병이 오빠!!!" changeExpression(여대생3,여대생그림자3,100)
+여대생2 "사진 찍어주세요 오빠~~" changeExpression(여대생2,여대생그림자2,100)
+여대생2 "싸인도 해주세요 싸인도!!!" changeExpression(여대생1,여대생그림자1,100)
 문준병 "네네~ 잠시만요~~" changeExpression(문준병,문준병_기본,100)
 문준병 "한 분씩 해드릴게요~" changeExpression(문준병,문준병_기본,100)
-???(그림자) "꺄아아악 너무 잘생겼어!!" changeExpression(???,여대생그림자3,100)
-???(그림자) "으아아... 진수야 이거 꿈이냐 생시냐!" changeExpression(???,여대생그림자2,100)
-???(그림자) "준병 오빠를 이렇게 가까이서 보다니!" changeExpression(???,여대생그림자2,100)
-???(그림자) "그러니까 내 말이!!!!" changeExpression(???,여대생그림자1,100)
-???(그림자) "오빠!!! 제 친구 것도 해주세요!!!" changeExpression(???,여대생그림자1,100)
+여대생3 "꺄아아악 너무 잘생겼어!!" changeExpression(여대생3,여대생그림자3,100)
+여대생2 "으아아... 진수야 이거 꿈이냐 생시냐!" changeExpression(여대생2,여대생그림자2,100)
+여대생2 "준병 오빠를 이렇게 가까이서 보다니!" changeExpression(여대생2,여대생그림자2,100)
+여대생1 "그러니까 내 말이!!!!" changeExpression(여대생1,여대생그림자1,100)
+여대생1 "오빠!!! 제 친구 것도 해주세요!!!" changeExpression(여대생1,여대생그림자1,100)
 문준병 "다 해드릴게요!! 이름 알려주세요!!" changeExpression(문준병,문준병_호탕,100)
-???(그림자) "저는 하은이고, 얘는 진수예요!" changeExpression(???,여대생그림자3,100)
+여대생3 "저는 하은이고, 얘는 진수예요!" changeExpression(여대생3,여대생그림자3,100)
 문준병 "네네!! 하은씨, 진수씨." changeExpression(문준병,문준병_기본,100)
 지찬우 "준병이... 아는 사람이야...? 누군데?" changeExpression(지찬우,지찬우_깜짝,100)
 문준병 "아, 내 팬들이야!" changeExpression(문준병,문준병_기본,100)
 문준병 "잠시만~ 나 단장 좀 하고..." changeExpression(문준병,문준병_호탕,100)
-(문준병 스탠딩 페이드 아웃, 준베이 스탠딩 페이드 인)
+
 준베이 "여기까지 와주셨는데" changeExpression(준베이,준베이_아련,100)
 준베이 "분장도 안하고 사진 찍을 순 없지." changeExpression(준베이,준베이_기본,100)
 지찬우 "어...? 그러고 사진을 찍는다고...?" changeExpression(지찬우,지찬우_얼빠짐,100)
@@ -93,7 +93,7 @@ setMiniGameAfterBG(강의실,false,1) playMusic(S4)
 최은지 "그렇지 찬우야?" changeExpression(최은지,최은지_활짝,100)
 
 
-distr(문준병)
+distr(문준병) "그렇지 찬우야?"
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {

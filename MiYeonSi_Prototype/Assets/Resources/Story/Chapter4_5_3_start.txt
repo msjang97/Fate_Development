@@ -47,10 +47,7 @@ PlaySound(S_5)
 choice
 {
   지찬우 "저... 안 들고 왔는데..." setBackground(편의점,false,1) changeExpression(지찬우,지찬우_넋나감,100)
-
-  
-  
-  마민석 "후후후 귀엽게 뻔한 거짓말~" changeExpression(마민석,마민석_할짝,100)
+	마민석 "후후후 귀엽게 뻔한 거짓말~" changeExpression(마민석,마민석_할짝,100)
   지찬우 "들고는 왔는데... 드리기 싫어요." setBackground(편의점,false,1) changeExpression(지찬우,지찬우_기본,100)
 	마민석 "후후후 튕기시기는~" changeExpression(마민석,마민석_깜찍,100)
   지찬우 "아... PC방 알바는 그만두신거예요?" setBackground(편의점,false,1) changeExpression(지찬우,지찬우_웃음,100)

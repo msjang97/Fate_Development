@@ -102,8 +102,7 @@ narrator "마민석과 문준병."
 지찬우 "인디도... 너랑 들으니까 좋다..." changeExpression(지찬우,지찬우_일단동의,100)
 최은지 "응? 찬우야 뭐라고?" changeExpression(최은지,최은지_올,100)
 
-
-distr(문준병)
+distr(문준병) "응? 찬우야 뭐라고?"
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {
@@ -237,13 +236,10 @@ narrator "혼잣말 치고는 크게 말을 해버린다."
 마민석 "로만티카 비이임!!!!!" changeExpression(마민석,마민석_후잉,100)
 
 
-//분기점 선택지에 따라 7_5_1,2,3,4로 나뉨
-
 playMusic(Evolution)
 miniGame(LoveShotPut_Minigame) 
 {
-
-지찬우 "살짝 돌려말한다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_고백,100)
+	지찬우 "살짝 돌려말한다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_고백,100)
 	지찬우 "돌리지 않고 말한다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_쑥스,100)
 	지찬우 "티 나지만 얼버무린다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_안도,100)
 	지찬우 "잘못 들었다고 우긴다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_어색웃음,100)
