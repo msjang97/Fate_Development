@@ -28,7 +28,7 @@ narrator "쿠당탕탕"
 문준병 "아니? 사양 안 해도 돼!" changeExpression(문준병,문준병_미소,100)
 문준병 "지금 싫으면 기프티콘이라도 보낼게." changeExpression(문준병,문준병_미소,100)
 
-
+distr(문준병)
 choice
 {
   지찬우 "기프티콘...? 정성스럽네!" setBackground(강의실,false,1) changeExpression(지찬우,지찬우_고백,100)

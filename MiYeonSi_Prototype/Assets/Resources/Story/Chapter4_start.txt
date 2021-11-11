@@ -62,7 +62,7 @@ removeForeground()
 최은지 "혹시 아는 사이야...?" changeExpression(최은지,최은지_올,100)
 
 
-distr(마민석) "혹시 아는 사이야...?"
+"혹시 아는 사이야...?"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -85,10 +85,9 @@ setMiniGameAfterBG(pc방,false,1) playMusic(S15)
 최은지 "어서 가서 묻은 것부터" changeExpression(최은지,최은지_힝구,100)
 최은지 "닦으셔야 할 것 같아요..." changeExpression(최은지,최은지_힝구,100)
 지찬우 "‘은지... 마음도 착해...’" changeExpression(지찬우,지찬우_일단동의,100)
-
-
 마민석 "후후... 아닙니다. 다시 가져다 드리죠." changeExpression(마민석,마민석_호탕,100)
 
+distr(마민석)
 choice
 {
   지찬우 "그럼 아저씨 좋은 대로 하세요..." setBackground(PC방,false,1) changeExpression(지찬우,지찬우_고백,100)
@@ -146,9 +145,9 @@ setMiniGameAfterBG(pc방,false,1) playMusic(S15)
 지찬우 "... 저기요... 아무리 그래도 그렇지" changeExpression(지찬우,지찬우_삐질,100)
 지찬우 "이걸 듣고 좋아하는 사람도 있...?" changeExpression(지찬우,지찬우_삐질,100)
 지찬우 "왜 여기에...." changeExpression(지찬우,지찬우_사망,100)
-
-
 마민석 "후후... 돌리야, 무슨 일이시죠?" changeExpression(마민석,마민석_깜찍,100)
+
+distr(마민석)
 choice
 {
   지찬우 "내가 왜 왔더라... 진짜 운명인가...?" setBackground(PC방,false,1) changeExpression(지찬우,지찬우_고백,100)
@@ -189,16 +188,18 @@ setMiniGameAfterBG(pc방,false,1) playMusic(S15)
 마민석 "돌리야! 당신이 말해 보시죠." changeExpression(마민석,마민석_후잉,100)
 마민석 "제 말이 맞지 않나요?" changeExpression(마민석,마민석_후잉,100)
 
-
-distr(마민석) "제 말이 맞지 않나요?"
+"제 말이 맞지 않나요?"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
   지찬우 "아저씨 말도 틀린 건 아니야." setBackground(강의실,false,1) changeExpression(지찬우,지찬우_고백,100)
-	Load(Chapter5_start)
+	Load(Chapter4_1_1_start)
   지찬우 "아저씨 말이 맞지." setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_웃음,100)
+    Load(Chapter4_1_2_start)
   지찬우 "은지 말이 일리 있지..." setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_기본,100)
+    Load(Chapter4_1_3_start)
   지찬우 "무조건 은지 말이 맞지..." setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_기본,100)
+	Load(Chapter4_1_4_start)
 }
 
 

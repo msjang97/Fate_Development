@@ -103,10 +103,9 @@ removeForeground()
 지찬우 "저 앨범 명반이지...." changeExpression(지찬우,지찬우_기본,100)
 지찬우 "<Take a Look>..." changeExpression(지찬우,지찬우_기본,100)
 최은지 "...? 어...? " changeExpression(최은지,최은지_깜짝,100)
-
 최은지 "너 지금 뭐라고 했어...?" changeExpression(최은지,최은지_깜짝,100)
 
-distr(마민석)
+"너 지금 뭐라고 했어...?"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
