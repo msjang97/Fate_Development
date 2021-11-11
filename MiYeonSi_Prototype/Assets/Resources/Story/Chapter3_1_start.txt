@@ -101,10 +101,9 @@ removeForeground()
 지찬우 "저 앨범 명반이지...." changeExpression(지찬우,지찬우_기본,100)
 지찬우 "<Take a Look>..." changeExpression(지찬우,지찬우_기본,100)
 최은지 "...? 어...? " changeExpression(최은지,최은지_깜짝,100)
-
 최은지 "너 지금 뭐라고 했어...?" changeExpression(최은지,최은지_깜짝,100)
 
-distr(마민석)
+"너 지금 뭐라고 했어...?"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -121,7 +120,6 @@ miniGame(MMS_Minigame)
 
 setMiniGameAfterBG(은지방,false,1) playMusic(S12)
 최은지 "너도 이 노래 알아???" changeExpression(최은지,최은지_깜짝,100)
-
 
 setBackground(고등학교_교실,false,1) playMusic(S13)
 narrator "과거"

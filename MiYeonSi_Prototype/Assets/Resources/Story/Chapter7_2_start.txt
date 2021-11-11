@@ -39,6 +39,7 @@ setBackground(낮의거리,false,1) playMusic(S6)
 지찬우 "실수... 안 하겠지...?" changeExpression(지찬우,지찬우_헐,100)
 고아린 "오빠!!!! 어디가!!!" changeExpression(고아린,고아린_화색,100)
 
+distr(고아린)
 choice
 {
   지찬우 "으악 깜짝이야!" setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_고백,100)
@@ -102,7 +103,7 @@ narrator "마민석과 문준병."
 지찬우 "인디도... 너랑 들으니까 좋다..." changeExpression(지찬우,지찬우_일단동의,100)
 최은지 "응? 찬우야 뭐라고?" changeExpression(최은지,최은지_올,100)
 
-distr(문준병) "응? 찬우야 뭐라고?"
+"응? 찬우야 뭐라고?"
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {
@@ -130,6 +131,7 @@ narrator "재빨리 마이크를 가로채는 준병."
 지찬우 "그...그래.... 와...! 준병이네!" changeExpression(지찬우,지찬우_얼빠짐,100)
 최은지 "준병이 응원하자!" changeExpression(최은지,최은지_반짝,100)
 
+distr(문준병)
 choice
 {
   지찬우 "와...! 문준병 최고!!!" setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_고백,100)
@@ -173,6 +175,7 @@ setMiniGameAfterBG(버스킹,false,1)
 최은지 "커피라도 사줄까?" changeExpression(최은지,최은지_올,100)
 지찬우 "ㅇ...아니 은지야 그게 아니라..." changeExpression(지찬우,지찬우_헐,100)
 
+distr(마민석)
 choice
 {
   지찬우 "아저씨 또..." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_고백,100)
@@ -236,15 +239,19 @@ narrator "혼잣말 치고는 크게 말을 해버린다."
 마민석 "로만티카 비이임!!!!!" changeExpression(마민석,마민석_후잉,100)
 
 
+"사실 은지야... 내가..."
 playMusic(Evolution)
 miniGame(LoveShotPut_Minigame) 
 {
-	지찬우 "살짝 돌려말한다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_고백,100)
-	지찬우 "돌리지 않고 말한다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_쑥스,100)
-	지찬우 "티 나지만 얼버무린다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_안도,100)
-	지찬우 "잘못 들었다고 우긴다." setBackground(버스킹,false,1)  changeExpression(지찬우,지찬우_어색웃음,100)
+	narrator "살짝 돌려말한다." setBackground(버스킹,false,1)
+	Load(Chapter7_5_1_start)
+	narrator "돌리지 않고 말한다." setBackground(버스킹,false,1) 
+	Load(Chapter7_5_2_start)
+	narrator "티 나지만 얼버무린다." setBackground(버스킹,false,1)  
+	Load(Chapter7_5_3_start)
+	narrator "잘못 들었다고 우긴다." setBackground(버스킹,false,1)  
+	Load(Chapter7_5_4_start)
 }
-
 
 
 

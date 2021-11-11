@@ -80,6 +80,8 @@ playSound(S_5)
 마민석 "흐음… 찬우군…" changeExpression(마민석,마민석_불쾌,100)
 마민석 "돌리야에 대해 모르는 것 같군요." changeExpression(마민석,마민석_불쾌,100)
 
+
+distr(마민석)
 choice
 {
   지찬우 "그쪽이 더 잘 아시겠죠…" setBackground(편의점,false,1) changeExpression(지찬우,지찬우_고백,100)
@@ -239,8 +241,7 @@ setBackground(낮의거리, false, 1) playMusic(S6)
 최은지 "음… 난… 쓴 건 싫은데…" changeExpression(최은지,최은지_힝구,100)
 지찬우 "'은지는 어떤 음료를 좋아할까?'" changeExpression(지찬우,지찬우_기본,100)
 
-
-distr(마민석) "'은지는 어떤 음료를 좋아할까?'"
+"'은지는 어떤 음료를 좋아할까?'"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -308,17 +309,17 @@ playSound(S_3)
 연애세포 "이렇게 된 거" changeExpression(연애세포,연애세포_웃음,100)
 연애세포 "집이라도 같이 가자고 해봐." changeExpression(연애세포,연애세포_웃음,100)
 
-distr(마민석) "집이라도 같이 가자고 해봐."
+"집이라도 같이 가자고 해봐."
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
  지찬우 "그건 확실히 아니다." setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_고백,100)
 	Load(Chapter3_1_start)
  지찬우 "그래도 좀 그렇다." setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_웃음,100)
-	Load(Chapter3_1_start)
+	Load(Chapter3_2_start)
  지찬우 "그럴까…?" setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_기본,100)
-	Load(Chapter3_1_start)
+	Load(Chapter3_3_start)
  지찬우 "좋아, 같이 가자고 해야겠어." setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_얼빠짐,100)
-	Load(Chapter3_1_start)
+	Load(Chapter3_4_start)
 }
 

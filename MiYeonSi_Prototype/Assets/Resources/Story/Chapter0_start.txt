@@ -282,7 +282,7 @@ setBackground(찬우방_낮, false, 1) playMusic(S1)
 
 setBackground(엘리베이터_내부, false, 1) playMusic(S1)
 
-setForeground(하얀창,false,1)
+setForeground(하얀색,false,1)
 removeForeground()
 playSound(S_1)
 
