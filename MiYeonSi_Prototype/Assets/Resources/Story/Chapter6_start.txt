@@ -26,7 +26,7 @@ setBackground(학교축제,false,1) playMusic(S17)
 연애세포 "귀신의 집이랑 주점 중에 흠..." changeExpression(연애세포,연애세포_호탕,100)
 
 
-"귀신의 집이랑 주점 중에 흠..."
+distr(고아린) "귀신의 집이랑 주점 중에 흠..."
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {

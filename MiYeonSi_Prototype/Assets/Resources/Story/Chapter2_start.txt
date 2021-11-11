@@ -17,7 +17,7 @@ setBackground(강의실,false,1) playMusic(S4)
 문준병 "그만둘 생각 없습니다. 끊을게요." changeExpression(문준병,문준병_짜증,100)
 문준병 "어... 찬우야... 들었니...?" changeExpression(문준병,문준병_삐질,100)
 
-distr(문준병)
+
 choice 
 {
   지찬우 "ㅇ...어 준병아... 난 못 들었어." setBackground(강의실,false,1) changeExpression(지찬우,지찬우_고백,100)
@@ -65,9 +65,9 @@ setMiniGameAfterBG(강의실,false,1)
 지찬우 "으, 은지야, 안녕..." changeExpression(지찬우,지찬우_일단동의,100)
 문준병 "’내 팬이 하나 더 왔네...’" changeExpression(문준병,문준병_아야,100)
 문준병 "오히려 좋아!" changeExpression(문준병,문준병_호탕,100)
+
 문준병 "내 음악세계에 대해 들어 볼래?" changeExpression(문준병,문준병_호탕,100)
 
-distr(문준병)
 choice
 {
   지찬우 "안 궁금...한데...." setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_고백,100)
@@ -129,9 +129,7 @@ setBackground(낮의거리,false,1) playMusic(S6)
 최은지 "너는 누구야? 귀엽다!" changeExpression(최은지,최은지_기본,100)
 최은지 "혹시 찬우 동생...?" changeExpression(최은지,최은지_올,100)
 
-
-playMusic(Evolution) 
-miniGame(KAR_Minigame) 
+choice
 {
   지찬우 "응. 아는 동생인데 이 주변 살아." setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_고백,100)
     최은지 "아하 그렇구나~" setBackground(낮의거리,false,1) changeExpression(최은지,최은지_활짝,100)
@@ -141,6 +139,7 @@ miniGame(KAR_Minigame)
     최은지 "운명...! 하하하... 그렇구나...!" setBackground(낮의거리,false,1) changeExpression(최은지,최은지_무념,100)
   지찬우 "친한 동생! 운명처럼 다시 만났어." setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
     최은지 "운명에 노이로제 걸릴 것 같아...’" setBackground(낮의거리,false,1) changeExpression(최은지,최은지_헐,100)
+
 }
 
 setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
@@ -154,9 +153,9 @@ setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 지찬우 "......!" changeExpression(지찬우,지찬우_일단동의,100)
 고아린 "무슨 소리야 오빠!!!" changeExpression(고아린,고아린_투지,100)
 연애세포 "지찬우! 아린이 입 막아!" changeExpression(연애세포,연애세포_버럭,100)
-고아린 "오빠 집 여기 아니ㅈ..." changeExpression(고아린,고아린_투지,100)
 
-distr(고아린)
+
+고아린 "오빠 집 여기 아니ㅈ..." changeExpression(고아린,고아린_투지,100)
 choice
 {
   지찬우 "아린아! 운동 가는 길이지?" setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_고백,100)
@@ -190,7 +189,7 @@ setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 지찬우 "저... 은지야..." changeExpression(지찬우,지찬우_안도,100)
 최은지 "응! 오늘은 같이 못가는거야?" changeExpression(최은지,최은지_기본,100)
 
-"응! 오늘은 같이 못가는거야?"
+distr(마민석) "응! 오늘은 같이 못가는거야?"
 playMusic(Evolution) 
 miniGame(MMS_Minigame) 
 {
@@ -252,7 +251,8 @@ setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 지찬우 "‘그냥 지나치기도 그렇고...’" changeExpression(지찬우,지찬우_멍때림,100)
 연애세포 "두고 가기도 좀 그렇고... 어떡할래?" changeExpression(연애세포,연애세포_무표정,100)
 
-연애세포 "두고 가기도 좀 그렇고... 어떡할래?"
+
+distr(문준병) 연애세포 "두고 가기도 좀 그렇고... 어떡할래?"
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {

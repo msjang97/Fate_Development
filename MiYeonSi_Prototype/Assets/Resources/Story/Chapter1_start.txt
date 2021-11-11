@@ -90,7 +90,6 @@ setBackground(강의실, false, 1)
 문준병 "그렇구나~ 그럼 좋아하는 음식은?" changeExpression(문준병,문준병_반짝,100)
 문준병 "좋아하는 음식 없으면 자주 먹는 음식은?" changeExpression(문준병,문준병_반짝,100)
 
-distr(문준병)
 choice
 {
 	지찬우 "그냥 루피 삼각김밥... 포장지가 예쁘더라" setBackground(강의실, false, 1) changeExpression(지찬우,지찬우_머쓱,100)
@@ -168,7 +167,6 @@ setBackground(김밥천국, false, 1) playMusic(S5)
 마민석 "후후후..." changeExpression(마민석,마민석_무표정,100)
 마민석 "돌리야는 어떤 걸 좋아하나요?" changeExpression(마민석,마민석_발그레,100)
 
-distr(마민석)
 choice
 {
   지찬우 "그냥 안 먹을래요..." setBackground(김밥천국, false, 1) changeExpression(지찬우,지찬우_기본,100)
@@ -201,7 +199,7 @@ setMiniGameAfterBG(김밥천국,false,1)
 지찬우 "은지가 좋아하는 거 기억해둬야지..." changeExpression(지찬우,지찬우_기본,100)
 최은지 "응?? 뭐라고??" changeExpression(최은지,최은지_기본,100)
 
-"응?? 뭐라고??"
+distr(마민석) "응?? 뭐라고??"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -263,7 +261,7 @@ narrator "최은지의 전화벨이 울린다."
 연애세포 "매력을 어필 할 수 있어!" changeExpression(연애세포,연애세포_사악,100)
 지찬우 "‘좋아... 자연스러운 질문이라..." changeExpression(지찬우,지찬우_기본,100) 
 
-"‘좋아... 자연스러운 질문이라..."
+distr(마민석) "‘좋아... 자연스러운 질문이라..."
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -283,7 +281,7 @@ setMiniGameAfterBG(김밥천국,false,1)
 최은지 "왜 건축학과에 온거야?" changeExpression(최은지,최은지_기본,100)
 
 
-"왜 건축학과에 온거야?"
+distr(문준병) "왜 건축학과에 온거야?"
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {	
@@ -397,7 +395,6 @@ removeForeground()
 연애세포 "야!!! 정신차려!!!" changeExpression(연애세포,연애세포_버럭,100)
 연애세포 "어서 대화 끝내고 도망가!!!" changeExpression(연애세포,연애세포_버럭,100)
 
-distr(고아린)
 choice
 {
   지찬우 "음... 찾으러 오는 건 좀..." changeExpression(지찬우,지찬우_고백,100)

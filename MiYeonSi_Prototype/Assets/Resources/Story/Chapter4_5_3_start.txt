@@ -44,7 +44,6 @@ PlaySound(S_5)
 지찬우 "‘내 개인정보가 한가득 있는 이력서...’" changeExpression(지찬우,지찬우_넋나감,100)
 지찬우 "‘왠지 주기 싫어져...’" changeExpression(지찬우,지찬우_주륵,100)
 
-distr(마민석)
 choice
 {
   지찬우 "저... 안 들고 왔는데..." setBackground(편의점,false,1) changeExpression(지찬우,지찬우_넋나감,100)

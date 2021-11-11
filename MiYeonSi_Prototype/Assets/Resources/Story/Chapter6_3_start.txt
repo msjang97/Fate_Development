@@ -145,7 +145,7 @@ setMiniGameAfterBG(주점,false,1) playMusic(S18)
 최은지 "자신감도 넘쳐보인다." changeExpression(최은지,최은지_활짝,100)
 최은지 "평소에도 이러면 좋을 것 같은데..." changeExpression(최은지,최은지_갸륵,100)
 
-"평소에도 이러면 좋을 것 같은데..."
+distr(고아린) "평소에도 이러면 좋을 것 같은데..."
 playMusic(Evolution)
 miniGame(KAR_Minigame) 
 {
@@ -220,7 +220,7 @@ setBackground(주점,false,1) playMusic(S18)
 최은지 "나뭇잎 치워주려고..." changeExpression(최은지,최은지_난처,100)
 고아린 "네...? 그럼 데이트 중...?" changeExpression(고아린,고아린_놀람,100)
 
-"네...? 그럼 데이트 중...?"
+distr(고아린) "네...? 그럼 데이트 중...?"
 playMusic(Evolution)
 miniGame(KAR_Minigame) 
 {
@@ -242,7 +242,6 @@ setMiniGameAfterBG(산책로,false,1) playMusic(S19)
 고아린 "그런게 아니면 이 시간에 둘이" changeExpression(고아린,고아린_투지,100)
 고아린 "같이 걷고 있을리가 없어..." changeExpression(고아린,고아린_투지,100)
 
-distr(고아린)
 choice
 {
   지찬우 "하하하... 아니야 친구야" setBackground(산책로,false,1) changeExpression(지찬우,지찬우_고백,100)
