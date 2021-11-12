@@ -13,6 +13,7 @@ public class EndingCollection : MonoBehaviour
     public enum IllustrationName
     {
         dummy,
+        Title,
         엘리베이터,
         고아린_만남,
         아린찬우_손,
@@ -42,6 +43,8 @@ public class EndingCollection : MonoBehaviour
 
     public void CollectEnding()
     {
+        if (EndingCollections == null) return;
+
         foreach (var item in SaveData.P_instance._endingCollectionData._endingCollection)
             EndingCollections[item].GetChild(0).gameObject.SetActive(true);
     }

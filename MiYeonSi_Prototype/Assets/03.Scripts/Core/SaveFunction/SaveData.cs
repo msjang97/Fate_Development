@@ -93,7 +93,7 @@ public class SaveData : MonoBehaviour
         }
 
         LoadSettingData();
-        SaveAndLoadEndingData("");
+        SaveAndLoadEndingData("Title");
     }
 
 
@@ -133,8 +133,6 @@ public class SaveData : MonoBehaviour
         Debug.Log(endingName);
         try
         {
-            int illustNumber = (int)System.Enum.Parse(typeof(EndingCollection.IllustrationName), endingName);
-
             if (File.Exists(endingDataPath))
             {
                 string loadData = File.ReadAllText(endingDataPath);
@@ -147,6 +145,8 @@ public class SaveData : MonoBehaviour
                 string message = "File " + endingDataPath + " does not exist!";
                 Debug.Log(message);
             }
+
+            int illustNumber = (int)System.Enum.Parse(typeof(EndingCollection.IllustrationName), endingName);
 
             if (!_endingCollectionData._endingCollection.Contains(illustNumber))
                 _endingCollectionData._endingCollection.Add(illustNumber);
