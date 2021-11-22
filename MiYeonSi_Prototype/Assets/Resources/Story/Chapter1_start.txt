@@ -1,6 +1,7 @@
 setForeground(스테이지1,false,1)
 removeForeground()
 setBackground(강의실, false, 1) playMusic(S4)
+지찬우 "수업 지각할 뻔했네... 위험했어..." changeExpression(지찬우,지찬우_삐질,100) 
 지찬우 "‘어제는 정말 끔찍했어...’" changeExpression(지찬우,지찬우_삐질,100) 
 지찬우 "‘모르는 사람이랑 엮이다니...’" changeExpression(지찬우,지찬우_기본,100)
 지찬우 "‘좀 미안해지기도 하네...’" changeExpression(지찬우,지찬우_기본,100)
@@ -97,7 +98,7 @@ choice
 	문준병 "헐!! 너도 루피 좋아하는구나!!" setBackground(강의실, false, 1) changeExpression(문준병,문준병_기본,100)
 	지찬우 "엄마가 주는 밥은 다 좋아해..." setBackground(강의실, false, 1) changeExpression(지찬우,지찬우_머쓱,100)
 	문준병 "나도나도! 엄마 밥은 다 좋아!" setBackground(강의실, false, 1) changeExpression(문준병,문준병_반짝,100)
-	지찬우 "나... 그냥 간단한 거 좋아해" setBackground(강의실, false, 1) changeExpression(지찬우,지찬우_머쓱,100)
+	지찬우 "나... 그냥 간단한 거 좋아해" setBackground(강의실, false, 1) changeExpression(지찬우,지찬우_머쓱,100) 
 	문준병 "삼각김밥 말하는 거지...?" setBackground(강의실, false, 1) changeExpression(문준병,문준병_기본,100)
 	지찬우 "주는 대로 먹어서 좋아하는 거 없어." setBackground(강의실, false, 1) changeExpression(지찬우,지찬우_기본,100)
 	문준병 "치... 재미없어... 그냥 삼각김밥 해." setBackground(강의실, false, 1) changeExpression(문준병,문준병_삐질,100)
@@ -342,6 +343,7 @@ setBackground(아린이네_문앞, false, 1) playMusic(S7)
 
 playSound(S_4)
 
+setMiniGameAfterBG(아린이네_문앞,false,1) 
 지찬우 "어라... 아직 비밀번호 다" changeExpression(지찬우,지찬우_헐,100)
 지찬우 "안 눌렀는데 왜 문이..." changeExpression(지찬우,지찬우_헐,100)
 고아린 "누구세요...?" changeExpression(고아린,고아린_무표정,100)
@@ -368,6 +370,7 @@ playSound(S_4)
 
 setForeground(고아린_만남,false,1)
 removeForeground()
+
 
 지찬우 "모, 못 알아봐서 미안..." changeExpression(지찬우,지찬우_헐,100)
 지찬우 "옛날이랑 조금 달라져서..." changeExpression(지찬우,지찬우_지루,100)
@@ -417,7 +420,7 @@ setMiniGameAfterBG(아린이네_문앞, false, 1) playMusic(S7)
 고아린 "대답도 제대로 안하고 어디를 가 오빠?" changeExpression(고아린,고아린_작은웃음,100)
 
 
-SetForeground(아린민석_손,false,1)
+SetForeground(아린찬우_손,false,1)
 removeForeground() 
 
 

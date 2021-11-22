@@ -21,7 +21,7 @@ narrator "원하지 않았던 신은"
 narrator "어떻게 할지 고민을 한다."
 신 "나는 바쁜데... 나 대신 다녀올 사람이 필요해" changeExpression(신,신_스탠딩,100)
 narrator "그때 눈에 띄는 노는 견습천사 하나."
-신 "주문 연습도 안하고 맨날 놀고..."
+신 "주문 연습도 안하고 맨날 놀고..." changeExpression(신,신_스탠딩,100)
 신 "그래, 너로 정했다!" changeExpression(신,신_스탠딩,100)
 narrator "......못미덥지만 다른 견습천사들은"
 narrator "바쁘기 때문에 선택지가 없다."
@@ -297,6 +297,8 @@ playSound(S_1)
 견습천사 "찬우야!! 잠시만!!!" changeExpression(견습천사,견습천사_다급,100)
 견습천사 "일단 눈부터 감ㅇ......" changeExpression(견습천사,견습천사_다급,100)
 견습천사 "............ 아... 망했다..." changeExpression(견습천사,견습천사_제발,100)
+지찬우 "왜? 왜 망했는데?!" changeExpression(지찬우,지찬우_깜짝,100)
+narrator "문이 열리고 사람들과 마주친다."
 마민석 "후후후... 운명을 믿으시나요...?" changeExpression(마민석,마민석_무표정,100)
 마민석 "난 그 쪽이 내 돌리야인 것 같은데..." changeExpression(마민석,마민석_발그레,100)
 지찬우 "...네? 누구... 세요..." changeExpression(지찬우,지찬우_헐,100)

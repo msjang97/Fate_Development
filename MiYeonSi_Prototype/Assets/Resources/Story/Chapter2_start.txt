@@ -142,7 +142,6 @@ miniGame(KAR_Minigame)
     최은지 "운명...! 하하하... 그렇구나...!" setBackground(낮의거리,false,1) changeExpression(최은지,최은지_무념,100)
   지찬우 "친한 동생! 운명처럼 다시 만났어." setBackground(낮의거리,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
     최은지 "운명에 노이로제 걸릴 것 같아...’" setBackground(낮의거리,false,1) changeExpression(최은지,최은지_헐,100)
-
 }
 
 setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
