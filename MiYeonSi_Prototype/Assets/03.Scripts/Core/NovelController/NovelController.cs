@@ -208,6 +208,14 @@ public class NovelController : MonoBehaviour
             {
                 if (isAfterMiniGame)
                 {
+                    if (ChoiceManager.P_instance.actions[ChoiceManager.P_instance.selectedNum - 1].StartsWith("Load")) // 미니게임을 통한 Load 키워드 이용 시
+                    {
+                        isAfterMiniGame = false;
+                        HandleLine(ChoiceManager.P_instance.actions[ChoiceManager.P_instance.selectedNum - 1]);
+
+                        continue;
+                    }
+
                     if (!LovePoint.instance._choiceNext) //미니게임 이후일 경우, 저장된 진행상황만큼 이동.
                     {
                         HandleLine(ChoiceManager.P_instance.choices[ChoiceManager.P_instance.selectedNum - 1]); //선택지 출력.
