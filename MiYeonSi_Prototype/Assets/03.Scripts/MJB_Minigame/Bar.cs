@@ -6,8 +6,8 @@ public class Bar : MonoBehaviour
 {
     [SerializeField]
     private float moveSpeed = 20;
-    private float upLimit = 1680;
-    private float downLimit = 280;   
+    private float upLimit;
+    private float downLimit;   
     private int direction = 1;
     private bool isStoped = false;
     public bool P_isStoped { get { return isStoped; } }
@@ -15,6 +15,19 @@ public class Bar : MonoBehaviour
     public Vector2 BarPosition;
     public RectTransform BarTransform;
     public GameObject manual;
+
+    private void Start()
+    {
+        SetUpDownLimit();
+    }
+
+    private void SetUpDownLimit()
+    {
+        GameObject choices = this.transform.parent.gameObject;
+        float height = choices.GetComponent<RectTransform>().sizeDelta.y / 2;
+        upLimit = this.transform.position.y + height;
+        downLimit = this.transform.position.y - height;
+    }
 
     // Update is called once per frame
     void Update()
