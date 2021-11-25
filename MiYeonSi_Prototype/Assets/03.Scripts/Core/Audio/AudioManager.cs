@@ -56,7 +56,6 @@ public class AudioManager : MonoBehaviour
 
     public void SetSFXVolume(float myVolume) //효과음 볼륨 조절.
     {
-        Debug.Log(SFX_volume + "next" + myVolume);
         SFX_volume = myVolume;
 
         // 저장을 위한 변수. 보기 좋게 수정 필요.

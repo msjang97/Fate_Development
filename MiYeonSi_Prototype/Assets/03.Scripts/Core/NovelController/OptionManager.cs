@@ -10,7 +10,6 @@ public class OptionManager : MonoBehaviour
 
     private void Start()
     {
-
         SetAudio();
     }
 
@@ -19,9 +18,23 @@ public class OptionManager : MonoBehaviour
         bgm.value = SaveData.P_instance._settingData._BGM_volume;
         sfx.value = SaveData.P_instance._settingData._SFX_volume;
 
-        bgm.onValueChanged.AddListener(GameObject.Find("AudioManager").GetComponent<AudioManager>().SetSongVolume);
-        sfx.onValueChanged.AddListener(GameObject.Find("AudioManager").GetComponent<AudioManager>().SetSFXVolume);
+        AudioManager.instance.SetSFXVolume(sfx.value);
+
+        bgm.onValueChanged.AddListener(AudioManager.instance.SetSongVolume);
+        sfx.onValueChanged.AddListener(AudioManager.instance.SetSFXVolume);
 
     }
+
+    public void SetActiveOption()
+    {
+        this.gameObject.SetActive(true);
+        AudioManager.instance.PlayButtonSound();
+    }
+
+    public void SetInActiveOption()
+    {
+        this.gameObject.SetActive(false);
+    }
+
 
 }

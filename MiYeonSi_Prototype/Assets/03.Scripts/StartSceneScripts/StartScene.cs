@@ -7,6 +7,7 @@ public class StartScene : MonoBehaviour
 {  
     public void StartGameScene() // 게임 시작
     {
+        AudioManager.instance.StopSong();
         SceneManager.LoadScene("MainSystem");
     }
 
@@ -20,7 +21,8 @@ public class StartScene : MonoBehaviour
     public void LoadGameScene() // 게임 이어하기
     {
         SaveData.P_instance.isLoadData = true;
-        SceneManager.LoadScene("MainSystem");
+
+        StartGameScene();
     }
 
     public void QuitApplication() //게임 종료
