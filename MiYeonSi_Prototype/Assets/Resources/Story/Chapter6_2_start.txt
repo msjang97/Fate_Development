@@ -13,7 +13,7 @@ setMiniGameAfterBG(학교축제,false,1) playMusic(S17)
 최은지 "꺄 재밌겠다!" changeExpression(최은지,최은지_반짝,100)
 최은지 "마침 바로 앞이네! 어서 가자!" changeExpression(최은지,최은지_활짝,100)
 
-SetForeground(귀신의집,false,1)
+setForeground(귀신의집,false,1)
 removeForeground() 
 
 최은지 "헉... 헉... 뭐야 저 아저씨..." changeExpression(최은지,최은지_긴장,100)

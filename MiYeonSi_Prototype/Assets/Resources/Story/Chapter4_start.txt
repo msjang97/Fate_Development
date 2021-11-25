@@ -50,7 +50,7 @@ PlaySound(S_7)
 
 지찬우 "......?" changeExpression(지찬우,지찬우_깜짝,100)
 
-SetForeground(피씨방_민석,false,1)
+setForeground(피씨방_민석,false,1)
 removeForeground() 
 
 마민석 "후후후... 돌리야..." changeExpression(마민석,마민석_후잉,100)

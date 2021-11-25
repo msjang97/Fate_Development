@@ -52,7 +52,7 @@ setBackground(검은창,false,1) playMusic(S9)
 견습천사 "흑흑… 잔잔바리 잔잔…" changeExpression(견습천사,견습천사_제발,100)
 견습천사 "잔잔바리… 잔잔… 흑흑" changeExpression(견습천사,견습천사_제발,100)
 
-SetForeground(솔로엔딩,false,1)
+setForeground(솔로엔딩,false,1)
 removeForeground() 
 
 

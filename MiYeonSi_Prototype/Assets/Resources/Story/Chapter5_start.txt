@@ -347,7 +347,7 @@ setMiniGameAfterBG(버스킹,false,1) playMusic(S17)
 준베이 "한 사람만을 위한 앵콜 무대." changeExpression(준베이,준베이_미소,100)
 준베이 "지금 시작합니다." changeExpression(준베이,준베이_기본,100)
 
-SetForeground(준병_노래자랑,false,1)
+setForeground(준병_노래자랑,false,1)
 removeForeground() 
 
 

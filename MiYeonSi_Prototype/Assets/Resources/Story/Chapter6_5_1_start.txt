@@ -241,7 +241,7 @@ narrator "접힌 모서리보다"
 narrator "환하게 웃는 은지의 얼굴에"
 narrator "눈길이 가는 찬우"
 
-SetForeground(찬우은지,false,1)
+setForeground(찬우은지,false,1)
 removeForeground() 
 
 

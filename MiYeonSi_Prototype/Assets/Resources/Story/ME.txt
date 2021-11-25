@@ -204,7 +204,7 @@ setBackground(낮의거리,false,1) playMusic(S6)
 지찬우 "아아아아아아아아아아악!!!" changeExpression(지찬우,지찬우_엉엉,100)
 
 
-SetForeground(민석엔딩,false,1)
+setForeground(민석엔딩,false,1)
 removeForeground() 
 
 

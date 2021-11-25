@@ -97,7 +97,7 @@ narrator "둘의 자리가 멀리 떨어진 것을 본다."
 지찬우 "공연에 점점 빨려 들어가는 것 같아." changeExpression(지찬우,지찬우_당황,100)
 지찬우 "왠지 공감 돼…" changeExpression(지찬우,지찬우_당황,100)
 
-SetForeground(검은창,false,1)
+setForeground(검은창,false,1)
 removeForeground() 
 
 setBackground(콘서트장_내부,false,1) playMusic(S21)
@@ -156,7 +156,7 @@ setBackground(콘서트장_내부,false,1)
 준베이 "응원해주세요!" changeExpression(준베이,준베이_침착,100)
 
 
-SetForeground(준병엔딩,false,1)
+setForeground(준병엔딩,false,1)
 removeForeground() 
 
 goEndingcredit()

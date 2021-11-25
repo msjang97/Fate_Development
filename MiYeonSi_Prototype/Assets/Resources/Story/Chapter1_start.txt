@@ -263,9 +263,9 @@ narrator "최은지의 전화벨이 울린다."
 연애세포 "은지한테 궁금했던 거 물어봐!!" changeExpression(연애세포,연애세포_호탕,100)
 연애세포 "자연스럽게 대화를 이끌어 가는 것으로도" changeExpression(연애세포,연애세포_사악,100)
 연애세포 "매력을 어필 할 수 있어!" changeExpression(연애세포,연애세포_사악,100)
-지찬우 "‘좋아... 자연스러운 질문이라..." changeExpression(지찬우,지찬우_기본,100) 
+지찬우 "‘좋아... 자연스러운 질문이라...'" changeExpression(지찬우,지찬우_기본,100) 
 
-"‘좋아... 자연스러운 질문이라..."
+"‘좋아... 자연스러운 질문이라...'"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -420,7 +420,7 @@ setMiniGameAfterBG(아린이네_문앞, false, 1) playMusic(S7)
 고아린 "대답도 제대로 안하고 어디를 가 오빠?" changeExpression(고아린,고아린_작은웃음,100)
 
 
-SetForeground(아린찬우_손,false,1)
+setForeground(아린찬우_손,false,1)
 removeForeground() 
 
 

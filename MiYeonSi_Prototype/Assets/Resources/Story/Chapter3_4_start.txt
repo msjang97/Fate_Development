@@ -121,7 +121,7 @@ setBackground(은지방,false,1) playMusic(S12)
 최은석 "우리 집 소개해주고 있었어!" changeExpression(최은석,최은석_활짝,100)
 
 
-SetForeground(삼자대면,false,1)
+setForeground(삼자대면,false,1)
 removeForeground() 
 
 최은석 "어? 누나! 내 새 친구 알아?" changeExpression(최은석,최은석_웃음,100)

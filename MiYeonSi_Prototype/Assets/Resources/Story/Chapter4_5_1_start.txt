@@ -81,7 +81,7 @@ setBackground(김밥천국,false,1) playMusic(S5)
 문준병 "아, 그래도 너무 외롭진 않았어!" changeExpression(문준병,준베이_아련,100)
 문준병 "항상 난 철수와 함께였으니까..." changeExpression(문준병,준베이_아련,100)
 
-SetForeground(준병철수,false,1)
+setForeground(준병철수,false,1)
 removeForeground() 
 
 문준병 "그러다 보니까 헤비메탈 라이징 스타" changeExpression(문준병,준베이_아련,100)

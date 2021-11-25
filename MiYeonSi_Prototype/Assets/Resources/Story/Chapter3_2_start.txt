@@ -60,7 +60,7 @@ setBackground(은지방,false,1) playMusic(S12)
 최은지 "최은석! 또 누나 방 들어가 있ㅈ..." changeExpression(최은지,최은지_짜증,100)
 최은지 "찬.... 우...야?" changeExpression(최은지,최은지_긴장,100)
 
-SetForeground(삼자대면,false,1)
+setForeground(삼자대면,false,1)
 removeForeground() 
 
 최은석 "어? 누나! 내 새 친구 알아?" changeExpression(최은석,최은석_웃음,100)

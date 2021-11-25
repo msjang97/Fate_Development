@@ -152,7 +152,7 @@ setBackground(크리스마스_거리,false,1) playMusic(S8)
 최은지 "오늘은 우리 둘이 있자." changeExpression(최은지,최은지_갸륵,100)
 최은지 "첫 데이트니까!" changeExpression(최은지,최은지_활짝,100)
 
-SetForeground(은지엔딩,false,1)
+setForeground(은지엔딩,false,1)
 removeForeground() 
 
 

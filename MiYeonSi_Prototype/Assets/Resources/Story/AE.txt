@@ -3,10 +3,10 @@ setBackground(낮의거리,false,1) playMusic(S6)
 지찬우 "에휴………………" changeExpression(지찬우,지찬우_기본,100)
 
 PlaySound(S_2)
-SetForeground(검은창,false,1)
-SetForeground(하얀색,false,1)
-SetForeground(검은창,false,1)
-SetForeground(하얀색,false,1)
+setForeground(검은창,false,1)
+setForeground(하얀색,false,1)
+setForeground(검은창,false,1)
+setForeground(하얀색,false,1)
 removeForeground() 
 
 setBackground(낮의거리,false,1)
@@ -120,7 +120,7 @@ narrator "말이 나오질 않는다."
 지찬우 "으아아…아아아악!!" changeExpression(지찬우,지찬우_살려줘,100)
 
 
-SetForeground(아린엔딩,false,1)
+setForeground(아린엔딩,false,1)
 removeForeground() 
 
 

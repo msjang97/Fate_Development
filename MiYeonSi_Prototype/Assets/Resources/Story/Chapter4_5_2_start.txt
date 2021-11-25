@@ -51,7 +51,7 @@ PlaySound(S_2)
 어린찬우 "어라 팔이 빨개졌네." changeExpression(어린찬우,어린찬우_기본,100)
 어린아린 "흑...흡...끕....으아앙!!" changeExpression(어린아린,어린아린_눈물,100)
 
-SetForeground(어린찬우아린,false,1)
+setForeground(어린찬우아린,false,1)
 removeForeground() 
 
 어린아린 "오빠 팔이 흑...흡.... " changeExpression(어린아린,어린아린_눈물,100)
