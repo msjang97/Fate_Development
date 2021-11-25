@@ -74,14 +74,24 @@ public class LovePoint : MonoBehaviour
     public void Distr_LovePoint_Cal(int point) //방해자 점수 정리해주는 함수 - 챕터 별 방해자 한테 선택지 점수 넘겨주기
     {
         // 챕터 카운트를 가져와서 각각 챕터의 방해자에게 호감도 넣어주기 (문준병-1,4 ,7 / 고아린-3,6  / 마민석-2 ,5)
-        if (ch_count == 1 ) // 문준병       
+        if (ch_count == 1) // 문준병       
+        {
             junbyeong_LovePoint += point;
+            Debug.Log("LovePoint Check");
+        }
 
-        else if (ch_count == 2) //고아린        
+
+        else if (ch_count == 2) //고아린  
+        {
             arin_LovePoint += point;
+            Debug.Log("LovePoint Check");
+        }
 
-        else if (ch_count == 3) // 마민석       
+        else if (ch_count == 3) // 마민석  
+        {
             minseok_LovePoint += point;
+            Debug.Log("LovePoint Check");
+        }
 
     }
 

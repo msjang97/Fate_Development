@@ -47,7 +47,7 @@ public class Choice : MonoBehaviour
     private void TimeOutSelectChoice() //시간이 다 지났을 때 1번 선택지가 자동으로 선택되게.
     {
         bar.BarPosition = Vector2.Lerp(bar.BarPosition, myPosition, 0.9f);
-        ChoiceManager.P_instance.selectedNum = 1;
+        ChoiceManager.P_instance.selectedNum = 4;
 
         if (lovecheck == true) //호감도 조정해주기.
         {
@@ -61,16 +61,16 @@ public class Choice : MonoBehaviour
         switch (ChoiceManager.P_instance.selectedNum)
         {
             case 1:
-                LovePoint.instance.Main_LovePoint_Cal(-5);
+                LovePoint.instance.Main_LovePoint_Cal(5);
                 break;
             case 2:
-                LovePoint.instance.Main_LovePoint_Cal(0);
-                break;
-            case 3:
                 LovePoint.instance.Main_LovePoint_Cal(3);
                 break;
+            case 3:
+                LovePoint.instance.Main_LovePoint_Cal(0);
+                break;
             case 4:
-                LovePoint.instance.Main_LovePoint_Cal(5);
+                LovePoint.instance.Main_LovePoint_Cal(-5);
                 break;
             default:
                 break;

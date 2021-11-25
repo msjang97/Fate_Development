@@ -32,7 +32,7 @@ public class Timer : MonoBehaviour
             if (currentTime <= 0)
             {
                 currentTime = 0;
-                ChoiceManager.P_instance.selectedNum = 1;
+                ChoiceManager.P_instance.selectedNum = 4;
             }
         }
         

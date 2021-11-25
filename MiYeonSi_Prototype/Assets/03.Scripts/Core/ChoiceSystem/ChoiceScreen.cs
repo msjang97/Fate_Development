@@ -117,7 +117,11 @@ public class ChoiceScreen : MonoBehaviour
                 case 2:
                     LovePoint.instance._numBranch = 3; ;
                     break;
-               
+                case 3:
+                    LovePoint.instance._numBranch = 4; ;
+                    break;
+
+
                 default:
                     break;
             }
@@ -127,16 +131,20 @@ public class ChoiceScreen : MonoBehaviour
             switch (choice.index)
             {
                 case 0:
-                    LovePoint.instance.Distr_LovePoint_Cal(-5);
+                    LovePoint.instance.Distr_LovePoint_Cal(5);
+                    Debug.Log("Click Choice");
                     break;
                 case 1:
-                    LovePoint.instance.Distr_LovePoint_Cal(0);
+                    LovePoint.instance.Distr_LovePoint_Cal(3);
+                    Debug.Log("Click Choice");
                     break;
                 case 2:
-                    LovePoint.instance.Distr_LovePoint_Cal(3);
+                    LovePoint.instance.Distr_LovePoint_Cal(0);
+                    Debug.Log("Click Choice");
                     break;
                 case 3:
-                    LovePoint.instance.Distr_LovePoint_Cal(5);
+                    LovePoint.instance.Distr_LovePoint_Cal(-5);
+                    Debug.Log("Click Choice");
                     break;
                 default:
                     break;
