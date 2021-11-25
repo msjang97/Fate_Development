@@ -341,7 +341,7 @@ setBackground(찬우방_밤,false,1) playMusic(S14)
 연애세포 "그냥 안되더라도 일단 가는 거지." changeExpression(연애세포,연애세포_짜증,100)
 지찬우 "...그렇겠지, 고마워." changeExpression(지찬우,지찬우_안도,100)
 연애세포 "짜식...! 내가 다 뿌듯하네." changeExpression(연애세포,연애세포_웃음,100)
-연야세포 "드디어 한 걸음 앞으로 가는구나!" changeExpression(연애세포,연애세포_웃음,100)
+연애세포 "드디어 한 걸음 앞으로 가는구나!" changeExpression(연애세포,연애세포_웃음,100)
 지찬우 "믿기지 않네... 주말이 벌써 기대된다..." changeExpression(지찬우,지찬우_쑥스,100)
 지찬우 "내 불행도 조금은 씻겨 나간걸까...?" changeExpression(지찬우,지찬우_씁쓸,100)
 
