@@ -262,5 +262,3 @@ miniGame(LoveShotPut_Minigame)
 	Load(Chapter7_5_4_start)
 }
 
-countEnd()
-goEnding()

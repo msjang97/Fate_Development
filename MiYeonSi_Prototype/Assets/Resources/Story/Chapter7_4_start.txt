@@ -277,5 +277,3 @@ miniGame(LoveShotPut_Minigame)
 }
 
 
-countEnd()
-goEnding()
