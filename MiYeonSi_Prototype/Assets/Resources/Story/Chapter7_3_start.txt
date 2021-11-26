@@ -164,7 +164,7 @@ setMiniGameAfterBG(버스킹,false,1)
 준베이 "찬우야 노래 끝나고" changeExpression(준베이,준베이_웃음,100)
 준베이 "너에게 할 말이 있어." changeExpression(준베이,준베이_웃음,100)
 준베이 "끝까지 기다려줘." changeExpression(준베이,준베이_기본,100)
-팬(그림자) "꺄아아아악 새로운 뮤즈라니!!" changeExpression(팬,여대생그림자3,100)
+팬 "꺄아아아악 새로운 뮤즈라니!!" changeExpression(팬,여대생그림자3,100)
 준베이 "<고1, 그 고독함이란> 부르겠습니다." changeExpression(준베이,준베이_기본,100)
 최은지 "와...부럽다 찬우야" changeExpression(최은지,최은지_꾸욱,100)
 최은지 "너 준병이랑 되게 친해졌구나... "changeExpression(최은지,최은지_창피,100)
@@ -249,7 +249,6 @@ narrator "혼잣말 치고는 크게 말을 해버린다."
 마민석 "로만티카 비이임!!!!!" changeExpression(마민석,마민석_후잉,100)
 
 
-"사실 은지야... 내가..."
 playMusic(Evolution)
 miniGame(LoveShotPut_Minigame) 
 {

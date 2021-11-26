@@ -103,7 +103,7 @@ setMiniGameAfterBG(주점,false,1) playMusic(S18)
 최은지 "남은 건 내가 다 마실 게." changeExpression(최은지,최은지_기본,100)
 최은지 "이것만 마시고 그만 마시자!" changeExpression(최은지,최은지_기본,100)
 
-setBackground(주점,false,1) playMusic(S18)
+setBackground(학교축제,false,1) playMusic(S18)
 지찬우 "‘하... 내가 무슨 말을 한 거지...’" changeExpression(지찬우,지찬우_사망,100)
 지찬우 "‘기억이... 잘...’" changeExpression(지찬우,지찬우_사망,100)
 연애세포 "야!! 지찬우!!" changeExpression(연애세포,연애세포_버럭,100)
@@ -148,17 +148,17 @@ setBackground(주점,false,1) playMusic(S18)
 playMusic(Evolution)
 miniGame(KAR_Minigame) 
 {
-  지찬우 "이야기가 왜 그렇게 흘러 가는 거야...?" setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_기본,100)
+  지찬우 "이야기가 왜 그렇게 흘러 가는 거야...?" setBackground(학교축제,false,1) changeExpression(지찬우,지찬우_기본,100)
 	고아린 "딱 봐도 수상하니까..." changeExpression(고아린,고아린_미소,100)
-  지찬우 "데...? 뭐라고...?" setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_기본,100)
+  지찬우 "데...? 뭐라고...?" setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_기본,100)
 	고아린 "데이트 중 아니야...?" changeExpression(고아린,고아린_작은웃음,100)
-  지찬우 "하하하... 농담도 참..." setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_기본,100)
+  지찬우 "하하하... 농담도 참..." setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_기본,100)
 	최은지 "아린아 오해 안 해도 돼!" changeExpression(최은지,최은지_무념,100)
-  지찬우 "데이트...중이지...?" setBackground(강의실,false,1)  changeExpression(지찬우,지찬우_기본,100)
+  지찬우 "데이트...중이지...?" setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_기본,100)
 	최은지 "...? 아린아, 진짜 아니야." changeExpression(최은지,최은지_헐,100)
 }
 
-setMiniGameAfterBG(산책로,false,1) playMusic(S19)
+setMiniGameAfterBG(학교축제,false,1) playMusic(S19)
 최은지 "우리 그냥 술 한 잔 하고" changeExpression(최은지,최은지_긴장,100)
 최은지 "술도 깰 겸 그냥 걷던 중이야!" changeExpression(최은지,최은지_긴장,100)
 고아린 "거짓말... 거짓말...!" changeExpression(고아린,고아린_투지,100)
@@ -169,17 +169,17 @@ setMiniGameAfterBG(산책로,false,1) playMusic(S19)
 distr(고아린)
 choice
 {
-  지찬우 "하하하... 아니야 친구야" setBackground(산책로,false,1) changeExpression(지찬우,지찬우_고백,100)
+  지찬우 "하하하... 아니야 친구야" setBackground(학교축제,false,1) changeExpression(지찬우,지찬우_고백,100)
 	고아린 "정말 친구야...? changeExpression(고아린,고아린_활짝,100)
-  지찬우 "친구지...?" setBackground(산책로,false,1) changeExpression(지찬우,지찬우_웃음,100)
+  지찬우 "친구지...?" setBackground(학교축제,false,1) changeExpression(지찬우,지찬우_웃음,100)
 	고아린 "확신을 가지고 말해주면 안돼?" changeExpression(고아린,고아린_미소,100)
-  지찬우 "여자인 친구지...?" setBackground(산책로,false,1) changeExpression(지찬우,지찬우_기본,100)
+  지찬우 "여자인 친구지...?" setBackground(학교축제,false,1) changeExpression(지찬우,지찬우_기본,100)
 	고아린 "여자인... 친구...?" changeExpression(고아린,고아린_작은웃음,100)
-  지찬우 "왜 자꾸 그런 질문을 하는거야..." setBackground(산책로,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
+  지찬우 "왜 자꾸 그런 질문을 하는거야..." setBackground(학교축제,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
 	고아린 "대답해 오빠. 말 돌리지 말고." changeExpression(고아린,고아린_뾰로퉁,100)
 }
 
-setMiniGameAfterBG(산책로,false,1)
+setMiniGameAfterBG(학교축제,false,1)
 고아린 "아무리 친구라고 해도..." changeExpression(고아린,고아린_울먹,100)
 고아린 "이건 누가 봐도 연인 사이 잖아요!!" changeExpression(고아린,고아린_울먹,100)
 지찬우 "‘악!!! 아린아 그만!!!!’" changeExpression(지찬우,지찬우_얼빠짐,100)
@@ -233,6 +233,10 @@ setBackground(찬우방_밤,false,1) playMusic(S14)
 지찬우 "주머니에 넣었던 것 같은데" changeExpression(지찬우,지찬우_헐,100)
 지찬우 "어라... 끝이 접혔다..." changeExpression(지찬우,지찬우_안도,100)
 연애세포 "작은 불행도 피해가지 않는구나..." changeExpression(연애세포,연애세포_머쓱,100)
+
+setForeground(찬우은지,false,1)
+removeForeground() 
+
 지찬우 "그래도 오늘은 슬프지 않네..." changeExpression(지찬우,지찬우_웃음,100)
 narrator "사진의 한 귀퉁이가 접혀 있지만"
 narrator "오늘은 이런 작은 불운 따위가"
@@ -240,9 +244,6 @@ narrator "찬우를 슬프게 할 수 없다."
 narrator "접힌 모서리보다"
 narrator "환하게 웃는 은지의 얼굴에"
 narrator "눈길이 가는 찬우"
-
-setForeground(찬우은지,false,1)
-removeForeground() 
 
 
 Load(Chapter7_start)

@@ -1,6 +1,5 @@
 setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 
-
 지찬우 "좋아, 같이 가자고 해야겠어." changeExpression(지찬우,지찬우_얼빠짐,100)
 지찬우 "또 같이 가자 그래도 부담스럽지 않겠지?" changeExpression(지찬우,지찬우_삐질,100)
 연애세포 "밀어붙여!! 괜찮아!! 나 연애세포야!" changeExpression(연애세포,연애세포_웃음,100)
@@ -111,7 +110,7 @@ setBackground(거실,false,1) playMusic(S11)
 지찬우 "’이대로 괜찮으려나...’" changeExpression(지찬우,지찬우_일단동의,100)
 최은석 "형! 그럼 우리 집 구경 시켜줄게!" changeExpression(최은석,최은석_반짝,100)
 
-setBackground(은지방,false,1) playMusic(S12)
+setBackground(은지방,false,1) playMusic(S11)
 최은석 "여긴 우리 누나 방이야~~ " changeExpression(최은석,최은석_웃음,100)
 최은석 "우리 누나는 이상한 거 좋아해~~" changeExpression(최은석,최은석_활짝,100)
 지찬우 "앨범...? 헤비...메탈...?" changeExpression(지찬우,지찬우_멍때림,100)
@@ -123,15 +122,6 @@ setBackground(은지방,false,1) playMusic(S12)
 setForeground(삼자대면,false,1)
 removeForeground() 
 
-최은석 "어? 누나! 내 새 친구 알아?" changeExpression(최은석,최은석_웃음,100)
-최은지 "새...친구...?" changeExpression(최은지,최은지_긴장,100)
-지찬우 "은지...?" changeExpression(지찬우,지찬우_깜짝,100)
-지찬우 "은석아 너희 누나가 은지였어?" changeExpression(지찬우,지찬우_깜짝,100)
-최은석 "어? 우리 누나 아네?? changeExpression(최은석,최은석_웃음,100)
-지찬우 "아... 같은 학교 친구야." changeExpression(지찬우,지찬우_삐질,100)
-최은지 "............"changeExpression(최은지,최은지_긴장,100)
-최은석 "그렇구나! 누나 친구였구나!" changeExpression(최은석,최은석_활짝,100)
-최은석 "그럼 같이 놀면 되겠다! 신난다!" changeExpression(최은석,최은석_활짝,100)
 
 최은지 "........." changeExpression(최은지,최은지_긴장,100)
 최은지 "은석아... 누나가 형 이랑" changeExpression(최은지,최은지_긴장,100)
@@ -179,7 +169,7 @@ miniGame(MMS_Minigame)
 }
 
 
-setMiniGameAfterBG(은지방,false,1) playMusic(S12)
+setMiniGameAfterBG(은지방,false,1) playMusic(S11)
 최은지 "너도 이 노래 알아???" changeExpression(최은지,최은지_깜짝,100)
 
 
@@ -199,7 +189,7 @@ narrator "과거"
 학생찬우 "‘저 노래 요즘 계속 부르던데...’" changeExpression(학생찬우,학생찬우_기본,100)
 학생찬우 "‘나도 들어볼까...’" changeExpression(학생찬우,학생찬우_깨달음,100)
 
-setBackground(은지방,false,1) playMusic(S12)
+setBackground(은지방,false,1) playMusic(S11)
 지찬우 "‘고등학교때 은지가 ‘"changeExpression(지찬우,지찬우_당황,100)
 지찬우 "‘흥얼거리던 걸 듣고 알게 된 노래...’" changeExpression(지찬우,지찬우_당황,100)
 지찬우 "‘그때부터 쭉 들어왔는데...’" changeExpression(지찬우,지찬우_당황,100)

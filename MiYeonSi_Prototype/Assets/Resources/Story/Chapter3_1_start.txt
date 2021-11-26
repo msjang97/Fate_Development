@@ -45,7 +45,7 @@ setBackground(거실,false,1) playMusic(S11)
 최은지 "내 방 들어가지 말라 했는데" changeExpression(최은지,최은지_짜증,100)
 최은지 "또 들어갔나보네..." changeExpression(최은지,최은지_짜증,100)
 
-setBackground(은지방,false,1) playMusic(S12)
+setBackground(은지방,false,1) playMusic(S11)
 최은석 "형, 이거 아무한테나 안 보여주는 건데" changeExpression(최은석,최은석_웃음,100)
 최은석 "특별히 보여줄게." changeExpression(최은석,최은석_웃음,100)
 지찬우 "응? 이게 뭔데? 앨범...?" changeExpression(지찬우,지찬우_삐질,100)
@@ -118,7 +118,7 @@ miniGame(MMS_Minigame)
 }
 
 
-setMiniGameAfterBG(은지방,false,1) playMusic(S12)
+setMiniGameAfterBG(은지방,false,1) playMusic(S11)
 최은지 "너도 이 노래 알아???" changeExpression(최은지,최은지_깜짝,100)
 
 setBackground(고등학교_교실,false,1) playMusic(S13)
@@ -137,7 +137,7 @@ narrator "과거"
 학생찬우 "‘저 노래 요즘 계속 부르던데...’" changeExpression(학생찬우,학생찬우_기본,100)
 학생찬우 "‘나도 들어볼까...’" changeExpression(학생찬우,학생찬우_깨달음,100)
 
-setBackground(은지방,false,1) playMusic(S12)
+setBackground(은지방,false,1) playMusic(S11)
 지찬우 "‘고등학교때 은지가 ‘"changeExpression(지찬우,지찬우_당황,100)
 지찬우 "‘흥얼거리던 걸 듣고 알게 된 노래...’" changeExpression(지찬우,지찬우_당황,100)
 지찬우 "‘그때부터 쭉 들어왔는데...’" changeExpression(지찬우,지찬우_당황,100)

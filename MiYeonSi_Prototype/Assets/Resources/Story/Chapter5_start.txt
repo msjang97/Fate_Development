@@ -343,13 +343,14 @@ setMiniGameAfterBG(버스킹,false,1) playMusic(S17)
 최은지 "준병이의 뮤즈라니!" changeExpression(최은지,최은지_아련,100)
 지찬우 "하...하하 그게 아니라..." changeExpression(지찬우,지찬우_가식,100)
 지찬우 "‘이게 아닌데...’" changeExpression(지찬우,지찬우_주륵,100)
-준베이 "아아 잘 들리시나요." changeExpression(준베이,준베이_미소,100)
-준베이 "한 사람만을 위한 앵콜 무대." changeExpression(준베이,준베이_미소,100)
-준베이 "지금 시작합니다." changeExpression(준베이,준베이_기본,100)
+
 
 setForeground(준병_노래자랑,false,1)
 removeForeground() 
 
+준베이 "아아 잘 들리시나요." changeExpression(준베이,준베이_미소,100)
+준베이 "한 사람만을 위한 앵콜 무대." changeExpression(준베이,준베이_미소,100)
+준베이 "지금 시작합니다." changeExpression(준베이,준베이_기본,100)
 
 
 Load(Chapter6_start)
