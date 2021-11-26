@@ -20,6 +20,15 @@ public class ForJsonGameData
 }
 
 [Serializable]
+public class OnceCheckData
+{
+    public bool mini_kar = false;
+    public bool mini_mms = false;
+    public bool mini_mjb = false;
+    public bool mini_lsp = false;
+}
+
+[Serializable]
 public class EndingCollectionData
 {
     public List<int> _endingCollection;
@@ -50,6 +59,7 @@ public class SaveData : MonoBehaviour
     }
 
     public ForJsonGameData _gameData;
+    public OnceCheckData _onceCheckData;
     public EndingCollectionData _endingCollectionData;
     public SettingData _settingData;
 
@@ -61,6 +71,7 @@ public class SaveData : MonoBehaviour
     }
 
     string dataPath;
+    string OnceCheckDataPath;
     string endingDataPath;
     string settingDataPath;
 
@@ -79,10 +90,12 @@ public class SaveData : MonoBehaviour
         _isLoadData = false;
 
         _gameData = new ForJsonGameData();
+        _onceCheckData = new OnceCheckData();
         _endingCollectionData = new EndingCollectionData();
         _settingData = new SettingData();
 
         dataPath = Application.persistentDataPath + "GameData.json";
+        OnceCheckDataPath = Application.persistentDataPath + "OnceCheckData.json";
         endingDataPath = Application.persistentDataPath + "EndingData.json";
         settingDataPath = Application.persistentDataPath + "settingData.json";
 
@@ -96,6 +109,31 @@ public class SaveData : MonoBehaviour
         SaveAndLoadEndingData("Title");
     }
 
+    public void SaveOnceCheckData()
+    {
+        _onceCheckData.mini_kar = LovePoint.instance.mini_kar;
+        _onceCheckData.mini_lsp = LovePoint.instance.mini_lsp;
+        _onceCheckData.mini_mjb = LovePoint.instance.mini_mjb;
+        _onceCheckData.mini_mms = LovePoint.instance.mini_mms;
+
+        string ToJsonData = JsonUtility.ToJson(_onceCheckData);
+        File.WriteAllText(OnceCheckDataPath, ToJsonData);
+    }
+
+    public void LoadOnceCheckData()
+    {
+        if (File.Exists(OnceCheckDataPath))
+        {
+            string loadData = File.ReadAllText(OnceCheckDataPath);
+            _onceCheckData = JsonUtility.FromJson<OnceCheckData>(loadData);
+        }
+        else
+        {
+            string errorMessage = "ERR! File " + OnceCheckDataPath + " does not exist!";
+            Debug.LogError(errorMessage);
+        }
+    }
+
 
     public void SaveGame(string chapterName, int chapterProgress, int backgroundLine, string playSong)
     {
@@ -103,6 +141,12 @@ public class SaveData : MonoBehaviour
         _gameData._savedChapterProgress = chapterProgress;
         _gameData._savedBackgroundLine = backgroundLine;
         _gameData._savedPlaySong = playSong;
+
+        _gameData.ch_count = LovePoint.instance.ch_count;
+        _gameData.eunji_LovePoint = LovePoint.instance.eunji_LovePoint;
+        _gameData.junbyeong_LovePoint = LovePoint.instance.junbyeong_LovePoint;
+        _gameData.arin_LovePoint = LovePoint.instance.arin_LovePoint;
+        _gameData.minseok_LovePoint = LovePoint.instance.minseok_LovePoint;
 
         string ToJsonData = JsonUtility.ToJson(_gameData);
         File.WriteAllText(dataPath, ToJsonData);

@@ -52,6 +52,8 @@ public class ManualCon : MonoBehaviour
                     manual.SetActive(true);
                     Check_Minigame();
                 }
+
+                SaveData.P_instance.SaveOnceCheckData();
             }
             else 
             {
@@ -84,6 +86,7 @@ public class ManualCon : MonoBehaviour
             LovePoint.instance.mini_kar = true;
         else if (SceneManager.GetActiveScene().name == "LoveShotPut_Minigame")
             LovePoint.instance.mini_lsp = true;
+
     }
 
     public void Touch_Manual()

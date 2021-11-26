@@ -43,7 +43,7 @@ public class LovePoint : MonoBehaviour
     public int arin_LovePoint = 0; // 고아린 호감도
     public int minseok_LovePoint = 0; // 마민석 호감도
     public int end_num = 0;
-    public int minigameCount =0;
+    public int minigameCount = 0;
     public bool mini_kar = false;
     public bool mini_mms = false;
     public bool mini_mjb = false;
@@ -64,6 +64,19 @@ public class LovePoint : MonoBehaviour
 
     void Init()
     {
+        SaveData.P_instance.LoadOnceCheckData();
+
+        mini_kar = SaveData.P_instance._onceCheckData.mini_kar;
+        mini_mms = SaveData.P_instance._onceCheckData.mini_mms;
+        mini_mjb = SaveData.P_instance._onceCheckData.mini_mjb;
+        mini_lsp = SaveData.P_instance._onceCheckData.mini_lsp;
+
+    }
+
+    public void ResetData()
+    {
+        ch_count = 0;
+
         eunji_LovePoint = 0; // 최은지 호감도
         junbyeong_LovePoint = 0; // 문준병 호감도
         arin_LovePoint = 0; // 고아린 호감도

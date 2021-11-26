@@ -46,6 +46,8 @@ public class NovelController : MonoBehaviour
         if (ChoiceManager.P_instance.savedChapterName == "") //처음 시작할때만 
         {
             _chapterName = "Chapter0_start"; //Chapter0_start
+
+            LovePoint.instance.ResetData();
         }
         else
         {
@@ -193,6 +195,12 @@ public class NovelController : MonoBehaviour
             chapterProgress = SaveData.P_instance._gameData._savedChapterProgress;
             lastBackground = SaveData.P_instance._gameData._savedBackgroundLine;
             playSongName = SaveData.P_instance._gameData._savedPlaySong;
+
+            LovePoint.instance.ch_count = SaveData.P_instance._gameData.ch_count;
+            LovePoint.instance.eunji_LovePoint = SaveData.P_instance._gameData.eunji_LovePoint;
+            LovePoint.instance.junbyeong_LovePoint = SaveData.P_instance._gameData.junbyeong_LovePoint;
+            LovePoint.instance.arin_LovePoint = SaveData.P_instance._gameData.arin_LovePoint;
+            LovePoint.instance.minseok_LovePoint = SaveData.P_instance._gameData.minseok_LovePoint;
 
             HandleLine(data[lastBackground]);
             Command_PlayMusic(playSongName);
