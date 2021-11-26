@@ -124,7 +124,6 @@ miniGame(MMS_Minigame)
 setMiniGameAfterBG(은지방,false,1) playMusic(S11)
 최은지 "너도 이 노래 알아???" changeExpression(최은지,최은지_깜짝,100)
 
-
 setBackground(고등학교_교실,false,1) playMusic(S13)
 narrator "과거"
 학생은지 "흠~흠~ 룩룩~" changeExpression(학생은지,학생은지_방긋,100)

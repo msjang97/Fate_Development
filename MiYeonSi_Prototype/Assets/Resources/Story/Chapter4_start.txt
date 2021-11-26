@@ -61,9 +61,6 @@ removeForeground()
 최은지 "저 아저씨 어디서 봤던 것 같은데..." changeExpression(최은지,최은지_올,100)
 최은지 "혹시 아는 사이야...?" changeExpression(최은지,최은지_올,100)
 
-
-"혹시 아는 사이야...?"
-
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -189,8 +186,6 @@ setMiniGameAfterBG(pc방,false,1) playMusic(S15)
 마민석 "돌리야! 당신이 말해 보시죠." changeExpression(마민석,마민석_후잉,100)
 마민석 "제 말이 맞지 않나요?" changeExpression(마민석,마민석_후잉,100)
 
-
-"제 말이 맞지 않나요?"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {

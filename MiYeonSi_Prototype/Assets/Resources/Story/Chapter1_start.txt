@@ -202,8 +202,6 @@ setMiniGameAfterBG(김밥천국,false,1)
 지찬우 "은지가 좋아하는 거 기억해둬야지..." changeExpression(지찬우,지찬우_기본,100)
 최은지 "응?? 뭐라고??" changeExpression(최은지,최은지_기본,100)
 
-"응?? 뭐라고??"
-
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -265,7 +263,6 @@ narrator "최은지의 전화벨이 울린다."
 연애세포 "매력을 어필 할 수 있어!" changeExpression(연애세포,연애세포_사악,100)
 지찬우 "‘좋아... 자연스러운 질문이라...'" changeExpression(지찬우,지찬우_기본,100) 
 
-"‘좋아... 자연스러운 질문이라...'"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -284,7 +281,6 @@ setMiniGameAfterBG(김밥천국,false,1)
 최은지 "찬우 너는 어때?" changeExpression(최은지,최은지_기본,100)
 최은지 "왜 건축학과에 온거야?" changeExpression(최은지,최은지_기본,100)
 
-"왜 건축학과에 온거야?"
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {	
@@ -370,7 +366,6 @@ setMiniGameAfterBG(아린이네_문앞,false,1)
 
 setForeground(고아린_만남,false,1)
 removeForeground()
-
 
 지찬우 "모, 못 알아봐서 미안..." changeExpression(지찬우,지찬우_헐,100)
 지찬우 "옛날이랑 조금 달라져서..." changeExpression(지찬우,지찬우_지루,100)

@@ -105,7 +105,8 @@ setBackground(낮의거리,false,1) playMusic(S6)
 최은지 "무시당했다는 생각이 드니까" changeExpression(최은지,최은지_꾸욱,100)
 최은지 "갑자기 흥분해서 이성을 잃었나 봐..." changeExpression(최은지,최은지_꾸욱,100)
 최은지 "내가 말을 너무 못되게 했지..." changeExpression(최은지,최은지_창피,100)
-최은지 "미안해 찬우야..." changeExpression(최은지,최은지_난처,100)최은지 "고마워 찬우야... " changeExpression(최은지,최은지_기본,100)
+최은지 "미안해 찬우야..." changeExpression(최은지,최은지_난처,100)
+최은지 "고마워 찬우야... " changeExpression(최은지,최은지_기본,100)
 최은지 "너랑 친구라서 다행이다..." changeExpression(최은지,최은지_기본,100)
 최은지 "니가 차분하게 이야기해 준 덕분에" changeExpression(최은지,최은지_난처,100)
 최은지 "나도 이성적으로 생각 할 수 있었어." changeExpression(최은지,최은지_기본,100)
@@ -118,10 +119,9 @@ setBackground(낮의거리,false,1) playMusic(S6)
 연애세포 "흠... 좋은 친구라..." changeExpression(연애세포,연애세포_당황,100)
 연애세포 "아무래도 친구 이상은 힘들지도..." changeExpression(연애세포,연애세포_개싫음,100)
 
-(찬우네 방, 집)--------------------------------------------------------------------------------------------------------
+setBackground(찬우방_밤,false,1) playMusic(S14)
 지찬우 "하아... 지쳤다." changeExpression(지찬우,지찬우_멍때림,100)
 지찬우 "내일 할 일만 체크하고 바로 자야겠어." changeExpression(지찬우,지찬우_지루,100)
-
 지찬우 "어라, 내일 일정이 겹치네..." changeExpression(지찬우,지찬우_깜짝,100)
 지찬우 "어떡하지...?" changeExpression(지찬우,지찬우_지루,100)
 

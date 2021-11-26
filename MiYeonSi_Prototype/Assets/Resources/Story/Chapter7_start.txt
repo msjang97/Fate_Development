@@ -16,7 +16,6 @@ PlaySound(S_3)
 최은지 "어디 갈래? 뭐 먹고 싶어?" changeExpression(최은지,전화받음,100)
 
 
-"어디 갈래? 뭐 먹고 싶어?"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {

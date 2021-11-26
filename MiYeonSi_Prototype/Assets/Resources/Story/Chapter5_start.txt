@@ -13,7 +13,6 @@ narrator "축제를 즐기기 위해 강의실에 모인다."
 최은지 "하필 오늘까지 과제를..." changeExpression(최은지,최은지_난처,100)
 최은지 "교수님도 너무하시다..." changeExpression(최은지,최은지_힝구,100)
 
-"교수님도 너무하시다..."
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -93,7 +92,6 @@ setMiniGameAfterBG(강의실,false,1) playMusic(S4)
 최은지 "그렇지 찬우야?" changeExpression(최은지,최은지_활짝,100)
 
 
-"그렇지 찬우야?"
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {
@@ -243,7 +241,6 @@ playMusic(S17) setMiniGameAfterBG(버스킹,false,1)
 최은지 "뭐야? 아린이도 여기 있네?" changeExpression(최은지,최은지_깜짝,100)
 최은지 "아까 찬우 저기 있다 그러지 않았어?" changeExpression(최은지,최은지_난처,100)
 
-"아까 찬우 저기 있다 그러지 않았어?"
 playMusic(Evolution)
 miniGame(KAR_Minigame) 
 {

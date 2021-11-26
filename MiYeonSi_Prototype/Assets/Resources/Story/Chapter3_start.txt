@@ -241,7 +241,6 @@ setBackground(낮의거리, false, 1) playMusic(S6)
 최은지 "음… 난… 쓴 건 싫은데…" changeExpression(최은지,최은지_힝구,100)
 지찬우 "'은지는 어떤 음료를 좋아할까?'" changeExpression(지찬우,지찬우_기본,100)
 
-"'은지는 어떤 음료를 좋아할까?'"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
@@ -309,7 +308,7 @@ playSound(S_3)
 연애세포 "이렇게 된 거" changeExpression(연애세포,연애세포_웃음,100)
 연애세포 "집이라도 같이 가자고 해봐." changeExpression(연애세포,연애세포_웃음,100)
 
-"집이라도 같이 가자고 해봐."
+
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {

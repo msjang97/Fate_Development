@@ -162,7 +162,6 @@ removeForeground()
 최은지 "...? 어...? " changeExpression(최은지,최은지_깜짝,100)
 최은지 "너 지금 뭐라고 했어...?" changeExpression(최은지,최은지_깜짝,100)
 
-"너 지금 뭐라고 했어...?"
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
