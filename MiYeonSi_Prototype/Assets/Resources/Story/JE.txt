@@ -159,7 +159,7 @@ setBackground(콘서트장_내부,false,1)
 setForeground(준병엔딩,false,1)
 removeForeground() 
 
-goEndingcredit()
+goEndingCredit()
 
 
 

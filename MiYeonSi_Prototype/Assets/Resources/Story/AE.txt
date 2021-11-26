@@ -126,4 +126,4 @@ removeForeground()
 
 
 
-goEndingcredit()
+goEndingCredit()
