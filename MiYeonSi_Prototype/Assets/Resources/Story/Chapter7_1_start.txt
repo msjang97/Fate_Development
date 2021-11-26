@@ -101,7 +101,6 @@ narrator "마민석과 문준병."
 최은지 "응? 찬우야 뭐라고?" changeExpression(최은지,최은지_올,100)
 
 
-"응? 찬우야 뭐라고?"
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {
@@ -152,7 +151,7 @@ setMiniGameAfterBG(버스킹,false,1)
 준베이 "찬우야 노래 끝나고" changeExpression(준베이,준베이_웃음,100)
 준베이 "너에게 할 말이 있어." changeExpression(준베이,준베이_웃음,100)
 준베이 "끝까지 기다려줘." changeExpression(준베이,준베이_기본,100)
-팬 "꺄아아아악 새로운 뮤즈라니!!" changeExpression(팬,여대생그림자3,100)
+팬들 "꺄아아아악 새로운 뮤즈라니!!" changeExpression(팬들,여대생그림자3,100)
 준베이 "<고1, 그 고독함이란> 부르겠습니다." changeExpression(준베이,준베이_기본,100)
 최은지 "와...부럽다 찬우야" changeExpression(최은지,최은지_꾸욱,100)
 최은지 "너 준병이랑 되게 친해졌구나... "changeExpression(최은지,최은지_창피,100)
