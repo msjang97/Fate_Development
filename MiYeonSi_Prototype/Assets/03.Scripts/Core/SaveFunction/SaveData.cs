@@ -142,11 +142,22 @@ public class SaveData : MonoBehaviour
         _gameData._savedBackgroundLine = backgroundLine;
         _gameData._savedPlaySong = playSong;
 
-        _gameData.ch_count = LovePoint.instance.ch_count;
-        _gameData.eunji_LovePoint = LovePoint.instance.eunji_LovePoint;
-        _gameData.junbyeong_LovePoint = LovePoint.instance.junbyeong_LovePoint;
-        _gameData.arin_LovePoint = LovePoint.instance.arin_LovePoint;
-        _gameData.minseok_LovePoint = LovePoint.instance.minseok_LovePoint;
+        if (LovePoint.instance == null)
+        {
+            _gameData.ch_count = 0;
+            _gameData.eunji_LovePoint = 0;
+            _gameData.junbyeong_LovePoint = 0;
+            _gameData.arin_LovePoint = 0;
+            _gameData.minseok_LovePoint = 0;
+        }
+        else
+        {
+            _gameData.ch_count = LovePoint.instance.ch_count;
+            _gameData.eunji_LovePoint = LovePoint.instance.eunji_LovePoint;
+            _gameData.junbyeong_LovePoint = LovePoint.instance.junbyeong_LovePoint;
+            _gameData.arin_LovePoint = LovePoint.instance.arin_LovePoint;
+            _gameData.minseok_LovePoint = LovePoint.instance.minseok_LovePoint;
+        }
 
         string ToJsonData = JsonUtility.ToJson(_gameData);
         File.WriteAllText(dataPath, ToJsonData);
