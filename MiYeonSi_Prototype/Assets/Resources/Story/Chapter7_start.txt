@@ -1,6 +1,6 @@
 setForeground(스테이지7,false,1)
 removeForeground()
-setBackground(찬우방_낮,false,1) playMusic(S1)
+setMiniGameAfterBG(찬우방_낮,false,1) playMusic(S1)
 
 PlaySound(S_3)
 

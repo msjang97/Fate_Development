@@ -1,7 +1,7 @@
 setForeground(스테이지3,false,1)
 removeForeground()
 
-setBackground(낮의거리,false,1) playMusic(S6)
+setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 지찬우 "늦잠을 자는 바람에" changeExpression(지찬우,지찬우_헐,100)
 지찬우 "급하게 나오느라 밥도 못 먹었네…" changeExpression(지찬우,지찬우_헐,100)
 지찬우 "배고파… 뭐라도 먹어야…" changeExpression(지찬우,지찬우_주륵,100)
@@ -254,6 +254,7 @@ miniGame(MMS_Minigame)
    최은지 "금방도 말했지만 내가 쓴 걸 싫어해서…" changeExpression(최은지,최은지_헐,100)
 }
 
+setBackground(낮의거리, false, 1) playMusic(S6)
 문준병 "그럼 저기 갈까? 딸기 스무디 맛있던데." changeExpression(문준병,문준병_기본,100)
 최은지 "뭐…! 스무디…?" changeExpression(최은지,최은지_반짝,100)
 문준병 "난 아이스 아메리카노면 되거든" changeExpression(문준병,문준병_활짝,100)

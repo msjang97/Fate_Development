@@ -1,6 +1,6 @@
 setForeground(스테이지2,false,1)
 removeForeground()
-setBackground(강의실,false,1) playMusic(S4)
+setMiniGameAfterBG(강의실,false,1) playMusic(S4)
 연애세포 "잠깐만, 안에 누구 있는데?" changeExpression(연애세포,연애세포_당황,100)
 지찬우 "어? 누구... 준병이잖아? 전화 중인..." changeExpression(지찬우,지찬우_깜짝,100)
 문준병 "아, 아버지!" changeExpression(문준병,문준병_짜증,100)

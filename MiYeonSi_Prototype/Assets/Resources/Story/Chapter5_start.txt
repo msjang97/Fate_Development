@@ -1,7 +1,7 @@
 setForeground(스테이지5,false,1)
 removeForeground()
 
-setBackground(강의실,false,1) playMusic(S4)
+setMiniGameAfterBG(강의실,false,1) playMusic(S4)
 narrator "오늘은 선명대학교 축제가 있는 날이다."
 narrator "축제를 즐기려는 학생들과 손님이 모여"
 narrator "학교는 소란스럽다."

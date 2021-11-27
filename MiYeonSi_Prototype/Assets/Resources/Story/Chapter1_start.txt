@@ -1,6 +1,6 @@
 setForeground(스테이지1,false,1)
 removeForeground()
-setBackground(강의실, false, 1) playMusic(S4)
+setMiniGameAfterBG(강의실, false, 1) playMusic(S4)
 지찬우 "수업 지각할 뻔했네... 위험했어..." changeExpression(지찬우,지찬우_삐질,100) 
 지찬우 "‘어제는 정말 끔찍했어...’" changeExpression(지찬우,지찬우_삐질,100) 
 지찬우 "‘모르는 사람이랑 엮이다니...’" changeExpression(지찬우,지찬우_기본,100)

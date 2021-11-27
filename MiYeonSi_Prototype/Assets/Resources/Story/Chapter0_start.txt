@@ -286,6 +286,7 @@ setForeground(하얀색,false,1)
 removeForeground()
 playSound(S_1)
 
+setBackground(엘리베이터_내부, false, 1)
 지찬우 "..........?" changeExpression(지찬우,지찬우_헐,100)
 견습천사 "‘어라... 이게 왜 지금...?’" changeExpression(견습천사,견습천사_오잉,100)
 견습천사 "‘그러고 보니 아까 주문 외울 때’" changeExpression(견습천사,견습천사_오잉,100)
@@ -334,7 +335,7 @@ removeForeground()
 지찬우 "으아아아아아아아악!!!!!!!!!" changeExpression(지찬우,지찬우_경악,100)
 
 
-setBackground(찬우방_낮, false, 1) playMusic(S1)
+setMiniGameAfterBG(찬우방_낮, false, 1) playMusic(S1)
 지찬우 "허억...허억...후우..." changeExpression(지찬우,지찬우_우웩,100)
 지찬우 "오랜만에 계단으로 오느라" changeExpression(지찬우,지찬우_우웩,100)
 지찬우 "힘들어 죽는 줄 알았네..." changeExpression(지찬우,지찬우_우웩,100)

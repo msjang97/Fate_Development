@@ -1,7 +1,7 @@
 setForeground(스테이지4,false,1)
 removeForeground()
 
-setBackground(pc방,false,1) playMusic(S15)
+setMiniGameAfterBG(pc방,false,1) playMusic(S15)
 최은지 "찬우야! 여기야!" changeExpression(최은지,최은지_기본,100)
 지찬우 "어? 먼저 와 있었네?" changeExpression(지찬우,지찬우_깜짝,100)
 지찬우 "마, 많이 기다렸어?!" changeExpression(지찬우,지찬우_삐질,100)

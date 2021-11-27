@@ -1,6 +1,6 @@
 setForeground(스테이지6,false,1)
 removeForeground()
-setBackground(학교축제,false,1) playMusic(S17)
+setMiniGameAfterBG(학교축제,false,1) playMusic(S17)
 지찬우 "벌써 축제 마지막 날이라니..." changeExpression(지찬우,지찬우_기본,100)
 최은지 "그러게!" changeExpression(최은지,최은지_기본,100)
 최은지 "오늘이라도 즐길 수 있어서 다행이다." changeExpression(최은지,최은지_활짝,100)
