@@ -122,7 +122,7 @@ setBackground(은지방,false,1) playMusic(S11)
 setForeground(삼자대면,false,1)
 removeForeground() 
 
-
+setMiniGameAfterBG(은지방,false,1)
 최은지 "........." changeExpression(최은지,최은지_긴장,100)
 최은지 "은석아... 누나가 형 이랑" changeExpression(최은지,최은지_긴장,100)
 최은지 "할 이야기가 있어서" changeExpression(최은지,최은지_긴장,100)

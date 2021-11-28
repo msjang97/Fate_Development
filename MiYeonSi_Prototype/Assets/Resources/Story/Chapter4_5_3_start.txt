@@ -37,6 +37,12 @@ PlaySound(S_5)
 지찬우 "편의점 중에 제일 시급을 잘 쳐줘서..." changeExpression(지찬우,지찬우_주륵,100)
 마민석 "로만티카!!!" changeExpression(마민석,마민석_발그레,100)
 마민석 "그것 또한 돌리야군요 후후." changeExpression(마민석,마민석_할짝,100)
+
+
+setForeground(편돌이민석,false,1)
+removeForeground()
+
+setMiniGameAfterBG(편의점,false,1)
 연애세포 "‘운명이라는 말 입에 달고 사는구나...’" changeExpression(연애세포,연애세포_개싫음,100)
 연애세포 "‘지금이라도 찬우한테’" changeExpression(연애세포,연애세포_개싫음,100)
 연애세포 "‘도망치라고 할까...?’" changeExpression(연애세포,연애세포_개싫음,100)

@@ -69,6 +69,7 @@ setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 setForeground(은석놀이,false,1)
 removeForeground() 
 
+setMiniGameAfterBG(낮의거리,false,1)
 최은석 "형이 목마 태워주는 거 짱 재밌다!!!" changeExpression(최은석,최은석_활짝,100)
 최은석 "이제 뭐 할까 형???" changeExpression(최은석,최은석_흐음,100)
 최은석 "음... 그래!! 그거하자!!!" changeExpression(최은석,최은석_흐음,100)

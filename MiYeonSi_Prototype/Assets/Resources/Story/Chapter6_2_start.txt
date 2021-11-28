@@ -16,6 +16,8 @@ setMiniGameAfterBG(학교축제,false,1) playMusic(S17)
 setForeground(귀신의집,false,1)
 removeForeground() 
 
+
+setMiniGameAfterBG(학교축제,false,1) 
 최은지 "헉... 헉... 뭐야 저 아저씨..." changeExpression(최은지,최은지_긴장,100)
 최은지 "귀신의 집 알바도 하시는거야...?" changeExpression(최은지,최은지_긴장,100)
 지찬우 "허억... 그냥 축제 오신 것 같은데..." changeExpression(지찬우,지찬우_살려줘,100)

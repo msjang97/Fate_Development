@@ -84,6 +84,7 @@ setBackground(김밥천국,false,1) playMusic(S5)
 setForeground(준병철수,false,1)
 removeForeground() 
 
+setMiniGameAfterBG(김밥천국,false,1) 
 문준병 "그러다 보니까 헤비메탈 라이징 스타" changeExpression(문준병,준베이_아련,100)
 문준병 "준베이가 되어있더라고." changeExpression(문준병,준베이_아련,100)
 연애세포 "설마 <Take a Look> 가수...?" changeExpression(연애세포,연애세포_당황,100)

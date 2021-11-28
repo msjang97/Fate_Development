@@ -54,6 +54,7 @@ PlaySound(S_2)
 setForeground(어린찬우아린,false,1)
 removeForeground() 
 
+setMiniGameAfterBG(한의원_내부,false,1)
 어린아린 "오빠 팔이 흑...흡.... " changeExpression(어린아린,어린아린_눈물,100)
 어린아린 "빨개졌어 흐윽...흡...흑..." changeExpression(어린아린,어린아린_눈물,100)
 어린찬우 "여긴 병원이니까 내 팔도 나을거야!!" changeExpression(어린찬우,어린찬우_삐질,100)

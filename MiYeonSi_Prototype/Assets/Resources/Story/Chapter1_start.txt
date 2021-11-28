@@ -367,6 +367,7 @@ setMiniGameAfterBG(아린이네_문앞,false,1)
 setForeground(고아린_만남,false,1)
 removeForeground()
 
+setMiniGameAfterBG(아린이네_문앞,false,1) 
 지찬우 "모, 못 알아봐서 미안..." changeExpression(지찬우,지찬우_헐,100)
 지찬우 "옛날이랑 조금 달라져서..." changeExpression(지찬우,지찬우_지루,100)
 지찬우 "이게 몇 년 만이야? 그간 잘 지냈어?" changeExpression(지찬우,지찬우_기본,100)
