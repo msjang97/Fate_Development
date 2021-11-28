@@ -16,7 +16,6 @@ public class EndingCollection : MonoBehaviour
         Title,
         엘리베이터,
         고아린_만남,
-        아린찬우_손,
         은석놀이,
         삼자대면,
         피씨방_민석,
@@ -28,9 +27,9 @@ public class EndingCollection : MonoBehaviour
         찬우은지,
         방해자집합,
         은지엔딩,
-        아린엔딩,
         준병엔딩,
         민석엔딩,
+        아린엔딩,
         솔로엔딩,
     }
 
