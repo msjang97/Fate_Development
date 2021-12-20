@@ -69,7 +69,7 @@ public class HeartControll : MonoBehaviour
                 if (!worstStop)
                 {
                     Debug.Log("Best");
-                    ChoiceManager.P_instance.selectedNum = 4;
+                    ChoiceManager.P_instance.selectedNum = 1;
                      LovePoint.instance.eunji_LovePoint += 5;
                 }
                 
@@ -83,7 +83,7 @@ public class HeartControll : MonoBehaviour
                 {
                     Debug.Log("Good");
 
-                    ChoiceManager.P_instance.selectedNum = 3;
+                    ChoiceManager.P_instance.selectedNum = 2;
                     LovePoint.instance.eunji_LovePoint += 3;
                 }
                 
@@ -97,15 +97,15 @@ public class HeartControll : MonoBehaviour
                 {
                     Debug.Log("Normal");
 
-                    ChoiceManager.P_instance.selectedNum = 2;
+                    ChoiceManager.P_instance.selectedNum = 3;
                     LovePoint.instance.eunji_LovePoint += 0;
                 }
                
             }
             else if (col.gameObject.tag == "Worst")
             {
-                //ChoiceManager.P_instance.selectedNum = 1;
-                //LovePoint.instance.eunji_LovePoint += -5;
+                ChoiceManager.P_instance.selectedNum = 4;
+                LovePoint.instance.eunji_LovePoint += -5;
                 worstStop = true;
             }
         }     

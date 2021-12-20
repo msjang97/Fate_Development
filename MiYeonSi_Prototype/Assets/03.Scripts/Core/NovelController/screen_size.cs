@@ -8,7 +8,7 @@ public class screen_size : MonoBehaviour
     void Awake()
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
-        Screen.SetResolution(1080,1920, true);
+        Screen.SetResolution(1080,2400, true);
         Screen.SetResolution(Screen.width, Screen.width * 16 / 9, true); // 16:9 로 개발시
  
     }
