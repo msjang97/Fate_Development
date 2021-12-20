@@ -173,6 +173,7 @@ setMiniGameAfterBG(버스킹,false,1)
 최은지 "찬우 너 배 많이 고프니?" changeExpression(최은지,최은지_올,100)
 최은지 "커피라도 사줄까?" changeExpression(최은지,최은지_올,100)
 지찬우 "ㅇ...아니 은지야 그게 아니라..." changeExpression(지찬우,지찬우_헐,100)
+마민석 "그럼 로만티카 카페에 오는 건 어때요?" changeExpression(마민석,마민석_할짝,100)
 
 distr(마민석)
 choice
@@ -213,7 +214,7 @@ setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
 지찬우 "뭔가 데이트 하는 것 같은" changeExpression(지찬우,지찬우_씁쓸,100)
 지찬우 "시간을 보낼 수 있을 줄 알았는데..." changeExpression(지찬우,지찬우_씁쓸,100)
 최은지 "찬우야 뭐라고?? 데이트??" changeExpression(최은지,최은지_올,100)
-최은지 "무슨 말이야??" changeExpression(최은지,최은지_오,100)
+최은지 "무슨 말이야??" changeExpression(최은지,최은지_올,100)
 narrator "하루 안에 만나고 싶지 않은 인물들을"
 narrator "셋이나 동시에 만나 정신이 없는 찬우."
 narrator "앞에 은지가 있다는 것을"

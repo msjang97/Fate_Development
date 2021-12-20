@@ -171,6 +171,7 @@ setMiniGameAfterBG(버스킹,false,1)
 최은지 "찬우 너 배 많이 고프니?" changeExpression(최은지,최은지_올,100)
 최은지 "커피라도 사줄까?" changeExpression(최은지,최은지_올,100)
 지찬우 "ㅇ...아니 은지야 그게 아니라..." changeExpression(지찬우,지찬우_헐,100)
+마민석 "그럼 로만티카 카페에 오는 건 어때요?" changeExpression(마민석,마민석_할짝,100)
 
 distr(마민석)
 choice
