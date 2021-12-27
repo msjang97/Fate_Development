@@ -64,7 +64,6 @@ narrator "둘의 자리가 멀리 떨어진 것을 본다."
 지찬우 "어쩔 수 없지 뭐…" changeExpression(지찬우,지찬우_씁쓸,100)
 최은지 "찬우야! 우리 콘서트 끝나고 만나!" changeExpression(최은지,최은지_기본,100)
 지찬우 "그래… 재밌게 봐…!" changeExpression(지찬우,지찬우_씁쓸,100)
-
 지찬우 "은지는 없지만 이왕 온 거… 즐겨보자…" changeExpression(지찬우,지찬우_삐질,100)
 팬들 "꺄아아아악!!! 시작한다!!!" changeExpression(팬들,여대생그림자3,100)
 준베이 "안녕하세요 여러분!" changeExpression(준베이,준베이_기본,100)
@@ -99,6 +98,8 @@ narrator "둘의 자리가 멀리 떨어진 것을 본다."
 
 setForeground(검은창,false,1)
 removeForeground() 
+
+narrator "공연이 엔딩을 향해 달려간다."
 
 setBackground(콘서트장_내부,false,1) playMusic(S21)
 지찬우 "드디어 공연 막바지네…" changeExpression(지찬우,지찬우_기본,100)

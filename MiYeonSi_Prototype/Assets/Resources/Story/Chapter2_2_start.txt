@@ -1,6 +1,6 @@
 setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 
-지찬우 "그냥... 가자..." changeExpression(지찬우,지찬우_웃음,100)
+지찬우 "....가자" changeExpression(지찬우,지찬우_웃음,100)
 지찬우 "미안한데 형이 지금 바빠서..." changeExpression(지찬우,지찬우_삐질,100)
 남자아이 "끄흐흑...끄흡...흐윽...흑...끕..." changeExpression(남자아이,최은석_글썽,100)
 남자아이 "흐...흐엉...흡...끕...엉엉..." changeExpression(남자아이,최은석_글썽,100)

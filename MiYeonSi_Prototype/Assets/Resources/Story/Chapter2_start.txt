@@ -188,7 +188,7 @@ setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 최은지 "응! 오늘은 같이 못가는거야?" changeExpression(최은지,최은지_기본,100)
 
 playMusic(Evolution) 
-miniGame(MMS_Minigame) 
+miniGame(KAR_Minigame) 
 {
   지찬우 "오늘은 동생 데려다 줘야 할 것 같아..." setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_고백,100)
    최은지 "동생이니까 먼저 챙겨야지!" changeExpression(최은지,최은지_활짝,100)
@@ -253,11 +253,11 @@ miniGame(MJB_Minigame)
 {
   지찬우 "놀아주자..." setBackground(낮의거리,false,1)  changeExpression(지찬우,지찬우_고백,100)
   Load(Chapter2_1_start)
-  지찬우 "그냥... 가자..." setBackground(낮의거리,false,1)  changeExpression(지찬우,지찬우_웃음,100)
+  지찬우 "....가자" setBackground(낮의거리,false,1)  changeExpression(지찬우,지찬우_웃음,100)
   Load(Chapter2_2_start)
   지찬우 "그냥... 가자..." setBackground(낮의거리,false,1)  changeExpression(지찬우,지찬우_기본,100)
   Load(Chapter2_3_start)
-  지찬우 "그냥... 가자..." setBackground(낮의거리,false,1)  changeExpression(지찬우,지찬우_얼빠짐,100)
+  지찬우 "가자..." setBackground(낮의거리,false,1)  changeExpression(지찬우,지찬우_얼빠짐,100)
   Load(Chapter2_4_start)
 }
 
