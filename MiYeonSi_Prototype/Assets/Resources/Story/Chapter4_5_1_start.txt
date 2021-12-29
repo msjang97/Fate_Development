@@ -1,5 +1,4 @@
 setMiniGameAfterBG(강의실,false,1) playMusic(S4)
-
 지찬우 "그래... 곧 시험이니까..." changeExpression(지찬우,지찬우_지루,100)
 지찬우 "공부부터 하자. 그게 맞아..." changeExpression(지찬우,지찬우_지루,100)
 연애세포 "편의점 알바 면접 갔으면" changeExpression(연애세포,연애세포_무표정,100)

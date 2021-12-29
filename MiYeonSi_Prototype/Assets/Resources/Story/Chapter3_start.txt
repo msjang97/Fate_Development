@@ -95,7 +95,7 @@ choice
 }
 
 
-setMiniGameAfterBG(편의점,false,1)
+setMiniGameAfterBG(편의점,false,1) playMusic(S10)
 마민석 "돌리야는 쉽게 말해" changeExpression(마민석,마민석_무표정,100)
 마민석 "‘운명’이라는 것입니다." changeExpression(마민석,마민석_무표정,100)
 마민석 "세계를 움직이는" changeExpression(마민석,마민석_무표정,100)
@@ -244,17 +244,17 @@ setBackground(낮의거리, false, 1) playMusic(S6)
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
-  지찬우 "달콤한 스무디!" setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_고백,100)
+  지찬우 "달콤한 스무디!" playMusic(S6) setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_고백,100)
    최은지 "좋아! 나 스무디 완전 좋아해!" changeExpression(최은지,최은지_활짝,100)
-  지찬우 "상큼한 에이드!" setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_웃음,100)
+  지찬우 "상큼한 에이드!" playMusic(S6) setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_웃음,100)
    최은지 "음… 에이드도 나쁘진 않지!" changeExpression(최은지,최은지_기본,100)
-  지찬우 "무난한 초코라떼!" setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_기본,100)
+  지찬우 "무난한 초코라떼!" playMusic(S6) setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_기본,100)
    최은지 "오늘 초코라떼 먹고 와서…" changeExpression(최은지,최은지_무념,100)
-  지찬우 "쌉싸름한 아메리카노!" setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_얼빠짐,100)
+  지찬우 "쌉싸름한 아메리카노!" playMusic(S6) setBackground(낮의거리, false, 1) changeExpression(지찬우,지찬우_얼빠짐,100)
    최은지 "금방도 말했지만 내가 쓴 걸 싫어해서…" changeExpression(최은지,최은지_헐,100)
 }
 
-setBackground(낮의거리, false, 1) playMusic(S6)
+setMiniGameAfterBG(낮의거리,false,1) 
 문준병 "그럼 저기 갈까? 딸기 스무디 맛있던데." changeExpression(문준병,문준병_기본,100)
 최은지 "뭐…! 스무디…?" changeExpression(최은지,최은지_반짝,100)
 문준병 "난 아이스 아메리카노면 되거든" changeExpression(문준병,문준병_활짝,100)
@@ -282,6 +282,7 @@ setBackground(낮의거리, false, 1) playMusic(S6)
 문준병 "찬우 따라가보자." changeExpression(문준병,문준병_기본,100)
 
 playSound(S_3)
+
 문준병 "아, 잠깐만. 나 전화 좀 받을게." changeExpression(문준병,문준병_기본,100)
 최은지 "우리 신경 쓰지 말고 편하게 해." changeExpression(최은지,최은지_기본,100)
 문준병 "여보세요?" changeExpression(문준병,문준병_기본,100)

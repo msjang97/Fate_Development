@@ -105,23 +105,20 @@ setMiniGameAfterBG(은지방,false,1)
 최은지 "...? 어...? " changeExpression(최은지,최은지_깜짝,100)
 최은지 "너 지금 뭐라고 했어...?" changeExpression(최은지,최은지_깜짝,100)
 
-"너 지금 뭐라고 했어...?"
-
 playMusic(Evolution)
 miniGame(MMS_Minigame) 
 {
-  지찬우 "어,어? 혼잣말을... 미안..." setBackground(은지방,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
+  지찬우 "어,어? 혼잣말을... 미안..." playMusic(S11) setBackground(은지방,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
 	최은지 "헐... 설마 찬우야...!" changeExpression(최은지,최은지_활짝,100)
-  지찬우 "어...? 뭐라고...?" setBackground(은지방,false,1) changeExpression(지찬우,지찬우_기본,100)
+  지찬우 "어...? 뭐라고...?" playMusic(S11) setBackground(은지방,false,1) changeExpression(지찬우,지찬우_기본,100)
 	최은지 "얼버무리지 말고!" changeExpression(최은지,최은지_기본,100)
-  지찬우 "뭐 잘못 한 거라도...?" setBackground(은지방,false,1) changeExpression(지찬우,지찬우_웃음,100)
+  지찬우 "뭐 잘못 한 거라도...?" playMusic(S11) setBackground(은지방,false,1) changeExpression(지찬우,지찬우_웃음,100)
 	최은지 "아니 그게 아니라..." changeExpression(최은지,최은지_무념,100)
-  지찬우 "두 번... 말 해야 하나...?" setBackground(은지방,false,1) changeExpression(지찬우,지찬우_고백,100)
+  지찬우 "두 번... 말 해야 하나...?" playMusic(S11) setBackground(은지방,false,1) changeExpression(지찬우,지찬우_고백,100)
 	최은지 "아... 미안... 근데 그게 아니라" changeExpression(최은지,최은지_헐,100)
 }
 
-
-setMiniGameAfterBG(은지방,false,1) playMusic(S11)
+setMiniGameAfterBG(은지방,false,1)
 최은지 "너도 이 노래 알아???" changeExpression(최은지,최은지_깜짝,100)
 
 setBackground(고등학교_교실,false,1) playMusic(S13)

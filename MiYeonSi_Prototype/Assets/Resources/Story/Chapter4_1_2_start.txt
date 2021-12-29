@@ -1,6 +1,5 @@
 setMiniGameAfterBG(PC방,false,1) playMusic(S15)
 
-
 지찬우 "아저씨 말이 맞지." changeExpression(지찬우,지찬우_웃음,100)
 지찬우 "‘저 아저씨랑은... ‘" changeExpression(지찬우,지찬우_얼빠짐,100)
 지찬우 "‘말이 안 통할 것 같으니까...’" changeExpression(지찬우,지찬우_얼빠짐,100)
@@ -99,7 +98,6 @@ setMiniGameAfterBG(PC방,false,1) playMusic(S15)
 setBackground(찬우방_밤,false,1) playMusic(S14)
 지찬우 "하아... 지쳤다." changeExpression(지찬우,지찬우_멍때림,100)
 지찬우 "내일 할 일만 체크하고 바로 자야겠어." changeExpression(지찬우,지찬우_지루,100)
-
 지찬우 "어라, 내일 일정이 겹치네..." changeExpression(지찬우,지찬우_깜짝,100)
 지찬우 "어떡하지...?" changeExpression(지찬우,지찬우_지루,100)
 

@@ -116,17 +116,17 @@ narrator "마민석과 문준병."
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {
-  지찬우 "하하...! 인디 음악 나도 좋다고!" setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_고백,100)
+  지찬우 "하하...! 인디 음악 나도 좋다고!" playMusic(S20) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_고백,100)
 	최은지 "그런거였구나~" changeExpression(최은지,최은지_활짝,100)
-  지찬우 "어...! 그... 인디 좋네!" setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_웃음,100)
+  지찬우 "어...! 그... 인디 좋네!" playMusic(S20) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_웃음,100)
 	최은지 "그런거였구나~" changeExpression(최은지,최은지_기본,100)
-  지찬우 "아, 별거 아니야." setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_기본,100)
+  지찬우 "아, 별거 아니야." playMusic(S20) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_기본,100)
 	최은지 "아... 그래...!" changeExpression(최은지,최은지_무념,100)
-  지찬우 "두 번 말해야 하나..." setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
+  지찬우 "두 번 말해야 하나..." playMusic(S20) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
 	최은지 "아하하... 말하기 싫으면 말아..." changeExpression(최은지,최은지_헐,100)
 }
 
-setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
+setMiniGameAfterBG(버스킹,false,1) 
 문준병 "‘둘이서... 버스킹 관람...?’" changeExpression(문준병,문준병_짜증,100)
 준베이 "‘안돼. 내 뮤즈야.’" changeExpression(준베이,준베이_침착,100)
 narrator "무대를 하던 사람이 공연을 끝내자마자"
