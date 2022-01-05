@@ -32,21 +32,22 @@ setMiniGameAfterBG(학교축제,false,1) playMusic(S17)
 
 setBackground(주점,false,1) playMusic(S18)
 
-지찬우 "으아아... 진짜 괜찮으려나..." changeExpression(지찬우,지찬우_일단동의,100)
+지찬우 "막상 둘만 오니 떨리네..." changeExpression(지찬우,지찬우_당황,100)
 지찬우 "은지랑 술은 처음인데..." changeExpression(지찬우,지찬우_고백,100)
 연애세포 "원래 술 한 잔을 해야" changeExpression(연애세포,연애세포_웃음,100)
 연애세포 "더 친해지는 법이지!" changeExpression(연애세포,연애세포_웃음,100)
 연애세포 "자신감 장착해! 지찬우!" changeExpression(연애세포,연애세포_호탕,100)
-지찬우 "그래...! 자신감...!" changeExpression(지찬우,지찬우_쑥스,100)
+지찬우 "그래...! 자신감...!" changeExpression(지찬우,지찬우_당황,100)
 최은지 "찬우야 짠! 할까?" changeExpression(최은지,최은지_기본,100)
 지찬우 "그래...! 짠!" changeExpression(지찬우,지찬우_일단동의,100)
+
 narrator "은지와 술을 마시는 것은 처음인 찬우."
 narrator "바짝 긴장한 탓에 술 기운이"
 narrator "빨리 오르는 듯 하다."
 지찬우 "흐아아... 좋다..." changeExpression(지찬우,지찬우_어색웃음,100)
-지찬우 "머리가 띵...하다..." changeExpression(지찬우,지찬우_일단동의,100)
-연애세포 "찬우야? 지찬우???" changeExpression(연애세포,연애세포_머쓱,100)
-연애세포 "정신 줄 꽉 잡아야해." changeExpression(연애세포,연애세포_머쓱,100)
+지찬우 "머리가 띵...하다..." changeExpression(지찬우,지찬우_어색웃음,100)
+연애세포 "찬우야? 지찬우???" changeExpression(연애세포,연애세포_당황,100)
+연애세포 "정신 줄 꽉 잡아야해." changeExpression(연애세포,연애세포_당황,100)
 연애세포 "은지랑 처음 술 마시는데" changeExpression(연애세포,연애세포_당황,100)
 연애세포 "취하면 어떡해! 지찬우!" changeExpression(연애세포,연애세포_당황,100)
 지찬우 "아... 머릿속에 무슨 소리가..." changeExpression(지찬우,지찬우_가식,100)
@@ -54,17 +55,17 @@ narrator "빨리 오르는 듯 하다."
 지찬우 "윙...윙..." changeExpression(지찬우,지찬우_가식,100)
 연애세포 "큰일났다... 내 말은 들리지도 않아." changeExpression(연애세포,연애세포_당황,100)
 연애세포 "어떡하지...?" changeExpression(연애세포,연애세포_개싫음,100)
-지찬우 "하... 인생..." changeExpression(지찬우,지찬우_일단동의,100)
-지찬우 "‘연애는 내 마음대로 안되고...’" changeExpression(지찬우,지찬우_씁쓸,100)
-지찬우 "‘뭐... 언제는 내 마음대로 됐나...’" changeExpression(지찬우,지찬우_씁쓸,100)
-지찬우 "‘연애세포라는 것도...’" changeExpression(지찬우,지찬우_씁쓸,100)
-지찬우 "‘지가 연애 도와준다면서...’" changeExpression(지찬우,지찬우_씁쓸,100)
-지찬우 "‘하는 것도 없고...’" changeExpression(지찬우,지찬우_씁쓸,100)
-지찬우 "‘맨날 옆에서 혼내기만 하고...’" changeExpression(지찬우,지찬우_씁쓸,100)
+지찬우 "하... 인생..." changeExpression(지찬우,지찬우_주륵,100)
+지찬우 "‘연애는 내 마음대로 안되고...’" changeExpression(지찬우,지찬우_주륵,100)
+지찬우 "‘뭐... 언제는 내 마음대로 됐나...’" changeExpression(지찬우,지찬우_주륵,100)
+지찬우 "‘연애세포라는 것도...’" changeExpression(지찬우,지찬우_엉엉,100)
+지찬우 "‘지가 연애 도와준다면서...’" changeExpression(지찬우,지찬우_엉엉,100)
+지찬우 "‘하는 것도 없고...’" changeExpression(지찬우,지찬우_엉엉,100)
+지찬우 "‘맨날 옆에서 혼내기만 하고...’" changeExpression(지찬우,지찬우_우웩,100)
 
 choice
 {
-  지찬우 "스스로 해보자." setBackground(주점,false,1) changeExpression(지찬우,지찬우_고백,100)
+  지찬우 "그냥 스스로 해볼까." setBackground(주점,false,1) changeExpression(지찬우,지찬우_고백,100)
 	Load(Chapter6_5_1_start)
   지찬우 "어쩔 수 없다. 해보자." setBackground(주점,false,1) changeExpression(지찬우,지찬우_웃음,100)
 	Load(Chapter6_5_1_start)

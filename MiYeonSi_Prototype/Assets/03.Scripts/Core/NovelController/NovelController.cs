@@ -45,7 +45,7 @@ public class NovelController : MonoBehaviour
 
         if (ChoiceManager.P_instance.savedChapterName == "") //처음 시작할때만 
         {
-            _chapterName = "Chapter2_start"; //Chapter0_start
+            _chapterName = "Chapter0_start"; //Chapter0_start
 
             LovePoint.instance.ResetData();
         }
