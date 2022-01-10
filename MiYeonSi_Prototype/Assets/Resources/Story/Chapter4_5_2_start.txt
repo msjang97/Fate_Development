@@ -62,7 +62,7 @@ setMiniGameAfterBG(한의원_내부,false,1)
 어린아린 "‘오빠가 날 지켜주느라 팔을 다쳤어.’" changeExpression(어린아린,어린아린_눈물,100)
 어린아린 "‘내가 좋아하는 오빠가 다치는 건’" changeExpression(어린아린,어린아린_눈물,100)
 어린아린 "‘............ 싫어!’" changeExpression(어린아린,어린아린_눈물,100)
-어린아린 "‘내가... 빨리 자라서‘" changeExpression(어린아린,어린아린_울망,100)
+어린아린 "‘내가... 빨리 자라서’" changeExpression(어린아린,어린아린_울망,100)
 어린아린 "‘오빠를 지켜주는 사람이 될거야!’" changeExpression(어린아린,어린아린_울망,100)
 
 setBackground(낮의거리,false,1) playMusic(S6)

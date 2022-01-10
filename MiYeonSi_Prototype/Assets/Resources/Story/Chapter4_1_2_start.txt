@@ -1,9 +1,9 @@
 setMiniGameAfterBG(PC방,false,1) playMusic(S15)
 
 지찬우 "아저씨 말이 맞지." changeExpression(지찬우,지찬우_씁쓸,100)
-지찬우 "‘저 아저씨랑은... ‘" changeExpression(지찬우,지찬우_얼빠짐,100)
+지찬우 "‘저 아저씨랑은... ’" changeExpression(지찬우,지찬우_얼빠짐,100)
 지찬우 "‘말이 안 통할 것 같으니까...’" changeExpression(지찬우,지찬우_얼빠짐,100)
-지찬우 "‘그렇지. 말이 통하려면‘" changeExpression(지찬우,지찬우_얼빠짐,100)
+지찬우 "‘그렇지. 말이 통하려면’" changeExpression(지찬우,지찬우_얼빠짐,100)
 지찬우 "‘아무래도 은지 쪽이지.’" changeExpression(지찬우,지찬우_얼빠짐,100)
 지찬우 "‘일단 아저씨 편을 들어주자.’" changeExpression(지찬우,지찬우_삐질,100)
 지찬우 "‘은지라면 이해해줄 거야.’" changeExpression(지찬우,지찬우_삐질,100)
