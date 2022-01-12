@@ -260,6 +260,10 @@ narrator "혼잣말 치고는 크게 말을 해버린다."
 고아린 "오빠!!!!!!!!!!!! 잠시만!!!!!!!!!!" changeExpression(고아린,고아린_투지,100)
 마민석 "로만티카 비이임!!!!!" changeExpression(마민석,마민석_후잉,100)
 
+setForeground(방해자집합,false,1)
+removeForeground() 
+
+
 지찬우 "'왜 다 여기있는거야...!'" changeExpression(지찬우,지찬우_당황,100)
 지찬우 "'제발 들어줘 은지야...!'" changeExpression(지찬우,지찬우_당황,100)
 지찬우 "사실 은지야...! 내가..!" changeExpression(지찬우,지찬우_고백,100)

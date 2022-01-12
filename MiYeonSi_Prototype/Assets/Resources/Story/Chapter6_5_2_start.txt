@@ -146,13 +146,13 @@ setBackground(학교축제,false,1) playMusic(S18)
 playMusic(Evolution)
 miniGame(KAR_Minigame) 
 {
-  지찬우 "이야기가 왜 그렇게 흘러 가는 거야...?" playMusic(S19) setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_어색웃음,100)
+  지찬우 "이야기가 왜 그렇게 흘러 가는 거야...?" playMusic(S18) setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_어색웃음,100)
 	고아린 "딱 봐도 수상하니까..." changeExpression(고아린,고아린_미소,100)
-  지찬우 "데...? 뭐라고...?" playMusic(S19) setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_당황,100)
+  지찬우 "데...? 뭐라고...?" playMusic(S18) setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_당황,100)
 	고아린 "데이트 중 아니야...?" changeExpression(고아린,고아린_작은웃음,100)
-  지찬우 "하하하... 농담도 참..." playMusic(S19) setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_기본,100)
+  지찬우 "하하하... 농담도 참..." playMusic(S18) setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_기본,100)
 	최은지 "아린아 오해 안 해도 돼!" changeExpression(최은지,최은지_무념,100)
-  지찬우 "데이트...중이지...?" playMusic(S19) setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_기본,100)
+  지찬우 "데이트...중이지...?" playMusic(S18) setBackground(학교축제,false,1)  changeExpression(지찬우,지찬우_기본,100)
 	최은지 "...? 아린아, 진짜 아니야." changeExpression(최은지,최은지_헐,100)
 }
 

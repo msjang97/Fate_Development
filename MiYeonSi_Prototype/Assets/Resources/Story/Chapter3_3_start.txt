@@ -118,20 +118,8 @@ setBackground(은지방,false,1) playMusic(S11)
 최은석 "아! 누나! 내가 누나 대신" changeExpression(최은석,최은석_활짝,100)
 최은석 "우리 집 소개해주고 있었어!" changeExpression(최은석,최은석_활짝,100)
 
-
 setForeground(삼자대면,false,1)
 removeForeground() 
-
-setMiniGameAfterBG(은지방,false,1)
-최은석 "어? 누나! 내 새 친구 알아?" changeExpression(최은석,최은석_웃음,100)
-최은지 "새...친구...?" changeExpression(최은지,최은지_긴장,100)
-지찬우 "은지...?" changeExpression(지찬우,지찬우_깜짝,100)
-지찬우 "은석아 너희 누나가 은지였어?" changeExpression(지찬우,지찬우_깜짝,100)
-최은석 "어? 우리 누나 아네?? changeExpression(최은석,최은석_웃음,100)
-지찬우 "아... 같은 학교 친구야." changeExpression(지찬우,지찬우_삐질,100)
-최은지 "............"changeExpression(최은지,최은지_긴장,100)
-최은석 "그렇구나! 누나 친구였구나!" changeExpression(최은석,최은석_활짝,100)
-최은석 "그럼 같이 놀면 되겠다! 신난다!" changeExpression(최은석,최은석_활짝,100)
 
 최은지 "........." changeExpression(최은지,최은지_긴장,100)
 최은지 "은석아... 누나가 형 이랑" changeExpression(최은지,최은지_긴장,100)
