@@ -60,7 +60,8 @@ public class LovePoint : MonoBehaviour
     public bool _goBranch;// 선택지 분기점 열어주기
     public int _numBranch; // 분기점 번호
 
-
+    //미니게임 배경이름 가져오기 변수
+    public string back_name;
 
     void Init()
     {

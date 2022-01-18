@@ -706,6 +706,7 @@ public class NovelController : MonoBehaviour
     void Command_SetLayerImage(string data, BCFC.LAYER layer)
     {
         string texName = data.Contains(",") ? data.Split(',')[0] : data;
+        LovePoint.instance.back_name = texName;
         //Debug.Log(texName);
         ILLuCon(texName);
         Texture2D tex = texName == "null" ? null : Resources.Load("Images/UI/Backdrops/" + texName) as Texture2D;

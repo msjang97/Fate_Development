@@ -33,6 +33,7 @@ public class Timer : MonoBehaviour
             {
                 currentTime = 0;
                 ChoiceManager.P_instance.selectedNum = 4;
+                Debug.Log(ChoiceManager.P_instance.selectedNum);
             }
         }
         

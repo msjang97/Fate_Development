@@ -1861,6 +1861,7 @@ GameObject:
   - component: {fileID: 1352932520}
   - component: {fileID: 1352932522}
   - component: {fileID: 1352932521}
+  - component: {fileID: 1352932523}
   m_Layer: 5
   m_Name: BackgroundImage
   m_TagString: Untagged
@@ -1921,6 +1922,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352932519}
   m_CullTransparentMesh: 0
+--- !u!114 &1352932523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352932519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc917ce3ce5546a4199914e477ed1aad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backChange: {fileID: 0}
+  backChange2: {fileID: 1352932521}
 --- !u!1 &1374772233
 GameObject:
   m_ObjectHideFlags: 0
