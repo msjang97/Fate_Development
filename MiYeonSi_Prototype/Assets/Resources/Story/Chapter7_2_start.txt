@@ -65,7 +65,7 @@ setMiniGameAfterBG(낮의거리,false,1) playMusic(S6)
 고아린 "예쁜 언니한테 차이기라도 하면..." changeExpression(고아린,고아린_투지,100)
 
 
-setBackground(버스킹,false,1) playMusic(S20)
+setBackground(버스킹,false,1) playMusic(S21)
 지찬우 "와... 오늘 사람 되게 많네." changeExpression(지찬우,지찬우_삐질,100)
 지찬우 "은지... 은지 어디있지?" changeExpression(지찬우,지찬우_헐,100)
 지찬우 "저기에 있다. 빨리 가자." changeExpression(지찬우,지찬우_깜짝,100)
@@ -107,13 +107,13 @@ narrator "마민석과 문준병."
 playMusic(Evolution)
 miniGame(MJB_Minigame) 
 {
-  지찬우 "하하...! 인디 음악 나도 좋다고!" playMusic(S20) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_어색웃음,100)
+  지찬우 "하하...! 인디 음악 나도 좋다고!" playMusic(S21) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_어색웃음,100)
 	최은지 "그런거였구나~" changeExpression(최은지,최은지_활짝,100)
-  지찬우 "어...! 그... 인디 좋네!" playMusic(S20) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_당황,100)
+  지찬우 "어...! 그... 인디 좋네!" playMusic(S21) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_당황,100)
 	최은지 "그런거였구나~" changeExpression(최은지,최은지_기본,100)
-  지찬우 "아, 별거 아니야." playMusic(S20) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_일단동의,100)
+  지찬우 "아, 별거 아니야." playMusic(S21) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_일단동의,100)
 	최은지 "아... 그래...!" changeExpression(최은지,최은지_무념,100)
-  지찬우 "두 번 말해야 하나..." playMusic(S20) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
+  지찬우 "두 번 말해야 하나..." playMusic(S21) setBackground(버스킹,false,1) changeExpression(지찬우,지찬우_얼빠짐,100)
 	최은지 "아하하... 말하기 싫으면 말아..." changeExpression(최은지,최은지_헐,100)
 }
 
@@ -189,7 +189,7 @@ choice
 	마민석 "당연히 돌리야 당신을 위함이죠." changeExpression(마민석,마민석_불쾌,100)
 }
 
-setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
+setMiniGameAfterBG(버스킹,false,1) playMusic(S21)
 최은지 "이 아저씨 자주 마주치네...하하" changeExpression(최은지,최은지_난처,100)
 최은지 "이번엔 전단지...알바...?" changeExpression(최은지,최은지_오잉,100)
 마민석 "후후... 로만티카~ 이~ 돌리야~~" changeExpression(마민석,마민석_할짝,100)

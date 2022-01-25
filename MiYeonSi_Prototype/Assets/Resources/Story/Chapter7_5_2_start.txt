@@ -1,4 +1,4 @@
-setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
+setMiniGameAfterBG(버스킹,false,1) playMusic(S21)
 
 지찬우 "사실 나... 너 좋아해." changeExpression(지찬우,지찬우_웃음,100)
 최은지 "어...? 어... 어...?" changeExpression(최은지,최은지_어색웃음,100)

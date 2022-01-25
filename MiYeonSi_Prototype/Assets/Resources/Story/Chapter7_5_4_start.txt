@@ -1,4 +1,4 @@
-setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
+setMiniGameAfterBG(버스킹,false,1) playMusic(S21)
 
 지찬우 "어... 그게..." changeExpression(지찬우,지찬우_얼빠짐,100)
 지찬우 "하하하 그게 아니라~" changeExpression(지찬우,지찬우_얼빠짐,100)

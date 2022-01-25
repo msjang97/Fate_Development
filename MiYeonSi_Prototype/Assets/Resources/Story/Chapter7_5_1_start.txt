@@ -1,4 +1,4 @@
-setMiniGameAfterBG(버스킹,false,1) playMusic(S20)
+setMiniGameAfterBG(버스킹,false,1) playMusic(S21)
 
 지찬우 "사실 나... 오늘 좀 기대하고 나왔거든..." changeExpression(지찬우,지찬우_고백,100)
 지찬우 "혹시 네가 날 친구로서 보는게 아니라" changeExpression(지찬우,지찬우_고백,100)
